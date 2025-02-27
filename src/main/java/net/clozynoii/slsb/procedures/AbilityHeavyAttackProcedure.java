@@ -1,11 +1,14 @@
 package net.clozynoii.slsb.procedures;
 
+import net.neoforged.neoforge.network.PacketDistributor;
+
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.ClipContext;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.TamableAnimal;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
@@ -124,6 +127,13 @@ public class AbilityHeavyAttackProcedure {
 			SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
 			_vars.InputDelay = 15;
 			_vars.syncPlayerVariables(entity);
+		}
+		if (world.isClientSide()) {
+			SetupAnimationsProcedure.setAnimationClientside((Player) entity, "heavy", true);
+		}
+		if (!world.isClientSide()) {
+			if (entity instanceof Player)
+				PacketDistributor.sendToPlayersInDimension((ServerLevel) entity.level(), new SetupAnimationsProcedure.SlsbModAnimationMessage("heavy", entity.getId(), true));
 		}
 		{
 			Entity _ent = entity;
