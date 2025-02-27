@@ -1,0 +1,15 @@
+{
+  "_fv": 73,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "V",
+    "keyBindingName": "Ability 4",
+    "keyBindingCategoryKey": "slsb",
+    "onKeyPressed": {
+      "name": "AbilityKey4"
+    },
+    "onKeyReleased": {
+      "name": "AbilityKey4"
+    }
+  }
+}

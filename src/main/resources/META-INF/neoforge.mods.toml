@@ -1,0 +1,53 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="slsb"
+version="1.0.0"
+displayName="Solo Leveling: System Break"
+displayURL="https://discord.gg/TJj3Sk52Jq"
+credits="NoiiLive, sushiclozy"
+authors="NoiiLive, sushiclozy"
+description="Adds Solo Leveling into Minecraft."
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[dependencies.slsb]]
+    modId="neoforge"
+    type="required"
+    versionRange="[21.1.65,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.slsb]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.21.1]"
+    ordering="AFTER"
+    side="BOTH"
+
+
+[[dependencies.slsb]]
+    modId="kleidersplayerrenderer"
+    type="optional"
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.slsb]]
+    modId="geckolib"
+    type="optional"
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.slsb]]
+    modId="playeranimator"
+    type="optional"
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration

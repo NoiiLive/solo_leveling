@@ -1,0 +1,923 @@
+{
+  "mod_elements": [
+    {
+      "name": "Slsb",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slsb",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/command/SlsbCommand.java"
+        ]
+      },
+      "path": "~/Misc/Commands"
+    },
+    {
+      "name": "SystemBreak",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "system_break",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/command/SystemBreakCommand.java"
+        ]
+      },
+      "path": "~/Misc/Commands"
+    },
+    {
+      "name": "PlayerJoinedWorld",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_joined_world",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/PlayerJoinedWorldProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Player"
+    },
+    {
+      "name": "PlayerTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/PlayerTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Player"
+    },
+    {
+      "name": "GlobalCooldowns",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "global_cooldowns",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/GlobalCooldownsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Player"
+    },
+    {
+      "name": "PlayerLeavesWorld",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_leaves_world",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/PlayerLeavesWorldProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Player"
+    },
+    {
+      "name": "SetupAnimations",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "setup_animations",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SetupAnimationsProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Procedures/Player"
+    },
+    {
+      "name": "ClientOnlyHandler",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "client_only_handler",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/ClientOnlyHandler.java"
+        ]
+      },
+      "path": "~/Procedures/Player"
+    },
+    {
+      "name": "PlayerOverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/client/screens/PlayerOverlayOverlay.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "HideOverlayF1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hide_overlay_f_1",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/HideOverlayF1Procedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Procedures/GUI"
+    },
+    {
+      "name": "Ability1",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/network/Ability1Message.java"
+        ]
+      },
+      "path": "~/Misc/Keybinds"
+    },
+    {
+      "name": "Ability2",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/network/Ability2Message.java"
+        ]
+      },
+      "path": "~/Misc/Keybinds"
+    },
+    {
+      "name": "Ability3",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/network/Ability3Message.java"
+        ]
+      },
+      "path": "~/Misc/Keybinds"
+    },
+    {
+      "name": "Ability4",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_4",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/network/Ability4Message.java"
+        ]
+      },
+      "path": "~/Misc/Keybinds"
+    },
+    {
+      "name": "Ability5",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_5",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/network/Ability5Message.java"
+        ]
+      },
+      "path": "~/Misc/Keybinds"
+    },
+    {
+      "name": "ChangeAbilityBar",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "change_ability_bar",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/network/ChangeAbilityBarMessage.java"
+        ]
+      },
+      "path": "~/Misc/Keybinds"
+    },
+    {
+      "name": "MainMenu",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "main_menu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/network/MainMenuMessage.java"
+        ]
+      },
+      "path": "~/Misc/Keybinds"
+    },
+    {
+      "name": "AbilityOverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/client/screens/AbilityOverlayOverlay.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "MainGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "main_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/world/inventory/MainGUIMenu.java",
+          "src/main/java/net/clozynoii/slsb/client/gui/MainGUIScreen.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "MainMenuKey",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "main_menu_key",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/MainMenuKeyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Keys"
+    },
+    {
+      "name": "AbilityBarKey",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_bar_key",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/AbilityBarKeyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Keys"
+    },
+    {
+      "name": "AbilityKey1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_key_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/AbilityKey1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Keys"
+    },
+    {
+      "name": "AbilityKey2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_key_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/AbilityKey2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Keys"
+    },
+    {
+      "name": "AbilityKey3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_key_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/AbilityKey3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Keys"
+    },
+    {
+      "name": "AbilityKey4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_key_4",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/AbilityKey4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Keys"
+    },
+    {
+      "name": "AbilityKey5",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_key_5",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/AbilityKey5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Keys"
+    },
+    {
+      "name": "UseAbilities1a",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "use_abilities_1a",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/UseAbilities1aProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Abilities"
+    },
+    {
+      "name": "UseAbilities2a",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "use_abilities_2a",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/UseAbilities2aProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Abilities"
+    },
+    {
+      "name": "UseAbilities3a",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "use_abilities_3a",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/UseAbilities3aProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Abilities"
+    },
+    {
+      "name": "UseAbilities4a",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "use_abilities_4a",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/UseAbilities4aProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Abilities"
+    },
+    {
+      "name": "UseAbilities5a",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "use_abilities_5a",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/UseAbilities5aProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Abilities"
+    },
+    {
+      "name": "UseAbilities1b",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "use_abilities_1b",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/UseAbilities1bProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Abilities"
+    },
+    {
+      "name": "UseAbilities2b",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "use_abilities_2b",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/UseAbilities2bProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Abilities"
+    },
+    {
+      "name": "UseAbilities3b",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "use_abilities_3b",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/UseAbilities3bProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Abilities"
+    },
+    {
+      "name": "UseAbilities4b",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "use_abilities_4b",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/UseAbilities4bProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Abilities"
+    },
+    {
+      "name": "UseAbilities5b",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "use_abilities_5b",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/UseAbilities5bProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Abilities"
+    },
+    {
+      "name": "ExampleAbility",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "example_ability",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ExampleAbilityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Abilities/Hunters"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "Ability1a",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "None"
+    },
+    {
+      "name": "Ability1b",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "None"
+    },
+    {
+      "name": "Ability2a",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "None"
+    },
+    {
+      "name": "Ability2b",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "None"
+    },
+    {
+      "name": "Ability3a",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "None"
+    },
+    {
+      "name": "Ability3b",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "None"
+    },
+    {
+      "name": "Ability4a",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "None"
+    },
+    {
+      "name": "Ability4b",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "None"
+    },
+    {
+      "name": "Ability5a",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "None"
+    },
+    {
+      "name": "Ability5b",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "None"
+    },
+    {
+      "name": "AbilityBar",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "1.0"
+    },
+    {
+      "name": "Cooldown1a",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "Cooldown1b",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "Cooldown2a",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "Cooldown2b",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "Cooldown3a",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "Cooldown3b",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "Cooldown4a",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "Cooldown4b",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "Cooldown5a",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "Cooldown5b",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "GUISelectedEntry",
+      "type": "string",
+      "scope": "player_lifetime",
+      "value": ""
+    },
+    {
+      "name": "KeyHeld",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "InputDelay",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0.0"
+    },
+    {
+      "name": "NoCooldowns",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "JoinedWorld",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "GlobalCooldownCounter",
+      "type": "number",
+      "scope": "map",
+      "value": "0.0"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "key.slsb.ability_4": "Ability 4",
+      "key.slsb.ability_5": "Ability 5",
+      "key.slsb.change_ability_bar": "Change Ability Bar",
+      "key.categories.slsb\\": "Solo Leveling: System Break",
+      "key.slsb.main_menu": "Main Menu",
+      "key.slsb.ability_2": "Ability 2",
+      "key.slsb.ability_3": "Ability 3",
+      "key.slsb.ability_1": "Ability 1",
+      "slsb.ability.cooldown": "Ability is on Cooldown!"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Procedures",
+        "children": [
+          {
+            "name": "Player",
+            "children": []
+          },
+          {
+            "name": "GUI",
+            "children": []
+          },
+          {
+            "name": "Keys",
+            "children": []
+          },
+          {
+            "name": "Abilities",
+            "children": [
+              {
+                "name": "Hunters",
+                "children": []
+              },
+              {
+                "name": "System",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Entities",
+        "children": []
+      },
+      {
+        "name": "Armor",
+        "children": []
+      },
+      {
+        "name": "Weapons",
+        "children": []
+      },
+      {
+        "name": "Items",
+        "children": []
+      },
+      {
+        "name": "Structures",
+        "children": []
+      },
+      {
+        "name": "GUI",
+        "children": []
+      },
+      {
+        "name": "Effects",
+        "children": []
+      },
+      {
+        "name": "Particles",
+        "children": []
+      },
+      {
+        "name": "Misc",
+        "children": [
+          {
+            "name": "Commands",
+            "children": []
+          },
+          {
+            "name": "Tabs",
+            "children": []
+          },
+          {
+            "name": "Keybinds",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "slsb",
+    "modName": "Solo Leveling: System Break",
+    "version": "1.0.0",
+    "description": "Adds Solo Leveling into Minecraft.",
+    "author": "NoiiLive, sushiclozy",
+    "websiteURL": "https://discord.gg/TJj3Sk52Jq",
+    "license": "All Rights Reserved",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "kleidersplayerrenderer",
+      "geckolib",
+      "playeranimator"
+    ],
+    "currentGenerator": "neoforge-1.21.1",
+    "credits": "NoiiLive, sushiclozy",
+    "modElementsPackage": "net.clozynoii.slsb"
+  },
+  "mcreatorVersion": 202400452410
+}
