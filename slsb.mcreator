@@ -796,6 +796,12 @@
       "type": "number",
       "scope": "map",
       "value": "0.0"
+    },
+    {
+      "name": "Barraging",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
     }
   ],
   "sound_elements": [],
@@ -841,6 +847,10 @@
               },
               {
                 "name": "System",
+                "children": []
+              },
+              {
+                "name": "Basic",
                 "children": []
               }
             ]

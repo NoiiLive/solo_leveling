@@ -10,15 +10,27 @@ public class UseAbilities1bProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).InputDelay == 0) {
-			if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).Cooldown1b == 0) {
-				if ((entity.getData(SlsbModVariables.PLAYER_VARIABLES).Ability1b).equals("")) {
+		if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).Cooldown1b == 0) {
+			if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).InputDelay == 0 && entity.getData(SlsbModVariables.PLAYER_VARIABLES).KeyHeld == true || entity.getData(SlsbModVariables.PLAYER_VARIABLES).KeyHeld == false) {
+				if ((entity.getData(SlsbModVariables.PLAYER_VARIABLES).Ability1b).equals("Barrage")) {
 				}
-			} else {
-				if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).KeyHeld == true) {
-					if (entity instanceof Player _player && !_player.level().isClientSide())
-						_player.displayClientMessage(Component.literal(("\u00A7c" + Component.translatable("slsb.ability.cooldown").getString())), true);
+			}
+			if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).InputDelay == 0) {
+				if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).Barraging == false) {
+					if ((entity.getData(SlsbModVariables.PLAYER_VARIABLES).Ability1b).equals("Heavy Attack")) {
+					}
+					if ((entity.getData(SlsbModVariables.PLAYER_VARIABLES).Ability1b).equals("Uppercut")) {
+					}
+					if ((entity.getData(SlsbModVariables.PLAYER_VARIABLES).Ability1b).equals("Slam")) {
+					}
+					if ((entity.getData(SlsbModVariables.PLAYER_VARIABLES).Ability1b).equals("Dash")) {
+					}
 				}
+			}
+		} else {
+			if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).KeyHeld == true) {
+				if (entity instanceof Player _player && !_player.level().isClientSide())
+					_player.displayClientMessage(Component.literal(("\u00A7c" + Component.translatable("slsb.ability.cooldown").getString())), true);
 			}
 		}
 	}

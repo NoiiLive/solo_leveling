@@ -94,6 +94,7 @@ public class SlsbModVariables {
 				clone.GUISelectedEntry = original.GUISelectedEntry;
 				clone.KeyHeld = original.KeyHeld;
 				clone.InputDelay = original.InputDelay;
+				clone.Barraging = original.Barraging;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
@@ -258,6 +259,7 @@ public class SlsbModVariables {
 		public double InputDelay = 0.0;
 		public boolean NoCooldowns = false;
 		public boolean JoinedWorld = false;
+		public boolean Barraging = false;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -288,6 +290,7 @@ public class SlsbModVariables {
 			nbt.putDouble("InputDelay", InputDelay);
 			nbt.putBoolean("NoCooldowns", NoCooldowns);
 			nbt.putBoolean("JoinedWorld", JoinedWorld);
+			nbt.putBoolean("Barraging", Barraging);
 			return nbt;
 		}
 
@@ -319,6 +322,7 @@ public class SlsbModVariables {
 			InputDelay = nbt.getDouble("InputDelay");
 			NoCooldowns = nbt.getBoolean("NoCooldowns");
 			JoinedWorld = nbt.getBoolean("JoinedWorld");
+			Barraging = nbt.getBoolean("Barraging");
 		}
 
 		public void syncPlayerVariables(Entity entity) {
