@@ -2,7 +2,7 @@
   "_fv": 73,
   "_type": "overlay",
   "definition": {
-    "priority": "NORMAL",
+    "priority": "HIGH",
     "components": [
       {
         "type": "image",
@@ -20,6 +20,9 @@
         "data": {
           "image": "ability_bar_2.png",
           "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnAbilityBar2"
+          },
           "anchorPoint": "BOTTOM_LEFT",
           "x": 107,
           "y": 210,
@@ -31,9 +34,87 @@
         "data": {
           "image": "ability_bar_1.png",
           "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnAbilityBar1"
+          },
           "anchorPoint": "BOTTOM_LEFT",
           "x": 107,
           "y": 210,
+          "locked": true
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "abilities.png",
+          "spritesCount": 6,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "ReturnAbility1"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 13,
+          "y": 211,
+          "locked": true
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "abilities.png",
+          "spritesCount": 6,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "ReturnAbility2"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 32,
+          "y": 211,
+          "locked": true
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "abilities.png",
+          "spritesCount": 6,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "ReturnAbility3"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 51,
+          "y": 211,
+          "locked": true
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "abilities.png",
+          "spritesCount": 6,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "ReturnAbility4"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 70,
+          "y": 211,
+          "locked": true
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "abilities.png",
+          "spritesCount": 6,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "ReturnAbility5"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 89,
+          "y": 211,
           "locked": true
         }
       }

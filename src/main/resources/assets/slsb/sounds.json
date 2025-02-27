@@ -1,0 +1,20 @@
+{
+  "whoosh": {
+    "subtitle": "subtitles.whoosh",
+    "sounds": [
+      {
+        "name": "slsb:whoosh",
+        "stream": false
+      }
+    ]
+  },
+  "basic_hit": {
+    "subtitle": "subtitles.basic_hit",
+    "sounds": [
+      {
+        "name": "slsb:basic_hit",
+        "stream": false
+      }
+    ]
+  }
+}

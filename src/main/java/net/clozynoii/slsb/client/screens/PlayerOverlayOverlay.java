@@ -11,10 +11,18 @@ import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.util.Mth;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.client.Minecraft;
 
+import net.clozynoii.slsb.procedures.ReturnAbilityBar2Procedure;
+import net.clozynoii.slsb.procedures.ReturnAbilityBar1Procedure;
+import net.clozynoii.slsb.procedures.ReturnAbility5Procedure;
+import net.clozynoii.slsb.procedures.ReturnAbility4Procedure;
+import net.clozynoii.slsb.procedures.ReturnAbility3Procedure;
+import net.clozynoii.slsb.procedures.ReturnAbility2Procedure;
+import net.clozynoii.slsb.procedures.ReturnAbility1Procedure;
 import net.clozynoii.slsb.procedures.HideOverlayF1Procedure;
 
 import com.mojang.blaze3d.systems.RenderSystem;
@@ -22,7 +30,7 @@ import com.mojang.blaze3d.platform.GlStateManager;
 
 @EventBusSubscriber({Dist.CLIENT})
 public class PlayerOverlayOverlay {
-	@SubscribeEvent(priority = EventPriority.NORMAL)
+	@SubscribeEvent(priority = EventPriority.HIGH)
 	public static void eventHandler(RenderGuiEvent.Pre event) {
 		int w = event.getGuiGraphics().guiWidth();
 		int h = event.getGuiGraphics().guiHeight();
@@ -46,9 +54,22 @@ public class PlayerOverlayOverlay {
 		if (HideOverlayF1Procedure.execute()) {
 			event.getGuiGraphics().blit(ResourceLocation.parse("slsb:textures/screens/ability_bar.png"), 8, h - 34, 0, 0, 108, 26, 108, 26);
 
-			event.getGuiGraphics().blit(ResourceLocation.parse("slsb:textures/screens/ability_bar_2.png"), 107, h - 30, 0, 0, 5, 18, 5, 18);
+			if (ReturnAbilityBar2Procedure.execute(entity)) {
+				event.getGuiGraphics().blit(ResourceLocation.parse("slsb:textures/screens/ability_bar_2.png"), 107, h - 30, 0, 0, 5, 18, 5, 18);
+			}
+			if (ReturnAbilityBar1Procedure.execute(entity)) {
+				event.getGuiGraphics().blit(ResourceLocation.parse("slsb:textures/screens/ability_bar_1.png"), 107, h - 30, 0, 0, 5, 18, 5, 18);
+			}
 
-			event.getGuiGraphics().blit(ResourceLocation.parse("slsb:textures/screens/ability_bar_1.png"), 107, h - 30, 0, 0, 5, 18, 5, 18);
+			event.getGuiGraphics().blit(ResourceLocation.parse("slsb:textures/screens/abilities.png"), 13, h - 29, Mth.clamp((int) ReturnAbility1Procedure.execute(entity) * 16, 0, 80), 0, 16, 16, 96, 16);
+
+			event.getGuiGraphics().blit(ResourceLocation.parse("slsb:textures/screens/abilities.png"), 32, h - 29, Mth.clamp((int) ReturnAbility2Procedure.execute(entity) * 16, 0, 80), 0, 16, 16, 96, 16);
+
+			event.getGuiGraphics().blit(ResourceLocation.parse("slsb:textures/screens/abilities.png"), 51, h - 29, Mth.clamp((int) ReturnAbility3Procedure.execute(entity) * 16, 0, 80), 0, 16, 16, 96, 16);
+
+			event.getGuiGraphics().blit(ResourceLocation.parse("slsb:textures/screens/abilities.png"), 70, h - 29, Mth.clamp((int) ReturnAbility4Procedure.execute(entity) * 16, 0, 80), 0, 16, 16, 96, 16);
+
+			event.getGuiGraphics().blit(ResourceLocation.parse("slsb:textures/screens/abilities.png"), 89, h - 29, Mth.clamp((int) ReturnAbility5Procedure.execute(entity) * 16, 0, 80), 0, 16, 16, 96, 16);
 
 		}
 		RenderSystem.depthMask(true);

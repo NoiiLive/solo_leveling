@@ -1,11 +1,12 @@
 package net.clozynoii.slsb.procedures;
 
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.Entity;
 
 import net.clozynoii.slsb.network.SlsbModVariables;
 
 public class AbilityKey4Procedure {
-	public static void execute(Entity entity) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
 		if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).KeyHeld == false) {
@@ -24,9 +25,9 @@ public class AbilityKey4Procedure {
 			}
 		}
 		if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).AbilityBar == 1) {
-			UseAbilities4aProcedure.execute(entity);
+			UseAbilities4aProcedure.execute(world, x, y, z, entity);
 		} else if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).AbilityBar == 2) {
-			UseAbilities4bProcedure.execute(entity);
+			UseAbilities4bProcedure.execute(world, x, y, z, entity);
 		}
 	}
 }

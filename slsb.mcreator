@@ -155,7 +155,7 @@
         ],
         "dependencies": []
       },
-      "path": "~/Procedures/GUI"
+      "path": "~/Procedures/GUI/Overlay"
     },
     {
       "name": "Ability1",
@@ -343,6 +343,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -362,6 +378,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -381,6 +413,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -400,6 +448,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -419,6 +483,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -438,6 +518,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -457,6 +553,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -476,6 +588,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -495,6 +623,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -514,6 +658,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -533,6 +693,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -552,6 +728,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -571,6 +763,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -590,6 +798,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -609,6 +833,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -632,6 +872,688 @@
         ]
       },
       "path": "~/Procedures/Abilities/Hunters"
+    },
+    {
+      "name": "BloodBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/slsb/blockstates/blood_block.json",
+          "src/main/resources/data/slsb/loot_table/blocks/blood_block.json",
+          "src/main/resources/assets/slsb/models/item/blood_block.json",
+          "src/main/resources/assets/slsb/models/block/blood_block.json",
+          "src/main/java/net/clozynoii/slsb/block/BloodBlockBlock.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "AbilityHeavyAttack",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_heavy_attack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/AbilityHeavyAttackProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Abilities/Basic"
+    },
+    {
+      "name": "HeavyAttackFunction",
+      "type": "function",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heavy_attack_function",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/slsb/function/heavy_attack_function.mcfunction"
+        ]
+      },
+      "path": "~/Effects/Functions"
+    },
+    {
+      "name": "CircleLarge",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "circle_large",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/client/particle/CircleLargeParticle.java",
+          "src/main/resources/assets/slsb/particles/circle_large.json"
+        ]
+      },
+      "path": "~/Effects/Particles"
+    },
+    {
+      "name": "CircleMedium",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "circle_medium",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/slsb/particles/circle_medium.json",
+          "src/main/java/net/clozynoii/slsb/client/particle/CircleMediumParticle.java"
+        ]
+      },
+      "path": "~/Effects/Particles"
+    },
+    {
+      "name": "CircleSmall",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "circle_small",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/slsb/particles/circle_small.json",
+          "src/main/java/net/clozynoii/slsb/client/particle/CircleSmallParticle.java"
+        ]
+      },
+      "path": "~/Effects/Particles"
+    },
+    {
+      "name": "CircleBarrage",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "circle_barrage",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/slsb/particles/circle_barrage.json",
+          "src/main/java/net/clozynoii/slsb/client/particle/CircleBarrageParticle.java"
+        ]
+      },
+      "path": "~/Effects/Particles"
+    },
+    {
+      "name": "NoFall",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "no_fall",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/potion/NoFallMobEffect.java"
+        ]
+      },
+      "path": "~/Effects/Potions"
+    },
+    {
+      "name": "NoFallEffectTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "no_fall_effect_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/NoFallEffectTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Effects"
+    },
+    {
+      "name": "UppercutFunction",
+      "type": "function",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uppercut_function",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/slsb/function/uppercut_function.mcfunction"
+        ]
+      },
+      "path": "~/Effects/Functions"
+    },
+    {
+      "name": "SlamFunction",
+      "type": "function",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slam_function",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/slsb/function/slam_function.mcfunction"
+        ]
+      },
+      "path": "~/Effects/Functions"
+    },
+    {
+      "name": "AbilityUppercut",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_uppercut",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/AbilityUppercutProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Abilities/Basic"
+    },
+    {
+      "name": "AbilitySlam",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_slam",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/AbilitySlamProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Abilities/Basic"
+    },
+    {
+      "name": "AbilityDash",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_dash",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/AbilityDashProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Abilities/Basic"
+    },
+    {
+      "name": "AbilityBarrage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_barrage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/AbilityBarrageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Abilities/Basic"
+    },
+    {
+      "name": "BarrageTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "barrage_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/BarrageTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Abilities/Basic"
+    },
+    {
+      "name": "ReturnAbilityBar1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_ability_bar_1",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnAbilityBar1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Overlay"
+    },
+    {
+      "name": "ReturnAbilityBar2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_ability_bar_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnAbilityBar2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Overlay"
+    },
+    {
+      "name": "ReturnAbility1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_ability_1",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnAbility1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Overlay"
+    },
+    {
+      "name": "ReturnAbility2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_ability_2",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnAbility2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Overlay"
+    },
+    {
+      "name": "ReturnAbility3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_ability_3",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnAbility3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Overlay"
+    },
+    {
+      "name": "ReturnAbility4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_ability_4",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnAbility4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Overlay"
+    },
+    {
+      "name": "ReturnAbility5",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_ability_5",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnAbility5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Overlay"
+    },
+    {
+      "name": "ReturnCooldownText1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_cooldown_text_1",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnCooldownText1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Overlay"
+    },
+    {
+      "name": "ReturnCooldownText2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_cooldown_text_2",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnCooldownText2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Overlay"
+    },
+    {
+      "name": "ReturnCooldownText3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_cooldown_text_3",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnCooldownText3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Overlay"
+    },
+    {
+      "name": "ReturnCooldownText4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_cooldown_text_4",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnCooldownText4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Overlay"
+    },
+    {
+      "name": "ReturnCooldownText5",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_cooldown_text_5",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnCooldownText5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Overlay"
+    },
+    {
+      "name": "ReturnCooldown1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_cooldown_1",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnCooldown1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Overlay"
+    },
+    {
+      "name": "ReturnCooldown2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_cooldown_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnCooldown2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Overlay"
+    },
+    {
+      "name": "ReturnCooldown3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_cooldown_3",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnCooldown3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Overlay"
+    },
+    {
+      "name": "ReturnCooldown4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_cooldown_4",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnCooldown4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Overlay"
+    },
+    {
+      "name": "ReturnCooldown5",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_cooldown_5",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnCooldown5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Overlay"
     }
   ],
   "variable_elements": [
@@ -802,22 +1724,98 @@
       "type": "logic",
       "scope": "player_lifetime",
       "value": "false"
+    },
+    {
+      "name": "BarrageCooldown",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0.0"
     }
   ],
-  "sound_elements": [],
-  "tag_elements": {},
+  "sound_elements": [
+    {
+      "name": "whoosh",
+      "files": [
+        "whoosh"
+      ],
+      "category": "player",
+      "subtitle": "Player whooshes"
+    },
+    {
+      "name": "basic_hit",
+      "files": [
+        "basic_hit"
+      ],
+      "category": "player",
+      "subtitle": "Player lands a hit"
+    }
+  ],
+  "tag_elements": {
+    "ENTITIES:mod:non_targetable": [
+      "EntityAreaEffectCloud",
+      "EntityArmorStand",
+      "EntityArrow",
+      "EntityBlockDisplay",
+      "EntityBoat",
+      "EntityChestBoat",
+      "EntityBreezeWindCharge",
+      "EntityDragonFireball",
+      "EntityEgg",
+      "EntityEnderCrystal",
+      "EntityEnderPearl",
+      "EntityEvokerFangs",
+      "EntityExpBottle",
+      "EntityXPOrb",
+      "EntityEnderEye",
+      "EntityFallingBlock",
+      "EntityFireball",
+      "EntityFireworkRocket",
+      "EntityGlowItemFrame",
+      "EntityInteraction",
+      "EntityItem",
+      "EntityItemDisplay",
+      "EntityItemFrame",
+      "EntityLeashKnot",
+      "EntityLightningBolt",
+      "EntityLlamaSpit",
+      "EntityMarker",
+      "EntityMinecart",
+      "EntityMinecartChest",
+      "EntityMinecartCommandBlock",
+      "EntityMinecartFurnace",
+      "EntityMinecartHopper",
+      "EntityMinecartMobSpawner",
+      "EntityMinecartTNT",
+      "EntityOminousItemSpawner",
+      "EntityPainting",
+      "EntityPotion",
+      "EntityShulkerBullet",
+      "EntitySmallFireball",
+      "EntitySnowball",
+      "EntitySpectralArrow",
+      "EntityTextDisplay",
+      "EntityTNTPrimed",
+      "EntityTrident",
+      "EntityWindCharge",
+      "EntityWitherSkull"
+    ]
+  },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
       "key.slsb.ability_4": "Ability 4",
       "key.slsb.ability_5": "Ability 5",
+      "subtitles.whoosh": "Player whooshes",
+      "key.slsb.ability_2": "Ability 2",
+      "block.slsb.blood_block": "Blood Block",
+      "key.slsb.ability_3": "Ability 3",
+      "key.slsb.ability_1": "Ability 1",
+      "slsb.ability.cooldown": "Ability is on Cooldown!",
+      "subtitles.basic_hit": "Player lands a hit",
       "key.slsb.change_ability_bar": "Change Ability Bar",
       "key.categories.slsb\\": "Solo Leveling: System Break",
       "key.slsb.main_menu": "Main Menu",
-      "key.slsb.ability_2": "Ability 2",
-      "key.slsb.ability_3": "Ability 3",
-      "key.slsb.ability_1": "Ability 1",
-      "slsb.ability.cooldown": "Ability is on Cooldown!"
+      "effect.slsb.no_fall": "No Fall"
     }
   },
   "foldersRoot": {
@@ -832,7 +1830,12 @@
           },
           {
             "name": "GUI",
-            "children": []
+            "children": [
+              {
+                "name": "Overlay",
+                "children": []
+              }
+            ]
           },
           {
             "name": "Keys",
@@ -854,6 +1857,10 @@
                 "children": []
               }
             ]
+          },
+          {
+            "name": "Effects",
+            "children": []
           }
         ]
       },
@@ -883,10 +1890,23 @@
       },
       {
         "name": "Effects",
-        "children": []
+        "children": [
+          {
+            "name": "Potions",
+            "children": []
+          },
+          {
+            "name": "Particles",
+            "children": []
+          },
+          {
+            "name": "Functions",
+            "children": []
+          }
+        ]
       },
       {
-        "name": "Particles",
+        "name": "Blocks",
         "children": []
       },
       {

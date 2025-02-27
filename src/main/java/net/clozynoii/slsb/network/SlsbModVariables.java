@@ -95,6 +95,7 @@ public class SlsbModVariables {
 				clone.KeyHeld = original.KeyHeld;
 				clone.InputDelay = original.InputDelay;
 				clone.Barraging = original.Barraging;
+				clone.BarrageCooldown = original.BarrageCooldown;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
@@ -260,6 +261,7 @@ public class SlsbModVariables {
 		public boolean NoCooldowns = false;
 		public boolean JoinedWorld = false;
 		public boolean Barraging = false;
+		public double BarrageCooldown = 0.0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -291,6 +293,7 @@ public class SlsbModVariables {
 			nbt.putBoolean("NoCooldowns", NoCooldowns);
 			nbt.putBoolean("JoinedWorld", JoinedWorld);
 			nbt.putBoolean("Barraging", Barraging);
+			nbt.putDouble("BarrageCooldown", BarrageCooldown);
 			return nbt;
 		}
 
@@ -323,6 +326,7 @@ public class SlsbModVariables {
 			NoCooldowns = nbt.getBoolean("NoCooldowns");
 			JoinedWorld = nbt.getBoolean("JoinedWorld");
 			Barraging = nbt.getBoolean("Barraging");
+			BarrageCooldown = nbt.getDouble("BarrageCooldown");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

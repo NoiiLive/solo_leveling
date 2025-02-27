@@ -7,33 +7,175 @@
       {
         "type": "image",
         "data": {
-          "image": "ability_bar.png",
+          "image": "ability_cooldown.png",
           "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnCooldown1"
+          },
           "anchorPoint": "BOTTOM_LEFT",
-          "x": 8,
-          "y": 206,
+          "x": 13,
+          "y": 211,
           "locked": true
         }
       },
       {
         "type": "image",
         "data": {
-          "image": "ability_bar_2.png",
+          "image": "ability_cooldown.png",
           "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnCooldown2"
+          },
           "anchorPoint": "BOTTOM_LEFT",
-          "x": 107,
-          "y": 210,
+          "x": 32,
+          "y": 211,
           "locked": true
         }
       },
       {
         "type": "image",
         "data": {
-          "image": "ability_bar_1.png",
+          "image": "ability_cooldown.png",
           "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnCooldown3"
+          },
           "anchorPoint": "BOTTOM_LEFT",
-          "x": 107,
-          "y": 210,
+          "x": 51,
+          "y": 211,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_cooldown.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnCooldown4"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 70,
+          "y": 211,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_cooldown.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnCooldown5"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 89,
+          "y": 211,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_cooldown_text_1",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnCooldownText1"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ReturnCooldown1"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 18,
+          "y": 215,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_cooldown_text_2",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnCooldownText2"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ReturnCooldown2"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 37,
+          "y": 215,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_cooldown_text_3",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnCooldownText3"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ReturnCooldown3"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 56,
+          "y": 215,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_cooldown_text_4",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnCooldownText4"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ReturnCooldown4"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 75,
+          "y": 215,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_cooldown_text_5",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnCooldownText5"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ReturnCooldown5"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 94,
+          "y": 215,
           "locked": true
         }
       }

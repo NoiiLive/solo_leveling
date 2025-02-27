@@ -1,0 +1,9 @@
+{
+  "_fv": 73,
+  "_type": "function",
+  "definition": {
+    "code": "gamerule sendCommandFeedback false\nparticle slsb:circle_large ^ ^1 ^ 0.01 0.01 0.01 0 1 force\nparticle slsb:circle_medium ^ ^2 ^ 0.01 0.01 0.01 0 1 force\nparticle slsb:circle_small ^ ^3 ^ 0.01 0.01 0.01 0 1 force",
+    "name": "uppercut_function",
+    "namespace": "mod"
+  }
+}

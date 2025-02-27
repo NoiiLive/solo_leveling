@@ -31,6 +31,31 @@ public class PlayerJoinedWorldProcedure {
 				_vars.JoinedWorld = true;
 				_vars.syncPlayerVariables(entity);
 			}
+			{
+				SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
+				_vars.Ability1a = "Heavy Attack";
+				_vars.syncPlayerVariables(entity);
+			}
+			{
+				SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
+				_vars.Ability2a = "Barrage";
+				_vars.syncPlayerVariables(entity);
+			}
+			{
+				SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
+				_vars.Ability3a = "Uppercut";
+				_vars.syncPlayerVariables(entity);
+			}
+			{
+				SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
+				_vars.Ability4a = "Slam";
+				_vars.syncPlayerVariables(entity);
+			}
+			{
+				SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
+				_vars.Ability5a = "Dash";
+				_vars.syncPlayerVariables(entity);
+			}
 		}
 	}
 }

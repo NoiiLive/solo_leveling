@@ -52,11 +52,11 @@ public record Ability2Message(int eventType, int pressedms) implements CustomPac
 			return;
 		if (type == 0) {
 
-			AbilityKey2Procedure.execute(entity);
+			AbilityKey2Procedure.execute(world, x, y, z, entity);
 		}
 		if (type == 1) {
 
-			AbilityKey2Procedure.execute(entity);
+			AbilityKey2Procedure.execute(world, x, y, z, entity);
 		}
 	}
 
