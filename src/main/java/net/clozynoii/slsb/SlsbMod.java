@@ -19,12 +19,14 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.clozynoii.slsb.network.SlsbModVariables;
+import net.clozynoii.slsb.init.SlsbModTabs;
 import net.clozynoii.slsb.init.SlsbModSounds;
 import net.clozynoii.slsb.init.SlsbModParticleTypes;
 import net.clozynoii.slsb.init.SlsbModMobEffects;
 import net.clozynoii.slsb.init.SlsbModMenus;
 import net.clozynoii.slsb.init.SlsbModItems;
 import net.clozynoii.slsb.init.SlsbModBlocks;
+import net.clozynoii.slsb.init.SlsbModBlockEntities;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Map;
@@ -45,9 +47,10 @@ public class SlsbMod {
 		modEventBus.addListener(this::registerNetworking);
 		SlsbModSounds.REGISTRY.register(modEventBus);
 		SlsbModBlocks.REGISTRY.register(modEventBus);
-
+		SlsbModBlockEntities.REGISTRY.register(modEventBus);
 		SlsbModItems.REGISTRY.register(modEventBus);
 
+		SlsbModTabs.REGISTRY.register(modEventBus);
 		SlsbModVariables.ATTACHMENT_TYPES.register(modEventBus);
 
 		SlsbModMobEffects.REGISTRY.register(modEventBus);

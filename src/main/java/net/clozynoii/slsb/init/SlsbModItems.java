@@ -12,12 +12,17 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import net.clozynoii.slsb.block.display.BlueGateSmallDisplayItem;
+import net.clozynoii.slsb.block.display.BlueGateMediumDisplayItem;
+import net.clozynoii.slsb.block.display.AwakeningOrbDisplayItem;
 import net.clozynoii.slsb.SlsbMod;
 
 public class SlsbModItems {
 	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(SlsbMod.MODID);
 	public static final DeferredItem<Item> BLOOD_BLOCK = block(SlsbModBlocks.BLOOD_BLOCK);
-	public static final DeferredItem<Item> TEST_BLOCK = block(SlsbModBlocks.TEST_BLOCK);
+	public static final DeferredItem<Item> AWAKENING_ORB = REGISTRY.register(SlsbModBlocks.AWAKENING_ORB.getId().getPath(), () -> new AwakeningOrbDisplayItem(SlsbModBlocks.AWAKENING_ORB.get(), new Item.Properties()));
+	public static final DeferredItem<Item> BLUE_GATE_SMALL = REGISTRY.register(SlsbModBlocks.BLUE_GATE_SMALL.getId().getPath(), () -> new BlueGateSmallDisplayItem(SlsbModBlocks.BLUE_GATE_SMALL.get(), new Item.Properties()));
+	public static final DeferredItem<Item> BLUE_GATE_MEDIUM = REGISTRY.register(SlsbModBlocks.BLUE_GATE_MEDIUM.getId().getPath(), () -> new BlueGateMediumDisplayItem(SlsbModBlocks.BLUE_GATE_MEDIUM.get(), new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

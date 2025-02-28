@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "slsb:custom/awakening_orb_particle"
+    },
+    "facing=east": {
+      "model": "slsb:custom/awakening_orb_particle",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "slsb:custom/awakening_orb_particle",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "slsb:custom/awakening_orb_particle",
+      "y": 270
+    }
+  }
+}

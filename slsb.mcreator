@@ -1963,23 +1963,6 @@
       "path": "~/Procedures/GUI/Hunter GUI"
     },
     {
-      "name": "TestBlock",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "test_block",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/slsb/models/item/test_block.json",
-          "src/main/resources/assets/slsb/blockstates/test_block.json",
-          "src/main/java/net/clozynoii/slsb/block/TestBlockBlock.java",
-          "src/main/resources/data/slsb/loot_table/blocks/test_block.json",
-          "src/main/resources/assets/slsb/models/block/test_block.json"
-        ]
-      },
-      "path": "~/Blocks"
-    },
-    {
       "name": "HunterEvaluation",
       "type": "procedure",
       "compiles": true,
@@ -2013,6 +1996,85 @@
         ]
       },
       "path": "~/Procedures/Blocks"
+    },
+    {
+      "name": "AwakeningOrb",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "awakening_orb",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/block/renderer/AwakeningOrbDisplayItemRenderer.java",
+          "src/main/java/net/clozynoii/slsb/block/display/AwakeningOrbDisplayItem.java",
+          "src/main/java/net/clozynoii/slsb/block/model/AwakeningOrbDisplayModel.java",
+          "src/main/java/net/clozynoii/slsb/block/AwakeningOrbBlock.java",
+          "src/main/resources/assets/slsb/models/custom/awakening_orb_particle.json",
+          "src/main/java/net/clozynoii/slsb/block/model/AwakeningOrbBlockModel.java",
+          "src/main/java/net/clozynoii/slsb/block/entity/AwakeningOrbTileEntity.java",
+          "src/main/java/net/clozynoii/slsb/block/renderer/AwakeningOrbTileRenderer.java",
+          "src/main/resources/assets/slsb/models/item/awakening_orb.json",
+          "src/main/resources/assets/slsb/blockstates/awakening_orb.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "SLBlocks",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sl_blocks",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Misc/Tabs"
+    },
+    {
+      "name": "BlueGateSmall",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_gate_small",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/block/model/BlueGateSmallBlockModel.java",
+          "src/main/java/net/clozynoii/slsb/block/model/BlueGateSmallDisplayModel.java",
+          "src/main/resources/assets/slsb/models/item/blue_gate_small.json",
+          "src/main/java/net/clozynoii/slsb/block/entity/BlueGateSmallTileEntity.java",
+          "src/main/java/net/clozynoii/slsb/block/renderer/BlueGateSmallDisplayItemRenderer.java",
+          "src/main/java/net/clozynoii/slsb/block/renderer/BlueGateSmallTileRenderer.java",
+          "src/main/resources/assets/slsb/models/custom/blue_gate_small_particle.json",
+          "src/main/resources/assets/slsb/blockstates/blue_gate_small.json",
+          "src/main/java/net/clozynoii/slsb/block/BlueGateSmallBlock.java",
+          "src/main/java/net/clozynoii/slsb/block/display/BlueGateSmallDisplayItem.java",
+          "src/main/resources/assets/slsb/models/block/blue_gate_small_blockstate_0.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "BlueGateMedium",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_gate_medium",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/block/renderer/BlueGateMediumDisplayItemRenderer.java",
+          "src/main/java/net/clozynoii/slsb/block/display/BlueGateMediumDisplayItem.java",
+          "src/main/java/net/clozynoii/slsb/block/entity/BlueGateMediumTileEntity.java",
+          "src/main/resources/assets/slsb/blockstates/blue_gate_medium.json",
+          "src/main/java/net/clozynoii/slsb/block/model/BlueGateMediumBlockModel.java",
+          "src/main/java/net/clozynoii/slsb/block/model/BlueGateMediumDisplayModel.java",
+          "src/main/java/net/clozynoii/slsb/block/BlueGateMediumBlock.java",
+          "src/main/resources/assets/slsb/models/item/blue_gate_medium.json",
+          "src/main/resources/assets/slsb/models/block/blue_gate_medium_blockstate_0.json",
+          "src/main/resources/assets/slsb/models/custom/blue_gate_medium_particle.json",
+          "src/main/java/net/clozynoii/slsb/block/renderer/BlueGateMediumTileRenderer.java"
+        ]
+      },
+      "path": "~/Blocks"
     }
   ],
   "variable_elements": [
@@ -2300,6 +2362,12 @@
     }
   ],
   "tag_elements": {
+    "BLOCKS:minecraft:needs_diamond_tool": [
+      "~CUSTOM:AwakeningOrb"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:AwakeningOrb"
+    ],
     "ENTITIES:mod:non_targetable": [
       "EntityAreaEffectCloud",
       "EntityArmorStand",
@@ -2354,19 +2422,22 @@
     "en_us": {
       "slsb.evaluator.evaluated": "You have already been evaluated!",
       "slsb.evaluator.normalrank.rank": "-Rank!",
+      "block.slsb.blue_gate_medium": "Gate (Medium)",
+      "item_group.slsb.sl_blocks": "Solo Leveling: Blocks",
       "slsb.evaluator.normalrank.response": "This is good! It seems you are",
-      "slsb.evaluator.srank.goodbye": "This is history in the making! The world will be watching you.",
       "block.slsb.blood_block": "Blood Block",
+      "slsb.evaluator.srank.goodbye": "This is history in the making! The world will be watching you.",
       "slsb.command.unawakentarget": "You have been un-awakened",
       "slsb.evaluator.welcome": "Welcome to your Hunter Evaluation!",
       "key.categories.slsb\\": "Solo Leveling: System Break",
+      "block.slsb.awakening_orb": "Awakening Orb",
+      "block.slsb.blue_gate_small": "Gate (Small)",
       "key.slsb.main_menu": "Main Menu",
       "effect.slsb.no_fall": "No Fall",
       "slsb.evaluator.waiting": "Let\u0027s see what your rank is...",
       "slsb.command.awakentarget": "You have been awakened",
       "key.slsb.ability_4": "Ability 4",
       "key.slsb.ability_5": "Ability 5",
-      "block.slsb.test_block": "Test Block",
       "slsb.command.awakenadmin": "has been awakened",
       "subtitles.whoosh": "Player whooshes",
       "slsb.command.unawakenadmin": "has been un-awakened",

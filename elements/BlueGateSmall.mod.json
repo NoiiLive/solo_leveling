@@ -1,0 +1,156 @@
+{
+  "_fv": 73,
+  "_type": "animatedblock",
+  "definition": {
+    "texture": "smallbluegatetexture",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
+    "renderType": 0,
+    "rotationMode": 1,
+    "enablePitch": false,
+    "emissiveRendering": true,
+    "displayFluidOverlay": false,
+    "animateBlockItem": false,
+    "itemTexture": "gate_item",
+    "particleTexture": "",
+    "tintType": "No tint",
+    "isItemTinted": false,
+    "hasTransparency": true,
+    "connectedSides": false,
+    "transparencyType": "SOLID",
+    "disableOffset": false,
+    "boundingBoxes": [
+      {
+        "mx": -24.0,
+        "my": 0.0,
+        "mz": 4.0,
+        "Mx": 40.0,
+        "My": 64.0,
+        "Mz": 12.0,
+        "subtract": false
+      }
+    ],
+    "name": "Gate (Small)",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "hardness": 100.0,
+    "resistance": 1000.0,
+    "hasGravity": false,
+    "isWaterloggable": false,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:SLBlocks"
+      }
+    ],
+    "destroyTool": "Not specified",
+    "customDrop": {
+      "value": ""
+    },
+    "dropAmount": 1,
+    "useLootTableForDrops": false,
+    "requiresCorrectTool": false,
+    "enchantPowerBonus": 0.0,
+    "plantsGrowOn": false,
+    "canRedstoneConnect": false,
+    "lightOpacity": 0,
+    "material": {
+      "value": "NONE"
+    },
+    "tickRate": 1,
+    "tickRandomly": false,
+    "isReplaceable": false,
+    "canProvidePower": false,
+    "emittedRedstonePower": {
+      "fixedValue": 15.0
+    },
+    "colorOnMap": "DEFAULT",
+    "creativePickItem": {
+      "value": ""
+    },
+    "offsetType": "NONE",
+    "aiPathNodeType": "DEFAULT",
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "isLadder": false,
+    "slipperiness": 0.6,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
+    "animationCount": 1,
+    "reactionToPushing": "NORMAL",
+    "isNotColidable": true,
+    "isCustomSoundType": false,
+    "soundOnStep": {
+      "value": "GLASS"
+    },
+    "breakSound": {
+      "value": ""
+    },
+    "fallSound": {
+      "value": ""
+    },
+    "hitSound": {
+      "value": ""
+    },
+    "placeSound": {
+      "value": ""
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "luminance": 14,
+    "unbreakable": true,
+    "breakHarvestLevel": 0,
+    "hasInventory": false,
+    "guiBoundTo": "<NONE>",
+    "openGUIOnRightClick": false,
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "inventoryDropWhenDestroyed": true,
+    "inventoryComparatorPower": true,
+    "generateFeature": false,
+    "inventoryOutSlotIDs": [],
+    "inventoryInSlotIDs": [],
+    "hasEnergyStorage": false,
+    "energyInitial": 0,
+    "energyCapacity": 400000,
+    "energyMaxReceive": 200,
+    "energyMaxExtract": 200,
+    "isFluidTank": false,
+    "fluidCapacity": 8000,
+    "fluidRestrictions": [],
+    "restrictionBiomes": [],
+    "blocksToReplace": [],
+    "generationShape": "UNIFORM",
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 64,
+    "normal": "bluegatesmall.geo.json",
+    "displaySettings": "bluegatesmall.item.json",
+    "vanillaToolTier": "NONE",
+    "blockstateList": [
+      {
+        "texture": "smallredgatetexture",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "bluegatesmall.geo.json",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": -24.0,
+            "my": 0.0,
+            "mz": 4.0,
+            "Mx": 40.0,
+            "My": 64.0,
+            "Mz": 12.0,
+            "subtract": false
+          }
+        ]
+      }
+    ]
+  }
+}

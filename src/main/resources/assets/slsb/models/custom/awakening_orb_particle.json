@@ -1,0 +1,7 @@
+
+{
+  "parent": "slsb:displaysettings/awakeningorb.item",
+  "textures": {
+    "particle": "slsb:block/awakeningorbtexture"
+  }
+}
