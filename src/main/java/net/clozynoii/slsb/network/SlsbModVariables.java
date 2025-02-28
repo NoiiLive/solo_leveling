@@ -104,6 +104,7 @@ public class SlsbModVariables {
 			clone.PlayerMana = original.PlayerMana;
 			clone.PlayerMaxMana = original.PlayerMaxMana;
 			clone.ManaRegenTimer = original.ManaRegenTimer;
+			clone.UnlockedSkills = original.UnlockedSkills;
 			if (!event.isWasDeath()) {
 				clone.AbilityBar = original.AbilityBar;
 				clone.GUISelectedEntry = original.GUISelectedEntry;
@@ -292,6 +293,7 @@ public class SlsbModVariables {
 		public double PlayerMana = 100.0;
 		public double PlayerMaxMana = 100.0;
 		public double ManaRegenTimer = 0.0;
+		public String UnlockedSkills = "";
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -339,6 +341,7 @@ public class SlsbModVariables {
 			nbt.putDouble("PlayerMana", PlayerMana);
 			nbt.putDouble("PlayerMaxMana", PlayerMaxMana);
 			nbt.putDouble("ManaRegenTimer", ManaRegenTimer);
+			nbt.putString("UnlockedSkills", UnlockedSkills);
 			return nbt;
 		}
 
@@ -387,6 +390,7 @@ public class SlsbModVariables {
 			PlayerMana = nbt.getDouble("PlayerMana");
 			PlayerMaxMana = nbt.getDouble("PlayerMaxMana");
 			ManaRegenTimer = nbt.getDouble("ManaRegenTimer");
+			UnlockedSkills = nbt.getString("UnlockedSkills");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

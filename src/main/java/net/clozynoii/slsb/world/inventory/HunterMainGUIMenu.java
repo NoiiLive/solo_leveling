@@ -16,6 +16,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
+import net.clozynoii.slsb.procedures.ResetGUISelectedProcedure;
 import net.clozynoii.slsb.init.SlsbModMenus;
 
 import java.util.function.Supplier;
@@ -66,6 +67,12 @@ public class HunterMainGUIMenu extends AbstractContainerMenu implements Supplier
 	@Override
 	public ItemStack quickMoveStack(Player playerIn, int index) {
 		return ItemStack.EMPTY;
+	}
+
+	@Override
+	public void removed(Player playerIn) {
+		super.removed(playerIn);
+		ResetGUISelectedProcedure.execute(entity);
 	}
 
 	public Map<Integer, Slot> get() {

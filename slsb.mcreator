@@ -2075,6 +2075,750 @@
         ]
       },
       "path": "~/Blocks"
+    },
+    {
+      "name": "ResetGUISelected",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reset_gui_selected",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ResetGUISelectedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Hunter GUI"
+    },
+    {
+      "name": "GUISkillSlot1a",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gui_skill_slot_1a",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/GUISkillSlot1aProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Hunter GUI"
+    },
+    {
+      "name": "GUISkillSlot2a",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gui_skill_slot_2a",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/GUISkillSlot2aProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Hunter GUI"
+    },
+    {
+      "name": "GUISkillSlot3a",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gui_skill_slot_3a",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/GUISkillSlot3aProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Hunter GUI"
+    },
+    {
+      "name": "GUISkillSlot4a",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gui_skill_slot_4a",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/GUISkillSlot4aProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Hunter GUI"
+    },
+    {
+      "name": "GUISkillSlot5a",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gui_skill_slot_5a",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/GUISkillSlot5aProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Hunter GUI"
+    },
+    {
+      "name": "GUISkillSlot1b",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gui_skill_slot_1b",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/GUISkillSlot1bProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Hunter GUI"
+    },
+    {
+      "name": "GUISkillSlot2b",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gui_skill_slot_2b",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/GUISkillSlot2bProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Hunter GUI"
+    },
+    {
+      "name": "GUISkillSlot3b",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gui_skill_slot_3b",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/GUISkillSlot3bProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Hunter GUI"
+    },
+    {
+      "name": "GUISkillSlot4b",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gui_skill_slot_4b",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/GUISkillSlot4bProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Hunter GUI"
+    },
+    {
+      "name": "GUISkillSlot5b",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gui_skill_slot_5b",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/GUISkillSlot5bProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Hunter GUI"
+    },
+    {
+      "name": "ReturnSlot1a",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_slot_1a",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnSlot1aProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Hunter GUI"
+    },
+    {
+      "name": "ReturnSlot2a",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_slot_2a",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnSlot2aProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Hunter GUI"
+    },
+    {
+      "name": "ReturnSlot3a",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_slot_3a",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnSlot3aProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Hunter GUI"
+    },
+    {
+      "name": "ReturnSlot4a",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_slot_4a",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnSlot4aProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Hunter GUI"
+    },
+    {
+      "name": "ReturnSlot5a",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_slot_5a",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnSlot5aProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Hunter GUI"
+    },
+    {
+      "name": "ReturnSlot1b",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_slot_1b",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnSlot1bProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Hunter GUI"
+    },
+    {
+      "name": "ReturnSlot2b",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_slot_2b",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnSlot2bProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Hunter GUI"
+    },
+    {
+      "name": "ReturnSlot3b",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_slot_3b",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnSlot3bProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Hunter GUI"
+    },
+    {
+      "name": "ReturnSlot4b",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_slot_4b",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnSlot4bProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Hunter GUI"
+    },
+    {
+      "name": "ReturnSlot5b",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_slot_5b",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnSlot5bProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Hunter GUI"
+    },
+    {
+      "name": "SkillButtonHeavyAttack",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_button_heavy_attack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SkillButtonHeavyAttackProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Basic"
+    },
+    {
+      "name": "SkillButtonBarrage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_button_barrage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SkillButtonBarrageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Basic"
+    },
+    {
+      "name": "SkillButtonUppercut",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_button_uppercut",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SkillButtonUppercutProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Basic"
+    },
+    {
+      "name": "SkillButtonSlam",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_button_slam",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SkillButtonSlamProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Basic"
+    },
+    {
+      "name": "SkillButtonDash",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_button_dash",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SkillButtonDashProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Basic"
     }
   ],
   "variable_elements": [
@@ -2341,6 +3085,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0.0"
+    },
+    {
+      "name": "UnlockedSkills",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
     }
   ],
   "sound_elements": [
@@ -2425,6 +3175,7 @@
       "block.slsb.blue_gate_medium": "Gate (Medium)",
       "item_group.slsb.sl_blocks": "Solo Leveling: Blocks",
       "slsb.evaluator.normalrank.response": "This is good! It seems you are",
+      "gui.slsb.hunter_skill_gui.tooltip_barrage": "Barrage",
       "block.slsb.blood_block": "Blood Block",
       "slsb.evaluator.srank.goodbye": "This is history in the making! The world will be watching you.",
       "slsb.command.unawakentarget": "You have been un-awakened",
@@ -2432,12 +3183,21 @@
       "key.categories.slsb\\": "Solo Leveling: System Break",
       "block.slsb.awakening_orb": "Awakening Orb",
       "block.slsb.blue_gate_small": "Gate (Small)",
+      "gui.slsb.hunter_skill_gui.tooltip_slot_2": "Slot 2",
       "key.slsb.main_menu": "Main Menu",
       "effect.slsb.no_fall": "No Fall",
+      "gui.slsb.hunter_skill_gui.tooltip_slot_3": "Slot 3",
+      "gui.slsb.hunter_skill_gui.tooltip_slot_1": "Slot 1",
+      "gui.slsb.hunter_skill_gui.tooltip_slot_6": "Slot 6",
+      "gui.slsb.hunter_skill_gui.tooltip_slot_7": "Slot 7",
       "slsb.evaluator.waiting": "Let\u0027s see what your rank is...",
+      "gui.slsb.hunter_skill_gui.tooltip_slot_4": "Slot 4",
+      "gui.slsb.hunter_skill_gui.tooltip_slot_5": "Slot 5",
       "slsb.command.awakentarget": "You have been awakened",
       "key.slsb.ability_4": "Ability 4",
+      "gui.slsb.hunter_skill_gui.tooltip_slot_8": "Slot 8",
       "key.slsb.ability_5": "Ability 5",
+      "gui.slsb.hunter_skill_gui.tooltip_slot_9": "Slot 9",
       "slsb.command.awakenadmin": "has been awakened",
       "subtitles.whoosh": "Player whooshes",
       "slsb.command.unawakenadmin": "has been un-awakened",
@@ -2451,7 +3211,12 @@
       "subtitles.basic_hit": "Player lands a hit",
       "key.slsb.change_ability_bar": "Change Ability Bar",
       "slsb.evaluator.erank.response": "Oh... uh... Well, this is... unexpected. You’re an E-Rank",
-      "slsb.evaluator.unawakened": "It appears you haven\u0027t awakened yet..."
+      "gui.slsb.hunter_skill_gui.tooltip_dash": "Dash",
+      "gui.slsb.hunter_skill_gui.tooltip_slot_10": "Slot 10",
+      "gui.slsb.hunter_skill_gui.tooltip_slam": "Slam",
+      "gui.slsb.hunter_skill_gui.tooltip_uppercut": "Uppercut",
+      "slsb.evaluator.unawakened": "It appears you haven\u0027t awakened yet...",
+      "gui.slsb.hunter_skill_gui.tooltip_heavy_attack": "Heavy Attack"
     }
   },
   "foldersRoot": {
@@ -2474,6 +3239,15 @@
               {
                 "name": "Hunter GUI",
                 "children": []
+              },
+              {
+                "name": "Skills",
+                "children": [
+                  {
+                    "name": "Basic",
+                    "children": []
+                  }
+                ]
               }
             ]
           },
