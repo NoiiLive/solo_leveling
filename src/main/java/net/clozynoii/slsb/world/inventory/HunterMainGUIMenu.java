@@ -22,7 +22,7 @@ import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
-public class MainGUIMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
+public class HunterMainGUIMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
 	public final static HashMap<String, Object> guistate = new HashMap<>();
 	public final Level world;
 	public final Player entity;
@@ -35,8 +35,8 @@ public class MainGUIMenu extends AbstractContainerMenu implements Supplier<Map<I
 	private Entity boundEntity = null;
 	private BlockEntity boundBlockEntity = null;
 
-	public MainGUIMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(SlsbModMenus.MAIN_GUI.get(), id);
+	public HunterMainGUIMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
+		super(SlsbModMenus.HUNTER_MAIN_GUI.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
 		this.internal = new ItemStackHandler(0);

@@ -9,12 +9,14 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
-import net.clozynoii.slsb.client.gui.MainGUIScreen;
+import net.clozynoii.slsb.client.gui.HunterSkillGUIScreen;
+import net.clozynoii.slsb.client.gui.HunterMainGUIScreen;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class SlsbModScreens {
 	@SubscribeEvent
 	public static void clientLoad(RegisterMenuScreensEvent event) {
-		event.register(SlsbModMenus.MAIN_GUI.get(), MainGUIScreen::new);
+		event.register(SlsbModMenus.HUNTER_MAIN_GUI.get(), HunterMainGUIScreen::new);
+		event.register(SlsbModMenus.HUNTER_SKILL_GUI.get(), HunterSkillGUIScreen::new);
 	}
 }

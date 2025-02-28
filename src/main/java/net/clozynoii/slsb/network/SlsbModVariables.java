@@ -89,6 +89,16 @@ public class SlsbModVariables {
 			clone.Cooldown5b = original.Cooldown5b;
 			clone.NoCooldowns = original.NoCooldowns;
 			clone.JoinedWorld = original.JoinedWorld;
+			clone.SystemPlayer = original.SystemPlayer;
+			clone.PlayerClass = original.PlayerClass;
+			clone.PlayerRank = original.PlayerRank;
+			clone.PlayerCash = original.PlayerCash;
+			clone.PlayerGuild = original.PlayerGuild;
+			clone.PlayerStrength = original.PlayerStrength;
+			clone.PlayerAgility = original.PlayerAgility;
+			clone.PlayerPerception = original.PlayerPerception;
+			clone.PlayerVitality = original.PlayerVitality;
+			clone.PlayerIntelligence = original.PlayerIntelligence;
 			if (!event.isWasDeath()) {
 				clone.AbilityBar = original.AbilityBar;
 				clone.GUISelectedEntry = original.GUISelectedEntry;
@@ -262,6 +272,16 @@ public class SlsbModVariables {
 		public boolean JoinedWorld = false;
 		public boolean Barraging = false;
 		public double BarrageCooldown = 0.0;
+		public boolean SystemPlayer = false;
+		public String PlayerClass = "Civilian";
+		public String PlayerRank = "F";
+		public double PlayerCash = 1000.0;
+		public String PlayerGuild = "None";
+		public double PlayerStrength = 0.0;
+		public double PlayerAgility = 0.0;
+		public double PlayerPerception = 0.0;
+		public double PlayerVitality = 0.0;
+		public double PlayerIntelligence = 0.0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -294,6 +314,16 @@ public class SlsbModVariables {
 			nbt.putBoolean("JoinedWorld", JoinedWorld);
 			nbt.putBoolean("Barraging", Barraging);
 			nbt.putDouble("BarrageCooldown", BarrageCooldown);
+			nbt.putBoolean("SystemPlayer", SystemPlayer);
+			nbt.putString("PlayerClass", PlayerClass);
+			nbt.putString("PlayerRank", PlayerRank);
+			nbt.putDouble("PlayerCash", PlayerCash);
+			nbt.putString("PlayerGuild", PlayerGuild);
+			nbt.putDouble("PlayerStrength", PlayerStrength);
+			nbt.putDouble("PlayerAgility", PlayerAgility);
+			nbt.putDouble("PlayerPerception", PlayerPerception);
+			nbt.putDouble("PlayerVitality", PlayerVitality);
+			nbt.putDouble("PlayerIntelligence", PlayerIntelligence);
 			return nbt;
 		}
 
@@ -327,6 +357,16 @@ public class SlsbModVariables {
 			JoinedWorld = nbt.getBoolean("JoinedWorld");
 			Barraging = nbt.getBoolean("Barraging");
 			BarrageCooldown = nbt.getDouble("BarrageCooldown");
+			SystemPlayer = nbt.getBoolean("SystemPlayer");
+			PlayerClass = nbt.getString("PlayerClass");
+			PlayerRank = nbt.getString("PlayerRank");
+			PlayerCash = nbt.getDouble("PlayerCash");
+			PlayerGuild = nbt.getString("PlayerGuild");
+			PlayerStrength = nbt.getDouble("PlayerStrength");
+			PlayerAgility = nbt.getDouble("PlayerAgility");
+			PlayerPerception = nbt.getDouble("PlayerPerception");
+			PlayerVitality = nbt.getDouble("PlayerVitality");
+			PlayerIntelligence = nbt.getDouble("PlayerIntelligence");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

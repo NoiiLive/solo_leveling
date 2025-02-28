@@ -1,0 +1,366 @@
+{
+  "_fv": 73,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "gui_hunter_main.png",
+          "use1Xscale": false,
+          "x": 0,
+          "y": 0,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_tab_top",
+          "image": "tab_top.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "TabHunterSkills"
+          },
+          "x": 176,
+          "y": 13,
+          "locked": true
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnPlayer"
+          },
+          "scale": 35,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 176,
+          "y": 124,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_hunter_rank",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnHunterRank"
+          },
+          "color": {
+            "value": -14664184,
+            "falpha": 0.0
+          },
+          "x": 247,
+          "y": 73,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_hunter_class",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnHunterClass"
+          },
+          "color": {
+            "value": -14664184,
+            "falpha": 0.0
+          },
+          "x": 196,
+          "y": 157,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_hunter_guild",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnHunterGuild"
+          },
+          "color": {
+            "value": -11252677,
+            "falpha": 0.0
+          },
+          "x": 196,
+          "y": 170,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_player_cash",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnPlayerCash"
+          },
+          "color": {
+            "value": -11252677,
+            "falpha": 0.0
+          },
+          "x": 196,
+          "y": 183,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_hunter_strength",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnHunterStrength"
+          },
+          "color": {
+            "value": -11252677,
+            "falpha": 0.0
+          },
+          "x": 247,
+          "y": 86,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_hunter_agility",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnHunterAgility"
+          },
+          "color": {
+            "value": -11252677,
+            "falpha": 0.0
+          },
+          "x": 247,
+          "y": 99,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_hunter_perception",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnHunterPerception"
+          },
+          "color": {
+            "value": -11252677,
+            "falpha": 0.0
+          },
+          "x": 247,
+          "y": 112,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_hunter_vitality",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnHunterVitality"
+          },
+          "color": {
+            "value": -11252677,
+            "falpha": 0.0
+          },
+          "x": 247,
+          "y": 125,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_hunter_intelligence",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnHunterIntelligence"
+          },
+          "color": {
+            "value": -11252677,
+            "falpha": 0.0
+          },
+          "x": 247,
+          "y": 138,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_hunter_rank1",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnHunterRank"
+          },
+          "color": {
+            "value": -8455136,
+            "falpha": 0.0
+          },
+          "x": 246,
+          "y": 72,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_hunter_class1",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnHunterClass"
+          },
+          "color": {
+            "value": -8455136,
+            "falpha": 0.0
+          },
+          "x": 195,
+          "y": 156,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_hunter_guild1",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnHunterGuild"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 195,
+          "y": 169,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_player_cash1",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnPlayerCash"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 195,
+          "y": 182,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_hunter_strength1",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnHunterStrength"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 246,
+          "y": 85,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_hunter_agility1",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnHunterAgility"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 246,
+          "y": 98,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_hunter_perception1",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnHunterPerception"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 246,
+          "y": 111,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_hunter_vitality1",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnHunterVitality"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 246,
+          "y": 124,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_hunter_intelligence1",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnHunterIntelligence"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 246,
+          "y": 137,
+          "locked": true
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

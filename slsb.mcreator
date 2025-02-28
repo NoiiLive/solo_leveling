@@ -262,20 +262,6 @@
       "path": "~/GUI"
     },
     {
-      "name": "MainGUI",
-      "type": "gui",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "main_gui",
-      "metadata": {
-        "files": [
-          "src/main/java/net/clozynoii/slsb/world/inventory/MainGUIMenu.java",
-          "src/main/java/net/clozynoii/slsb/client/gui/MainGUIScreen.java"
-        ]
-      },
-      "path": "~/GUI"
-    },
-    {
       "name": "MainMenuKey",
       "type": "procedure",
       "compiles": true,
@@ -1554,6 +1540,306 @@
         ]
       },
       "path": "~/Procedures/GUI/Overlay"
+    },
+    {
+      "name": "HunterMainGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hunter_main_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/world/inventory/HunterMainGUIMenu.java",
+          "src/main/java/net/clozynoii/slsb/client/gui/HunterMainGUIScreen.java",
+          "src/main/java/net/clozynoii/slsb/network/HunterMainGUIButtonMessage.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "HunterSkillGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hunter_skill_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/world/inventory/HunterSkillGUIMenu.java",
+          "src/main/java/net/clozynoii/slsb/network/HunterSkillGUIButtonMessage.java",
+          "src/main/java/net/clozynoii/slsb/client/gui/HunterSkillGUIScreen.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "TabHunterSkills",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tab_hunter_skills",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/TabHunterSkillsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Hunter GUI"
+    },
+    {
+      "name": "TabHunterMain",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tab_hunter_main",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/TabHunterMainProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Hunter GUI"
+    },
+    {
+      "name": "ReturnHunterRank",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_hunter_rank",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnHunterRankProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Hunter GUI"
+    },
+    {
+      "name": "ReturnHunterClass",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_hunter_class",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnHunterClassProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Hunter GUI"
+    },
+    {
+      "name": "ReturnHunterGuild",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_hunter_guild",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnHunterGuildProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Hunter GUI"
+    },
+    {
+      "name": "ReturnPlayerCash",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_player_cash",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnPlayerCashProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Hunter GUI"
+    },
+    {
+      "name": "ReturnHunterStrength",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_hunter_strength",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnHunterStrengthProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Hunter GUI"
+    },
+    {
+      "name": "ReturnHunterAgility",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_hunter_agility",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnHunterAgilityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Hunter GUI"
+    },
+    {
+      "name": "ReturnHunterPerception",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_hunter_perception",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnHunterPerceptionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Hunter GUI"
+    },
+    {
+      "name": "ReturnHunterVitality",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_hunter_vitality",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnHunterVitalityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Hunter GUI"
+    },
+    {
+      "name": "ReturnHunterIntelligence",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_hunter_intelligence",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnHunterIntelligenceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Hunter GUI"
+    },
+    {
+      "name": "ReturnPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_player",
+      "metadata": {
+        "return_type": "entity",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Hunter GUI"
     }
   ],
   "variable_elements": [
@@ -1730,6 +2016,66 @@
       "type": "number",
       "scope": "player_lifetime",
       "value": "0.0"
+    },
+    {
+      "name": "SystemPlayer",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "PlayerClass",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "Civilian"
+    },
+    {
+      "name": "PlayerRank",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "F"
+    },
+    {
+      "name": "PlayerCash",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1000.0"
+    },
+    {
+      "name": "PlayerGuild",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "None"
+    },
+    {
+      "name": "PlayerStrength",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "PlayerAgility",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "PlayerPerception",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "PlayerVitality",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "PlayerIntelligence",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
     }
   ],
   "sound_elements": [
@@ -1833,6 +2179,10 @@
             "children": [
               {
                 "name": "Overlay",
+                "children": []
+              },
+              {
+                "name": "Hunter GUI",
                 "children": []
               }
             ]
