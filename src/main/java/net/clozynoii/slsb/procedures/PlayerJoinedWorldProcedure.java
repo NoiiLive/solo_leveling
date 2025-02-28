@@ -6,6 +6,8 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.entity.Entity;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
 
 import net.clozynoii.slsb.network.SlsbModVariables;
 
@@ -28,32 +30,12 @@ public class PlayerJoinedWorldProcedure {
 		if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).JoinedWorld == false) {
 			{
 				SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
+				_vars.AwakeningTimer = Mth.nextInt(RandomSource.create(), 300, 600);
+				_vars.syncPlayerVariables(entity);
+			}
+			{
+				SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
 				_vars.JoinedWorld = true;
-				_vars.syncPlayerVariables(entity);
-			}
-			{
-				SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
-				_vars.Ability1a = "Heavy Attack";
-				_vars.syncPlayerVariables(entity);
-			}
-			{
-				SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
-				_vars.Ability2a = "Barrage";
-				_vars.syncPlayerVariables(entity);
-			}
-			{
-				SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
-				_vars.Ability3a = "Uppercut";
-				_vars.syncPlayerVariables(entity);
-			}
-			{
-				SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
-				_vars.Ability4a = "Slam";
-				_vars.syncPlayerVariables(entity);
-			}
-			{
-				SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
-				_vars.Ability5a = "Dash";
 				_vars.syncPlayerVariables(entity);
 			}
 		}

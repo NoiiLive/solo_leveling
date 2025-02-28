@@ -16,6 +16,8 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.client.Minecraft;
 
+import net.clozynoii.slsb.procedures.ReturnPlayerIsHunterProcedure;
+import net.clozynoii.slsb.procedures.ReturnManaAmountProcedure;
 import net.clozynoii.slsb.procedures.ReturnAbilityBar2Procedure;
 import net.clozynoii.slsb.procedures.ReturnAbilityBar1Procedure;
 import net.clozynoii.slsb.procedures.ReturnAbility5Procedure;
@@ -52,8 +54,11 @@ public class PlayerOverlayOverlay {
 		RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		if (HideOverlayF1Procedure.execute()) {
-			event.getGuiGraphics().blit(ResourceLocation.parse("slsb:textures/screens/ability_bar.png"), 8, h - 34, 0, 0, 108, 26, 108, 26);
+			event.getGuiGraphics().blit(ResourceLocation.parse("slsb:textures/screens/ability_bar.png"), 8, h - 42, 0, 0, 140, 34, 140, 34);
 
+			if (ReturnPlayerIsHunterProcedure.execute(entity)) {
+				event.getGuiGraphics().blit(ResourceLocation.parse("slsb:textures/screens/ability_bar_mana.png"), 8, h - 42, 0, 0, 140, 34, 140, 34);
+			}
 			if (ReturnAbilityBar2Procedure.execute(entity)) {
 				event.getGuiGraphics().blit(ResourceLocation.parse("slsb:textures/screens/ability_bar_2.png"), 107, h - 30, 0, 0, 5, 18, 5, 18);
 			}
@@ -71,6 +76,9 @@ public class PlayerOverlayOverlay {
 
 			event.getGuiGraphics().blit(ResourceLocation.parse("slsb:textures/screens/abilities.png"), 89, h - 29, Mth.clamp((int) ReturnAbility5Procedure.execute(entity) * 16, 0, 80), 0, 16, 16, 96, 16);
 
+			if (ReturnPlayerIsHunterProcedure.execute(entity)) {
+				event.getGuiGraphics().blit(ResourceLocation.parse("slsb:textures/screens/mana_bar.png"), 8, h - 42, Mth.clamp((int) ReturnManaAmountProcedure.execute(entity) * 140, 0, 1540), 0, 140, 11, 1680, 11);
+			}
 		}
 		RenderSystem.depthMask(true);
 		RenderSystem.defaultBlendFunc();

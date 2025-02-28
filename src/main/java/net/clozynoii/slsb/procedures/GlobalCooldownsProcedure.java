@@ -100,6 +100,20 @@ public class GlobalCooldownsProcedure {
 						_vars.syncPlayerVariables(entityiterator);
 					}
 				}
+				if (entityiterator.getData(SlsbModVariables.PLAYER_VARIABLES).ManaRegenTimer > 0) {
+					{
+						SlsbModVariables.PlayerVariables _vars = entityiterator.getData(SlsbModVariables.PLAYER_VARIABLES);
+						_vars.ManaRegenTimer = entityiterator.getData(SlsbModVariables.PLAYER_VARIABLES).ManaRegenTimer - 1;
+						_vars.syncPlayerVariables(entityiterator);
+					}
+				}
+				if (entityiterator.getData(SlsbModVariables.PLAYER_VARIABLES).AwakeningTimer > 1) {
+					{
+						SlsbModVariables.PlayerVariables _vars = entityiterator.getData(SlsbModVariables.PLAYER_VARIABLES);
+						_vars.AwakeningTimer = entityiterator.getData(SlsbModVariables.PLAYER_VARIABLES).AwakeningTimer - 1;
+						_vars.syncPlayerVariables(entityiterator);
+					}
+				}
 			}
 		}
 		if (SlsbModVariables.MapVariables.get(world).GlobalCooldownCounter > 0) {

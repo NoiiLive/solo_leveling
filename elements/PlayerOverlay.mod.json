@@ -11,7 +11,21 @@
           "use1Xscale": false,
           "anchorPoint": "BOTTOM_LEFT",
           "x": 8,
-          "y": 206,
+          "y": 198,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_bar_mana.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnPlayerIsHunter"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 8,
+          "y": 198,
           "locked": true
         }
       },
@@ -115,6 +129,24 @@
           "anchorPoint": "BOTTOM_LEFT",
           "x": 89,
           "y": 211,
+          "locked": true
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "mana_bar.png",
+          "spritesCount": 12,
+          "displayCondition": {
+            "name": "ReturnPlayerIsHunter"
+          },
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "ReturnManaAmount"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 8,
+          "y": 198,
           "locked": true
         }
       }

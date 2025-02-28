@@ -99,6 +99,11 @@ public class SlsbModVariables {
 			clone.PlayerPerception = original.PlayerPerception;
 			clone.PlayerVitality = original.PlayerVitality;
 			clone.PlayerIntelligence = original.PlayerIntelligence;
+			clone.AwakeningTimer = original.AwakeningTimer;
+			clone.PlayerAwakened = original.PlayerAwakened;
+			clone.PlayerMana = original.PlayerMana;
+			clone.PlayerMaxMana = original.PlayerMaxMana;
+			clone.ManaRegenTimer = original.ManaRegenTimer;
 			if (!event.isWasDeath()) {
 				clone.AbilityBar = original.AbilityBar;
 				clone.GUISelectedEntry = original.GUISelectedEntry;
@@ -282,6 +287,11 @@ public class SlsbModVariables {
 		public double PlayerPerception = 0.0;
 		public double PlayerVitality = 0.0;
 		public double PlayerIntelligence = 0.0;
+		public double AwakeningTimer = 100.0;
+		public boolean PlayerAwakened = false;
+		public double PlayerMana = 100.0;
+		public double PlayerMaxMana = 100.0;
+		public double ManaRegenTimer = 0.0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -324,6 +334,11 @@ public class SlsbModVariables {
 			nbt.putDouble("PlayerPerception", PlayerPerception);
 			nbt.putDouble("PlayerVitality", PlayerVitality);
 			nbt.putDouble("PlayerIntelligence", PlayerIntelligence);
+			nbt.putDouble("AwakeningTimer", AwakeningTimer);
+			nbt.putBoolean("PlayerAwakened", PlayerAwakened);
+			nbt.putDouble("PlayerMana", PlayerMana);
+			nbt.putDouble("PlayerMaxMana", PlayerMaxMana);
+			nbt.putDouble("ManaRegenTimer", ManaRegenTimer);
 			return nbt;
 		}
 
@@ -367,6 +382,11 @@ public class SlsbModVariables {
 			PlayerPerception = nbt.getDouble("PlayerPerception");
 			PlayerVitality = nbt.getDouble("PlayerVitality");
 			PlayerIntelligence = nbt.getDouble("PlayerIntelligence");
+			AwakeningTimer = nbt.getDouble("AwakeningTimer");
+			PlayerAwakened = nbt.getBoolean("PlayerAwakened");
+			PlayerMana = nbt.getDouble("PlayerMana");
+			PlayerMaxMana = nbt.getDouble("PlayerMaxMana");
+			ManaRegenTimer = nbt.getDouble("ManaRegenTimer");
 		}
 
 		public void syncPlayerVariables(Entity entity) {
