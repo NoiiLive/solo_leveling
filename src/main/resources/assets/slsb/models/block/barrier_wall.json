@@ -1,0 +1,9 @@
+{
+  "parent": "slsb:custom/invis_slab",
+  "textures": {
+    "all": "slsb:block/invis32x",
+    "particle": "slsb:block/invis32x",
+    "0": "slsb:block/invis32x"
+  },
+  "render_type": "cutout"
+}

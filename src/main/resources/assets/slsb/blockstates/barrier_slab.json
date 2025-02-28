@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "slsb:block/barrier_slab"
+    },
+    "type=top": {
+      "model": "slsb:block/barrier_slab_top"
+    },
+    "type=double": {
+      "model": "slsb:block/barrier_slab_full"
+    }
+  }
+}

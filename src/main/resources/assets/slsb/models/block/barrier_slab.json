@@ -1,0 +1,10 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "particle": "slsb:block/invis32x",
+    "bottom": "slsb:block/invis32x",
+    "top": "slsb:block/invis32x",
+    "side": "slsb:block/invis32x"
+  },
+  "render_type": "cutout"
+}

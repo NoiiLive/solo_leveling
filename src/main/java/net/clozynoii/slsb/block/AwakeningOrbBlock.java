@@ -52,7 +52,7 @@ public class AwakeningOrbBlock extends BaseEntityBlock implements EntityBlock {
 	public AwakeningOrbBlock() {
 		super(BlockBehaviour.Properties.of()
 
-				.sound(SoundType.METAL).strength(1f, 100f).lightLevel(s -> 10).requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+				.sound(SoundType.METAL).strength(-1, 3600000).lightLevel(s -> 10).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 

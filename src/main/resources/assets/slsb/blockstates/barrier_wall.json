@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "slsb:block/barrier_wall"
+    },
+    "facing=east": {
+      "model": "slsb:block/barrier_wall",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "slsb:block/barrier_wall",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "slsb:block/barrier_wall",
+      "y": 270
+    }
+  }
+}
