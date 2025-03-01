@@ -149,6 +149,48 @@
           "y": 198,
           "locked": true
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_mana",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnMana"
+          },
+          "color": {
+            "value": -16764544,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ReturnPlayerIsHunter"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 13,
+          "y": 190,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_mana1",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnMana"
+          },
+          "color": {
+            "value": -15014145,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ReturnPlayerIsHunter"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 12,
+          "y": 189,
+          "locked": true
+        }
       }
     ],
     "baseTexture": "",

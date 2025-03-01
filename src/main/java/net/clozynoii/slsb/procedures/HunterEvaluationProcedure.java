@@ -25,6 +25,31 @@ public class HunterEvaluationProcedure {
 		if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerAwakened == true && (entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerClass).equals("Civilian")) {
 			RandomClass = Mth.nextInt(RandomSource.create(), 1, 6);
 			RandomRank = Mth.nextInt(RandomSource.create(), 1, 6);
+			{
+				SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
+				_vars.PlayerStrength = 1;
+				_vars.syncPlayerVariables(entity);
+			}
+			{
+				SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
+				_vars.PlayerAgility = 1;
+				_vars.syncPlayerVariables(entity);
+			}
+			{
+				SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
+				_vars.PlayerVitality = 1;
+				_vars.syncPlayerVariables(entity);
+			}
+			{
+				SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
+				_vars.PlayerPerception = 1;
+				_vars.syncPlayerVariables(entity);
+			}
+			{
+				SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
+				_vars.PlayerIntelligence = 1;
+				_vars.syncPlayerVariables(entity);
+			}
 			if (RandomClass == 1) {
 				{
 					SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
@@ -186,6 +211,11 @@ public class HunterEvaluationProcedure {
 											("playsound minecraft:entity.item.pickup player " + entity.getDisplayName().getString() + " ~ ~ ~ 0.5 1"));
 							});
 						});
+					}
+					{
+						SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
+						_vars.PlayerMana = entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerMaxMana;
+						_vars.syncPlayerVariables(entity);
 					}
 				});
 			});

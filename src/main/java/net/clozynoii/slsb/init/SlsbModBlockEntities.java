@@ -11,6 +11,7 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.core.registries.BuiltInRegistries;
 
+import net.clozynoii.slsb.block.entity.ManaTrainingOrbTileEntity;
 import net.clozynoii.slsb.block.entity.BlueGateSmallTileEntity;
 import net.clozynoii.slsb.block.entity.BlueGateMediumTileEntity;
 import net.clozynoii.slsb.block.entity.AwakeningOrbTileEntity;
@@ -21,6 +22,7 @@ public class SlsbModBlockEntities {
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> AWAKENING_ORB = register("awakening_orb", SlsbModBlocks.AWAKENING_ORB, AwakeningOrbTileEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> BLUE_GATE_SMALL = register("blue_gate_small", SlsbModBlocks.BLUE_GATE_SMALL, BlueGateSmallTileEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> BLUE_GATE_MEDIUM = register("blue_gate_medium", SlsbModBlocks.BLUE_GATE_MEDIUM, BlueGateMediumTileEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> MANA_TRAINING_ORB = register("mana_training_orb", SlsbModBlocks.MANA_TRAINING_ORB, ManaTrainingOrbTileEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

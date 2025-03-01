@@ -2855,6 +2855,115 @@
         ]
       },
       "path": "~/Blocks"
+    },
+    {
+      "name": "PlayerStatEffects",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_stat_effects",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/PlayerStatEffectsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Player"
+    },
+    {
+      "name": "ReturnMana",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_mana",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnManaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Overlay"
+    },
+    {
+      "name": "ManaFatigue",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_fatigue",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/potion/ManaFatigueMobEffect.java"
+        ]
+      },
+      "path": "~/Effects/Potions"
+    },
+    {
+      "name": "ManaTrainingOrb",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_training_orb",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/block/model/ManaTrainingOrbBlockModel.java",
+          "src/main/resources/assets/slsb/blockstates/mana_training_orb.json",
+          "src/main/java/net/clozynoii/slsb/block/ManaTrainingOrbBlock.java",
+          "src/main/java/net/clozynoii/slsb/block/renderer/ManaTrainingOrbTileRenderer.java",
+          "src/main/java/net/clozynoii/slsb/block/entity/ManaTrainingOrbTileEntity.java",
+          "src/main/java/net/clozynoii/slsb/block/display/ManaTrainingOrbDisplayItem.java",
+          "src/main/java/net/clozynoii/slsb/block/renderer/ManaTrainingOrbDisplayItemRenderer.java",
+          "src/main/resources/assets/slsb/models/custom/mana_training_orb_particle.json",
+          "src/main/resources/assets/slsb/models/item/mana_training_orb.json",
+          "src/main/java/net/clozynoii/slsb/block/model/ManaTrainingOrbDisplayModel.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "ManaTraining",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_training",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ManaTrainingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Blocks"
     }
   ],
   "variable_elements": [
@@ -3151,6 +3260,9 @@
     "BLOCKS:minecraft:slabs": [
       "~CUSTOM:BarrierSlab"
     ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:ManaTrainingOrb"
+    ],
     "ENTITIES:mod:non_targetable": [
       "EntityAreaEffectCloud",
       "EntityArmorStand",
@@ -3209,13 +3321,14 @@
       "gui.slsb.hunter_skill_gui.tooltip_barrage": "Barrage",
       "key.categories.slsb\\": "Solo Leveling: System Break",
       "block.slsb.awakening_orb": "Awakening Orb",
+      "block.slsb.mana_training_orb": "Mana Training Orb",
       "slsb.command.awakentarget": "You have been awakened",
       "slsb.command.unawakenadmin": "has been un-awakened",
       "slsb.evaluator.normalrank.goodbye": "Good luck, and stay safe out there, Hunter!",
       "slsb.ability.cooldown": "Ability is on Cooldown!",
       "key.slsb.change_ability_bar": "Change Ability Bar",
-      "slsb.evaluator.erank.response": "Oh... uh... Well, this is... unexpected. You’re an E-Rank",
       "gui.slsb.hunter_skill_gui.tooltip_slot_10": "Slot 10",
+      "slsb.evaluator.erank.response": "Oh... uh... Well, this is... unexpected. You’re an E-Rank",
       "gui.slsb.hunter_skill_gui.tooltip_slam": "Slam",
       "gui.slsb.hunter_skill_gui.tooltip_uppercut": "Uppercut",
       "slsb.evaluator.unawakened": "It appears you haven\u0027t awakened yet...",
@@ -3249,6 +3362,7 @@
       "slsb.evaluator.srank.response": "Wow... I can\u0027t believe my eyes! You\u0027re really an S-Rank!",
       "key.slsb.ability_1": "Ability 1",
       "subtitles.basic_hit": "Player lands a hit",
+      "effect.slsb.mana_fatigue": "Mana Fatigue",
       "gui.slsb.hunter_skill_gui.tooltip_dash": "Dash",
       "gui.slsb.hunter_skill_gui.tooltip_heavy_attack": "Heavy Attack",
       "block.slsb.barrier_slab": "§dBarrier Slab"

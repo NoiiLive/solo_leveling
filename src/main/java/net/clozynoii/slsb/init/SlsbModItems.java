@@ -12,6 +12,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import net.clozynoii.slsb.block.display.ManaTrainingOrbDisplayItem;
 import net.clozynoii.slsb.block.display.BlueGateSmallDisplayItem;
 import net.clozynoii.slsb.block.display.BlueGateMediumDisplayItem;
 import net.clozynoii.slsb.block.display.AwakeningOrbDisplayItem;
@@ -25,6 +26,7 @@ public class SlsbModItems {
 	public static final DeferredItem<Item> BLUE_GATE_MEDIUM = REGISTRY.register(SlsbModBlocks.BLUE_GATE_MEDIUM.getId().getPath(), () -> new BlueGateMediumDisplayItem(SlsbModBlocks.BLUE_GATE_MEDIUM.get(), new Item.Properties()));
 	public static final DeferredItem<Item> BARRIER_SLAB = block(SlsbModBlocks.BARRIER_SLAB);
 	public static final DeferredItem<Item> BARRIER_WALL = block(SlsbModBlocks.BARRIER_WALL);
+	public static final DeferredItem<Item> MANA_TRAINING_ORB = REGISTRY.register(SlsbModBlocks.MANA_TRAINING_ORB.getId().getPath(), () -> new ManaTrainingOrbDisplayItem(SlsbModBlocks.MANA_TRAINING_ORB.get(), new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

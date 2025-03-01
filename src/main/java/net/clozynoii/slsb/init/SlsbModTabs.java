@@ -21,5 +21,6 @@ public class SlsbModTabs {
 				tabData.accept(SlsbModBlocks.AWAKENING_ORB.get().asItem());
 				tabData.accept(SlsbModBlocks.BLUE_GATE_SMALL.get().asItem());
 				tabData.accept(SlsbModBlocks.BLUE_GATE_MEDIUM.get().asItem());
+				tabData.accept(SlsbModBlocks.MANA_TRAINING_ORB.get().asItem());
 			}).build());
 }

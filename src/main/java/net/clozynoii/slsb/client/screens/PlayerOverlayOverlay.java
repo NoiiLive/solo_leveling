@@ -17,6 +17,7 @@ import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.client.Minecraft;
 
 import net.clozynoii.slsb.procedures.ReturnPlayerIsHunterProcedure;
+import net.clozynoii.slsb.procedures.ReturnManaProcedure;
 import net.clozynoii.slsb.procedures.ReturnManaAmountProcedure;
 import net.clozynoii.slsb.procedures.ReturnAbilityBar2Procedure;
 import net.clozynoii.slsb.procedures.ReturnAbilityBar1Procedure;
@@ -79,6 +80,14 @@ public class PlayerOverlayOverlay {
 			if (ReturnPlayerIsHunterProcedure.execute(entity)) {
 				event.getGuiGraphics().blit(ResourceLocation.parse("slsb:textures/screens/mana_bar.png"), 8, h - 42, Mth.clamp((int) ReturnManaAmountProcedure.execute(entity) * 140, 0, 1540), 0, 140, 11, 1680, 11);
 			}
+			if (ReturnPlayerIsHunterProcedure.execute(entity))
+				event.getGuiGraphics().drawString(Minecraft.getInstance().font,
+
+						ReturnManaProcedure.execute(entity), 13, h - 50, -16764544, false);
+			if (ReturnPlayerIsHunterProcedure.execute(entity))
+				event.getGuiGraphics().drawString(Minecraft.getInstance().font,
+
+						ReturnManaProcedure.execute(entity), 12, h - 51, -15014145, false);
 		}
 		RenderSystem.depthMask(true);
 		RenderSystem.defaultBlendFunc();

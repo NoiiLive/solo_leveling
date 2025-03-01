@@ -9,6 +9,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 
 import net.minecraft.world.level.block.Block;
 
+import net.clozynoii.slsb.block.ManaTrainingOrbBlock;
 import net.clozynoii.slsb.block.BlueGateSmallBlock;
 import net.clozynoii.slsb.block.BlueGateMediumBlock;
 import net.clozynoii.slsb.block.BloodBlockBlock;
@@ -25,6 +26,7 @@ public class SlsbModBlocks {
 	public static final DeferredBlock<Block> BLUE_GATE_MEDIUM = REGISTRY.register("blue_gate_medium", BlueGateMediumBlock::new);
 	public static final DeferredBlock<Block> BARRIER_SLAB = REGISTRY.register("barrier_slab", BarrierSlabBlock::new);
 	public static final DeferredBlock<Block> BARRIER_WALL = REGISTRY.register("barrier_wall", BarrierWallBlock::new);
+	public static final DeferredBlock<Block> MANA_TRAINING_ORB = REGISTRY.register("mana_training_orb", ManaTrainingOrbBlock::new);
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }
