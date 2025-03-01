@@ -197,8 +197,8 @@ public class HunterEvaluationProcedure {
 							_level.sendParticles(ParticleTypes.ENCHANTED_HIT, (x + 0.5), (y + 1), (z + 0.5), 20, 0.5, 0.5, 0.5, 0.1);
 						SlsbMod.queueServerWork(10, () -> {
 							if (entity instanceof Player _player && !_player.level().isClientSide())
-								_player.displayClientMessage(Component.literal(("<Evaluator> " + Component.translatable("slsb.evaluator.normalrank.response").getString() + " " + entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerRank
-										+ Component.translatable("slsb.evaluator.normalrank.rank").getString())), false);
+								_player.displayClientMessage(Component.literal(("<Evaluator> " + Component.translatable("slsb.evaluator.normalrank.response").getString() + " \u00A7f\u00A7l"
+										+ entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerRank + Component.translatable("slsb.evaluator.normalrank.rank").getString())), false);
 							if (world instanceof ServerLevel _level)
 								_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 										("playsound minecraft:entity.item.pickup player " + entity.getDisplayName().getString() + " ~ ~ ~ 0.5 1"));
