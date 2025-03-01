@@ -34,16 +34,16 @@ public class PlayerStatEffectsProcedure {
 			ManaScaling = 10;
 		} else if ((entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerRank).equals("D")) {
 			ManaBase = 50;
-			ManaScaling = 10;
+			ManaScaling = 25;
 		} else if ((entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerRank).equals("C")) {
 			ManaBase = 100;
-			ManaScaling = 5;
+			ManaScaling = 10;
 		} else if ((entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerRank).equals("B")) {
 			ManaBase = 500;
-			ManaScaling = 5;
+			ManaScaling = 25;
 		} else if ((entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerRank).equals("A")) {
 			ManaBase = 1000;
-			ManaScaling = 2;
+			ManaScaling = 5;
 		} else if ((entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerRank).equals("S")) {
 			ManaBase = 10000;
 			ManaScaling = 10;
