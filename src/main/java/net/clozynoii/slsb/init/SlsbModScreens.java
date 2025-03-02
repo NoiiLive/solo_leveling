@@ -9,6 +9,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
+import net.clozynoii.slsb.client.gui.SystemMainGUIScreen;
 import net.clozynoii.slsb.client.gui.HunterSkillGUIScreen;
 import net.clozynoii.slsb.client.gui.HunterMainGUIScreen;
 
@@ -18,5 +19,6 @@ public class SlsbModScreens {
 	public static void clientLoad(RegisterMenuScreensEvent event) {
 		event.register(SlsbModMenus.HUNTER_MAIN_GUI.get(), HunterMainGUIScreen::new);
 		event.register(SlsbModMenus.HUNTER_SKILL_GUI.get(), HunterSkillGUIScreen::new);
+		event.register(SlsbModMenus.SYSTEM_MAIN_GUI.get(), SystemMainGUIScreen::new);
 	}
 }

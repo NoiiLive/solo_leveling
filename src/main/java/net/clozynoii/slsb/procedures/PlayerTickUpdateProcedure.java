@@ -8,13 +8,17 @@ import net.neoforged.bus.api.Event;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.GameType;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
+import net.minecraft.client.Minecraft;
 
 import net.clozynoii.slsb.network.SlsbModVariables;
 import net.clozynoii.slsb.init.SlsbModMobEffects;
@@ -49,26 +53,45 @@ public class PlayerTickUpdateProcedure {
 				_vars.syncPlayerVariables(entity);
 			}
 		}
-		if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).ManaRegenTimer == 0) {
+		if (new Object() {
+			public boolean checkGamemode(Entity _ent) {
+				if (_ent instanceof ServerPlayer _serverPlayer) {
+					return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.CREATIVE;
+				} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
+					return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null && Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.CREATIVE;
+				}
+				return false;
+			}
+		}.checkGamemode(entity)) {
 			if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerMana < entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerMaxMana) {
 				{
 					SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
-					_vars.PlayerMana = Math
-							.round(entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerMana + entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerMaxMana / 50 + entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerIntelligence);
+					_vars.PlayerMana = entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerMaxMana;
 					_vars.syncPlayerVariables(entity);
 				}
 			}
-			if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(SlsbModMobEffects.MANA_FATIGUE)) {
-				{
-					SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
-					_vars.ManaRegenTimer = 10;
-					_vars.syncPlayerVariables(entity);
+		} else {
+			if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).ManaRegenTimer == 0) {
+				if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerMana < entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerMaxMana) {
+					{
+						SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
+						_vars.PlayerMana = Math
+								.round(entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerMana + entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerMaxMana / 50 + entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerIntelligence);
+						_vars.syncPlayerVariables(entity);
+					}
 				}
-			} else {
-				{
-					SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
-					_vars.ManaRegenTimer = Math.round(5 - entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerIntelligence / 25);
-					_vars.syncPlayerVariables(entity);
+				if (entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(SlsbModMobEffects.MANA_FATIGUE)) {
+					{
+						SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
+						_vars.ManaRegenTimer = 10;
+						_vars.syncPlayerVariables(entity);
+					}
+				} else {
+					{
+						SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
+						_vars.ManaRegenTimer = Math.round(5 - entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerIntelligence / 25);
+						_vars.syncPlayerVariables(entity);
+					}
 				}
 			}
 		}
