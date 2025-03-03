@@ -16,7 +16,10 @@ import net.minecraft.commands.arguments.EntityArgument;
 import net.minecraft.commands.Commands;
 
 import net.clozynoii.slsb.procedures.CMDUnawakenPlayerProcedure;
+import net.clozynoii.slsb.procedures.CMDSystemPlayerProcedure;
 import net.clozynoii.slsb.procedures.CMDAwakenPlayerProcedure;
+
+import com.mojang.brigadier.arguments.BoolArgumentType;
 
 @EventBusSubscriber
 public class SlsbCommand {
@@ -50,6 +53,20 @@ public class SlsbCommand {
 
 			CMDUnawakenPlayerProcedure.execute(arguments, entity);
 			return 0;
-		})))));
+		}))).then(Commands.literal("system").then(Commands.argument("name", EntityArgument.player()).then(Commands.argument("logic", BoolArgumentType.bool()).executes(arguments -> {
+			Level world = arguments.getSource().getUnsidedLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null && world instanceof ServerLevel _servLevel)
+				entity = FakePlayerFactory.getMinecraft(_servLevel);
+			Direction direction = Direction.DOWN;
+			if (entity != null)
+				direction = entity.getDirection();
+
+			CMDSystemPlayerProcedure.execute(arguments, entity);
+			return 0;
+		}))))));
 	}
 }

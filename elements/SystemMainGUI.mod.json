@@ -1,0 +1,504 @@
+{
+  "_fv": 73,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "system_menu_main.png",
+          "use1Xscale": false,
+          "x": 0,
+          "y": 0,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_system_stat_button",
+          "image": "system_stat_button.png",
+          "hoveredImage": "",
+          "displayCondition": {
+            "name": "ReturnSystemHasPoints"
+          },
+          "x": 200,
+          "y": 145,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_system_stat_button1",
+          "image": "system_stat_button.png",
+          "hoveredImage": "",
+          "displayCondition": {
+            "name": "ReturnSystemHasPoints"
+          },
+          "x": 200,
+          "y": 157,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_system_stat_button2",
+          "image": "system_stat_button.png",
+          "hoveredImage": "",
+          "displayCondition": {
+            "name": "ReturnSystemHasPoints"
+          },
+          "x": 200,
+          "y": 169,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_system_stat_button3",
+          "image": "system_stat_button.png",
+          "hoveredImage": "",
+          "displayCondition": {
+            "name": "ReturnSystemHasPoints"
+          },
+          "x": 269,
+          "y": 145,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_system_stat_button4",
+          "image": "system_stat_button.png",
+          "hoveredImage": "",
+          "displayCondition": {
+            "name": "ReturnSystemHasPoints"
+          },
+          "x": 269,
+          "y": 157,
+          "locked": true
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "system_bar.png",
+          "spritesCount": 12,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "ReturnHealthAmount"
+          },
+          "x": 153,
+          "y": 114,
+          "locked": true
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "system_bar.png",
+          "spritesCount": 12,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "ReturnManaAmount"
+          },
+          "x": 153,
+          "y": 125,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_hunter_class",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnHunterClass"
+          },
+          "color": {
+            "value": -15657947,
+            "falpha": 0.0
+          },
+          "x": 170,
+          "y": 84,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_hunter_class1",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnHunterClass"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 169,
+          "y": 83,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_system_mana",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSystemMana"
+          },
+          "color": {
+            "value": -15657947,
+            "falpha": 0.0
+          },
+          "x": 241,
+          "y": 127,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_system_health",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSystemHealth"
+          },
+          "color": {
+            "value": -15657947,
+            "falpha": 0.0
+          },
+          "x": 241,
+          "y": 116,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_system_mana1",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSystemMana"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 240,
+          "y": 126,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_system_health1",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSystemHealth"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 240,
+          "y": 115,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_system_skill_points",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSystemSkillPoints"
+          },
+          "color": {
+            "value": -15657947,
+            "falpha": 0.0
+          },
+          "x": 250,
+          "y": 172,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_system_skill_points1",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSystemSkillPoints"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 249,
+          "y": 171,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_system_level",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSystemLevel"
+          },
+          "color": {
+            "value": -15657947,
+            "falpha": 0.0
+          },
+          "x": 181,
+          "y": 71,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_system_title",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSystemTitle"
+          },
+          "color": {
+            "value": -15657947,
+            "falpha": 0.0
+          },
+          "x": 175,
+          "y": 97,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_system_level1",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSystemLevel"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 180,
+          "y": 70,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_system_title1",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSystemTitle"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 174,
+          "y": 96,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_system_strength",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSystemStrength"
+          },
+          "color": {
+            "value": -15657947,
+            "falpha": 0.0
+          },
+          "x": 181,
+          "y": 148,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_system_agility",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSystemAgility"
+          },
+          "color": {
+            "value": -15657947,
+            "falpha": 0.0
+          },
+          "x": 181,
+          "y": 160,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_system_perception",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSystemPerception"
+          },
+          "color": {
+            "value": -15657947,
+            "falpha": 0.0
+          },
+          "x": 181,
+          "y": 172,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_system_vitality",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSystemVitality"
+          },
+          "color": {
+            "value": -15657947,
+            "falpha": 0.0
+          },
+          "x": 250,
+          "y": 148,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_system_intelligence",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSystemIntelligence"
+          },
+          "color": {
+            "value": -15657947,
+            "falpha": 0.0
+          },
+          "x": 250,
+          "y": 160,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_system_strength1",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSystemStrength"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 180,
+          "y": 147,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_system_agility1",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSystemAgility"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 180,
+          "y": 159,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_system_perception1",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSystemPerception"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 180,
+          "y": 171,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_system_vitality1",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSystemVitality"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 249,
+          "y": 147,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_system_intelligence1",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSystemIntelligence"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 249,
+          "y": 159,
+          "locked": true
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

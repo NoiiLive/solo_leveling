@@ -1940,7 +1940,7 @@
           }
         ]
       },
-      "path": "~/Procedures/GUI/Overlay"
+      "path": "~/Procedures/GUI/System GUI"
     },
     {
       "name": "ReturnPlayerIsHunter",
@@ -2964,6 +2964,283 @@
         ]
       },
       "path": "~/Procedures/Blocks"
+    },
+    {
+      "name": "ReturnHealthAmount",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_health_amount",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnHealthAmountProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/System GUI"
+    },
+    {
+      "name": "SystemMainGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "system_main_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/client/gui/SystemMainGUIScreen.java",
+          "src/main/java/net/clozynoii/slsb/world/inventory/SystemMainGUIMenu.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "ReturnSystemMana",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_system_mana",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnSystemManaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/System GUI"
+    },
+    {
+      "name": "ReturnSystemHealth",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_system_health",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnSystemHealthProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/System GUI"
+    },
+    {
+      "name": "CMDSystemPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmd_system_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/CMDSystemPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Commands"
+    },
+    {
+      "name": "ReturnSystemLevel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_system_level",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnSystemLevelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/System GUI"
+    },
+    {
+      "name": "ReturnSystemSkillPoints",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_system_skill_points",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnSystemSkillPointsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/System GUI"
+    },
+    {
+      "name": "ReturnSystemTitle",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_system_title",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnSystemTitleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/System GUI"
+    },
+    {
+      "name": "ReturnSystemStrength",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_system_strength",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnSystemStrengthProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/System GUI"
+    },
+    {
+      "name": "ReturnSystemAgility",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_system_agility",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnSystemAgilityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/System GUI"
+    },
+    {
+      "name": "ReturnSystemPerception",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_system_perception",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnSystemPerceptionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/System GUI"
+    },
+    {
+      "name": "ReturnSystemVitality",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_system_vitality",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnSystemVitalityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/System GUI"
+    },
+    {
+      "name": "ReturnSystemIntelligence",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_system_intelligence",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnSystemIntelligenceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/System GUI"
+    },
+    {
+      "name": "ReturnSystemHasPoints",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_system_has_points",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnSystemHasPointsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/System GUI"
     }
   ],
   "variable_elements": [
@@ -3236,6 +3513,24 @@
       "type": "string",
       "scope": "player_persistent",
       "value": ""
+    },
+    {
+      "name": "PlayerLevel",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1.0"
+    },
+    {
+      "name": "PlayerSkillPoints",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "PlayerTitle",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "None"
     }
   ],
   "sound_elements": [
@@ -3318,6 +3613,7 @@
       "slsb.evaluator.evaluated": "You have already been evaluated!",
       "slsb.evaluator.normalrank.rank": "-Rank!",
       "slsb.training.manafatigue": "Your mana is currently fatigued",
+      "slsb.command.systemplayertarget": "Your Player status has been set to",
       "block.slsb.blue_gate_medium": "Gate (Medium)",
       "gui.slsb.hunter_skill_gui.tooltip_barrage": "Barrage",
       "key.categories.slsb\\": "Solo Leveling: System Break",
@@ -3335,6 +3631,7 @@
       "slsb.evaluator.unawakened": "It appears you haven\u0027t awakened yet...",
       "slsb.training.nomana": "You do not have enough mana to train",
       "item_group.slsb.sl_blocks": "Solo Leveling: Blocks",
+      "slsb.command.systemplayeradmin": "Player status has been set to",
       "slsb.evaluator.normalrank.response": "This is good! It seems you are",
       "block.slsb.blood_block": "Blood Block",
       "slsb.evaluator.srank.goodbye": "This is history in the making! The world will be watching you.",
@@ -3389,6 +3686,10 @@
               },
               {
                 "name": "Hunter GUI",
+                "children": []
+              },
+              {
+                "name": "System GUI",
                 "children": []
               },
               {
