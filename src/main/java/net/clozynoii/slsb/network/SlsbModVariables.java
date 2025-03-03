@@ -105,9 +105,6 @@ public class SlsbModVariables {
 			clone.PlayerMaxMana = original.PlayerMaxMana;
 			clone.ManaRegenTimer = original.ManaRegenTimer;
 			clone.UnlockedSkills = original.UnlockedSkills;
-			clone.PlayerLevel = original.PlayerLevel;
-			clone.PlayerSkillPoints = original.PlayerSkillPoints;
-			clone.PlayerTitle = original.PlayerTitle;
 			if (!event.isWasDeath()) {
 				clone.AbilityBar = original.AbilityBar;
 				clone.GUISelectedEntry = original.GUISelectedEntry;
@@ -297,9 +294,6 @@ public class SlsbModVariables {
 		public double PlayerMaxMana = 100.0;
 		public double ManaRegenTimer = 0.0;
 		public String UnlockedSkills = "";
-		public double PlayerLevel = 1.0;
-		public double PlayerSkillPoints = 0.0;
-		public String PlayerTitle = "None";
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -348,9 +342,6 @@ public class SlsbModVariables {
 			nbt.putDouble("PlayerMaxMana", PlayerMaxMana);
 			nbt.putDouble("ManaRegenTimer", ManaRegenTimer);
 			nbt.putString("UnlockedSkills", UnlockedSkills);
-			nbt.putDouble("PlayerLevel", PlayerLevel);
-			nbt.putDouble("PlayerSkillPoints", PlayerSkillPoints);
-			nbt.putString("PlayerTitle", PlayerTitle);
 			return nbt;
 		}
 
@@ -400,9 +391,6 @@ public class SlsbModVariables {
 			PlayerMaxMana = nbt.getDouble("PlayerMaxMana");
 			ManaRegenTimer = nbt.getDouble("ManaRegenTimer");
 			UnlockedSkills = nbt.getString("UnlockedSkills");
-			PlayerLevel = nbt.getDouble("PlayerLevel");
-			PlayerSkillPoints = nbt.getDouble("PlayerSkillPoints");
-			PlayerTitle = nbt.getString("PlayerTitle");
 		}
 
 		public void syncPlayerVariables(Entity entity) {
