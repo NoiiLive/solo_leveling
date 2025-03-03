@@ -1,5 +1,7 @@
 package net.clozynoii.slsb.client.gui;
 
+import net.neoforged.neoforge.network.PacketDistributor;
+
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
@@ -18,6 +20,10 @@ import net.clozynoii.slsb.procedures.ReturnSystemStrengthProcedure;
 import net.clozynoii.slsb.procedures.ReturnSystemSkillPointsProcedure;
 import net.clozynoii.slsb.procedures.ReturnSystemPerceptionProcedure;
 import net.clozynoii.slsb.procedures.ReturnSystemManaProcedure;
+import net.clozynoii.slsb.procedures.ReturnSystemLocalStatusProcedure;
+import net.clozynoii.slsb.procedures.ReturnSystemLocalSkillsProcedure;
+import net.clozynoii.slsb.procedures.ReturnSystemLocalShopProcedure;
+import net.clozynoii.slsb.procedures.ReturnSystemLocalQuestsProcedure;
 import net.clozynoii.slsb.procedures.ReturnSystemLevelProcedure;
 import net.clozynoii.slsb.procedures.ReturnSystemIntelligenceProcedure;
 import net.clozynoii.slsb.procedures.ReturnSystemHealthProcedure;
@@ -26,6 +32,7 @@ import net.clozynoii.slsb.procedures.ReturnSystemAgilityProcedure;
 import net.clozynoii.slsb.procedures.ReturnManaAmountProcedure;
 import net.clozynoii.slsb.procedures.ReturnHunterClassProcedure;
 import net.clozynoii.slsb.procedures.ReturnHealthAmountProcedure;
+import net.clozynoii.slsb.network.SystemMainGUIButtonMessage;
 
 import java.util.HashMap;
 
@@ -41,6 +48,9 @@ public class SystemMainGUIScreen extends AbstractContainerScreen<SystemMainGUIMe
 	ImageButton imagebutton_system_stat_button2;
 	ImageButton imagebutton_system_stat_button3;
 	ImageButton imagebutton_system_stat_button4;
+	ImageButton imagebutton_tab_top;
+	ImageButton imagebutton_tab_top1;
+	ImageButton imagebutton_tab_top2;
 
 	public SystemMainGUIScreen(SystemMainGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -60,6 +70,14 @@ public class SystemMainGUIScreen extends AbstractContainerScreen<SystemMainGUIMe
 		this.renderBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
+		if (mouseX > leftPos + -88 && mouseX < leftPos + -64 && mouseY > topPos + -107 && mouseY < topPos + -83)
+			guiGraphics.renderTooltip(font, Component.literal(ReturnSystemLocalStatusProcedure.execute()), mouseX, mouseY);
+		if (mouseX > leftPos + -63 && mouseX < leftPos + -39 && mouseY > topPos + -107 && mouseY < topPos + -83)
+			guiGraphics.renderTooltip(font, Component.literal(ReturnSystemLocalSkillsProcedure.execute()), mouseX, mouseY);
+		if (mouseX > leftPos + -38 && mouseX < leftPos + -14 && mouseY > topPos + -107 && mouseY < topPos + -83)
+			guiGraphics.renderTooltip(font, Component.literal(ReturnSystemLocalShopProcedure.execute()), mouseX, mouseY);
+		if (mouseX > leftPos + -13 && mouseX < leftPos + 11 && mouseY > topPos + -107 && mouseY < topPos + -83)
+			guiGraphics.renderTooltip(font, Component.literal(ReturnSystemLocalQuestsProcedure.execute()), mouseX, mouseY);
 	}
 
 	@Override
@@ -215,5 +233,44 @@ public class SystemMainGUIScreen extends AbstractContainerScreen<SystemMainGUIMe
 		};
 		guistate.put("button:imagebutton_system_stat_button4", imagebutton_system_stat_button4);
 		this.addRenderableWidget(imagebutton_system_stat_button4);
+		imagebutton_tab_top = new ImageButton(this.leftPos + -64, this.topPos + -109, 26, 32, new WidgetSprites(ResourceLocation.parse("slsb:textures/screens/tab_top.png"), ResourceLocation.parse("slsb:textures/screens/tab_top.png")), e -> {
+			if (true) {
+				PacketDistributor.sendToServer(new SystemMainGUIButtonMessage(5, x, y, z));
+				SystemMainGUIButtonMessage.handleButtonAction(entity, 5, x, y, z);
+			}
+		}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
+			}
+		};
+		guistate.put("button:imagebutton_tab_top", imagebutton_tab_top);
+		this.addRenderableWidget(imagebutton_tab_top);
+		imagebutton_tab_top1 = new ImageButton(this.leftPos + -39, this.topPos + -109, 26, 32, new WidgetSprites(ResourceLocation.parse("slsb:textures/screens/tab_top.png"), ResourceLocation.parse("slsb:textures/screens/tab_top.png")), e -> {
+			if (true) {
+				PacketDistributor.sendToServer(new SystemMainGUIButtonMessage(6, x, y, z));
+				SystemMainGUIButtonMessage.handleButtonAction(entity, 6, x, y, z);
+			}
+		}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
+			}
+		};
+		guistate.put("button:imagebutton_tab_top1", imagebutton_tab_top1);
+		this.addRenderableWidget(imagebutton_tab_top1);
+		imagebutton_tab_top2 = new ImageButton(this.leftPos + -14, this.topPos + -109, 26, 32, new WidgetSprites(ResourceLocation.parse("slsb:textures/screens/tab_top.png"), ResourceLocation.parse("slsb:textures/screens/tab_top.png")), e -> {
+			if (true) {
+				PacketDistributor.sendToServer(new SystemMainGUIButtonMessage(7, x, y, z));
+				SystemMainGUIButtonMessage.handleButtonAction(entity, 7, x, y, z);
+			}
+		}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
+			}
+		};
+		guistate.put("button:imagebutton_tab_top2", imagebutton_tab_top2);
+		this.addRenderableWidget(imagebutton_tab_top2);
 	}
 }
