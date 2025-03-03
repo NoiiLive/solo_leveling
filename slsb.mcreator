@@ -3623,6 +3623,34 @@
         ]
       },
       "path": "~/Blocks/Hunter Association"
+    },
+    {
+      "name": "BloodredIgris",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bloodred_igris",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/entity/layer/BloodredIgrisLayer.java",
+          "src/main/java/net/clozynoii/slsb/entity/BloodredIgrisEntity.java",
+          "src/main/java/net/clozynoii/slsb/client/renderer/BloodredIgrisRenderer.java",
+          "src/main/resources/assets/slsb/models/item/bloodred_igris_spawn_egg.json",
+          "src/main/java/net/clozynoii/slsb/entity/model/BloodredIgrisModel.java"
+        ]
+      },
+      "path": "~/Entities"
+    },
+    {
+      "name": "SLMobs",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sl_mobs",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Misc/Tabs"
     }
   ],
   "variable_elements": [
@@ -4007,6 +4035,7 @@
       "block.slsb.awakening_orb": "Awakening Orb",
       "block.slsb.mana_training_orb": "Mana Training Orb",
       "block.slsb.metal_framed_window": "Metal Framed Window",
+      "entity.slsb.bloodred_igris": "Blood-Red Commander Igris",
       "slsb.command.awakentarget": "You have been awakened",
       "slsb.systemmenu.skills": "Skills",
       "slsb.command.unawakenadmin": "has been un-awakened",
@@ -4022,6 +4051,8 @@
       "gui.slsb.hunter_skill_gui.tooltip_slam": "Slam",
       "gui.slsb.hunter_skill_gui.tooltip_uppercut": "Uppercut",
       "slsb.evaluator.unawakened": "It appears you haven\u0027t awakened yet...",
+      "item.slsb.bloodred_igris_spawn_egg": "Blood-Red Commander Igris Spawn Egg",
+      "item_group.slsb.sl_mobs": "Solo Leveling: Mobs",
       "slsb.training.nomana": "You do not have enough mana to train",
       "item_group.slsb.sl_blocks": "Solo Leveling: Blocks",
       "slsb.command.systemplayeradmin": "Player status has been set to",

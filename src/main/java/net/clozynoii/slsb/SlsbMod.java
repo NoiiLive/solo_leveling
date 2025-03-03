@@ -25,6 +25,7 @@ import net.clozynoii.slsb.init.SlsbModParticleTypes;
 import net.clozynoii.slsb.init.SlsbModMobEffects;
 import net.clozynoii.slsb.init.SlsbModMenus;
 import net.clozynoii.slsb.init.SlsbModItems;
+import net.clozynoii.slsb.init.SlsbModEntities;
 import net.clozynoii.slsb.init.SlsbModBlocks;
 import net.clozynoii.slsb.init.SlsbModBlockEntities;
 
@@ -49,7 +50,7 @@ public class SlsbMod {
 		SlsbModBlocks.REGISTRY.register(modEventBus);
 		SlsbModBlockEntities.REGISTRY.register(modEventBus);
 		SlsbModItems.REGISTRY.register(modEventBus);
-
+		SlsbModEntities.REGISTRY.register(modEventBus);
 		SlsbModTabs.REGISTRY.register(modEventBus);
 		SlsbModVariables.ATTACHMENT_TYPES.register(modEventBus);
 

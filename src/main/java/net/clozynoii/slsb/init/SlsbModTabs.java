@@ -21,4 +21,8 @@ public class SlsbModTabs {
 				tabData.accept(SlsbModBlocks.AWAKENING_ORB.get().asItem());
 				tabData.accept(SlsbModBlocks.MANA_TRAINING_ORB.get().asItem());
 			}).build());
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> SL_MOBS = REGISTRY.register("sl_mobs",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.slsb.sl_mobs")).icon(() -> new ItemStack(SlsbModItems.BLOODRED_IGRIS_SPAWN_EGG.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(SlsbModItems.BLOODRED_IGRIS_SPAWN_EGG.get());
+			}).withTabsBefore(SL_BLOCKS.getId()).build());
 }

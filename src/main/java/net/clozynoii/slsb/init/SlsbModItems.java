@@ -7,6 +7,7 @@ package net.clozynoii.slsb.init;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.common.DeferredSpawnEggItem;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
@@ -35,6 +36,7 @@ public class SlsbModItems {
 	public static final DeferredItem<Item> TAN_TRIMMED_PANEL_WALL = block(SlsbModBlocks.TAN_TRIMMED_PANEL_WALL);
 	public static final DeferredItem<Item> TAN_PANEL_WALL = block(SlsbModBlocks.TAN_PANEL_WALL);
 	public static final DeferredItem<Item> METAL_FRAMED_WINDOW = block(SlsbModBlocks.METAL_FRAMED_WINDOW);
+	public static final DeferredItem<Item> BLOODRED_IGRIS_SPAWN_EGG = REGISTRY.register("bloodred_igris_spawn_egg", () -> new DeferredSpawnEggItem(SlsbModEntities.BLOODRED_IGRIS, -10346969, -5956837, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items
