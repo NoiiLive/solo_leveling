@@ -1565,8 +1565,8 @@
       "registry_name": "hunter_main_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/clozynoii/slsb/world/inventory/HunterMainGUIMenu.java",
           "src/main/java/net/clozynoii/slsb/client/gui/HunterMainGUIScreen.java",
+          "src/main/java/net/clozynoii/slsb/world/inventory/HunterMainGUIMenu.java",
           "src/main/java/net/clozynoii/slsb/network/HunterMainGUIButtonMessage.java"
         ]
       },

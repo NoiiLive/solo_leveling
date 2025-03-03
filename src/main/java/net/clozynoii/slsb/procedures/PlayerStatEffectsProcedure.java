@@ -55,5 +55,13 @@ public class PlayerStatEffectsProcedure {
 		}
 		if (entity instanceof LivingEntity _livingEntity0 && _livingEntity0.getAttributes().hasAttribute(Attributes.STEP_HEIGHT))
 			_livingEntity0.getAttribute(Attributes.STEP_HEIGHT).setBaseValue(1);
+		if (entity.isAlive()) {
+			if (entity instanceof LivingEntity _livingEntity2 && _livingEntity2.getAttributes().hasAttribute(Attributes.ATTACK_DAMAGE))
+				_livingEntity2.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue((1 + entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerStrength / 20));
+			if (entity instanceof LivingEntity _livingEntity3 && _livingEntity3.getAttributes().hasAttribute(Attributes.MAX_HEALTH))
+				_livingEntity3.getAttribute(Attributes.MAX_HEALTH).setBaseValue((20 + entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerVitality / 2.5));
+			if (entity instanceof LivingEntity _livingEntity4 && _livingEntity4.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED))
+				_livingEntity4.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue((0.1 + entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerAgility / 120));
+		}
 	}
 }
