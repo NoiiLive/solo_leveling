@@ -35,4 +35,9 @@ public class BloodredIgrisRenderer extends GeoEntityRenderer<BloodredIgrisEntity
 		this.scaleWidth = scale;
 		super.preRender(poseStack, entity, model, bufferSource, buffer, isReRender, partialTick, packedLight, packedOverlay, color);
 	}
+
+	@Override
+	protected float getDeathMaxRotation(BloodredIgrisEntity entityLivingBaseIn) {
+		return 0.0F;
+	}
 }
