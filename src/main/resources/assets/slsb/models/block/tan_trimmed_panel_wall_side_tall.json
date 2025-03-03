@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_side_tall",
+  "textures": {
+    "wall": "slsb:block/tan_panel_trim",
+    "particle": "slsb:block/tan_panel_trim"
+  },
+  "render_type": "solid"
+}

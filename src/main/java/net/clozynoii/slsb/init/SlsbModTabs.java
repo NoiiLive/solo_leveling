@@ -19,8 +19,6 @@ public class SlsbModTabs {
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> SL_BLOCKS = REGISTRY.register("sl_blocks",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.slsb.sl_blocks")).icon(() -> new ItemStack(SlsbModBlocks.AWAKENING_ORB.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(SlsbModBlocks.AWAKENING_ORB.get().asItem());
-				tabData.accept(SlsbModBlocks.BLUE_GATE_SMALL.get().asItem());
-				tabData.accept(SlsbModBlocks.BLUE_GATE_MEDIUM.get().asItem());
 				tabData.accept(SlsbModBlocks.MANA_TRAINING_ORB.get().asItem());
 			}).build());
 }

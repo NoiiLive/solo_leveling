@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft:block/cauldron_inner",
+    "up": "slsb:block/brown_panel",
+    "north": "slsb:block/brown_panel_trim",
+    "east": "slsb:block/brown_panel_trim",
+    "south": "slsb:block/brown_panel_trim",
+    "west": "slsb:block/brown_panel_trim",
+    "particle": "minecraft:block/cauldron_inner"
+  },
+  "render_type": "solid"
+}

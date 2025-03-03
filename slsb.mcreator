@@ -890,7 +890,7 @@
           "src/main/java/net/clozynoii/slsb/block/BloodBlockBlock.java"
         ]
       },
-      "path": "~/Blocks"
+      "path": "~/Blocks/Misc"
     },
     {
       "name": "AbilityHeavyAttack",
@@ -2017,7 +2017,7 @@
           "src/main/resources/assets/slsb/blockstates/awakening_orb.json"
         ]
       },
-      "path": "~/Blocks"
+      "path": "~/Blocks/Hunter Association"
     },
     {
       "name": "SLBlocks",
@@ -2837,7 +2837,7 @@
           "src/main/resources/assets/slsb/models/block/barrier_slab.json"
         ]
       },
-      "path": "~/Blocks"
+      "path": "~/Blocks/Misc"
     },
     {
       "name": "BarrierWall",
@@ -2854,7 +2854,7 @@
           "src/main/resources/assets/slsb/blockstates/barrier_wall.json"
         ]
       },
-      "path": "~/Blocks"
+      "path": "~/Blocks/Misc"
     },
     {
       "name": "PlayerStatEffects",
@@ -2928,7 +2928,7 @@
           "src/main/java/net/clozynoii/slsb/block/model/ManaTrainingOrbDisplayModel.java"
         ]
       },
-      "path": "~/Blocks"
+      "path": "~/Blocks/Useable"
     },
     {
       "name": "ManaTraining",
@@ -3487,6 +3487,142 @@
         ]
       },
       "path": "~/Procedures/GUI/System GUI"
+    },
+    {
+      "name": "GreenDoor",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_door",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/block/GreenDoorBlock.java",
+          "src/main/resources/data/slsb/loot_table/blocks/green_door.json",
+          "src/main/resources/assets/slsb/models/block/green_door_top_left_open.json",
+          "src/main/resources/assets/slsb/models/block/green_door_bottom_right_open.json",
+          "src/main/resources/assets/slsb/models/item/green_door.json",
+          "src/main/resources/assets/slsb/models/block/green_door_bottom_left.json",
+          "src/main/resources/assets/slsb/models/block/green_door_top_right.json",
+          "src/main/resources/assets/slsb/models/block/green_door_top_right_open.json",
+          "src/main/resources/assets/slsb/models/block/green_door_top_left.json",
+          "src/main/resources/assets/slsb/models/block/green_door_bottom_left_open.json",
+          "src/main/resources/assets/slsb/models/block/green_door_bottom_right.json",
+          "src/main/resources/assets/slsb/blockstates/green_door.json"
+        ]
+      },
+      "path": "~/Blocks/Hunter Association"
+    },
+    {
+      "name": "BrownTrimmedPanel",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brown_trimmed_panel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/slsb/blockstates/brown_trimmed_panel.json",
+          "src/main/resources/assets/slsb/models/block/brown_trimmed_panel.json",
+          "src/main/resources/data/slsb/loot_table/blocks/brown_trimmed_panel.json",
+          "src/main/resources/assets/slsb/models/item/brown_trimmed_panel.json",
+          "src/main/java/net/clozynoii/slsb/block/BrownTrimmedPanelBlock.java"
+        ]
+      },
+      "path": "~/Blocks/Hunter Association"
+    },
+    {
+      "name": "BrownPanel",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brown_panel",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/slsb/loot_table/blocks/brown_panel.json",
+          "src/main/resources/assets/slsb/models/block/brown_panel.json",
+          "src/main/resources/assets/slsb/models/item/brown_panel.json",
+          "src/main/java/net/clozynoii/slsb/block/BrownPanelBlock.java",
+          "src/main/resources/assets/slsb/blockstates/brown_panel.json"
+        ]
+      },
+      "path": "~/Blocks/Hunter Association"
+    },
+    {
+      "name": "TanPanel",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tan_panel",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/slsb/loot_table/blocks/tan_panel.json",
+          "src/main/resources/assets/slsb/blockstates/tan_panel.json",
+          "src/main/resources/assets/slsb/models/item/tan_panel.json",
+          "src/main/java/net/clozynoii/slsb/block/TanPanelBlock.java",
+          "src/main/resources/assets/slsb/models/block/tan_panel.json"
+        ]
+      },
+      "path": "~/Blocks/Hunter Association"
+    },
+    {
+      "name": "TanTrimmedPanelWall",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tan_trimmed_panel_wall",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/slsb/models/block/tan_trimmed_panel_wall.json",
+          "src/main/resources/assets/slsb/models/block/tan_trimmed_panel_wall_inventory.json",
+          "src/main/resources/assets/slsb/models/block/tan_trimmed_panel_wall_post.json",
+          "src/main/resources/assets/slsb/blockstates/tan_trimmed_panel_wall.json",
+          "src/main/java/net/clozynoii/slsb/block/TanTrimmedPanelWallBlock.java",
+          "src/main/resources/assets/slsb/models/item/tan_trimmed_panel_wall.json",
+          "src/main/resources/data/slsb/loot_table/blocks/tan_trimmed_panel_wall.json",
+          "src/main/resources/assets/slsb/models/block/tan_trimmed_panel_wall_side_tall.json"
+        ]
+      },
+      "path": "~/Blocks/Hunter Association"
+    },
+    {
+      "name": "TanPanelWall",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tan_panel_wall",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/slsb/models/item/tan_panel_wall.json",
+          "src/main/java/net/clozynoii/slsb/block/TanPanelWallBlock.java",
+          "src/main/resources/data/slsb/loot_table/blocks/tan_panel_wall.json",
+          "src/main/resources/assets/slsb/models/block/tan_panel_wall_inventory.json",
+          "src/main/resources/assets/slsb/models/block/tan_panel_wall.json",
+          "src/main/resources/assets/slsb/models/block/tan_panel_wall_side_tall.json",
+          "src/main/resources/assets/slsb/blockstates/tan_panel_wall.json",
+          "src/main/resources/assets/slsb/models/block/tan_panel_wall_post.json"
+        ]
+      },
+      "path": "~/Blocks/Hunter Association"
+    },
+    {
+      "name": "MetalFramedWindow",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "metal_framed_window",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/slsb/models/block/metal_framed_window_noside_alt.json",
+          "src/main/resources/data/slsb/loot_table/blocks/metal_framed_window.json",
+          "src/main/resources/assets/slsb/blockstates/metal_framed_window.json",
+          "src/main/resources/assets/slsb/models/block/metal_framed_window_noside.json",
+          "src/main/resources/assets/slsb/models/block/metal_framed_window_side.json",
+          "src/main/resources/assets/slsb/models/item/metal_framed_window.json",
+          "src/main/resources/assets/slsb/models/block/metal_framed_window_side_alt.json",
+          "src/main/resources/assets/slsb/models/block/metal_framed_window_post.json",
+          "src/main/java/net/clozynoii/slsb/block/MetalFramedWindowBlock.java"
+        ]
+      },
+      "path": "~/Blocks/Hunter Association"
     }
   ],
   "variable_elements": [
@@ -3802,7 +3938,12 @@
       "~CUSTOM:BarrierSlab"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:GreenDoor",
       "~CUSTOM:ManaTrainingOrb"
+    ],
+    "BLOCKS:minecraft:walls": [
+      "~CUSTOM:TanPanelWall",
+      "~CUSTOM:TanTrimmedPanelWall"
     ],
     "ENTITIES:mod:non_targetable": [
       "EntityAreaEffectCloud",
@@ -3865,15 +4006,19 @@
       "key.categories.slsb\\": "Solo Leveling: System Break",
       "block.slsb.awakening_orb": "Awakening Orb",
       "block.slsb.mana_training_orb": "Mana Training Orb",
+      "block.slsb.metal_framed_window": "Metal Framed Window",
       "slsb.command.awakentarget": "You have been awakened",
       "slsb.systemmenu.skills": "Skills",
       "slsb.command.unawakenadmin": "has been un-awakened",
+      "block.slsb.brown_trimmed_panel": "Brown Trimmed Panel",
       "slsb.evaluator.normalrank.goodbye": "Good luck, and stay safe out there, Hunter!",
+      "block.slsb.tan_panel_wall": "Tan Panel Wall",
       "slsb.ability.cooldown": "Ability is on Cooldown!",
       "key.slsb.change_ability_bar": "Change Ability Bar",
       "gui.slsb.hunter_skill_gui.tooltip_slot_10": "Slot 10",
       "slsb.evaluator.erank.response": "Oh... uh... Well, this is... unexpected. You’re an §f§lE-Rank",
       "slsb.systemmenu.shop": "Shop",
+      "block.slsb.tan_panel": "Brown Panel",
       "gui.slsb.hunter_skill_gui.tooltip_slam": "Slam",
       "gui.slsb.hunter_skill_gui.tooltip_uppercut": "Uppercut",
       "slsb.evaluator.unawakened": "It appears you haven\u0027t awakened yet...",
@@ -3893,6 +4038,7 @@
       "gui.slsb.hunter_skill_gui.tooltip_slot_3": "Slot 3",
       "gui.slsb.hunter_skill_gui.tooltip_slot_1": "Slot 1",
       "gui.slsb.hunter_skill_gui.tooltip_slot_6": "Slot 6",
+      "block.slsb.tan_trimmed_panel_wall": "Tan Trimmed Panel Wall",
       "gui.slsb.hunter_skill_gui.tooltip_slot_7": "Slot 7",
       "slsb.evaluator.waiting": "Let\u0027s see what your rank is...",
       "gui.slsb.hunter_skill_gui.tooltip_slot_4": "Slot 4",
@@ -3901,6 +4047,7 @@
       "gui.slsb.hunter_skill_gui.tooltip_slot_8": "Slot 8",
       "key.slsb.ability_5": "Ability 5",
       "gui.slsb.hunter_skill_gui.tooltip_slot_9": "Slot 9",
+      "block.slsb.brown_panel": "Brown Panel",
       "slsb.command.awakenadmin": "has been awakened",
       "subtitles.whoosh": "Player whooshes",
       "slsb.evaluator.erank.goodbye": "I, uh... hope you have a strong will. Good luck... I guess.",
@@ -3911,6 +4058,7 @@
       "key.slsb.ability_1": "Ability 1",
       "subtitles.basic_hit": "Player lands a hit",
       "effect.slsb.mana_fatigue": "Mana Fatigue",
+      "block.slsb.green_door": "Industrial Green Door",
       "gui.slsb.hunter_skill_gui.tooltip_dash": "Dash",
       "slsb.systemmenu.status": "Status",
       "gui.slsb.hunter_skill_gui.tooltip_heavy_attack": "Heavy Attack",
@@ -4036,7 +4184,20 @@
       },
       {
         "name": "Blocks",
-        "children": []
+        "children": [
+          {
+            "name": "Hunter Association",
+            "children": []
+          },
+          {
+            "name": "Useable",
+            "children": []
+          },
+          {
+            "name": "Misc",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Misc",

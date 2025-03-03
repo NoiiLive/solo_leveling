@@ -10,6 +10,7 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 
 import net.clozynoii.slsb.block.display.ManaTrainingOrbDisplayItem;
@@ -27,10 +28,21 @@ public class SlsbModItems {
 	public static final DeferredItem<Item> BARRIER_SLAB = block(SlsbModBlocks.BARRIER_SLAB);
 	public static final DeferredItem<Item> BARRIER_WALL = block(SlsbModBlocks.BARRIER_WALL);
 	public static final DeferredItem<Item> MANA_TRAINING_ORB = REGISTRY.register(SlsbModBlocks.MANA_TRAINING_ORB.getId().getPath(), () -> new ManaTrainingOrbDisplayItem(SlsbModBlocks.MANA_TRAINING_ORB.get(), new Item.Properties()));
+	public static final DeferredItem<Item> GREEN_DOOR = doubleBlock(SlsbModBlocks.GREEN_DOOR);
+	public static final DeferredItem<Item> BROWN_TRIMMED_PANEL = block(SlsbModBlocks.BROWN_TRIMMED_PANEL);
+	public static final DeferredItem<Item> BROWN_PANEL = block(SlsbModBlocks.BROWN_PANEL);
+	public static final DeferredItem<Item> TAN_PANEL = block(SlsbModBlocks.TAN_PANEL);
+	public static final DeferredItem<Item> TAN_TRIMMED_PANEL_WALL = block(SlsbModBlocks.TAN_TRIMMED_PANEL_WALL);
+	public static final DeferredItem<Item> TAN_PANEL_WALL = block(SlsbModBlocks.TAN_PANEL_WALL);
+	public static final DeferredItem<Item> METAL_FRAMED_WINDOW = block(SlsbModBlocks.METAL_FRAMED_WINDOW);
 
 	// Start of user code block custom items
 	// End of user code block custom items
 	private static DeferredItem<Item> block(DeferredHolder<Block, Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
+	}
+
+	private static DeferredItem<Item> doubleBlock(DeferredHolder<Block, Block> block) {
+		return REGISTRY.register(block.getId().getPath(), () -> new DoubleHighBlockItem(block.get(), new Item.Properties()));
 	}
 }

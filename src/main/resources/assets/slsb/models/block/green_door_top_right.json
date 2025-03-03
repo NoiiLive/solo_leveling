@@ -1,0 +1,9 @@
+{
+  "parent": "block/door_top_right",
+  "textures": {
+    "particle": "slsb:block/greendoor_bottom",
+    "bottom": "slsb:block/greendoor_bottom",
+    "top": "slsb:block/greendoor_top"
+  },
+  "render_type": "solid"
+}

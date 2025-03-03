@@ -1,44 +1,46 @@
 {
   "_fv": 73,
-  "_type": "animatedblock",
+  "_type": "block",
   "definition": {
-    "texture": "mediumbluegatetexture",
-    "textureTop": "",
+    "texture": "framed_window",
+    "textureTop": "framed_window",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
-    "renderType": 0,
-    "rotationMode": 1,
+    "renderType": 11,
+    "customModelName": "Single texture",
+    "rotationMode": 0,
     "enablePitch": false,
-    "emissiveRendering": true,
+    "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "animateBlockItem": false,
-    "itemTexture": "gate_item",
+    "itemTexture": "",
     "particleTexture": "",
+    "blockBase": "Pane",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": true,
+    "hasTransparency": false,
     "connectedSides": false,
-    "transparencyType": "SOLID",
+    "transparencyType": "TRANSLUCENT",
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": -24.0,
+        "mx": 0.0,
         "my": 0.0,
-        "mz": 4.0,
-        "Mx": 40.0,
-        "My": 64.0,
-        "Mz": 12.0,
+        "mz": 0.0,
+        "Mx": 16.0,
+        "My": 16.0,
+        "Mz": 16.0,
         "subtract": false
       }
     ],
-    "name": "Gate (Medium)",
+    "customProperties": [],
+    "name": "Metal Framed Window",
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 100.0,
-    "resistance": 1000.0,
+    "hardness": 0.2,
+    "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTabs": [],
@@ -56,7 +58,7 @@
     "material": {
       "value": "NONE"
     },
-    "tickRate": 1,
+    "tickRate": 0,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -75,9 +77,8 @@
     "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
-    "animationCount": 1,
     "reactionToPushing": "NORMAL",
-    "isNotColidable": true,
+    "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
       "value": "GLASS"
@@ -97,17 +98,16 @@
     "stepSound": {
       "value": ""
     },
-    "luminance": 14,
-    "unbreakable": true,
-    "breakHarvestLevel": 0,
+    "luminance": 0,
+    "unbreakable": false,
+    "vanillaToolTier": "NONE",
+    "isBonemealable": false,
     "hasInventory": false,
-    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
-    "generateFeature": false,
     "inventoryOutSlotIDs": [],
     "inventoryInSlotIDs": [],
     "hasEnergyStorage": false,
@@ -118,35 +118,17 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "generateFeature": false,
     "restrictionBiomes": [],
-    "blocksToReplace": [],
+    "blocksToReplace": [
+      {
+        "value": "TAG:stone_ore_replaceables"
+      }
+    ],
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 64,
-    "normal": "bluegatemedium.geo.json",
-    "displaySettings": "bluegatesmall.item.json",
-    "vanillaToolTier": "NONE",
-    "blockstateList": [
-      {
-        "texture": "mediumredgatetexture",
-        "particleTexture": "",
-        "renderType": 0,
-        "customModelName": "bluegatemedium.geo.json",
-        "luminance": 0,
-        "boundingBoxes": [
-          {
-            "mx": -24.0,
-            "my": 0.0,
-            "mz": 4.0,
-            "Mx": 40.0,
-            "My": 64.0,
-            "Mz": 12.0,
-            "subtract": false
-          }
-        ]
-      }
-    ]
+    "maxGenerateHeight": 64
   }
 }

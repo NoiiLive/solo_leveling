@@ -41,11 +41,7 @@
     "resistance": 1000.0,
     "hasGravity": false,
     "isWaterloggable": false,
-    "creativeTabs": [
-      {
-        "value": "CUSTOM:SLBlocks"
-      }
-    ],
+    "creativeTabs": [],
     "destroyTool": "Not specified",
     "customDrop": {
       "value": ""

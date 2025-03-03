@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "slsb:block/tan_panel",
+    "up": "slsb:block/tan_panel",
+    "north": "slsb:block/tan_panel",
+    "east": "slsb:block/tan_panel",
+    "south": "slsb:block/tan_panel",
+    "west": "slsb:block/tan_panel",
+    "particle": "slsb:block/tan_panel"
+  },
+  "render_type": "solid"
+}
