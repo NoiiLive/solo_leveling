@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "slsb:block/brown_panel",
+    "up": "slsb:block/brown_panel",
+    "north": "slsb:block/brown_panel",
+    "east": "slsb:block/brown_panel",
+    "south": "slsb:block/brown_panel",
+    "west": "slsb:block/brown_panel",
+    "particle": "slsb:block/brown_panel"
+  },
+  "render_type": "solid"
+}

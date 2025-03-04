@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_glass_pane_noside",
+  "textures": {
+    "particle": "slsb:block/framed_window",
+    "pane": "slsb:block/framed_window"
+  },
+  "render_type": "translucent"
+}

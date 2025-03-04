@@ -1,0 +1,144 @@
+{
+  "_fv": 73,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "system_menu_blank.png",
+          "use1Xscale": false,
+          "x": 0,
+          "y": 0,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "top_edge.png",
+          "use1Xscale": false,
+          "x": 125,
+          "y": 11,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_tab_top",
+          "image": "tab_top.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "SystemOpenStatus"
+          },
+          "x": 125,
+          "y": 11,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_tab_top1",
+          "image": "tab_top.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "SystemOpenSkills"
+          },
+          "x": 150,
+          "y": 11,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_tab_top2",
+          "image": "tab_top.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "SystemOpenShop"
+          },
+          "x": 175,
+          "y": 11,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_system_local_status",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSystemLocalStatus"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 126,
+          "y": 13,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_system_local_skills",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSystemLocalSkills"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 151,
+          "y": 13,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_system_local_shop",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSystemLocalShop"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 176,
+          "y": 13,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_system_local_quests",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSystemLocalQuests"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 201,
+          "y": 13,
+          "locked": true
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "slsb:block/framed_window"
+  },
+  "render_type": "translucent"
+}
