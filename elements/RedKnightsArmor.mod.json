@@ -16,10 +16,10 @@
       }
     ],
     "armorTextureFile": "empty",
-    "helmetName": "Crimson Knight's Helmet",
-    "bodyName": "Crimson Knight's Chestplate",
-    "leggingsName": "Crimson Knight's Leggings",
-    "bootsName": "Crimson Knight's Boots",
+    "helmetName": "§cCrimson Knight's Helmet",
+    "bodyName": "§cCrimson Knight's Chestplate",
+    "leggingsName": "§cCrimson Knight's Leggings",
+    "bootsName": "§cCrimson Knight's Boots",
     "helmetSpecialInformation": {
       "fixedValue": [
         "§7Acquisition Difficulty: §fS-Rank",

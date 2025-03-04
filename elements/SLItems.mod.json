@@ -4,7 +4,7 @@
   "definition": {
     "name": "Solo Leveling: Items",
     "icon": {
-      "value": "CUSTOM:EssenceStoneE"
+      "value": "CUSTOM:ItemsTab"
     },
     "showSearch": false
   }

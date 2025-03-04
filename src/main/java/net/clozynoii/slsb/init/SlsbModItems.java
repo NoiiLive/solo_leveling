@@ -15,7 +15,10 @@ import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 
 import net.clozynoii.slsb.item.RedKnightsArmorItem;
+import net.clozynoii.slsb.item.ManaStonePickaxeItem;
+import net.clozynoii.slsb.item.ManaCrystalItem;
 import net.clozynoii.slsb.item.KasakasFangItem;
+import net.clozynoii.slsb.item.ItemsTabItem;
 import net.clozynoii.slsb.item.EssenceStoneSItem;
 import net.clozynoii.slsb.item.EssenceStoneEItem;
 import net.clozynoii.slsb.item.EssenceStoneDItem;
@@ -56,6 +59,9 @@ public class SlsbModItems {
 	public static final DeferredItem<Item> ESSENCE_STONE_B = REGISTRY.register("essence_stone_b", EssenceStoneBItem::new);
 	public static final DeferredItem<Item> ESSENCE_STONE_A = REGISTRY.register("essence_stone_a", EssenceStoneAItem::new);
 	public static final DeferredItem<Item> ESSENCE_STONE_S = REGISTRY.register("essence_stone_s", EssenceStoneSItem::new);
+	public static final DeferredItem<Item> MANA_CRYSTAL = REGISTRY.register("mana_crystal", ManaCrystalItem::new);
+	public static final DeferredItem<Item> ITEMS_TAB = REGISTRY.register("items_tab", ItemsTabItem::new);
+	public static final DeferredItem<Item> MANA_STONE_PICKAXE = REGISTRY.register("mana_stone_pickaxe", ManaStonePickaxeItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items
