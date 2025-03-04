@@ -14,6 +14,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 
+import net.clozynoii.slsb.item.KasakasFangItem;
 import net.clozynoii.slsb.block.display.ManaTrainingOrbDisplayItem;
 import net.clozynoii.slsb.block.display.BlueGateSmallDisplayItem;
 import net.clozynoii.slsb.block.display.BlueGateMediumDisplayItem;
@@ -37,6 +38,7 @@ public class SlsbModItems {
 	public static final DeferredItem<Item> TAN_PANEL_WALL = block(SlsbModBlocks.TAN_PANEL_WALL);
 	public static final DeferredItem<Item> METAL_FRAMED_WINDOW = block(SlsbModBlocks.METAL_FRAMED_WINDOW);
 	public static final DeferredItem<Item> BLOODRED_IGRIS_SPAWN_EGG = REGISTRY.register("bloodred_igris_spawn_egg", () -> new DeferredSpawnEggItem(SlsbModEntities.BLOODRED_IGRIS, -10346969, -5956837, new Item.Properties()));
+	public static final DeferredItem<Item> KASAKAS_FANG = REGISTRY.register("kasakas_fang", KasakasFangItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

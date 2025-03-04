@@ -25,4 +25,8 @@ public class SlsbModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.slsb.sl_mobs")).icon(() -> new ItemStack(SlsbModItems.BLOODRED_IGRIS_SPAWN_EGG.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(SlsbModItems.BLOODRED_IGRIS_SPAWN_EGG.get());
 			}).withTabsBefore(SL_BLOCKS.getId()).build());
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> SL_GEAR = REGISTRY.register("sl_gear",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.slsb.sl_gear")).icon(() -> new ItemStack(SlsbModItems.KASAKAS_FANG.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(SlsbModItems.KASAKAS_FANG.get());
+			}).withTabsBefore(SL_MOBS.getId()).build());
 }

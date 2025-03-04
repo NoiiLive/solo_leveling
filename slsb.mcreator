@@ -3651,6 +3651,31 @@
         "files": []
       },
       "path": "~/Misc/Tabs"
+    },
+    {
+      "name": "KasakasFang",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kasakas_fang",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/item/KasakasFangItem.java",
+          "src/main/resources/assets/slsb/models/item/kasakas_fang.json"
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "SLGear",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sl_gear",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Misc/Tabs"
     }
   ],
   "variable_elements": [
@@ -4020,21 +4045,34 @@
       "EntityTrident",
       "EntityWindCharge",
       "EntityWitherSkull"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:KasakasFang"
     ]
   },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
       "slsb.evaluator.evaluated": "You have already been evaluated!",
-      "slsb.evaluator.normalrank.rank": "-Rank!",
-      "slsb.training.manafatigue": "Your mana is currently fatigued",
+      "item_group.slsb.sl_gear": "Solo Leveling: Gear",
       "slsb.command.systemplayertarget": "Your Player status has been set to",
+      "slsb.training.manafatigue": "Your mana is currently fatigued",
+      "slsb.evaluator.normalrank.rank": "-Rank!",
       "block.slsb.blue_gate_medium": "Gate (Medium)",
       "gui.slsb.hunter_skill_gui.tooltip_barrage": "Barrage",
+      "item.slsb.kasakas_fang.description_1": "§7Category: §fDagger",
+      "item.slsb.kasakas_fang.description_0": "§7Acquisition Difficulty: §fC-Rank",
+      "item.slsb.kasakas_fang.description_3": "§aATK +25",
       "key.categories.slsb\\": "Solo Leveling: System Break",
+      "item.slsb.kasakas_fang.description_2": "",
       "block.slsb.awakening_orb": "Awakening Orb",
-      "block.slsb.mana_training_orb": "Mana Training Orb",
+      "item.slsb.kasakas_fang.description_5": "§7§oOpponent cannot move",
+      "item.slsb.kasakas_fang.description_4": "§f- Paralysis:",
+      "item.slsb.kasakas_fang.description_7": "§f- Bleed:",
+      "item.slsb.kasakas_fang.description_6": "§7§ofor a set time.",
       "block.slsb.metal_framed_window": "Metal Framed Window",
+      "block.slsb.mana_training_orb": "Mana Training Orb",
+      "item.slsb.kasakas_fang.description_8": "§7§oHP -1%/second.",
       "entity.slsb.bloodred_igris": "Blood-Red Commander Igris",
       "slsb.command.awakentarget": "You have been awakened",
       "slsb.systemmenu.skills": "Skills",
@@ -4061,6 +4099,7 @@
       "block.slsb.blood_block": "Blood Block",
       "slsb.evaluator.srank.goodbye": "This is history in the making! The world will be watching you.",
       "slsb.command.unawakentarget": "You have been un-awakened",
+      "item.slsb.kasakas_fang": "§eKasaka\u0027s Venom Fang",
       "slsb.evaluator.welcome": "Welcome to your Hunter Evaluation!",
       "block.slsb.blue_gate_small": "Gate (Small)",
       "gui.slsb.hunter_skill_gui.tooltip_slot_2": "Slot 2",

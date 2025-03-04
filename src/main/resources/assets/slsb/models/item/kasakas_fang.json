@@ -1,0 +1,7 @@
+{
+  "parent": "slsb:custom/kasaka_fang",
+  "textures": {
+    "0": "slsb:block/kasaka_fang",
+    "particle": "minecraft:item/barrier"
+  }
+}
