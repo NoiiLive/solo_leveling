@@ -14,7 +14,7 @@ public class KasakasFangLivingEntityIsHitWithToolProcedure {
 	public static void execute(Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (Mth.nextInt(RandomSource.create(), 1, 10) == 1) {
+		if (Mth.nextInt(RandomSource.create(), 1, 6) == 1) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(SlsbModMobEffects.PARALYZED, 40, 0, true, true));
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())

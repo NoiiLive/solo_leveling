@@ -11,6 +11,7 @@ import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ArmorMaterial;
@@ -19,6 +20,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.Holder;
@@ -128,6 +130,18 @@ public abstract class RedKnightsArmorItem extends ArmorItem {
 		public ResourceLocation getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, ArmorMaterial.Layer layer, boolean innerModel) {
 			return ResourceLocation.parse("slsb:textures/entities/igris_armor.png");
 		}
+
+		@Override
+		@OnlyIn(Dist.CLIENT)
+		public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, context, list, flag);
+			list.add(Component.translatable("item.slsb.red_knights_armor_helmet.description_0"));
+			list.add(Component.translatable("item.slsb.red_knights_armor_helmet.description_1"));
+			list.add(Component.translatable("item.slsb.red_knights_armor_helmet.description_2"));
+			list.add(Component.translatable("item.slsb.red_knights_armor_helmet.description_3"));
+			list.add(Component.translatable("item.slsb.red_knights_armor_helmet.description_4"));
+			list.add(Component.translatable("item.slsb.red_knights_armor_helmet.description_5"));
+		}
 	}
 
 	public static class Chestplate extends RedKnightsArmorItem {
@@ -138,6 +152,18 @@ public abstract class RedKnightsArmorItem extends ArmorItem {
 		@Override
 		public ResourceLocation getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, ArmorMaterial.Layer layer, boolean innerModel) {
 			return ResourceLocation.parse("slsb:textures/entities/igris_armor.png");
+		}
+
+		@Override
+		@OnlyIn(Dist.CLIENT)
+		public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, context, list, flag);
+			list.add(Component.translatable("item.slsb.red_knights_armor_chestplate.description_0"));
+			list.add(Component.translatable("item.slsb.red_knights_armor_chestplate.description_1"));
+			list.add(Component.translatable("item.slsb.red_knights_armor_chestplate.description_2"));
+			list.add(Component.translatable("item.slsb.red_knights_armor_chestplate.description_3"));
+			list.add(Component.translatable("item.slsb.red_knights_armor_chestplate.description_4"));
+			list.add(Component.translatable("item.slsb.red_knights_armor_chestplate.description_5"));
 		}
 	}
 
@@ -150,6 +176,18 @@ public abstract class RedKnightsArmorItem extends ArmorItem {
 		public ResourceLocation getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, ArmorMaterial.Layer layer, boolean innerModel) {
 			return ResourceLocation.parse("slsb:textures/entities/igris_armor.png");
 		}
+
+		@Override
+		@OnlyIn(Dist.CLIENT)
+		public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, context, list, flag);
+			list.add(Component.translatable("item.slsb.red_knights_armor_leggings.description_0"));
+			list.add(Component.translatable("item.slsb.red_knights_armor_leggings.description_1"));
+			list.add(Component.translatable("item.slsb.red_knights_armor_leggings.description_2"));
+			list.add(Component.translatable("item.slsb.red_knights_armor_leggings.description_3"));
+			list.add(Component.translatable("item.slsb.red_knights_armor_leggings.description_4"));
+			list.add(Component.translatable("item.slsb.red_knights_armor_leggings.description_5"));
+		}
 	}
 
 	public static class Boots extends RedKnightsArmorItem {
@@ -160,6 +198,18 @@ public abstract class RedKnightsArmorItem extends ArmorItem {
 		@Override
 		public ResourceLocation getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, ArmorMaterial.Layer layer, boolean innerModel) {
 			return ResourceLocation.parse("slsb:textures/entities/igris_armor.png");
+		}
+
+		@Override
+		@OnlyIn(Dist.CLIENT)
+		public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, context, list, flag);
+			list.add(Component.translatable("item.slsb.red_knights_armor_boots.description_0"));
+			list.add(Component.translatable("item.slsb.red_knights_armor_boots.description_1"));
+			list.add(Component.translatable("item.slsb.red_knights_armor_boots.description_2"));
+			list.add(Component.translatable("item.slsb.red_knights_armor_boots.description_3"));
+			list.add(Component.translatable("item.slsb.red_knights_armor_boots.description_4"));
+			list.add(Component.translatable("item.slsb.red_knights_armor_boots.description_5"));
 		}
 	}
 }

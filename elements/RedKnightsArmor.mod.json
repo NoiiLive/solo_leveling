@@ -16,21 +16,49 @@
       }
     ],
     "armorTextureFile": "empty",
-    "helmetName": "Red Knight's Helmet",
-    "bodyName": "Red Knight's Chestplate",
-    "leggingsName": "Red Knight's Leggings",
-    "bootsName": "Red Knight's Boots",
+    "helmetName": "Crimson Knight's Helmet",
+    "bodyName": "Crimson Knight's Chestplate",
+    "leggingsName": "Crimson Knight's Leggings",
+    "bootsName": "Crimson Knight's Boots",
     "helmetSpecialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "§7Acquisition Difficulty: §fS-Rank",
+        "§7Category: §fGear",
+        "",
+        "§aPhysical Damage -20%",
+        "§aVIT +20",
+        "§aSTR +20"
+      ]
     },
     "bodySpecialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "§7Acquisition Difficulty: §fS-Rank",
+        "§7Category: §fGear",
+        "",
+        "§aPhysical Damage -20%",
+        "§aVIT +20",
+        "§aSTR +20"
+      ]
     },
     "leggingsSpecialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "§7Acquisition Difficulty: §fS-Rank",
+        "§7Category: §fGear",
+        "",
+        "§aPhysical Damage -20%",
+        "§aVIT +20",
+        "§aSTR +20"
+      ]
     },
     "bootsSpecialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "§7Acquisition Difficulty: §fS-Rank",
+        "§7Category: §fGear",
+        "",
+        "§aPhysical Damage -20%",
+        "§aVIT +20",
+        "§aSTR +20"
+      ]
     },
     "helmetModelName": "Modeligris_armor",
     "helmetModelPart": "Head",
