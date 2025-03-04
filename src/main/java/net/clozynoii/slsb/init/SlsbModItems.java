@@ -15,6 +15,7 @@ import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 
 import net.clozynoii.slsb.item.RedKnightsArmorItem;
+import net.clozynoii.slsb.item.MiningClothesItem;
 import net.clozynoii.slsb.item.ManaStonePickaxeItem;
 import net.clozynoii.slsb.item.ManaCrystalItem;
 import net.clozynoii.slsb.item.KasakasFangItem;
@@ -62,6 +63,10 @@ public class SlsbModItems {
 	public static final DeferredItem<Item> MANA_CRYSTAL = REGISTRY.register("mana_crystal", ManaCrystalItem::new);
 	public static final DeferredItem<Item> ITEMS_TAB = REGISTRY.register("items_tab", ItemsTabItem::new);
 	public static final DeferredItem<Item> MANA_STONE_PICKAXE = REGISTRY.register("mana_stone_pickaxe", ManaStonePickaxeItem::new);
+	public static final DeferredItem<Item> MINING_CLOTHES_HELMET = REGISTRY.register("mining_clothes_helmet", MiningClothesItem.Helmet::new);
+	public static final DeferredItem<Item> MINING_CLOTHES_CHESTPLATE = REGISTRY.register("mining_clothes_chestplate", MiningClothesItem.Chestplate::new);
+	public static final DeferredItem<Item> MINING_CLOTHES_LEGGINGS = REGISTRY.register("mining_clothes_leggings", MiningClothesItem.Leggings::new);
+	public static final DeferredItem<Item> MINING_CLOTHES_BOOTS = REGISTRY.register("mining_clothes_boots", MiningClothesItem.Boots::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

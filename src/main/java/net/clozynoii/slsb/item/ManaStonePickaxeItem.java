@@ -17,12 +17,12 @@ public class ManaStonePickaxeItem extends PickaxeItem {
 	private static final Tier TOOL_TIER = new Tier() {
 		@Override
 		public int getUses() {
-			return 50000;
+			return 10000;
 		}
 
 		@Override
 		public float getSpeed() {
-			return 12f;
+			return 14f;
 		}
 
 		@Override
@@ -47,6 +47,6 @@ public class ManaStonePickaxeItem extends PickaxeItem {
 	};
 
 	public ManaStonePickaxeItem() {
-		super(TOOL_TIER, new Item.Properties().attributes(DiggerItem.createAttributes(TOOL_TIER, 3f, -2.4f)).fireResistant());
+		super(TOOL_TIER, new Item.Properties().attributes(DiggerItem.createAttributes(TOOL_TIER, 7f, -2.4f)).fireResistant());
 	}
 }

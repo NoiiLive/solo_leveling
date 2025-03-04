@@ -34,6 +34,10 @@ public class SlsbModTabs {
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> SL_GEAR = REGISTRY.register("sl_gear",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.slsb.sl_gear")).icon(() -> new ItemStack(SlsbModItems.KASAKAS_FANG.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(SlsbModItems.MANA_STONE_PICKAXE.get());
+				tabData.accept(SlsbModItems.MINING_CLOTHES_HELMET.get());
+				tabData.accept(SlsbModItems.MINING_CLOTHES_CHESTPLATE.get());
+				tabData.accept(SlsbModItems.MINING_CLOTHES_LEGGINGS.get());
+				tabData.accept(SlsbModItems.MINING_CLOTHES_BOOTS.get());
 				tabData.accept(SlsbModItems.KASAKAS_FANG.get());
 				tabData.accept(SlsbModItems.RED_KNIGHTS_ARMOR_HELMET.get());
 				tabData.accept(SlsbModItems.RED_KNIGHTS_ARMOR_CHESTPLATE.get());

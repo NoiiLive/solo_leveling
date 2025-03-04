@@ -3746,7 +3746,7 @@
           }
         ]
       },
-      "path": "~/Weapons"
+      "path": "~/Procedures/Weapons"
     },
     {
       "name": "RedKnightsArmor",
@@ -4187,7 +4187,7 @@
           "src/main/java/net/clozynoii/slsb/item/ManaStonePickaxeItem.java"
         ]
       },
-      "path": "~/Items"
+      "path": "~/Weapons"
     },
     {
       "name": "MSPickRecipe",
@@ -4201,6 +4201,23 @@
         ]
       },
       "path": "~/Misc/Recipes"
+    },
+    {
+      "name": "MiningClothes",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mining_clothes",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/slsb/models/item/mining_clothes_boots.json",
+          "src/main/resources/assets/slsb/models/item/mining_clothes_chestplate.json",
+          "src/main/resources/assets/slsb/models/item/mining_clothes_leggings.json",
+          "src/main/resources/assets/slsb/models/item/mining_clothes_helmet.json",
+          "src/main/java/net/clozynoii/slsb/item/MiningClothesItem.java"
+        ]
+      },
+      "path": "~/Armor"
     }
   ],
   "variable_elements": [
@@ -4513,6 +4530,7 @@
   ],
   "tag_elements": {
     "ITEMS:minecraft:chest_armor": [
+      "~CUSTOM:MiningClothes.body",
       "~CUSTOM:RedKnightsArmor.body"
     ],
     "BLOCKS:minecraft:slabs": [
@@ -4581,12 +4599,15 @@
       "~CUSTOM:KasakasFang"
     ],
     "ITEMS:minecraft:head_armor": [
+      "~CUSTOM:MiningClothes.helmet",
       "~CUSTOM:RedKnightsArmor.helmet"
     ],
     "ITEMS:minecraft:foot_armor": [
+      "~CUSTOM:MiningClothes.boots",
       "~CUSTOM:RedKnightsArmor.boots"
     ],
     "ITEMS:minecraft:leg_armor": [
+      "~CUSTOM:MiningClothes.legs",
       "~CUSTOM:RedKnightsArmor.legs"
     ]
   },
@@ -4606,6 +4627,7 @@
     ],
     "CUSTOM:SLGear": [
       "ManaStonePickaxe",
+      "MiningClothes",
       "KasakasFang",
       "RedKnightsArmor"
     ],
@@ -4616,8 +4638,8 @@
   "language_map": {
     "en_us": {
       "gui.slsb.hunter_skill_gui_tank.tooltip_slot_9": "Slot 9",
-      "slsb.evaluator.evaluated": "You have already been evaluated!",
       "gui.slsb.hunter_skill_gui_tank.tooltip_slot_7": "Slot 7",
+      "slsb.evaluator.evaluated": "You have already been evaluated!",
       "item.slsb.red_knights_armor_chestplate": "§cCrimson Knight\u0027s Chestplate",
       "gui.slsb.hunter_skill_gui_tank.tooltip_slot_8": "Slot 8",
       "slsb.evaluator.normalrank.rank": "-Rank!",
@@ -4659,6 +4681,7 @@
       "gui.slsb.hunter_skill_gui.tooltip_slam": "Slam",
       "gui.slsb.hunter_skill_gui.tooltip_uppercut": "Uppercut",
       "item_group.slsb.sl_mobs": "Solo Leveling: Mobs",
+      "item.slsb.mining_clothes_helmet": "Mining Helmet",
       "slsb.training.nomana": "You do not have enough mana to train",
       "item.slsb.red_knights_armor_chestplate.description_2": "",
       "item.slsb.red_knights_armor_chestplate.description_3": "§aPhysical Damage -20%",
@@ -4671,6 +4694,7 @@
       "block.slsb.blood_block": "Blood Block",
       "slsb.evaluator.srank.goodbye": "This is history in the making! The world will be watching you.",
       "slsb.evaluator.welcome": "Welcome to your Hunter Evaluation!",
+      "item.slsb.mining_clothes_leggings": "Mining Pants",
       "gui.slsb.hunter_skill_gui.tooltip_slot_2": "Slot 2",
       "block.slsb.blue_gate_small": "Gate (Small)",
       "key.slsb.main_menu": "Main Menu",
@@ -4723,6 +4747,7 @@
       "block.slsb.mana_training_orb": "Mana Training Orb",
       "item.slsb.kasakas_fang.description_8": "§7§oHP -1%/second.",
       "item.slsb.red_knights_armor_helmet.description_1": "§7Category: §fGear",
+      "item.slsb.mining_clothes_boots": "Mining Boots",
       "entity.slsb.bloodred_igris": "Blood-Red Commander Igris",
       "item.slsb.red_knights_armor_helmet.description_4": "§aVIT +20",
       "item.slsb.red_knights_armor_helmet.description_5": "§aSTR +20",
@@ -4773,6 +4798,7 @@
       "gui.slsb.hunter_skill_gui_healer.tooltip_slot_4": "Slot 4",
       "gui.slsb.hunter_skill_gui_ranger.tooltip_slot_4": "Slot 4",
       "item.slsb.essence_stone_b": "§bEssence Stone (B-Rank)",
+      "item.slsb.mining_clothes_chestplate": "Mining Jacket",
       "slsb.huntermenu.basicskils": "Basic Skills",
       "gui.slsb.hunter_skill_gui_healer.tooltip_slot_5": "Slot 5",
       "gui.slsb.hunter_skill_gui_ranger.tooltip_slot_5": "Slot 5",
@@ -4903,6 +4929,10 @@
           },
           {
             "name": "Blocks",
+            "children": []
+          },
+          {
+            "name": "Weapons",
             "children": []
           }
         ]
