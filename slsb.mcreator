@@ -4638,8 +4638,8 @@
   "language_map": {
     "en_us": {
       "gui.slsb.hunter_skill_gui_tank.tooltip_slot_9": "Slot 9",
-      "gui.slsb.hunter_skill_gui_tank.tooltip_slot_7": "Slot 7",
       "slsb.evaluator.evaluated": "You have already been evaluated!",
+      "gui.slsb.hunter_skill_gui_tank.tooltip_slot_7": "Slot 7",
       "item.slsb.red_knights_armor_chestplate": "§cCrimson Knight\u0027s Chestplate",
       "gui.slsb.hunter_skill_gui_tank.tooltip_slot_8": "Slot 8",
       "slsb.evaluator.normalrank.rank": "-Rank!",
