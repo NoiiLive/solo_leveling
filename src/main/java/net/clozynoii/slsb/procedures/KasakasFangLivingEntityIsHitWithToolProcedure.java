@@ -16,15 +16,11 @@ public class KasakasFangLivingEntityIsHitWithToolProcedure {
 			return;
 		if (Mth.nextInt(RandomSource.create(), 1, 10) == 1) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(SlsbModMobEffects.PARALYZED, 30, 0, true, true));
-			if (sourceentity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal(("\u00A7a" + Component.translatable("slsb.weapontrigger.paralysis").getString())), true);
-		}
-		if (Mth.nextInt(RandomSource.create(), 1, 10) == 1) {
+				_entity.addEffect(new MobEffectInstance(SlsbModMobEffects.PARALYZED, 40, 0, true, true));
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(SlsbModMobEffects.BLEEDING, 100, 0, true, false));
 			if (sourceentity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal(("\u00A7c" + Component.translatable("slsb.weapontrigger.bleed").getString())), true);
+				_player.displayClientMessage(Component.literal(("\u00A7a" + Component.translatable("slsb.weapontrigger.kasaka").getString())), true);
 		}
 	}
 }
