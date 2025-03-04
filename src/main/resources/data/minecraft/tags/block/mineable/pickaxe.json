@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "slsb:mana_crystal_cluster",
+    "slsb:mana_crystal_ore",
     "slsb:green_door",
     "slsb:mana_training_orb"
   ]

@@ -4218,6 +4218,40 @@
         ]
       },
       "path": "~/Armor"
+    },
+    {
+      "name": "ManaCrystalOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_crystal_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/slsb/models/item/mana_crystal_ore.json",
+          "src/main/java/net/clozynoii/slsb/block/ManaCrystalOreBlock.java",
+          "src/main/resources/data/slsb/loot_table/blocks/mana_crystal_ore.json",
+          "src/main/resources/assets/slsb/blockstates/mana_crystal_ore.json",
+          "src/main/resources/assets/slsb/models/block/mana_crystal_ore.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "ManaCrystalCluster",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_crystal_cluster",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/block/ManaCrystalClusterBlock.java",
+          "src/main/resources/data/slsb/loot_table/blocks/mana_crystal_cluster.json",
+          "src/main/resources/assets/slsb/models/block/mana_crystal_cluster.json",
+          "src/main/resources/assets/slsb/models/item/mana_crystal_cluster.json",
+          "src/main/resources/assets/slsb/blockstates/mana_crystal_cluster.json"
+        ]
+      },
+      "path": "~/Blocks"
     }
   ],
   "variable_elements": [
@@ -4533,10 +4567,16 @@
       "~CUSTOM:MiningClothes.body",
       "~CUSTOM:RedKnightsArmor.body"
     ],
+    "BLOCKS:minecraft:needs_diamond_tool": [
+      "~CUSTOM:ManaCrystalCluster",
+      "~CUSTOM:ManaCrystalOre"
+    ],
     "BLOCKS:minecraft:slabs": [
       "~CUSTOM:BarrierSlab"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:ManaCrystalCluster",
+      "~CUSTOM:ManaCrystalOre",
       "~CUSTOM:GreenDoor",
       "~CUSTOM:ManaTrainingOrb"
     ],
@@ -4623,7 +4663,9 @@
     ],
     "CUSTOM:SLBlocks": [
       "AwakeningOrb",
-      "ManaTrainingOrb"
+      "ManaTrainingOrb",
+      "ManaCrystalOre",
+      "ManaCrystalCluster"
     ],
     "CUSTOM:SLGear": [
       "ManaStonePickaxe",
@@ -4638,8 +4680,8 @@
   "language_map": {
     "en_us": {
       "gui.slsb.hunter_skill_gui_tank.tooltip_slot_9": "Slot 9",
-      "slsb.evaluator.evaluated": "You have already been evaluated!",
       "gui.slsb.hunter_skill_gui_tank.tooltip_slot_7": "Slot 7",
+      "slsb.evaluator.evaluated": "You have already been evaluated!",
       "item.slsb.red_knights_armor_chestplate": "§cCrimson Knight\u0027s Chestplate",
       "gui.slsb.hunter_skill_gui_tank.tooltip_slot_8": "Slot 8",
       "slsb.evaluator.normalrank.rank": "-Rank!",
@@ -4665,8 +4707,10 @@
       "gui.slsb.hunter_skill_gui_fighter.tooltip_slot_3": "Slot 3",
       "gui.slsb.hunter_skill_gui_fighter.tooltip_slot_4": "Slot 4",
       "gui.slsb.hunter_skill_gui_fighter.tooltip_slot_5": "Slot 5",
+      "block.slsb.mana_crystal_cluster": "Mana Crystal Cluster",
       "gui.slsb.hunter_skill_gui_fighter.tooltip_slot_1": "Slot 1",
       "gui.slsb.hunter_skill_gui_fighter.tooltip_slam": "Slam",
+      "block.slsb.mana_crystal_ore": "Mana Crystal Ore",
       "item.slsb.mana_stone_pickaxe": "Mana-Stone Pickaxe",
       "gui.slsb.hunter_skill_gui_fighter.tooltip_slot_6": "Slot 6",
       "slsb.evaluator.normalrank.goodbye": "Good luck, and stay safe out there, Hunter!",

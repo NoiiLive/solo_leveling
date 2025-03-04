@@ -67,6 +67,8 @@ public class SlsbModItems {
 	public static final DeferredItem<Item> MINING_CLOTHES_CHESTPLATE = REGISTRY.register("mining_clothes_chestplate", MiningClothesItem.Chestplate::new);
 	public static final DeferredItem<Item> MINING_CLOTHES_LEGGINGS = REGISTRY.register("mining_clothes_leggings", MiningClothesItem.Leggings::new);
 	public static final DeferredItem<Item> MINING_CLOTHES_BOOTS = REGISTRY.register("mining_clothes_boots", MiningClothesItem.Boots::new);
+	public static final DeferredItem<Item> MANA_CRYSTAL_ORE = block(SlsbModBlocks.MANA_CRYSTAL_ORE);
+	public static final DeferredItem<Item> MANA_CRYSTAL_CLUSTER = block(SlsbModBlocks.MANA_CRYSTAL_CLUSTER);
 
 	// Start of user code block custom items
 	// End of user code block custom items
