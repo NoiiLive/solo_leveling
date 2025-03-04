@@ -3676,6 +3676,73 @@
         "files": []
       },
       "path": "~/Misc/Tabs"
+    },
+    {
+      "name": "BleedingOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bleeding_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/BleedingOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Potions/Procedures"
+    },
+    {
+      "name": "Bleeding",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bleeding",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/potion/BleedingMobEffect.java"
+        ]
+      },
+      "path": "~/Potions"
+    },
+    {
+      "name": "KasakasFangLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kasakas_fang_living_entity_is_hit_with_tool",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/KasakasFangLivingEntityIsHitWithToolProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Weapons"
     }
   ],
   "variable_elements": [
@@ -4054,10 +4121,10 @@
   "language_map": {
     "en_us": {
       "slsb.evaluator.evaluated": "You have already been evaluated!",
-      "item_group.slsb.sl_gear": "Solo Leveling: Gear",
-      "slsb.command.systemplayertarget": "Your Player status has been set to",
-      "slsb.training.manafatigue": "Your mana is currently fatigued",
       "slsb.evaluator.normalrank.rank": "-Rank!",
+      "slsb.training.manafatigue": "Your mana is currently fatigued",
+      "slsb.command.systemplayertarget": "Your Player status has been set to",
+      "item_group.slsb.sl_gear": "Solo Leveling: Gear",
       "block.slsb.blue_gate_medium": "Gate (Medium)",
       "gui.slsb.hunter_skill_gui.tooltip_barrage": "Barrage",
       "item.slsb.kasakas_fang.description_1": "§7Category: §fDagger",
@@ -4132,7 +4199,8 @@
       "gui.slsb.hunter_skill_gui.tooltip_dash": "Dash",
       "slsb.systemmenu.status": "Status",
       "gui.slsb.hunter_skill_gui.tooltip_heavy_attack": "Heavy Attack",
-      "block.slsb.barrier_slab": "§dBarrier Slab"
+      "block.slsb.barrier_slab": "§dBarrier Slab",
+      "effect.slsb.bleeding": "Bleeding"
     }
   },
   "foldersRoot": {
@@ -4282,6 +4350,15 @@
           },
           {
             "name": "Keybinds",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Potions",
+        "children": [
+          {
+            "name": "Procedures",
             "children": []
           }
         ]

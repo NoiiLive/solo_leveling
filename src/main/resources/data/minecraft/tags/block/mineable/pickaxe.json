@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "slsb:green_door",
     "slsb:mana_training_orb"
   ]
 }

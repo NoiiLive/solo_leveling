@@ -14,11 +14,13 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.tags.TagKey;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.component.DataComponents;
 
+import net.clozynoii.slsb.procedures.KasakasFangLivingEntityIsHitWithToolProcedure;
 import net.clozynoii.slsb.init.SlsbModItems;
 
 import java.util.List;
@@ -64,6 +66,13 @@ public class KasakasFangItem extends SwordItem {
 	@SubscribeEvent
 	public static void handleToolDamage(ModifyDefaultComponentsEvent event) {
 		event.modify(SlsbModItems.KASAKAS_FANG.get(), builder -> builder.remove(DataComponents.MAX_DAMAGE));
+	}
+
+	@Override
+	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
+		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
+		KasakasFangLivingEntityIsHitWithToolProcedure.execute(entity);
+		return retval;
 	}
 
 	@Override
