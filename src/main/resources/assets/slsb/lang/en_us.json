@@ -78,5 +78,6 @@
   "gui.slsb.hunter_skill_gui.tooltip_dash": "Dash",
   "slsb.systemmenu.status": "Status",
   "gui.slsb.hunter_skill_gui.tooltip_heavy_attack": "Heavy Attack",
-  "block.slsb.barrier_slab": "§dBarrier Slab"
+  "block.slsb.barrier_slab": "§dBarrier Slab",
+  "effect.slsb.bleeding": "Bleeding"
 }
