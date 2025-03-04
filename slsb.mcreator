@@ -3739,6 +3739,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
           }
         ]
       },
@@ -4015,6 +4019,133 @@
         ]
       },
       "path": "~/GUI/Hunter"
+    },
+    {
+      "name": "EssenceStoneE",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "essence_stone_e",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/slsb/models/item/essence_stone_e.json",
+          "src/main/java/net/clozynoii/slsb/item/EssenceStoneEItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "EssenceStoneD",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "essence_stone_d",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/slsb/models/item/essence_stone_d.json",
+          "src/main/java/net/clozynoii/slsb/item/EssenceStoneDItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "EssenceStoneC",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "essence_stone_c",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/item/EssenceStoneCItem.java",
+          "src/main/resources/assets/slsb/models/item/essence_stone_c.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "EssenceStoneB",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "essence_stone_b",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/slsb/models/item/essence_stone_b.json",
+          "src/main/java/net/clozynoii/slsb/item/EssenceStoneBItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "EssenceStoneA",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "essence_stone_a",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/item/EssenceStoneAItem.java",
+          "src/main/resources/assets/slsb/models/item/essence_stone_a.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "EssenceStoneS",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "essence_stone_s",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/slsb/models/item/essence_stone_s.json",
+          "src/main/java/net/clozynoii/slsb/item/EssenceStoneSItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "SLItems",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sl_items",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Misc/Tabs"
+    },
+    {
+      "name": "Paralyzed",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "paralyzed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/potion/ParalyzedMobEffect.java"
+        ]
+      },
+      "path": "~/Effects/Potions"
+    },
+    {
+      "name": "ParalyzedTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "paralyzed_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ParalyzedTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Effects/Potions/Procedures"
     }
   ],
   "variable_elements": [
@@ -4461,9 +4592,11 @@
       "gui.slsb.hunter_skill_gui.tooltip_slot_8": "Slot 8",
       "key.slsb.ability_5": "Ability 5",
       "gui.slsb.hunter_skill_gui.tooltip_slot_9": "Slot 9",
+      "slsb.weapontrigger.paralysis": "\"Paralysis\" effect has been triggered",
       "block.slsb.brown_panel": "Brown Panel",
       "subtitles.whoosh": "Player whooshes",
       "slsb.evaluator.erank.goodbye": "I, uh... hope you have a strong will. Good luck... I guess.",
+      "effect.slsb.paralyzed": "Paralyzed",
       "key.slsb.ability_2": "Ability 2",
       "block.slsb.barrier_wall": "§dBarrier Wall",
       "key.slsb.ability_3": "Ability 3",
@@ -4517,6 +4650,7 @@
       "gui.slsb.hunter_skill_gui_assassin.tooltip_slot_5": "Slot 5",
       "item.slsb.kasakas_fang": "§eKasaka\u0027s Venom Fang",
       "gui.slsb.hunter_skill_gui_healer.tooltip_slot_10": "Slot 10",
+      "item_group.slsb.sl_items": "Solo Leveling: Items",
       "gui.slsb.hunter_skill_gui_fighter.tooltip_dash": "Dash",
       "effect.slsb.no_fall": "No Fall",
       "block.slsb.tan_trimmed_panel_wall": "Tan Trimmed Panel Wall",
@@ -4531,21 +4665,28 @@
       "gui.slsb.hunter_skill_gui_ranger.tooltip_slot_7": "Slot 7",
       "gui.slsb.hunter_skill_gui_healer.tooltip_slot_4": "Slot 4",
       "gui.slsb.hunter_skill_gui_ranger.tooltip_slot_4": "Slot 4",
+      "item.slsb.essence_stone_b": "§bEssence Stone (B-Rank)",
       "slsb.huntermenu.basicskils": "Basic Skills",
       "gui.slsb.hunter_skill_gui_healer.tooltip_slot_5": "Slot 5",
       "gui.slsb.hunter_skill_gui_ranger.tooltip_slot_5": "Slot 5",
+      "item.slsb.essence_stone_c": "§aEssence Stone (C-Rank)",
       "gui.slsb.hunter_skill_gui_healer.tooltip_slot_2": "Slot 2",
       "gui.slsb.hunter_skill_gui_ranger.tooltip_slot_2": "Slot 2",
       "slsb.command.awakenadmin": "has been awakened",
       "gui.slsb.hunter_skill_gui_healer.tooltip_slot_3": "Slot 3",
       "gui.slsb.hunter_skill_gui_ranger.tooltip_slot_3": "Slot 3",
+      "item.slsb.essence_stone_a": "§cEssence Stone (A-Rank)",
+      "slsb.weapontrigger.bleed": "\"Bleed\" effect has been triggered",
       "gui.slsb.hunter_skill_gui_healer.tooltip_slot_1": "Slot 1",
       "gui.slsb.hunter_skill_gui_ranger.tooltip_slot_1": "Slot 1",
       "subtitles.basic_hit": "Player lands a hit",
       "slsb.huntermenu.classskills": "Class Skills",
+      "item.slsb.essence_stone_s": "§dEssence Stone (S-Rank)",
       "slsb.systemmenu.status": "Status",
       "gui.slsb.hunter_skill_gui_tank.tooltip_slot_10": "Slot 10",
       "slsb.command.setclassadmin": "Class has been set to",
+      "item.slsb.essence_stone_d": "§eEssence Stone (D-Rank)",
+      "item.slsb.essence_stone_e": "Essence Stone (E-Rank)",
       "block.slsb.barrier_slab": "§dBarrier Slab",
       "gui.slsb.hunter_skill_gui.tooltip_heavy_attack": "Heavy Attack"
     }

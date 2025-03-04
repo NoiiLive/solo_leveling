@@ -14,6 +14,7 @@ import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.neoforged.neoforge.common.NeoForgeMod;
 
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ThrownPotion;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
@@ -29,12 +30,14 @@ import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.Pose;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EntityDimensions;
 import net.minecraft.world.entity.AreaEffectCloud;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.network.syncher.EntityDataSerializers;
@@ -42,6 +45,8 @@ import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.chat.Component;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.registries.BuiltInRegistries;
+
+import net.clozynoii.slsb.init.SlsbModItems;
 
 public class BloodredIgrisEntity extends Monster implements GeoEntity {
 	public static final EntityDataAccessor<Boolean> SHOOT = SynchedEntityData.defineId(BloodredIgrisEntity.class, EntityDataSerializers.BOOLEAN);
@@ -60,6 +65,10 @@ public class BloodredIgrisEntity extends Monster implements GeoEntity {
 		setCustomName(Component.literal("Blood-Red Commander Igris"));
 		setCustomNameVisible(true);
 		setPersistenceRequired();
+		this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(SlsbModItems.RED_KNIGHTS_ARMOR_HELMET.get()));
+		this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(SlsbModItems.RED_KNIGHTS_ARMOR_CHESTPLATE.get()));
+		this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(SlsbModItems.RED_KNIGHTS_ARMOR_LEGGINGS.get()));
+		this.setItemSlot(EquipmentSlot.FEET, new ItemStack(SlsbModItems.RED_KNIGHTS_ARMOR_BOOTS.get()));
 	}
 
 	@Override
@@ -97,6 +106,11 @@ public class BloodredIgrisEntity extends Monster implements GeoEntity {
 	@Override
 	public boolean removeWhenFarAway(double distanceToClosestPlayer) {
 		return false;
+	}
+
+	protected void dropCustomDeathLoot(ServerLevel serverLevel, DamageSource source, boolean recentlyHitIn) {
+		super.dropCustomDeathLoot(serverLevel, source, recentlyHitIn);
+		this.spawnAtLocation(new ItemStack(SlsbModItems.ESSENCE_STONE_A.get()));
 	}
 
 	@Override

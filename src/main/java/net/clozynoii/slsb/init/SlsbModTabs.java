@@ -33,4 +33,13 @@ public class SlsbModTabs {
 				tabData.accept(SlsbModItems.RED_KNIGHTS_ARMOR_LEGGINGS.get());
 				tabData.accept(SlsbModItems.RED_KNIGHTS_ARMOR_BOOTS.get());
 			}).withTabsBefore(SL_MOBS.getId()).build());
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> SL_ITEMS = REGISTRY.register("sl_items",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.slsb.sl_items")).icon(() -> new ItemStack(SlsbModItems.ESSENCE_STONE_E.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(SlsbModItems.ESSENCE_STONE_E.get());
+				tabData.accept(SlsbModItems.ESSENCE_STONE_D.get());
+				tabData.accept(SlsbModItems.ESSENCE_STONE_C.get());
+				tabData.accept(SlsbModItems.ESSENCE_STONE_B.get());
+				tabData.accept(SlsbModItems.ESSENCE_STONE_A.get());
+				tabData.accept(SlsbModItems.ESSENCE_STONE_S.get());
+			}).withTabsBefore(SL_GEAR.getId()).build());
 }

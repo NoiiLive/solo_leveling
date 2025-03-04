@@ -42,16 +42,16 @@
       "value": ""
     },
     "equipmentHelmet": {
-      "value": ""
+      "value": "CUSTOM:RedKnightsArmor.helmet"
     },
     "equipmentBody": {
-      "value": ""
+      "value": "CUSTOM:RedKnightsArmor.body"
     },
     "equipmentLeggings": {
-      "value": ""
+      "value": "CUSTOM:RedKnightsArmor.legs"
     },
     "equipmentBoots": {
-      "value": ""
+      "value": "CUSTOM:RedKnightsArmor.boots"
     },
     "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
@@ -89,7 +89,7 @@
     "immuneToWither": true,
     "immuneToDragonBreath": true,
     "mobDrop": {
-      "value": ""
+      "value": "CUSTOM:EssenceStoneA"
     },
     "livingSound": {
       "value": ""

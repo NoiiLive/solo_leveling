@@ -16,6 +16,12 @@ import net.minecraft.world.item.BlockItem;
 
 import net.clozynoii.slsb.item.RedKnightsArmorItem;
 import net.clozynoii.slsb.item.KasakasFangItem;
+import net.clozynoii.slsb.item.EssenceStoneSItem;
+import net.clozynoii.slsb.item.EssenceStoneEItem;
+import net.clozynoii.slsb.item.EssenceStoneDItem;
+import net.clozynoii.slsb.item.EssenceStoneCItem;
+import net.clozynoii.slsb.item.EssenceStoneBItem;
+import net.clozynoii.slsb.item.EssenceStoneAItem;
 import net.clozynoii.slsb.block.display.ManaTrainingOrbDisplayItem;
 import net.clozynoii.slsb.block.display.BlueGateSmallDisplayItem;
 import net.clozynoii.slsb.block.display.BlueGateMediumDisplayItem;
@@ -44,6 +50,12 @@ public class SlsbModItems {
 	public static final DeferredItem<Item> RED_KNIGHTS_ARMOR_CHESTPLATE = REGISTRY.register("red_knights_armor_chestplate", RedKnightsArmorItem.Chestplate::new);
 	public static final DeferredItem<Item> RED_KNIGHTS_ARMOR_LEGGINGS = REGISTRY.register("red_knights_armor_leggings", RedKnightsArmorItem.Leggings::new);
 	public static final DeferredItem<Item> RED_KNIGHTS_ARMOR_BOOTS = REGISTRY.register("red_knights_armor_boots", RedKnightsArmorItem.Boots::new);
+	public static final DeferredItem<Item> ESSENCE_STONE_E = REGISTRY.register("essence_stone_e", EssenceStoneEItem::new);
+	public static final DeferredItem<Item> ESSENCE_STONE_D = REGISTRY.register("essence_stone_d", EssenceStoneDItem::new);
+	public static final DeferredItem<Item> ESSENCE_STONE_C = REGISTRY.register("essence_stone_c", EssenceStoneCItem::new);
+	public static final DeferredItem<Item> ESSENCE_STONE_B = REGISTRY.register("essence_stone_b", EssenceStoneBItem::new);
+	public static final DeferredItem<Item> ESSENCE_STONE_A = REGISTRY.register("essence_stone_a", EssenceStoneAItem::new);
+	public static final DeferredItem<Item> ESSENCE_STONE_S = REGISTRY.register("essence_stone_s", EssenceStoneSItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items
