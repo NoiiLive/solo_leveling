@@ -17,6 +17,11 @@ import net.minecraft.commands.Commands;
 
 import net.clozynoii.slsb.procedures.CMDUnawakenPlayerProcedure;
 import net.clozynoii.slsb.procedures.CMDSystemPlayerProcedure;
+import net.clozynoii.slsb.procedures.CMDSetClassTankProcedure;
+import net.clozynoii.slsb.procedures.CMDSetClassRangerProcedure;
+import net.clozynoii.slsb.procedures.CMDSetClassHealerProcedure;
+import net.clozynoii.slsb.procedures.CMDSetClassFighterProcedure;
+import net.clozynoii.slsb.procedures.CMDSetClassAssassinProcedure;
 import net.clozynoii.slsb.procedures.CMDAwakenPlayerProcedure;
 
 import com.mojang.brigadier.arguments.BoolArgumentType;
@@ -66,6 +71,76 @@ public class SlsbCommand {
 				direction = entity.getDirection();
 
 			CMDSystemPlayerProcedure.execute(arguments, entity);
+			return 0;
+		})))).then(Commands.literal("class").then(Commands.literal("fighter").then(Commands.argument("name", EntityArgument.player()).executes(arguments -> {
+			Level world = arguments.getSource().getUnsidedLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null && world instanceof ServerLevel _servLevel)
+				entity = FakePlayerFactory.getMinecraft(_servLevel);
+			Direction direction = Direction.DOWN;
+			if (entity != null)
+				direction = entity.getDirection();
+
+			CMDSetClassFighterProcedure.execute(arguments, entity);
+			return 0;
+		}))).then(Commands.literal("assassin").then(Commands.argument("name", EntityArgument.player()).executes(arguments -> {
+			Level world = arguments.getSource().getUnsidedLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null && world instanceof ServerLevel _servLevel)
+				entity = FakePlayerFactory.getMinecraft(_servLevel);
+			Direction direction = Direction.DOWN;
+			if (entity != null)
+				direction = entity.getDirection();
+
+			CMDSetClassAssassinProcedure.execute(arguments, entity);
+			return 0;
+		}))).then(Commands.literal("tanker").then(Commands.argument("name", EntityArgument.player()).executes(arguments -> {
+			Level world = arguments.getSource().getUnsidedLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null && world instanceof ServerLevel _servLevel)
+				entity = FakePlayerFactory.getMinecraft(_servLevel);
+			Direction direction = Direction.DOWN;
+			if (entity != null)
+				direction = entity.getDirection();
+
+			CMDSetClassTankProcedure.execute(arguments, entity);
+			return 0;
+		}))).then(Commands.literal("healer").then(Commands.argument("name", EntityArgument.player()).executes(arguments -> {
+			Level world = arguments.getSource().getUnsidedLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null && world instanceof ServerLevel _servLevel)
+				entity = FakePlayerFactory.getMinecraft(_servLevel);
+			Direction direction = Direction.DOWN;
+			if (entity != null)
+				direction = entity.getDirection();
+
+			CMDSetClassHealerProcedure.execute(arguments, entity);
+			return 0;
+		}))).then(Commands.literal("ranger").then(Commands.argument("name", EntityArgument.player()).executes(arguments -> {
+			Level world = arguments.getSource().getUnsidedLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null && world instanceof ServerLevel _servLevel)
+				entity = FakePlayerFactory.getMinecraft(_servLevel);
+			Direction direction = Direction.DOWN;
+			if (entity != null)
+				direction = entity.getDirection();
+
+			CMDSetClassRangerProcedure.execute(arguments, entity);
 			return 0;
 		}))))));
 	}

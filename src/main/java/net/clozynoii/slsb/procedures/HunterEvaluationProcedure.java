@@ -59,7 +59,7 @@ public class HunterEvaluationProcedure {
 			} else if (RandomClass == 2) {
 				{
 					SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
-					_vars.PlayerClass = "Tank";
+					_vars.PlayerClass = "Tanker";
 					_vars.syncPlayerVariables(entity);
 				}
 			} else if (RandomClass == 3) {
@@ -83,7 +83,7 @@ public class HunterEvaluationProcedure {
 			} else if (RandomClass == 6) {
 				{
 					SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
-					_vars.PlayerClass = "Archer";
+					_vars.PlayerClass = "Ranger";
 					_vars.syncPlayerVariables(entity);
 				}
 			}

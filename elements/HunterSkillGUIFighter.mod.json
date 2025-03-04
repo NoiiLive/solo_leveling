@@ -85,206 +85,6 @@
         }
       },
       {
-        "type": "image",
-        "data": {
-          "image": "blank_skill.png",
-          "use1Xscale": false,
-          "x": 164,
-          "y": 96,
-          "locked": true
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "skill_heavy.png",
-          "use1Xscale": false,
-          "x": 167,
-          "y": 75,
-          "locked": true
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "skill_barrage.png",
-          "use1Xscale": false,
-          "x": 192,
-          "y": 75,
-          "locked": true
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "skill_uppercut.png",
-          "use1Xscale": false,
-          "x": 218,
-          "y": 75,
-          "locked": true
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "skill_slam.png",
-          "use1Xscale": false,
-          "x": 243,
-          "y": 75,
-          "locked": true
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "skill_dash.png",
-          "use1Xscale": false,
-          "x": 167,
-          "y": 99,
-          "locked": true
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
-          "name": "tooltip_heavy_attack",
-          "text": {
-            "fixedValue": "Heavy Attack"
-          },
-          "width": 22,
-          "height": 22,
-          "x": 164,
-          "y": 72,
-          "locked": true
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
-          "name": "tooltip_barrage",
-          "text": {
-            "fixedValue": "Barrage"
-          },
-          "width": 22,
-          "height": 22,
-          "x": 189,
-          "y": 72,
-          "locked": true
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
-          "name": "tooltip_uppercut",
-          "text": {
-            "fixedValue": "Uppercut"
-          },
-          "width": 22,
-          "height": 22,
-          "x": 215,
-          "y": 72,
-          "locked": true
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
-          "name": "tooltip_slam",
-          "text": {
-            "fixedValue": "Slam"
-          },
-          "width": 22,
-          "height": 22,
-          "x": 240,
-          "y": 72,
-          "locked": true
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
-          "name": "tooltip_dash",
-          "text": {
-            "fixedValue": "Dash"
-          },
-          "width": 22,
-          "height": 22,
-          "x": 164,
-          "y": 96,
-          "locked": true
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_blank22x",
-          "image": "blank22x.png",
-          "hoveredImage": "",
-          "onClick": {
-            "name": "SkillButtonHeavyAttack"
-          },
-          "x": 164,
-          "y": 72,
-          "locked": true
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_blank22x1",
-          "image": "blank22x.png",
-          "hoveredImage": "",
-          "onClick": {
-            "name": "SkillButtonBarrage"
-          },
-          "x": 189,
-          "y": 72,
-          "locked": true
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_blank22x2",
-          "image": "blank22x.png",
-          "hoveredImage": "",
-          "onClick": {
-            "name": "SkillButtonUppercut"
-          },
-          "x": 215,
-          "y": 72,
-          "locked": true
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_blank22x3",
-          "image": "blank22x.png",
-          "hoveredImage": "",
-          "onClick": {
-            "name": "SkillButtonSlam"
-          },
-          "x": 240,
-          "y": 72,
-          "locked": true
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_blank22x4",
-          "image": "blank22x.png",
-          "hoveredImage": "",
-          "onClick": {
-            "name": "SkillButtonDash"
-          },
-          "x": 164,
-          "y": 96,
-          "locked": true
-        }
-      },
-      {
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_blank16x",
@@ -707,10 +507,10 @@
       {
         "type": "image",
         "data": {
-          "image": "tab_bottom_selected.png",
+          "image": "tab_bottom_edge.png",
           "use1Xscale": false,
           "x": 151,
-          "y": 197,
+          "y": 198,
           "locked": true
         }
       },
@@ -721,10 +521,20 @@
           "image": "tab_bottom.png",
           "hoveredImage": "",
           "onClick": {
-            "name": "TabHunterClassSkills"
+            "name": "TabHunterSkills"
           },
-          "x": 176,
+          "x": 151,
           "y": 198,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "tab_bottom_middle.png",
+          "use1Xscale": false,
+          "x": 176,
+          "y": 197,
           "locked": true
         }
       },

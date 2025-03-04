@@ -1565,12 +1565,12 @@
       "registry_name": "hunter_main_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/clozynoii/slsb/client/gui/HunterMainGUIScreen.java",
           "src/main/java/net/clozynoii/slsb/world/inventory/HunterMainGUIMenu.java",
+          "src/main/java/net/clozynoii/slsb/client/gui/HunterMainGUIScreen.java",
           "src/main/java/net/clozynoii/slsb/network/HunterMainGUIButtonMessage.java"
         ]
       },
-      "path": "~/GUI"
+      "path": "~/GUI/Hunter"
     },
     {
       "name": "HunterSkillGUI",
@@ -1585,7 +1585,7 @@
           "src/main/java/net/clozynoii/slsb/client/gui/HunterSkillGUIScreen.java"
         ]
       },
-      "path": "~/GUI"
+      "path": "~/GUI/Hunter"
     },
     {
       "name": "TabHunterSkills",
@@ -2998,7 +2998,7 @@
           "src/main/java/net/clozynoii/slsb/world/inventory/SystemMainGUIMenu.java"
         ]
       },
-      "path": "~/GUI"
+      "path": "~/GUI/System"
     },
     {
       "name": "ReturnSystemMana",
@@ -3316,7 +3316,7 @@
           "src/main/java/net/clozynoii/slsb/network/SystemSkillsGUIButtonMessage.java"
         ]
       },
-      "path": "~/GUI"
+      "path": "~/GUI/System"
     },
     {
       "name": "SystemShopGUI",
@@ -3331,7 +3331,7 @@
           "src/main/java/net/clozynoii/slsb/world/inventory/SystemShopGUIMenu.java"
         ]
       },
-      "path": "~/GUI"
+      "path": "~/GUI/System"
     },
     {
       "name": "SystemQuestGUI",
@@ -3346,7 +3346,7 @@
           "src/main/java/net/clozynoii/slsb/world/inventory/SystemQuestGUIMenu.java"
         ]
       },
-      "path": "~/GUI"
+      "path": "~/GUI/System"
     },
     {
       "name": "SystemOpenStatus",
@@ -3752,14 +3752,269 @@
       "registry_name": "red_knights_armor",
       "metadata": {
         "files": [
+          "src/main/java/net/clozynoii/slsb/item/RedKnightsArmorItem.java",
           "src/main/resources/assets/slsb/models/item/red_knights_armor_helmet.json",
           "src/main/resources/assets/slsb/models/item/red_knights_armor_boots.json",
-          "src/main/java/net/clozynoii/slsb/item/RedKnightsArmorItem.java",
           "src/main/resources/assets/slsb/models/item/red_knights_armor_chestplate.json",
           "src/main/resources/assets/slsb/models/item/red_knights_armor_leggings.json"
         ]
       },
       "path": "~/Armor"
+    },
+    {
+      "name": "HunterSkillGUIFighter",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hunter_skill_gui_fighter",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/client/gui/HunterSkillGUIFighterScreen.java",
+          "src/main/java/net/clozynoii/slsb/network/HunterSkillGUIFighterButtonMessage.java",
+          "src/main/java/net/clozynoii/slsb/world/inventory/HunterSkillGUIFighterMenu.java"
+        ]
+      },
+      "path": "~/GUI/Hunter"
+    },
+    {
+      "name": "TabHunterClassSkills",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tab_hunter_class_skills",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/TabHunterClassSkillsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Hunter GUI"
+    },
+    {
+      "name": "CMDSetClassFighter",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmd_set_class_fighter",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/CMDSetClassFighterProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Commands"
+    },
+    {
+      "name": "CMDSetClassAssassin",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmd_set_class_assassin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/CMDSetClassAssassinProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Commands"
+    },
+    {
+      "name": "CMDSetClassTank",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmd_set_class_tank",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/CMDSetClassTankProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Commands"
+    },
+    {
+      "name": "CMDSetClassRanger",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmd_set_class_ranger",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/CMDSetClassRangerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Commands"
+    },
+    {
+      "name": "CMDSetClassHealer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmd_set_class_healer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/CMDSetClassHealerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Commands"
+    },
+    {
+      "name": "ReturnHunterLocalBasicSkills",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_hunter_local_basic_skills",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnHunterLocalBasicSkillsProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Procedures/GUI/System GUI/Localized"
+    },
+    {
+      "name": "ReturnHunterLocalClassSkills",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_hunter_local_class_skills",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnHunterLocalClassSkillsProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Procedures/GUI/System GUI/Localized"
+    },
+    {
+      "name": "HunterSkillGUIAssassin",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hunter_skill_gui_assassin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/network/HunterSkillGUIAssassinButtonMessage.java",
+          "src/main/java/net/clozynoii/slsb/world/inventory/HunterSkillGUIAssassinMenu.java",
+          "src/main/java/net/clozynoii/slsb/client/gui/HunterSkillGUIAssassinScreen.java"
+        ]
+      },
+      "path": "~/GUI/Hunter"
+    },
+    {
+      "name": "HunterSkillGUITank",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hunter_skill_gui_tank",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/world/inventory/HunterSkillGUITankMenu.java",
+          "src/main/java/net/clozynoii/slsb/network/HunterSkillGUITankButtonMessage.java",
+          "src/main/java/net/clozynoii/slsb/client/gui/HunterSkillGUITankScreen.java"
+        ]
+      },
+      "path": "~/GUI/Hunter"
+    },
+    {
+      "name": "HunterSkillGUIHealer",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hunter_skill_gui_healer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/network/HunterSkillGUIHealerButtonMessage.java",
+          "src/main/java/net/clozynoii/slsb/client/gui/HunterSkillGUIHealerScreen.java",
+          "src/main/java/net/clozynoii/slsb/world/inventory/HunterSkillGUIHealerMenu.java"
+        ]
+      },
+      "path": "~/GUI/Hunter"
+    },
+    {
+      "name": "HunterSkillGUIRanger",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hunter_skill_gui_ranger",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/world/inventory/HunterSkillGUIRangerMenu.java",
+          "src/main/java/net/clozynoii/slsb/network/HunterSkillGUIRangerButtonMessage.java",
+          "src/main/java/net/clozynoii/slsb/client/gui/HunterSkillGUIRangerScreen.java"
+        ]
+      },
+      "path": "~/GUI/Hunter"
     }
   ],
   "variable_elements": [
@@ -4149,18 +4404,83 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
+      "gui.slsb.hunter_skill_gui_tank.tooltip_slot_9": "Slot 9",
       "slsb.evaluator.evaluated": "You have already been evaluated!",
-      "item_group.slsb.sl_gear": "Solo Leveling: Gear",
+      "gui.slsb.hunter_skill_gui_tank.tooltip_slot_7": "Slot 7",
+      "item.slsb.red_knights_armor_chestplate": "Red Knight\u0027s Chestplate",
+      "gui.slsb.hunter_skill_gui_tank.tooltip_slot_8": "Slot 8",
       "slsb.command.systemplayertarget": "Your Player status has been set to",
-      "slsb.training.manafatigue": "Your mana is currently fatigued",
+      "item_group.slsb.sl_gear": "Solo Leveling: Gear",
       "slsb.evaluator.normalrank.rank": "-Rank!",
       "block.slsb.blue_gate_medium": "Gate (Medium)",
+      "slsb.command.setclasstarget": "Your Class has been set to",
+      "gui.slsb.hunter_skill_gui_tank.tooltip_slot_1": "Slot 1",
+      "item.slsb.red_knights_armor_helmet": "Red Knight\u0027s Helmet",
+      "gui.slsb.hunter_skill_gui_tank.tooltip_slot_2": "Slot 2",
+      "gui.slsb.hunter_skill_gui_tank.tooltip_slot_5": "Slot 5",
+      "gui.slsb.hunter_skill_gui_tank.tooltip_slot_6": "Slot 6",
+      "gui.slsb.hunter_skill_gui_fighter.tooltip_slot_10": "Slot 10",
+      "item.slsb.red_knights_armor_boots": "Red Knight\u0027s Boots",
+      "gui.slsb.hunter_skill_gui_tank.tooltip_slot_3": "Slot 3",
+      "gui.slsb.hunter_skill_gui_tank.tooltip_slot_4": "Slot 4",
+      "gui.slsb.hunter_skill_gui_fighter.tooltip_slot_2": "Slot 2",
+      "gui.slsb.hunter_skill_gui_fighter.tooltip_slot_3": "Slot 3",
+      "gui.slsb.hunter_skill_gui_fighter.tooltip_slot_4": "Slot 4",
+      "gui.slsb.hunter_skill_gui_fighter.tooltip_slot_5": "Slot 5",
+      "gui.slsb.hunter_skill_gui_fighter.tooltip_slot_1": "Slot 1",
+      "gui.slsb.hunter_skill_gui_fighter.tooltip_slam": "Slam",
+      "gui.slsb.hunter_skill_gui_fighter.tooltip_slot_6": "Slot 6",
+      "slsb.evaluator.normalrank.goodbye": "Good luck, and stay safe out there, Hunter!",
+      "block.slsb.tan_panel_wall": "Tan Panel Wall",
+      "gui.slsb.hunter_skill_gui_fighter.tooltip_slot_7": "Slot 7",
+      "gui.slsb.hunter_skill_gui_fighter.tooltip_slot_8": "Slot 8",
+      "slsb.ability.cooldown": "Ability is on Cooldown!",
+      "gui.slsb.hunter_skill_gui_fighter.tooltip_slot_9": "Slot 9",
+      "slsb.evaluator.erank.response": "Oh... uh... Well, this is... unexpected. You’re an §f§lE-Rank",
+      "block.slsb.tan_panel": "Brown Panel",
+      "gui.slsb.hunter_skill_gui.tooltip_slam": "Slam",
+      "gui.slsb.hunter_skill_gui.tooltip_uppercut": "Uppercut",
+      "item_group.slsb.sl_mobs": "Solo Leveling: Mobs",
+      "slsb.training.nomana": "You do not have enough mana to train",
+      "slsb.command.systemplayeradmin": "Player status has been set to",
+      "slsb.systemmenu.quests": "Quests",
+      "block.slsb.blood_block": "Blood Block",
+      "slsb.evaluator.srank.goodbye": "This is history in the making! The world will be watching you.",
+      "slsb.evaluator.welcome": "Welcome to your Hunter Evaluation!",
+      "gui.slsb.hunter_skill_gui.tooltip_slot_2": "Slot 2",
+      "block.slsb.blue_gate_small": "Gate (Small)",
+      "key.slsb.main_menu": "Main Menu",
+      "gui.slsb.hunter_skill_gui.tooltip_slot_3": "Slot 3",
+      "gui.slsb.hunter_skill_gui.tooltip_slot_1": "Slot 1",
+      "gui.slsb.hunter_skill_gui.tooltip_slot_6": "Slot 6",
+      "gui.slsb.hunter_skill_gui.tooltip_slot_7": "Slot 7",
+      "slsb.evaluator.waiting": "Let\u0027s see what your rank is...",
+      "gui.slsb.hunter_skill_gui.tooltip_slot_4": "Slot 4",
+      "gui.slsb.hunter_skill_gui.tooltip_slot_5": "Slot 5",
+      "key.slsb.ability_4": "Ability 4",
+      "gui.slsb.hunter_skill_gui.tooltip_slot_8": "Slot 8",
+      "key.slsb.ability_5": "Ability 5",
+      "gui.slsb.hunter_skill_gui.tooltip_slot_9": "Slot 9",
+      "block.slsb.brown_panel": "Brown Panel",
+      "subtitles.whoosh": "Player whooshes",
+      "slsb.evaluator.erank.goodbye": "I, uh... hope you have a strong will. Good luck... I guess.",
+      "key.slsb.ability_2": "Ability 2",
+      "block.slsb.barrier_wall": "§dBarrier Wall",
+      "key.slsb.ability_3": "Ability 3",
+      "slsb.evaluator.srank.response": "Wow... I can\u0027t believe my eyes! You\u0027re really an §f§lS-Rank!",
+      "key.slsb.ability_1": "Ability 1",
+      "effect.slsb.mana_fatigue": "Mana Fatigue",
+      "block.slsb.green_door": "Industrial Green Door",
+      "gui.slsb.hunter_skill_gui.tooltip_dash": "Dash",
+      "item.slsb.red_knights_armor_leggings": "Red Knight\u0027s Leggings",
+      "effect.slsb.bleeding": "Bleeding",
+      "slsb.training.manafatigue": "Your mana is currently fatigued",
       "gui.slsb.hunter_skill_gui.tooltip_barrage": "Barrage",
       "item.slsb.kasakas_fang.description_1": "§7Category: §fDagger",
       "item.slsb.kasakas_fang.description_0": "§7Acquisition Difficulty: §fC-Rank",
       "item.slsb.kasakas_fang.description_3": "§aATK +25",
-      "key.categories.slsb\\": "Solo Leveling: System Break",
       "item.slsb.kasakas_fang.description_2": "",
+      "key.categories.slsb\\": "Solo Leveling: System Break",
       "block.slsb.awakening_orb": "Awakening Orb",
       "item.slsb.kasakas_fang.description_5": "§7§oOpponent cannot move",
       "item.slsb.kasakas_fang.description_4": "§f- Paralysis:",
@@ -4172,64 +4492,62 @@
       "entity.slsb.bloodred_igris": "Blood-Red Commander Igris",
       "slsb.command.awakentarget": "You have been awakened",
       "slsb.systemmenu.skills": "Skills",
+      "gui.slsb.hunter_skill_gui_fighter.tooltip_uppercut": "Uppercut",
       "slsb.command.unawakenadmin": "has been un-awakened",
       "block.slsb.brown_trimmed_panel": "Brown Trimmed Panel",
-      "slsb.evaluator.normalrank.goodbye": "Good luck, and stay safe out there, Hunter!",
-      "block.slsb.tan_panel_wall": "Tan Panel Wall",
-      "slsb.ability.cooldown": "Ability is on Cooldown!",
       "key.slsb.change_ability_bar": "Change Ability Bar",
       "gui.slsb.hunter_skill_gui.tooltip_slot_10": "Slot 10",
-      "slsb.evaluator.erank.response": "Oh... uh... Well, this is... unexpected. You’re an §f§lE-Rank",
       "slsb.systemmenu.shop": "Shop",
-      "block.slsb.tan_panel": "Brown Panel",
-      "gui.slsb.hunter_skill_gui.tooltip_slam": "Slam",
-      "gui.slsb.hunter_skill_gui.tooltip_uppercut": "Uppercut",
+      "gui.slsb.hunter_skill_gui_fighter.tooltip_heavy_attack": "Heavy Attack",
       "slsb.evaluator.unawakened": "It appears you haven\u0027t awakened yet...",
       "item.slsb.bloodred_igris_spawn_egg": "Blood-Red Commander Igris Spawn Egg",
-      "item_group.slsb.sl_mobs": "Solo Leveling: Mobs",
-      "slsb.training.nomana": "You do not have enough mana to train",
+      "gui.slsb.hunter_skill_gui_assassin.tooltip_slot_10": "Slot 10",
+      "gui.slsb.hunter_skill_gui_fighter.tooltip_barrage": "Barrage",
+      "gui.slsb.hunter_skill_gui_assassin.tooltip_slot_1": "Slot 1",
       "item_group.slsb.sl_blocks": "Solo Leveling: Blocks",
-      "slsb.command.systemplayeradmin": "Player status has been set to",
+      "gui.slsb.hunter_skill_gui_assassin.tooltip_slot_6": "Slot 6",
+      "gui.slsb.hunter_skill_gui_assassin.tooltip_slot_7": "Slot 7",
       "slsb.evaluator.normalrank.response": "This is good! It seems you are",
-      "slsb.systemmenu.quests": "Quests",
-      "block.slsb.blood_block": "Blood Block",
-      "slsb.evaluator.srank.goodbye": "This is history in the making! The world will be watching you.",
+      "gui.slsb.hunter_skill_gui_assassin.tooltip_slot_8": "Slot 8",
+      "gui.slsb.hunter_skill_gui_assassin.tooltip_slot_9": "Slot 9",
+      "gui.slsb.hunter_skill_gui_assassin.tooltip_slot_2": "Slot 2",
       "slsb.command.unawakentarget": "You have been un-awakened",
+      "gui.slsb.hunter_skill_gui_assassin.tooltip_slot_3": "Slot 3",
+      "gui.slsb.hunter_skill_gui_assassin.tooltip_slot_4": "Slot 4",
+      "gui.slsb.hunter_skill_gui_assassin.tooltip_slot_5": "Slot 5",
       "item.slsb.kasakas_fang": "§eKasaka\u0027s Venom Fang",
-      "slsb.evaluator.welcome": "Welcome to your Hunter Evaluation!",
-      "block.slsb.blue_gate_small": "Gate (Small)",
-      "gui.slsb.hunter_skill_gui.tooltip_slot_2": "Slot 2",
-      "key.slsb.main_menu": "Main Menu",
+      "gui.slsb.hunter_skill_gui_healer.tooltip_slot_10": "Slot 10",
+      "gui.slsb.hunter_skill_gui_fighter.tooltip_dash": "Dash",
       "effect.slsb.no_fall": "No Fall",
-      "gui.slsb.hunter_skill_gui.tooltip_slot_3": "Slot 3",
-      "gui.slsb.hunter_skill_gui.tooltip_slot_1": "Slot 1",
-      "gui.slsb.hunter_skill_gui.tooltip_slot_6": "Slot 6",
       "block.slsb.tan_trimmed_panel_wall": "Tan Trimmed Panel Wall",
-      "gui.slsb.hunter_skill_gui.tooltip_slot_7": "Slot 7",
-      "slsb.evaluator.waiting": "Let\u0027s see what your rank is...",
-      "gui.slsb.hunter_skill_gui.tooltip_slot_4": "Slot 4",
-      "gui.slsb.hunter_skill_gui.tooltip_slot_5": "Slot 5",
-      "key.slsb.ability_4": "Ability 4",
-      "gui.slsb.hunter_skill_gui.tooltip_slot_8": "Slot 8",
-      "key.slsb.ability_5": "Ability 5",
-      "gui.slsb.hunter_skill_gui.tooltip_slot_9": "Slot 9",
-      "block.slsb.brown_panel": "Brown Panel",
+      "gui.slsb.hunter_skill_gui_ranger.tooltip_slot_10": "Slot 10",
+      "gui.slsb.hunter_skill_gui_healer.tooltip_slot_8": "Slot 8",
+      "gui.slsb.hunter_skill_gui_ranger.tooltip_slot_8": "Slot 8",
+      "gui.slsb.hunter_skill_gui_healer.tooltip_slot_9": "Slot 9",
+      "gui.slsb.hunter_skill_gui_ranger.tooltip_slot_9": "Slot 9",
+      "gui.slsb.hunter_skill_gui_healer.tooltip_slot_6": "Slot 6",
+      "gui.slsb.hunter_skill_gui_ranger.tooltip_slot_6": "Slot 6",
+      "gui.slsb.hunter_skill_gui_healer.tooltip_slot_7": "Slot 7",
+      "gui.slsb.hunter_skill_gui_ranger.tooltip_slot_7": "Slot 7",
+      "gui.slsb.hunter_skill_gui_healer.tooltip_slot_4": "Slot 4",
+      "gui.slsb.hunter_skill_gui_ranger.tooltip_slot_4": "Slot 4",
+      "slsb.huntermenu.basicskils": "Basic Skills",
+      "gui.slsb.hunter_skill_gui_healer.tooltip_slot_5": "Slot 5",
+      "gui.slsb.hunter_skill_gui_ranger.tooltip_slot_5": "Slot 5",
+      "gui.slsb.hunter_skill_gui_healer.tooltip_slot_2": "Slot 2",
+      "gui.slsb.hunter_skill_gui_ranger.tooltip_slot_2": "Slot 2",
       "slsb.command.awakenadmin": "has been awakened",
-      "subtitles.whoosh": "Player whooshes",
-      "slsb.evaluator.erank.goodbye": "I, uh... hope you have a strong will. Good luck... I guess.",
-      "key.slsb.ability_2": "Ability 2",
-      "block.slsb.barrier_wall": "§dBarrier Wall",
-      "key.slsb.ability_3": "Ability 3",
-      "slsb.evaluator.srank.response": "Wow... I can\u0027t believe my eyes! You\u0027re really an §f§lS-Rank!",
-      "key.slsb.ability_1": "Ability 1",
+      "gui.slsb.hunter_skill_gui_healer.tooltip_slot_3": "Slot 3",
+      "gui.slsb.hunter_skill_gui_ranger.tooltip_slot_3": "Slot 3",
+      "gui.slsb.hunter_skill_gui_healer.tooltip_slot_1": "Slot 1",
+      "gui.slsb.hunter_skill_gui_ranger.tooltip_slot_1": "Slot 1",
       "subtitles.basic_hit": "Player lands a hit",
-      "effect.slsb.mana_fatigue": "Mana Fatigue",
-      "block.slsb.green_door": "Industrial Green Door",
-      "gui.slsb.hunter_skill_gui.tooltip_dash": "Dash",
+      "slsb.huntermenu.classskills": "Class Skills",
       "slsb.systemmenu.status": "Status",
-      "gui.slsb.hunter_skill_gui.tooltip_heavy_attack": "Heavy Attack",
+      "gui.slsb.hunter_skill_gui_tank.tooltip_slot_10": "Slot 10",
+      "slsb.command.setclassadmin": "Class has been set to",
       "block.slsb.barrier_slab": "§dBarrier Slab",
-      "effect.slsb.bleeding": "Bleeding"
+      "gui.slsb.hunter_skill_gui.tooltip_heavy_attack": "Heavy Attack"
     }
   },
   "foldersRoot": {
@@ -4360,7 +4678,16 @@
       },
       {
         "name": "GUI",
-        "children": []
+        "children": [
+          {
+            "name": "Hunter",
+            "children": []
+          },
+          {
+            "name": "System",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Weapons",

@@ -13,7 +13,12 @@ import net.clozynoii.slsb.client.gui.SystemSkillsGUIScreen;
 import net.clozynoii.slsb.client.gui.SystemShopGUIScreen;
 import net.clozynoii.slsb.client.gui.SystemQuestGUIScreen;
 import net.clozynoii.slsb.client.gui.SystemMainGUIScreen;
+import net.clozynoii.slsb.client.gui.HunterSkillGUITankScreen;
 import net.clozynoii.slsb.client.gui.HunterSkillGUIScreen;
+import net.clozynoii.slsb.client.gui.HunterSkillGUIRangerScreen;
+import net.clozynoii.slsb.client.gui.HunterSkillGUIHealerScreen;
+import net.clozynoii.slsb.client.gui.HunterSkillGUIFighterScreen;
+import net.clozynoii.slsb.client.gui.HunterSkillGUIAssassinScreen;
 import net.clozynoii.slsb.client.gui.HunterMainGUIScreen;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -26,5 +31,10 @@ public class SlsbModScreens {
 		event.register(SlsbModMenus.SYSTEM_SKILLS_GUI.get(), SystemSkillsGUIScreen::new);
 		event.register(SlsbModMenus.SYSTEM_SHOP_GUI.get(), SystemShopGUIScreen::new);
 		event.register(SlsbModMenus.SYSTEM_QUEST_GUI.get(), SystemQuestGUIScreen::new);
+		event.register(SlsbModMenus.HUNTER_SKILL_GUI_FIGHTER.get(), HunterSkillGUIFighterScreen::new);
+		event.register(SlsbModMenus.HUNTER_SKILL_GUI_ASSASSIN.get(), HunterSkillGUIAssassinScreen::new);
+		event.register(SlsbModMenus.HUNTER_SKILL_GUI_TANK.get(), HunterSkillGUITankScreen::new);
+		event.register(SlsbModMenus.HUNTER_SKILL_GUI_HEALER.get(), HunterSkillGUIHealerScreen::new);
+		event.register(SlsbModMenus.HUNTER_SKILL_GUI_RANGER.get(), HunterSkillGUIRangerScreen::new);
 	}
 }

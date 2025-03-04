@@ -15,7 +15,12 @@ import net.clozynoii.slsb.world.inventory.SystemSkillsGUIMenu;
 import net.clozynoii.slsb.world.inventory.SystemShopGUIMenu;
 import net.clozynoii.slsb.world.inventory.SystemQuestGUIMenu;
 import net.clozynoii.slsb.world.inventory.SystemMainGUIMenu;
+import net.clozynoii.slsb.world.inventory.HunterSkillGUITankMenu;
+import net.clozynoii.slsb.world.inventory.HunterSkillGUIRangerMenu;
 import net.clozynoii.slsb.world.inventory.HunterSkillGUIMenu;
+import net.clozynoii.slsb.world.inventory.HunterSkillGUIHealerMenu;
+import net.clozynoii.slsb.world.inventory.HunterSkillGUIFighterMenu;
+import net.clozynoii.slsb.world.inventory.HunterSkillGUIAssassinMenu;
 import net.clozynoii.slsb.world.inventory.HunterMainGUIMenu;
 import net.clozynoii.slsb.SlsbMod;
 
@@ -27,4 +32,9 @@ public class SlsbModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<SystemSkillsGUIMenu>> SYSTEM_SKILLS_GUI = REGISTRY.register("system_skills_gui", () -> IMenuTypeExtension.create(SystemSkillsGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<SystemShopGUIMenu>> SYSTEM_SHOP_GUI = REGISTRY.register("system_shop_gui", () -> IMenuTypeExtension.create(SystemShopGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<SystemQuestGUIMenu>> SYSTEM_QUEST_GUI = REGISTRY.register("system_quest_gui", () -> IMenuTypeExtension.create(SystemQuestGUIMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<HunterSkillGUIFighterMenu>> HUNTER_SKILL_GUI_FIGHTER = REGISTRY.register("hunter_skill_gui_fighter", () -> IMenuTypeExtension.create(HunterSkillGUIFighterMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<HunterSkillGUIAssassinMenu>> HUNTER_SKILL_GUI_ASSASSIN = REGISTRY.register("hunter_skill_gui_assassin", () -> IMenuTypeExtension.create(HunterSkillGUIAssassinMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<HunterSkillGUITankMenu>> HUNTER_SKILL_GUI_TANK = REGISTRY.register("hunter_skill_gui_tank", () -> IMenuTypeExtension.create(HunterSkillGUITankMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<HunterSkillGUIHealerMenu>> HUNTER_SKILL_GUI_HEALER = REGISTRY.register("hunter_skill_gui_healer", () -> IMenuTypeExtension.create(HunterSkillGUIHealerMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<HunterSkillGUIRangerMenu>> HUNTER_SKILL_GUI_RANGER = REGISTRY.register("hunter_skill_gui_ranger", () -> IMenuTypeExtension.create(HunterSkillGUIRangerMenu::new));
 }

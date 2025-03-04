@@ -18,6 +18,8 @@ import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.clozynoii.slsb.world.inventory.HunterMainGUIMenu;
+import net.clozynoii.slsb.procedures.ReturnSystemLocalStatusProcedure;
+import net.clozynoii.slsb.procedures.ReturnSystemLocalSkillsProcedure;
 import net.clozynoii.slsb.procedures.ReturnPlayerProcedure;
 import net.clozynoii.slsb.procedures.ReturnPlayerCashProcedure;
 import net.clozynoii.slsb.procedures.ReturnHunterVitalityProcedure;
@@ -62,6 +64,10 @@ public class HunterMainGUIScreen extends AbstractContainerScreen<HunterMainGUIMe
 			this.renderEntityInInventoryFollowsAngle(guiGraphics, this.leftPos + -28, this.topPos + 24, 35, 0f + (float) Math.atan((this.leftPos + -28 - mouseX) / 40.0), (float) Math.atan((this.topPos + -25 - mouseY) / 40.0), livingEntity);
 		}
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
+		if (mouseX > leftPos + -62 && mouseX < leftPos + -38 && mouseY > topPos + -105 && mouseY < topPos + -81)
+			guiGraphics.renderTooltip(font, Component.literal(ReturnSystemLocalStatusProcedure.execute()), mouseX, mouseY);
+		if (mouseX > leftPos + -37 && mouseX < leftPos + -13 && mouseY > topPos + -105 && mouseY < topPos + -81)
+			guiGraphics.renderTooltip(font, Component.literal(ReturnSystemLocalSkillsProcedure.execute()), mouseX, mouseY);
 	}
 
 	@Override

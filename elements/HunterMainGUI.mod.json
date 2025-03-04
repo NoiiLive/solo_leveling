@@ -353,6 +353,36 @@
           "y": 137,
           "locked": true
         }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_system_local_status",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSystemLocalStatus"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 152,
+          "y": 15,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_system_local_skills",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSystemLocalSkills"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 177,
+          "y": 15,
+          "locked": true
+        }
       }
     ],
     "onClosed": {
