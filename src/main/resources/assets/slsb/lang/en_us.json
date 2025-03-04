@@ -1,9 +1,9 @@
 {
   "slsb.evaluator.evaluated": "You have already been evaluated!",
-  "slsb.evaluator.normalrank.rank": "-Rank!",
-  "slsb.training.manafatigue": "Your mana is currently fatigued",
-  "slsb.command.systemplayertarget": "Your Player status has been set to",
   "item_group.slsb.sl_gear": "Solo Leveling: Gear",
+  "slsb.command.systemplayertarget": "Your Player status has been set to",
+  "slsb.training.manafatigue": "Your mana is currently fatigued",
+  "slsb.evaluator.normalrank.rank": "-Rank!",
   "block.slsb.blue_gate_medium": "Gate (Medium)",
   "gui.slsb.hunter_skill_gui.tooltip_barrage": "Barrage",
   "item.slsb.kasakas_fang.description_1": "§7Category: §fDagger",
@@ -78,6 +78,5 @@
   "gui.slsb.hunter_skill_gui.tooltip_dash": "Dash",
   "slsb.systemmenu.status": "Status",
   "gui.slsb.hunter_skill_gui.tooltip_heavy_attack": "Heavy Attack",
-  "block.slsb.barrier_slab": "§dBarrier Slab",
-  "effect.slsb.bleeding": "Bleeding"
+  "block.slsb.barrier_slab": "§dBarrier Slab"
 }

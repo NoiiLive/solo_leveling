@@ -3743,6 +3743,23 @@
         ]
       },
       "path": "~/Weapons"
+    },
+    {
+      "name": "RedKnightsArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_knights_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/slsb/models/item/red_knights_armor_helmet.json",
+          "src/main/resources/assets/slsb/models/item/red_knights_armor_boots.json",
+          "src/main/java/net/clozynoii/slsb/item/RedKnightsArmorItem.java",
+          "src/main/resources/assets/slsb/models/item/red_knights_armor_chestplate.json",
+          "src/main/resources/assets/slsb/models/item/red_knights_armor_leggings.json"
+        ]
+      },
+      "path": "~/Armor"
     }
   ],
   "variable_elements": [
@@ -4054,6 +4071,9 @@
     }
   ],
   "tag_elements": {
+    "ITEMS:minecraft:chest_armor": [
+      "~CUSTOM:RedKnightsArmor.body"
+    ],
     "BLOCKS:minecraft:slabs": [
       "~CUSTOM:BarrierSlab"
     ],
@@ -4115,6 +4135,15 @@
     ],
     "ITEMS:minecraft:swords": [
       "~CUSTOM:KasakasFang"
+    ],
+    "ITEMS:minecraft:head_armor": [
+      "~CUSTOM:RedKnightsArmor.helmet"
+    ],
+    "ITEMS:minecraft:foot_armor": [
+      "~CUSTOM:RedKnightsArmor.boots"
+    ],
+    "ITEMS:minecraft:leg_armor": [
+      "~CUSTOM:RedKnightsArmor.legs"
     ]
   },
   "tab_element_order": {},
@@ -4199,31 +4228,43 @@
       "gui.slsb.hunter_skill_gui.tooltip_dash": "Dash",
       "slsb.systemmenu.status": "Status",
       "gui.slsb.hunter_skill_gui.tooltip_heavy_attack": "Heavy Attack",
-      "block.slsb.barrier_slab": "§dBarrier Slab",
-      "effect.slsb.bleeding": "Bleeding"
+      "block.slsb.barrier_slab": "§dBarrier Slab"
     }
   },
   "foldersRoot": {
     "name": "~",
     "children": [
       {
-        "name": "Procedures",
+        "name": "Armor",
+        "children": []
+      },
+      {
+        "name": "Items",
+        "children": []
+      },
+      {
+        "name": "Misc",
         "children": [
           {
-            "name": "Player",
+            "name": "Keybinds",
             "children": []
           },
           {
+            "name": "Commands",
+            "children": []
+          },
+          {
+            "name": "Tabs",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Procedures",
+        "children": [
+          {
             "name": "GUI",
             "children": [
-              {
-                "name": "Overlay",
-                "children": []
-              },
-              {
-                "name": "Hunter GUI",
-                "children": []
-              },
               {
                 "name": "System GUI",
                 "children": [
@@ -4241,22 +4282,26 @@
                     "children": []
                   }
                 ]
+              },
+              {
+                "name": "Hunter GUI",
+                "children": []
+              },
+              {
+                "name": "Overlay",
+                "children": []
               }
             ]
-          },
-          {
-            "name": "Keys",
-            "children": []
           },
           {
             "name": "Abilities",
             "children": [
               {
-                "name": "Hunters",
+                "name": "System",
                 "children": []
               },
               {
-                "name": "System",
+                "name": "Hunters",
                 "children": []
               },
               {
@@ -4274,6 +4319,14 @@
             "children": []
           },
           {
+            "name": "Player",
+            "children": []
+          },
+          {
+            "name": "Keys",
+            "children": []
+          },
+          {
             "name": "Blocks",
             "children": []
           }
@@ -4284,41 +4337,8 @@
         "children": []
       },
       {
-        "name": "Armor",
-        "children": []
-      },
-      {
-        "name": "Weapons",
-        "children": []
-      },
-      {
-        "name": "Items",
-        "children": []
-      },
-      {
         "name": "Structures",
         "children": []
-      },
-      {
-        "name": "GUI",
-        "children": []
-      },
-      {
-        "name": "Effects",
-        "children": [
-          {
-            "name": "Potions",
-            "children": []
-          },
-          {
-            "name": "Particles",
-            "children": []
-          },
-          {
-            "name": "Functions",
-            "children": []
-          }
-        ]
       },
       {
         "name": "Blocks",
@@ -4338,27 +4358,35 @@
         ]
       },
       {
-        "name": "Misc",
+        "name": "Potions",
         "children": [
           {
-            "name": "Commands",
-            "children": []
-          },
-          {
-            "name": "Tabs",
-            "children": []
-          },
-          {
-            "name": "Keybinds",
+            "name": "Procedures",
             "children": []
           }
         ]
       },
       {
-        "name": "Potions",
+        "name": "GUI",
+        "children": []
+      },
+      {
+        "name": "Weapons",
+        "children": []
+      },
+      {
+        "name": "Effects",
         "children": [
           {
-            "name": "Procedures",
+            "name": "Particles",
+            "children": []
+          },
+          {
+            "name": "Functions",
+            "children": []
+          },
+          {
+            "name": "Potions",
             "children": []
           }
         ]
