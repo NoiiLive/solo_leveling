@@ -26,10 +26,13 @@ import net.clozynoii.slsb.item.EssenceStoneDItem;
 import net.clozynoii.slsb.item.EssenceStoneCItem;
 import net.clozynoii.slsb.item.EssenceStoneBItem;
 import net.clozynoii.slsb.item.EssenceStoneAItem;
+import net.clozynoii.slsb.block.display.VitalityTrainingMatDisplayItem;
+import net.clozynoii.slsb.block.display.StrengthTrainingDumbellsDisplayItem;
 import net.clozynoii.slsb.block.display.ManaTrainingOrbDisplayItem;
 import net.clozynoii.slsb.block.display.BlueGateSmallDisplayItem;
 import net.clozynoii.slsb.block.display.BlueGateMediumDisplayItem;
 import net.clozynoii.slsb.block.display.AwakeningOrbDisplayItem;
+import net.clozynoii.slsb.block.display.AgilityTreadmillDisplayItem;
 import net.clozynoii.slsb.SlsbMod;
 
 public class SlsbModItems {
@@ -69,6 +72,10 @@ public class SlsbModItems {
 	public static final DeferredItem<Item> MINING_CLOTHES_BOOTS = REGISTRY.register("mining_clothes_boots", MiningClothesItem.Boots::new);
 	public static final DeferredItem<Item> MANA_CRYSTAL_ORE = block(SlsbModBlocks.MANA_CRYSTAL_ORE);
 	public static final DeferredItem<Item> MANA_CRYSTAL_CLUSTER = block(SlsbModBlocks.MANA_CRYSTAL_CLUSTER);
+	public static final DeferredItem<Item> STRENGTH_TRAINING_DUMBELLS = REGISTRY.register(SlsbModBlocks.STRENGTH_TRAINING_DUMBELLS.getId().getPath(),
+			() -> new StrengthTrainingDumbellsDisplayItem(SlsbModBlocks.STRENGTH_TRAINING_DUMBELLS.get(), new Item.Properties()));
+	public static final DeferredItem<Item> AGILITY_TREADMILL = REGISTRY.register(SlsbModBlocks.AGILITY_TREADMILL.getId().getPath(), () -> new AgilityTreadmillDisplayItem(SlsbModBlocks.AGILITY_TREADMILL.get(), new Item.Properties()));
+	public static final DeferredItem<Item> VITALITY_TRAINING_MAT = REGISTRY.register(SlsbModBlocks.VITALITY_TRAINING_MAT.getId().getPath(), () -> new VitalityTrainingMatDisplayItem(SlsbModBlocks.VITALITY_TRAINING_MAT.get(), new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

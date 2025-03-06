@@ -1,0 +1,7 @@
+
+{
+  "parent": "slsb:displaysettings/training_mat.item",
+  "textures": {
+    "particle": "slsb:block/training_mat"
+  }
+}

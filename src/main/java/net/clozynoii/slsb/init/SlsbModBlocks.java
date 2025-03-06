@@ -9,9 +9,11 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 
 import net.minecraft.world.level.block.Block;
 
+import net.clozynoii.slsb.block.VitalityTrainingMatBlock;
 import net.clozynoii.slsb.block.TanTrimmedPanelWallBlock;
 import net.clozynoii.slsb.block.TanPanelWallBlock;
 import net.clozynoii.slsb.block.TanPanelBlock;
+import net.clozynoii.slsb.block.StrengthTrainingDumbellsBlock;
 import net.clozynoii.slsb.block.MetalFramedWindowBlock;
 import net.clozynoii.slsb.block.ManaTrainingOrbBlock;
 import net.clozynoii.slsb.block.ManaCrystalOreBlock;
@@ -25,6 +27,7 @@ import net.clozynoii.slsb.block.BloodBlockBlock;
 import net.clozynoii.slsb.block.BarrierWallBlock;
 import net.clozynoii.slsb.block.BarrierSlabBlock;
 import net.clozynoii.slsb.block.AwakeningOrbBlock;
+import net.clozynoii.slsb.block.AgilityTreadmillBlock;
 import net.clozynoii.slsb.SlsbMod;
 
 public class SlsbModBlocks {
@@ -45,6 +48,9 @@ public class SlsbModBlocks {
 	public static final DeferredBlock<Block> METAL_FRAMED_WINDOW = REGISTRY.register("metal_framed_window", MetalFramedWindowBlock::new);
 	public static final DeferredBlock<Block> MANA_CRYSTAL_ORE = REGISTRY.register("mana_crystal_ore", ManaCrystalOreBlock::new);
 	public static final DeferredBlock<Block> MANA_CRYSTAL_CLUSTER = REGISTRY.register("mana_crystal_cluster", ManaCrystalClusterBlock::new);
+	public static final DeferredBlock<Block> STRENGTH_TRAINING_DUMBELLS = REGISTRY.register("strength_training_dumbells", StrengthTrainingDumbellsBlock::new);
+	public static final DeferredBlock<Block> AGILITY_TREADMILL = REGISTRY.register("agility_treadmill", AgilityTreadmillBlock::new);
+	public static final DeferredBlock<Block> VITALITY_TRAINING_MAT = REGISTRY.register("vitality_training_mat", VitalityTrainingMatBlock::new);
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

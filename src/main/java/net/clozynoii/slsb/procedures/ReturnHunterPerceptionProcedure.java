@@ -23,7 +23,7 @@ public class ReturnHunterPerceptionProcedure {
 		if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerPerception >= 65 && entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerPerception < 85) {
 			return "[A]";
 		}
-		if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerPerception >= 85 && entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerPerception < 100) {
+		if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerPerception >= 85 && entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerPerception <= 100) {
 			return "[S]";
 		}
 		return "[F]";

@@ -71,6 +71,8 @@ public class SystemSkillsGUIScreen extends AbstractContainerScreen<SystemSkillsG
 
 		guiGraphics.blit(ResourceLocation.parse("slsb:textures/screens/top_edge.png"), this.leftPos + -89, this.topPos + -109, 0, 0, 26, 32, 26, 32);
 
+		guiGraphics.blit(ResourceLocation.parse("slsb:textures/screens/tab_top_system.png"), this.leftPos + -64, this.topPos + -111, 0, 0, 26, 32, 26, 32);
+
 		RenderSystem.disableBlend();
 	}
 

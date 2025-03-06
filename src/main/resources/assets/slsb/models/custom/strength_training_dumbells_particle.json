@@ -1,0 +1,7 @@
+
+{
+  "parent": "slsb:displaysettings/dumbells.item",
+  "textures": {
+    "particle": "slsb:block/dumbells"
+  }
+}

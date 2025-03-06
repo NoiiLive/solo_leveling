@@ -23,7 +23,7 @@ public class ReturnHunterVitalityProcedure {
 		if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerVitality >= 65 && entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerVitality < 85) {
 			return "[A]";
 		}
-		if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerVitality >= 85 && entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerVitality < 100) {
+		if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerVitality >= 85 && entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerVitality <= 100) {
 			return "[S]";
 		}
 		return "[F]";

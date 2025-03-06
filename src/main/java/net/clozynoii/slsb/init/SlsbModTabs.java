@@ -30,6 +30,9 @@ public class SlsbModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.slsb.sl_blocks")).icon(() -> new ItemStack(SlsbModBlocks.AWAKENING_ORB.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(SlsbModBlocks.AWAKENING_ORB.get().asItem());
 				tabData.accept(SlsbModBlocks.MANA_TRAINING_ORB.get().asItem());
+				tabData.accept(SlsbModBlocks.STRENGTH_TRAINING_DUMBELLS.get().asItem());
+				tabData.accept(SlsbModBlocks.AGILITY_TREADMILL.get().asItem());
+				tabData.accept(SlsbModBlocks.VITALITY_TRAINING_MAT.get().asItem());
 				tabData.accept(SlsbModBlocks.MANA_CRYSTAL_ORE.get().asItem());
 				tabData.accept(SlsbModBlocks.MANA_CRYSTAL_CLUSTER.get().asItem());
 			}).withTabsBefore(SL_ITEMS.getId()).build());

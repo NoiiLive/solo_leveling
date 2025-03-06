@@ -23,7 +23,7 @@ public class ReturnHunterIntelligenceProcedure {
 		if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerIntelligence >= 65 && entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerIntelligence < 85) {
 			return "[A]";
 		}
-		if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerIntelligence >= 85 && entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerIntelligence < 100) {
+		if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerIntelligence >= 85 && entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerIntelligence <= 100) {
 			return "[S]";
 		}
 		return "[F]";

@@ -42,11 +42,6 @@ public class HunterEvaluationProcedure {
 			}
 			{
 				SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
-				_vars.PlayerPerception = 1;
-				_vars.syncPlayerVariables(entity);
-			}
-			{
-				SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
 				_vars.PlayerIntelligence = 1;
 				_vars.syncPlayerVariables(entity);
 			}
@@ -93,10 +88,20 @@ public class HunterEvaluationProcedure {
 					_vars.PlayerRank = "E";
 					_vars.syncPlayerVariables(entity);
 				}
+				{
+					SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
+					_vars.PlayerPerception = 1;
+					_vars.syncPlayerVariables(entity);
+				}
 			} else if (RandomRank == 2) {
 				{
 					SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
 					_vars.PlayerRank = "D";
+					_vars.syncPlayerVariables(entity);
+				}
+				{
+					SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
+					_vars.PlayerPerception = 20;
 					_vars.syncPlayerVariables(entity);
 				}
 			} else if (RandomRank == 3) {
@@ -105,10 +110,20 @@ public class HunterEvaluationProcedure {
 					_vars.PlayerRank = "C";
 					_vars.syncPlayerVariables(entity);
 				}
+				{
+					SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
+					_vars.PlayerPerception = 35;
+					_vars.syncPlayerVariables(entity);
+				}
 			} else if (RandomRank == 4) {
 				{
 					SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
 					_vars.PlayerRank = "B";
+					_vars.syncPlayerVariables(entity);
+				}
+				{
+					SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
+					_vars.PlayerPerception = 50;
 					_vars.syncPlayerVariables(entity);
 				}
 			} else if (RandomRank == 5) {
@@ -117,10 +132,20 @@ public class HunterEvaluationProcedure {
 					_vars.PlayerRank = "A";
 					_vars.syncPlayerVariables(entity);
 				}
+				{
+					SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
+					_vars.PlayerPerception = 65;
+					_vars.syncPlayerVariables(entity);
+				}
 			} else if (RandomRank == 6) {
 				{
 					SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
 					_vars.PlayerRank = "S";
+					_vars.syncPlayerVariables(entity);
+				}
+				{
+					SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
+					_vars.PlayerPerception = 85;
 					_vars.syncPlayerVariables(entity);
 				}
 			}
