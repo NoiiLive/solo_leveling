@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb"
+  ],
+  "key": {
+    "a": {
+      "item": "slsb:mana_crystal"
+    },
+    "b": {
+      "item": "minecraft:gold_ingot"
+    },
+    "c": {
+      "item": "minecraft:gold_block"
+    }
+  },
+  "result": {
+    "id": "slsb:mana_training_orb",
+    "count": 1
+  }
+}

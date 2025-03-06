@@ -3331,7 +3331,7 @@
           "src/main/java/net/clozynoii/slsb/world/inventory/SystemShopGUIMenu.java"
         ]
       },
-      "path": "~/GUI/System"
+      "path": "~/GUI/System/Shop"
     },
     {
       "name": "SystemQuestGUI",
@@ -4436,6 +4436,271 @@
         ]
       },
       "path": "~/Blocks/Useable"
+    },
+    {
+      "name": "SystemShopWeapons",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "system_shop_weapons",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/client/gui/SystemShopWeaponsScreen.java",
+          "src/main/java/net/clozynoii/slsb/network/SystemShopWeaponsButtonMessage.java",
+          "src/main/java/net/clozynoii/slsb/world/inventory/SystemShopWeaponsMenu.java"
+        ]
+      },
+      "path": "~/GUI/System/Shop"
+    },
+    {
+      "name": "SystemShopArmor",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "system_shop_armor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/network/SystemShopArmorButtonMessage.java",
+          "src/main/java/net/clozynoii/slsb/client/gui/SystemShopArmorScreen.java",
+          "src/main/java/net/clozynoii/slsb/world/inventory/SystemShopArmorMenu.java"
+        ]
+      },
+      "path": "~/GUI/System/Shop"
+    },
+    {
+      "name": "SystemShopPotions",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "system_shop_potions",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/client/gui/SystemShopPotionsScreen.java",
+          "src/main/java/net/clozynoii/slsb/network/SystemShopPotionsButtonMessage.java",
+          "src/main/java/net/clozynoii/slsb/world/inventory/SystemShopPotionsMenu.java"
+        ]
+      },
+      "path": "~/GUI/System/Shop"
+    },
+    {
+      "name": "SystemOpenShopWeapons",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "system_open_shop_weapons",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SystemOpenShopWeaponsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/System GUI"
+    },
+    {
+      "name": "SystemOpenShopArmor",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "system_open_shop_armor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SystemOpenShopArmorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/System GUI"
+    },
+    {
+      "name": "SystemOpenShopPotions",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "system_open_shop_potions",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SystemOpenShopPotionsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/System GUI"
+    },
+    {
+      "name": "ReturnSystemEXP",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_system_exp",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnSystemEXPProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/System GUI"
+    },
+    {
+      "name": "ReturnSystemGold",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_system_gold",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnSystemGoldProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/System GUI"
+    },
+    {
+      "name": "INTOrbRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "int_orb_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/slsb/recipe/int_orb_recipe.json"
+        ]
+      },
+      "path": "~/Misc/Recipes"
+    },
+    {
+      "name": "STRDumbellRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "str_dumbell_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/slsb/recipe/str_dumbell_recipe.json"
+        ]
+      },
+      "path": "~/Misc/Recipes"
+    },
+    {
+      "name": "AGLTreadmillRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "agl_treadmill_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/slsb/recipe/agl_treadmill_recipe.json"
+        ]
+      },
+      "path": "~/Misc/Recipes"
+    },
+    {
+      "name": "VITMatRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vit_mat_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/slsb/recipe/vit_mat_recipe.json"
+        ]
+      },
+      "path": "~/Misc/Recipes"
+    },
+    {
+      "name": "SystemSell",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "system_sell",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SystemSellProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/System GUI"
     }
   ],
   "variable_elements": [
@@ -4726,6 +4991,24 @@
       "type": "string",
       "scope": "player_persistent",
       "value": "None"
+    },
+    {
+      "name": "PlayerEXP",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "PlayerMaxEXP",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "100.0"
+    },
+    {
+      "name": "PlayerGold",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1000.0"
     }
   ],
   "sound_elements": [
@@ -4879,6 +5162,7 @@
       "gui.slsb.hunter_skill_gui_fighter.tooltip_slot_5": "Slot 5",
       "block.slsb.mana_crystal_cluster": "Mana Crystal Cluster",
       "gui.slsb.hunter_skill_gui_fighter.tooltip_slot_1": "Slot 1",
+      "gui.slsb.system_shop_armor.button_ssfsslx": "§f§lX",
       "block.slsb.mana_crystal_ore": "Mana Crystal Ore",
       "gui.slsb.hunter_skill_gui_fighter.tooltip_slot_6": "Slot 6",
       "gui.slsb.hunter_skill_gui_fighter.tooltip_slot_7": "Slot 7",
@@ -4929,6 +5213,7 @@
       "slsb.huntermenu.basicskills": "Basic Skills",
       "key.slsb.change_ability_bar": "Change Ability Bar",
       "gui.slsb.hunter_skill_gui.tooltip_slot_10": "Slot 10",
+      "gui.slsb.system_shop_weapons.button_ssfsslsell": "§f§lSell",
       "gui.slsb.hunter_skill_gui_fighter.tooltip_heavy_attack": "Heavy Attack",
       "block.slsb.vitality_training_mat": "Training Mat",
       "slsb.evaluator.unawakened": "It appears you haven\u0027t awakened yet...",
@@ -4946,13 +5231,16 @@
       "item.slsb.essence_stone_b": "§bEssence Stone (B-Rank)",
       "item.slsb.essence_stone_c": "§aEssence Stone (C-Rank)",
       "item.slsb.essence_stone_a": "§cEssence Stone (A-Rank)",
+      "gui.slsb.system_shop_gui.button_ssfsslpots": "§f§lPots",
       "subtitles.basic_hit": "Player lands a hit",
       "slsb.huntermenu.classskills": "Class Skills",
       "item.slsb.essence_stone_s": "§dEssence Stone (S-Rank)",
       "gui.slsb.hunter_skill_gui_tank.tooltip_slot_10": "Slot 10",
       "item.slsb.essence_stone_d": "§eEssence Stone (D-Rank)",
       "item.slsb.essence_stone_e": "Essence Stone (E-Rank)",
+      "gui.slsb.system_shop_potions.button_ssfsslx": "§f§lX",
       "gui.slsb.hunter_skill_gui_tank.tooltip_slot_9": "Slot 9",
+      "gui.slsb.system_shop_gui.button_ssfsslweaps": "§f§lWeaps",
       "slsb.evaluator.evaluated": "You have already been evaluated!",
       "gui.slsb.hunter_skill_gui_tank.tooltip_slot_7": "Slot 7",
       "item.slsb.red_knights_armor_chestplate": "§cCrimson Knight\u0027s Chestplate",
@@ -4974,6 +5262,7 @@
       "gui.slsb.hunter_skill_gui_tank.tooltip_slot_4": "Slot 4",
       "item.slsb.red_knights_armor_leggings.description_4": "§aVIT +20",
       "gui.slsb.hunter_skill_gui_fighter.tooltip_slam": "Slam",
+      "gui.slsb.system_shop_gui.button_ssfsslsell": "§f§lSell",
       "item.slsb.mana_stone_pickaxe": "Mana-Stone Pickaxe",
       "block.slsb.tan_panel_wall": "Tan Panel Wall",
       "slsb.evaluator.normalrank.goodbye": "Good luck, and stay safe out there, Hunter!",
@@ -5014,9 +5303,11 @@
       "slsb.evaluator.srank.response": "Wow... I can\u0027t believe my eyes! You\u0027re really an §f§lS-Rank!",
       "effect.slsb.mana_fatigue": "Mana Fatigue",
       "block.slsb.green_door": "Industrial Green Door",
+      "gui.slsb.system_shop_gui.button_ssfsslarmor": "§f§lArmor",
       "block.slsb.agility_treadmill.description_1": "§7§otrain their Agility",
       "block.slsb.agility_treadmill.description_0": "§7§oUsed by Hunters to",
       "effect.slsb.bleeding": "Bleeding",
+      "gui.slsb.system_shop_weapons.button_ssfsslweaps": "§f§lWeaps",
       "item.slsb.red_knights_armor_helmet.description_0": "§7Acquisition Difficulty: §fS-Rank",
       "item.slsb.red_knights_armor_helmet.description_1": "§7Category: §fGear",
       "block.slsb.mana_training_orb": "Mana Orb",
@@ -5033,6 +5324,7 @@
       "gui.slsb.hunter_skill_gui_assassin.tooltip_slot_10": "Slot 10",
       "effect.slsb.muscle_fatigue": "Muscle Fatigue",
       "gui.slsb.hunter_skill_gui_fighter.tooltip_barrage": "Barrage",
+      "gui.slsb.system_shop_weapons.button_ssfsslarmor": "§f§lArmor",
       "gui.slsb.hunter_skill_gui_assassin.tooltip_slot_1": "Slot 1",
       "gui.slsb.hunter_skill_gui_assassin.tooltip_slot_6": "Slot 6",
       "gui.slsb.hunter_skill_gui_assassin.tooltip_slot_7": "Slot 7",
@@ -5044,6 +5336,8 @@
       "gui.slsb.hunter_skill_gui_assassin.tooltip_slot_4": "Slot 4",
       "gui.slsb.hunter_skill_gui_assassin.tooltip_slot_5": "Slot 5",
       "item.slsb.kasakas_fang": "§eKasaka\u0027s Venom Fang",
+      "gui.slsb.system_shop_weapons.button_ssfsslx": "§f§lX",
+      "gui.slsb.system_shop_weapons.button_ssfsslpots": "§f§lPots",
       "effect.slsb.no_fall": "No Fall",
       "gui.slsb.hunter_skill_gui_healer.tooltip_slot_8": "Slot 8",
       "gui.slsb.hunter_skill_gui_ranger.tooltip_slot_8": "Slot 8",
@@ -5218,7 +5512,16 @@
           },
           {
             "name": "System",
-            "children": []
+            "children": [
+              {
+                "name": "Shop",
+                "children": []
+              },
+              {
+                "name": "Skills",
+                "children": []
+              }
+            ]
           }
         ]
       },

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:red_wool"
+    },
+    "b": {
+      "item": "minecraft:white_wool"
+    }
+  },
+  "result": {
+    "id": "slsb:vitality_training_mat",
+    "count": 1
+  }
+}

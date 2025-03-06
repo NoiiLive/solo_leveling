@@ -12,7 +12,10 @@ import net.minecraft.world.inventory.MenuType;
 import net.minecraft.core.registries.Registries;
 
 import net.clozynoii.slsb.world.inventory.SystemSkillsGUIMenu;
+import net.clozynoii.slsb.world.inventory.SystemShopWeaponsMenu;
+import net.clozynoii.slsb.world.inventory.SystemShopPotionsMenu;
 import net.clozynoii.slsb.world.inventory.SystemShopGUIMenu;
+import net.clozynoii.slsb.world.inventory.SystemShopArmorMenu;
 import net.clozynoii.slsb.world.inventory.SystemQuestGUIMenu;
 import net.clozynoii.slsb.world.inventory.SystemMainGUIMenu;
 import net.clozynoii.slsb.world.inventory.HunterSkillGUITankMenu;
@@ -37,4 +40,7 @@ public class SlsbModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<HunterSkillGUITankMenu>> HUNTER_SKILL_GUI_TANK = REGISTRY.register("hunter_skill_gui_tank", () -> IMenuTypeExtension.create(HunterSkillGUITankMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<HunterSkillGUIHealerMenu>> HUNTER_SKILL_GUI_HEALER = REGISTRY.register("hunter_skill_gui_healer", () -> IMenuTypeExtension.create(HunterSkillGUIHealerMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<HunterSkillGUIRangerMenu>> HUNTER_SKILL_GUI_RANGER = REGISTRY.register("hunter_skill_gui_ranger", () -> IMenuTypeExtension.create(HunterSkillGUIRangerMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<SystemShopWeaponsMenu>> SYSTEM_SHOP_WEAPONS = REGISTRY.register("system_shop_weapons", () -> IMenuTypeExtension.create(SystemShopWeaponsMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<SystemShopArmorMenu>> SYSTEM_SHOP_ARMOR = REGISTRY.register("system_shop_armor", () -> IMenuTypeExtension.create(SystemShopArmorMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<SystemShopPotionsMenu>> SYSTEM_SHOP_POTIONS = REGISTRY.register("system_shop_potions", () -> IMenuTypeExtension.create(SystemShopPotionsMenu::new));
 }

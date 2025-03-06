@@ -13,7 +13,7 @@
       {
         "type": "image",
         "data": {
-          "image": "system_menu_shop.png",
+          "image": "system_menu_blank.png",
           "use1Xscale": false,
           "x": 0,
           "y": 0,
@@ -145,64 +145,50 @@
       {
         "type": "button",
         "data": {
-          "name": "button_ssfsslarmor",
-          "text": "§f§lArmor",
+          "name": "button_ssfsslx",
+          "text": "§f§lX",
           "isUndecorated": true,
           "onClick": {
-            "name": "SystemOpenShopArmor"
+            "name": "SystemOpenShop"
           },
-          "width": 34,
+          "width": 51,
           "height": 20,
-          "x": 221,
-          "y": 102,
+          "x": 142,
+          "y": 68,
           "locked": true
         }
       },
       {
-        "type": "button",
+        "type": "label",
         "data": {
-          "name": "button_ssfsslweaps",
-          "text": "§f§lWeaps",
-          "isUndecorated": true,
-          "onClick": {
-            "name": "SystemOpenShopWeapons"
+          "name": "label_proc_return_system_gold",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSystemGold"
           },
-          "width": 34,
-          "height": 20,
-          "x": 171,
-          "y": 102,
+          "color": {
+            "value": -15657947,
+            "falpha": 0.0
+          },
+          "x": 143,
+          "y": 179,
           "locked": true
         }
       },
       {
-        "type": "button",
+        "type": "label",
         "data": {
-          "name": "button_ssfsslpots",
-          "text": "§f§lPots",
-          "isUndecorated": true,
-          "onClick": {
-            "name": "SystemOpenShopPotions"
+          "name": "label_proc_return_system_gold1",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSystemGold"
           },
-          "width": 28,
-          "height": 20,
-          "x": 201,
-          "y": 148,
-          "locked": true
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "name": "button_ssfsslsell",
-          "text": "§f§lSell",
-          "isUndecorated": true,
-          "onClick": {
-            "name": "SystemSell"
+          "color": {
+            "value": -13210,
+            "falpha": 0.0
           },
-          "width": 21,
-          "height": 20,
-          "x": 203,
-          "y": 169,
+          "x": 142,
+          "y": 178,
           "locked": true
         }
       }

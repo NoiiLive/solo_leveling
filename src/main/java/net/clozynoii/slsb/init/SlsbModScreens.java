@@ -10,7 +10,10 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
 import net.clozynoii.slsb.client.gui.SystemSkillsGUIScreen;
+import net.clozynoii.slsb.client.gui.SystemShopWeaponsScreen;
+import net.clozynoii.slsb.client.gui.SystemShopPotionsScreen;
 import net.clozynoii.slsb.client.gui.SystemShopGUIScreen;
+import net.clozynoii.slsb.client.gui.SystemShopArmorScreen;
 import net.clozynoii.slsb.client.gui.SystemQuestGUIScreen;
 import net.clozynoii.slsb.client.gui.SystemMainGUIScreen;
 import net.clozynoii.slsb.client.gui.HunterSkillGUITankScreen;
@@ -36,5 +39,8 @@ public class SlsbModScreens {
 		event.register(SlsbModMenus.HUNTER_SKILL_GUI_TANK.get(), HunterSkillGUITankScreen::new);
 		event.register(SlsbModMenus.HUNTER_SKILL_GUI_HEALER.get(), HunterSkillGUIHealerScreen::new);
 		event.register(SlsbModMenus.HUNTER_SKILL_GUI_RANGER.get(), HunterSkillGUIRangerScreen::new);
+		event.register(SlsbModMenus.SYSTEM_SHOP_WEAPONS.get(), SystemShopWeaponsScreen::new);
+		event.register(SlsbModMenus.SYSTEM_SHOP_ARMOR.get(), SystemShopArmorScreen::new);
+		event.register(SlsbModMenus.SYSTEM_SHOP_POTIONS.get(), SystemShopPotionsScreen::new);
 	}
 }

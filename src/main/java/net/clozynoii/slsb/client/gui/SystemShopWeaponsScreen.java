@@ -14,31 +14,29 @@ import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 
-import net.clozynoii.slsb.world.inventory.SystemShopGUIMenu;
+import net.clozynoii.slsb.world.inventory.SystemShopWeaponsMenu;
 import net.clozynoii.slsb.procedures.ReturnSystemLocalStatusProcedure;
 import net.clozynoii.slsb.procedures.ReturnSystemLocalSkillsProcedure;
 import net.clozynoii.slsb.procedures.ReturnSystemLocalShopProcedure;
 import net.clozynoii.slsb.procedures.ReturnSystemLocalQuestsProcedure;
-import net.clozynoii.slsb.network.SystemShopGUIButtonMessage;
+import net.clozynoii.slsb.procedures.ReturnSystemGoldProcedure;
+import net.clozynoii.slsb.network.SystemShopWeaponsButtonMessage;
 
 import java.util.HashMap;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class SystemShopGUIScreen extends AbstractContainerScreen<SystemShopGUIMenu> {
-	private final static HashMap<String, Object> guistate = SystemShopGUIMenu.guistate;
+public class SystemShopWeaponsScreen extends AbstractContainerScreen<SystemShopWeaponsMenu> {
+	private final static HashMap<String, Object> guistate = SystemShopWeaponsMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	Button button_ssfsslarmor;
-	Button button_ssfsslweaps;
-	Button button_ssfsslpots;
-	Button button_ssfsslsell;
+	Button button_ssfsslx;
 	ImageButton imagebutton_tab_top;
 	ImageButton imagebutton_tab_top2;
 	ImageButton imagebutton_tab_top1;
 
-	public SystemShopGUIScreen(SystemShopGUIMenu container, Inventory inventory, Component text) {
+	public SystemShopWeaponsScreen(SystemShopWeaponsMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
 		this.world = container.world;
 		this.x = container.x;
@@ -49,7 +47,7 @@ public class SystemShopGUIScreen extends AbstractContainerScreen<SystemShopGUIMe
 		this.imageHeight = 0;
 	}
 
-	private static final ResourceLocation texture = ResourceLocation.parse("slsb:textures/screens/system_shop_gui.png");
+	private static final ResourceLocation texture = ResourceLocation.parse("slsb:textures/screens/system_shop_weapons.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
@@ -73,7 +71,7 @@ public class SystemShopGUIScreen extends AbstractContainerScreen<SystemShopGUIMe
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		guiGraphics.blit(ResourceLocation.parse("slsb:textures/screens/system_menu_shop.png"), this.leftPos + -214, this.topPos + -120, 0, 0, 427, 240, 427, 240);
+		guiGraphics.blit(ResourceLocation.parse("slsb:textures/screens/system_menu_blank.png"), this.leftPos + -214, this.topPos + -120, 0, 0, 427, 240, 427, 240);
 
 		guiGraphics.blit(ResourceLocation.parse("slsb:textures/screens/top_edge.png"), this.leftPos + -89, this.topPos + -109, 0, 0, 26, 32, 26, 32);
 
@@ -93,47 +91,29 @@ public class SystemShopGUIScreen extends AbstractContainerScreen<SystemShopGUIMe
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
+		guiGraphics.drawString(this.font,
+
+				ReturnSystemGoldProcedure.execute(entity), -71, 59, -15657947, false);
+		guiGraphics.drawString(this.font,
+
+				ReturnSystemGoldProcedure.execute(entity), -72, 58, -13210, false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		button_ssfsslarmor = new PlainTextButton(this.leftPos + 7, this.topPos + -18, 34, 20, Component.translatable("gui.slsb.system_shop_gui.button_ssfsslarmor"), e -> {
+		button_ssfsslx = new PlainTextButton(this.leftPos + -72, this.topPos + -52, 51, 20, Component.translatable("gui.slsb.system_shop_weapons.button_ssfsslx"), e -> {
 			if (true) {
-				PacketDistributor.sendToServer(new SystemShopGUIButtonMessage(0, x, y, z));
-				SystemShopGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
+				PacketDistributor.sendToServer(new SystemShopWeaponsButtonMessage(0, x, y, z));
+				SystemShopWeaponsButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}, this.font);
-		guistate.put("button:button_ssfsslarmor", button_ssfsslarmor);
-		this.addRenderableWidget(button_ssfsslarmor);
-		button_ssfsslweaps = new PlainTextButton(this.leftPos + -43, this.topPos + -18, 34, 20, Component.translatable("gui.slsb.system_shop_gui.button_ssfsslweaps"), e -> {
-			if (true) {
-				PacketDistributor.sendToServer(new SystemShopGUIButtonMessage(1, x, y, z));
-				SystemShopGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
-			}
-		}, this.font);
-		guistate.put("button:button_ssfsslweaps", button_ssfsslweaps);
-		this.addRenderableWidget(button_ssfsslweaps);
-		button_ssfsslpots = new PlainTextButton(this.leftPos + -13, this.topPos + 28, 28, 20, Component.translatable("gui.slsb.system_shop_gui.button_ssfsslpots"), e -> {
-			if (true) {
-				PacketDistributor.sendToServer(new SystemShopGUIButtonMessage(2, x, y, z));
-				SystemShopGUIButtonMessage.handleButtonAction(entity, 2, x, y, z);
-			}
-		}, this.font);
-		guistate.put("button:button_ssfsslpots", button_ssfsslpots);
-		this.addRenderableWidget(button_ssfsslpots);
-		button_ssfsslsell = new PlainTextButton(this.leftPos + -11, this.topPos + 49, 21, 20, Component.translatable("gui.slsb.system_shop_gui.button_ssfsslsell"), e -> {
-			if (true) {
-				PacketDistributor.sendToServer(new SystemShopGUIButtonMessage(3, x, y, z));
-				SystemShopGUIButtonMessage.handleButtonAction(entity, 3, x, y, z);
-			}
-		}, this.font);
-		guistate.put("button:button_ssfsslsell", button_ssfsslsell);
-		this.addRenderableWidget(button_ssfsslsell);
+		guistate.put("button:button_ssfsslx", button_ssfsslx);
+		this.addRenderableWidget(button_ssfsslx);
 		imagebutton_tab_top = new ImageButton(this.leftPos + -89, this.topPos + -109, 26, 32, new WidgetSprites(ResourceLocation.parse("slsb:textures/screens/tab_top.png"), ResourceLocation.parse("slsb:textures/screens/tab_top.png")), e -> {
 			if (true) {
-				PacketDistributor.sendToServer(new SystemShopGUIButtonMessage(4, x, y, z));
-				SystemShopGUIButtonMessage.handleButtonAction(entity, 4, x, y, z);
+				PacketDistributor.sendToServer(new SystemShopWeaponsButtonMessage(1, x, y, z));
+				SystemShopWeaponsButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
 		}) {
 			@Override
@@ -145,8 +125,8 @@ public class SystemShopGUIScreen extends AbstractContainerScreen<SystemShopGUIMe
 		this.addRenderableWidget(imagebutton_tab_top);
 		imagebutton_tab_top2 = new ImageButton(this.leftPos + -64, this.topPos + -109, 26, 32, new WidgetSprites(ResourceLocation.parse("slsb:textures/screens/tab_top.png"), ResourceLocation.parse("slsb:textures/screens/tab_top.png")), e -> {
 			if (true) {
-				PacketDistributor.sendToServer(new SystemShopGUIButtonMessage(5, x, y, z));
-				SystemShopGUIButtonMessage.handleButtonAction(entity, 5, x, y, z);
+				PacketDistributor.sendToServer(new SystemShopWeaponsButtonMessage(2, x, y, z));
+				SystemShopWeaponsButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
 		}) {
 			@Override
@@ -158,8 +138,8 @@ public class SystemShopGUIScreen extends AbstractContainerScreen<SystemShopGUIMe
 		this.addRenderableWidget(imagebutton_tab_top2);
 		imagebutton_tab_top1 = new ImageButton(this.leftPos + -14, this.topPos + -109, 26, 32, new WidgetSprites(ResourceLocation.parse("slsb:textures/screens/tab_top.png"), ResourceLocation.parse("slsb:textures/screens/tab_top.png")), e -> {
 			if (true) {
-				PacketDistributor.sendToServer(new SystemShopGUIButtonMessage(6, x, y, z));
-				SystemShopGUIButtonMessage.handleButtonAction(entity, 6, x, y, z);
+				PacketDistributor.sendToServer(new SystemShopWeaponsButtonMessage(3, x, y, z));
+				SystemShopWeaponsButtonMessage.handleButtonAction(entity, 3, x, y, z);
 			}
 		}) {
 			@Override

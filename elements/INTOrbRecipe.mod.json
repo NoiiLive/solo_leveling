@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:ManaCrystal"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.GOLD_INGOT"
+      },
+      {
+        "value": "Blocks.GOLD_BLOCK"
+      },
+      {
+        "value": "Items.GOLD_INGOT"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ManaTrainingOrb"
+    },
+    "name": "int_orb_recipe",
+    "namespace": "mod"
+  }
+}
