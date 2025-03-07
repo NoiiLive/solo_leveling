@@ -1,19 +1,6 @@
 
 package net.clozynoii.slsb.potion;
 
-import net.neoforged.neoforge.common.EffectCure;
-
-import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.ai.attributes.AttributeModifier;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffectCategory;
-import net.minecraft.world.effect.MobEffect;
-import net.minecraft.resources.ResourceLocation;
-
-import net.clozynoii.slsb.SlsbMod;
-
-import java.util.Set;
-
 public class MuscleFatigueMobEffect extends MobEffect {
 	public MuscleFatigueMobEffect() {
 		super(MobEffectCategory.HARMFUL, -39322);

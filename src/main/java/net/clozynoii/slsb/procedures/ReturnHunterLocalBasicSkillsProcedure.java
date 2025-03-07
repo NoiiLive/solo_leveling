@@ -1,6 +1,6 @@
 package net.clozynoii.slsb.procedures;
 
-import net.minecraft.network.chat.Component;
+import net.neoforged.bus.api.Event;
 
 public class ReturnHunterLocalBasicSkillsProcedure {
 	public static String execute() {

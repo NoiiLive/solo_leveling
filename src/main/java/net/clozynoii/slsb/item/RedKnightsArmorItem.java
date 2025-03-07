@@ -1,44 +1,12 @@
 
 package net.clozynoii.slsb.item;
 
-import net.neoforged.neoforge.registries.RegisterEvent;
-import net.neoforged.neoforge.registries.DeferredHolder;
-import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
-import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions;
-import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.api.distmarker.OnlyIn;
-import net.neoforged.api.distmarker.Dist;
-
-import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ArmorMaterial;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.Holder;
-import net.minecraft.client.model.geom.ModelPart;
-import net.minecraft.client.model.HumanoidModel;
-import net.minecraft.client.Minecraft;
-import net.minecraft.Util;
-
-import net.clozynoii.slsb.init.SlsbModItems;
-import net.clozynoii.slsb.client.model.Modeligris_armor;
-
-import java.util.Map;
-import java.util.List;
-import java.util.EnumMap;
-import java.util.Collections;
+import java.util.function.Consumer;
+import net.minecraft.client.model.Model;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public abstract class RedKnightsArmorItem extends ArmorItem {
+
 	public static Holder<ArmorMaterial> ARMOR_MATERIAL = null;
 
 	@SubscribeEvent
@@ -71,6 +39,7 @@ public abstract class RedKnightsArmorItem extends ArmorItem {
 				return armorModel;
 			}
 		}, SlsbModItems.RED_KNIGHTS_ARMOR_HELMET.get());
+
 		event.registerItem(new IClientItemExtensions() {
 			@Override
 			@OnlyIn(Dist.CLIENT)
@@ -85,6 +54,7 @@ public abstract class RedKnightsArmorItem extends ArmorItem {
 				return armorModel;
 			}
 		}, SlsbModItems.RED_KNIGHTS_ARMOR_CHESTPLATE.get());
+
 		event.registerItem(new IClientItemExtensions() {
 			@Override
 			@OnlyIn(Dist.CLIENT)
@@ -100,6 +70,7 @@ public abstract class RedKnightsArmorItem extends ArmorItem {
 				return armorModel;
 			}
 		}, SlsbModItems.RED_KNIGHTS_ARMOR_LEGGINGS.get());
+
 		event.registerItem(new IClientItemExtensions() {
 			@Override
 			@OnlyIn(Dist.CLIENT)
@@ -122,6 +93,7 @@ public abstract class RedKnightsArmorItem extends ArmorItem {
 	}
 
 	public static class Helmet extends RedKnightsArmorItem {
+
 		public Helmet() {
 			super(ArmorItem.Type.HELMET, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(1000)).fireResistant());
 		}
@@ -142,9 +114,11 @@ public abstract class RedKnightsArmorItem extends ArmorItem {
 			list.add(Component.translatable("item.slsb.red_knights_armor_helmet.description_4"));
 			list.add(Component.translatable("item.slsb.red_knights_armor_helmet.description_5"));
 		}
+
 	}
 
 	public static class Chestplate extends RedKnightsArmorItem {
+
 		public Chestplate() {
 			super(ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(1000)).fireResistant());
 		}
@@ -165,9 +139,11 @@ public abstract class RedKnightsArmorItem extends ArmorItem {
 			list.add(Component.translatable("item.slsb.red_knights_armor_chestplate.description_4"));
 			list.add(Component.translatable("item.slsb.red_knights_armor_chestplate.description_5"));
 		}
+
 	}
 
 	public static class Leggings extends RedKnightsArmorItem {
+
 		public Leggings() {
 			super(ArmorItem.Type.LEGGINGS, new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(1000)).fireResistant());
 		}
@@ -188,9 +164,11 @@ public abstract class RedKnightsArmorItem extends ArmorItem {
 			list.add(Component.translatable("item.slsb.red_knights_armor_leggings.description_4"));
 			list.add(Component.translatable("item.slsb.red_knights_armor_leggings.description_5"));
 		}
+
 	}
 
 	public static class Boots extends RedKnightsArmorItem {
+
 		public Boots() {
 			super(ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(1000)).fireResistant());
 		}
@@ -211,5 +189,7 @@ public abstract class RedKnightsArmorItem extends ArmorItem {
 			list.add(Component.translatable("item.slsb.red_knights_armor_boots.description_4"));
 			list.add(Component.translatable("item.slsb.red_knights_armor_boots.description_5"));
 		}
+
 	}
+
 }

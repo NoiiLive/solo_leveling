@@ -1,8 +1,6 @@
 package net.clozynoii.slsb.procedures;
 
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.entity.Entity;
+import net.neoforged.bus.api.Event;
 
 public class ParalyzedTickProcedure {
 	public static void execute(Entity entity) {

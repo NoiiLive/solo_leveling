@@ -1,15 +1,6 @@
 package net.clozynoii.slsb.procedures;
 
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.network.chat.Component;
-import net.minecraft.commands.arguments.EntityArgument;
-import net.minecraft.commands.CommandSourceStack;
-
-import net.clozynoii.slsb.network.SlsbModVariables;
-
-import com.mojang.brigadier.exceptions.CommandSyntaxException;
-import com.mojang.brigadier.context.CommandContext;
+import net.neoforged.bus.api.Event;
 
 public class CMDSetClassRangerProcedure {
 	public static void execute(CommandContext<CommandSourceStack> arguments, Entity entity) {

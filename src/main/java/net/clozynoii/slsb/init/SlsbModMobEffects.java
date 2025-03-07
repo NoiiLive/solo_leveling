@@ -11,6 +11,7 @@ import net.minecraft.world.effect.MobEffect;
 import net.minecraft.core.registries.Registries;
 
 import net.clozynoii.slsb.potion.ParalyzedMobEffect;
+import net.clozynoii.slsb.potion.ParalysisMobEffect;
 import net.clozynoii.slsb.potion.NoFallMobEffect;
 import net.clozynoii.slsb.potion.MuscleFatigueMobEffect;
 import net.clozynoii.slsb.potion.ManaFatigueMobEffect;
@@ -24,4 +25,5 @@ public class SlsbModMobEffects {
 	public static final DeferredHolder<MobEffect, MobEffect> BLEEDING = REGISTRY.register("bleeding", () -> new BleedingMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> PARALYZED = REGISTRY.register("paralyzed", () -> new ParalyzedMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> MUSCLE_FATIGUE = REGISTRY.register("muscle_fatigue", () -> new MuscleFatigueMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> PARALYSIS = REGISTRY.register("paralysis", () -> new ParalysisMobEffect());
 }

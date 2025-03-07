@@ -1,14 +1,6 @@
 package net.clozynoii.slsb.procedures;
 
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.damagesource.DamageTypes;
-import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.core.BlockPos;
-
-import net.clozynoii.slsb.init.SlsbModBlocks;
+import net.neoforged.bus.api.Event;
 
 public class BleedingOnEffectActiveTickProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
