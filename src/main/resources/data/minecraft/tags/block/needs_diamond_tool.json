@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "slsb:mana_crystal_ore",
+    "slsb:mana_crystal_cluster"
+  ]
+}

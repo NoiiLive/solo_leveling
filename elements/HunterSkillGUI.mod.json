@@ -703,6 +703,90 @@
           "y": 170,
           "locked": true
         }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "tab_bottom_selected.png",
+          "use1Xscale": false,
+          "x": 151,
+          "y": 197,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_tab_bottom",
+          "image": "tab_bottom.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "TabHunterClassSkills"
+          },
+          "x": 176,
+          "y": 198,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_system_local_status",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSystemLocalStatus"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 152,
+          "y": 15,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_system_local_skills",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSystemLocalSkills"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 177,
+          "y": 15,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_hunter_local_basic_s",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnHunterLocalBasicSkills"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 152,
+          "y": 201,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_hunter_local_class_s",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnHunterLocalClassSkills"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 177,
+          "y": 201,
+          "locked": true
+        }
       }
     ],
     "onClosed": {

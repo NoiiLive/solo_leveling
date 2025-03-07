@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aba",
+    " c ",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "slsb:deleted_mod_element"
+    },
+    "b": {
+      "item": "slsb:essence_stone_e"
+    },
+    "c": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "id": "slsb:mana_stone_pickaxe",
+    "count": 1
+  }
+}

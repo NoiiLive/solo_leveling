@@ -1,0 +1,6 @@
+{
+  "parent": "slsb:displaysettings/treadmill.item",
+  "textures": {
+    "particle": "slsb:block/treadmill"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "slsb:block/mana_ore",
+    "up": "slsb:block/mana_ore",
+    "north": "slsb:block/mana_ore",
+    "east": "slsb:block/mana_ore",
+    "south": "slsb:block/mana_ore",
+    "west": "slsb:block/mana_ore",
+    "particle": "slsb:block/mana_ore"
+  },
+  "render_type": "solid"
+}

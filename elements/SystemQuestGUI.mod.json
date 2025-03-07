@@ -131,6 +131,16 @@
           "y": 13,
           "locked": true
         }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "tab_top_system.png",
+          "use1Xscale": false,
+          "x": 200,
+          "y": 9,
+          "locked": true
+        }
       }
     ],
     "gridSettings": {

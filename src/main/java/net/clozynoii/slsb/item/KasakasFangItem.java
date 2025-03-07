@@ -71,7 +71,7 @@ public class KasakasFangItem extends SwordItem {
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		KasakasFangLivingEntityIsHitWithToolProcedure.execute(entity);
+		KasakasFangLivingEntityIsHitWithToolProcedure.execute(entity, sourceentity);
 		return retval;
 	}
 

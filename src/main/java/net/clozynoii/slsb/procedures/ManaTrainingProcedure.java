@@ -23,31 +23,33 @@ public class ManaTrainingProcedure {
 		if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerAwakened == true && entity.getData(SlsbModVariables.PLAYER_VARIABLES).SystemPlayer == false) {
 			if (!(entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(SlsbModMobEffects.MANA_FATIGUE))) {
 				if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerMana >= entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerMaxMana / 4) {
-					if (entity instanceof Player _player && !_player.level().isClientSide())
-						_player.displayClientMessage(Component.literal(("\u00A7bINT : " + new java.text.DecimalFormat("##").format(entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerIntelligence) + " > "
-								+ new java.text.DecimalFormat("##").format(entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerIntelligence + 1))), true);
-					{
-						SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
-						_vars.PlayerMana = entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerMana - entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerMaxMana / 4;
-						_vars.syncPlayerVariables(entity);
+					if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerIntelligence < 100) {
+						if (entity instanceof Player _player && !_player.level().isClientSide())
+							_player.displayClientMessage(Component.literal(("\u00A7bINT : " + new java.text.DecimalFormat("##").format(entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerIntelligence) + " > "
+									+ new java.text.DecimalFormat("##").format(entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerIntelligence + 1))), true);
+						{
+							SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
+							_vars.PlayerMana = entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerMana - entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerMaxMana / 4;
+							_vars.syncPlayerVariables(entity);
+						}
+						{
+							SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
+							_vars.ManaRegenTimer = 10;
+							_vars.syncPlayerVariables(entity);
+						}
+						{
+							SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
+							_vars.PlayerIntelligence = entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerIntelligence + 1;
+							_vars.syncPlayerVariables(entity);
+						}
+						if (world instanceof ServerLevel _level)
+							_level.sendParticles(ParticleTypes.END_ROD, (x + 0.5), (y + 0.5), (z + 0.5), 10, 0.1, 0.1, 0.1, 0.1);
+						if (world instanceof ServerLevel _level)
+							_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+									("playsound minecraft:block.brewing_stand.brew player " + "@a" + " ~ ~ ~ 1 1"));
+						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+							_entity.addEffect(new MobEffectInstance(SlsbModMobEffects.MANA_FATIGUE, 600, 0, true, false));
 					}
-					{
-						SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
-						_vars.ManaRegenTimer = 10;
-						_vars.syncPlayerVariables(entity);
-					}
-					{
-						SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
-						_vars.PlayerIntelligence = entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerIntelligence + 1;
-						_vars.syncPlayerVariables(entity);
-					}
-					if (world instanceof ServerLevel _level)
-						_level.sendParticles(ParticleTypes.END_ROD, (x + 0.5), (y + 0.5), (z + 0.5), 10, 0.1, 0.1, 0.1, 0.1);
-					if (world instanceof ServerLevel _level)
-						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-								("playsound minecraft:block.brewing_stand.brew player " + "@a" + " ~ ~ ~ 1 1"));
-					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(SlsbModMobEffects.MANA_FATIGUE, 600, 0, true, false));
 				} else {
 					if (entity instanceof Player _player && !_player.level().isClientSide())
 						_player.displayClientMessage(Component.literal(("\u00A7c" + Component.translatable("slsb.training.nomana").getString())), true);

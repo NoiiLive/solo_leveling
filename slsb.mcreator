@@ -883,11 +883,11 @@
       "registry_name": "blood_block",
       "metadata": {
         "files": [
-          "src/main/resources/data/slsb/loot_table/blocks/blood_block.json",
-          "src/main/java/net/clozynoii/slsb/block/BloodBlockBlock.java",
           "src/main/resources/assets/slsb/blockstates/blood_block.json",
+          "src/main/resources/data/slsb/loot_table/blocks/blood_block.json",
           "src/main/resources/assets/slsb/models/item/blood_block.json",
-          "src/main/resources/assets/slsb/models/block/blood_block.json"
+          "src/main/resources/assets/slsb/models/block/blood_block.json",
+          "src/main/java/net/clozynoii/slsb/block/BloodBlockBlock.java"
         ]
       },
       "path": "~/Blocks/Misc"
@@ -990,8 +990,8 @@
       "registry_name": "circle_barrage",
       "metadata": {
         "files": [
-          "src/main/java/net/clozynoii/slsb/client/particle/CircleBarrageParticle.java",
-          "src/main/resources/assets/slsb/particles/circle_barrage.json"
+          "src/main/resources/assets/slsb/particles/circle_barrage.json",
+          "src/main/java/net/clozynoii/slsb/client/particle/CircleBarrageParticle.java"
         ]
       },
       "path": "~/Effects/Particles"
@@ -2005,16 +2005,16 @@
       "registry_name": "awakening_orb",
       "metadata": {
         "files": [
-          "src/main/java/net/clozynoii/slsb/block/display/AwakeningOrbDisplayItem.java",
-          "src/main/resources/assets/slsb/models/item/awakening_orb.json",
-          "src/main/java/net/clozynoii/slsb/block/entity/AwakeningOrbTileEntity.java",
-          "src/main/resources/assets/slsb/models/custom/awakening_orb_particle.json",
-          "src/main/java/net/clozynoii/slsb/block/AwakeningOrbBlock.java",
-          "src/main/java/net/clozynoii/slsb/block/model/AwakeningOrbBlockModel.java",
           "src/main/java/net/clozynoii/slsb/block/renderer/AwakeningOrbDisplayItemRenderer.java",
-          "src/main/resources/assets/slsb/blockstates/awakening_orb.json",
+          "src/main/java/net/clozynoii/slsb/block/display/AwakeningOrbDisplayItem.java",
+          "src/main/java/net/clozynoii/slsb/block/model/AwakeningOrbDisplayModel.java",
+          "src/main/java/net/clozynoii/slsb/block/AwakeningOrbBlock.java",
+          "src/main/resources/assets/slsb/models/custom/awakening_orb_particle.json",
+          "src/main/java/net/clozynoii/slsb/block/model/AwakeningOrbBlockModel.java",
+          "src/main/java/net/clozynoii/slsb/block/entity/AwakeningOrbTileEntity.java",
           "src/main/java/net/clozynoii/slsb/block/renderer/AwakeningOrbTileRenderer.java",
-          "src/main/java/net/clozynoii/slsb/block/model/AwakeningOrbDisplayModel.java"
+          "src/main/resources/assets/slsb/models/item/awakening_orb.json",
+          "src/main/resources/assets/slsb/blockstates/awakening_orb.json"
         ]
       },
       "path": "~/Blocks/Hunter Association"
@@ -2038,17 +2038,17 @@
       "registry_name": "blue_gate_small",
       "metadata": {
         "files": [
-          "src/main/java/net/clozynoii/slsb/block/BlueGateSmallBlock.java",
-          "src/main/java/net/clozynoii/slsb/block/entity/BlueGateSmallTileEntity.java",
-          "src/main/resources/assets/slsb/models/custom/blue_gate_small_particle.json",
+          "src/main/java/net/clozynoii/slsb/block/model/BlueGateSmallBlockModel.java",
           "src/main/java/net/clozynoii/slsb/block/model/BlueGateSmallDisplayModel.java",
-          "src/main/resources/assets/slsb/models/block/blue_gate_small_blockstate_0.json",
           "src/main/resources/assets/slsb/models/item/blue_gate_small.json",
-          "src/main/java/net/clozynoii/slsb/block/renderer/BlueGateSmallTileRenderer.java",
+          "src/main/java/net/clozynoii/slsb/block/entity/BlueGateSmallTileEntity.java",
           "src/main/java/net/clozynoii/slsb/block/renderer/BlueGateSmallDisplayItemRenderer.java",
+          "src/main/java/net/clozynoii/slsb/block/renderer/BlueGateSmallTileRenderer.java",
+          "src/main/resources/assets/slsb/models/custom/blue_gate_small_particle.json",
           "src/main/resources/assets/slsb/blockstates/blue_gate_small.json",
+          "src/main/java/net/clozynoii/slsb/block/BlueGateSmallBlock.java",
           "src/main/java/net/clozynoii/slsb/block/display/BlueGateSmallDisplayItem.java",
-          "src/main/java/net/clozynoii/slsb/block/model/BlueGateSmallBlockModel.java"
+          "src/main/resources/assets/slsb/models/block/blue_gate_small_blockstate_0.json"
         ]
       },
       "path": "~/Blocks"
@@ -2061,17 +2061,17 @@
       "registry_name": "blue_gate_medium",
       "metadata": {
         "files": [
-          "src/main/java/net/clozynoii/slsb/block/BlueGateMediumBlock.java",
-          "src/main/resources/assets/slsb/models/block/blue_gate_medium_blockstate_0.json",
-          "src/main/java/net/clozynoii/slsb/block/renderer/BlueGateMediumTileRenderer.java",
-          "src/main/java/net/clozynoii/slsb/block/model/BlueGateMediumDisplayModel.java",
           "src/main/java/net/clozynoii/slsb/block/renderer/BlueGateMediumDisplayItemRenderer.java",
-          "src/main/java/net/clozynoii/slsb/block/model/BlueGateMediumBlockModel.java",
           "src/main/java/net/clozynoii/slsb/block/display/BlueGateMediumDisplayItem.java",
-          "src/main/resources/assets/slsb/models/custom/blue_gate_medium_particle.json",
+          "src/main/java/net/clozynoii/slsb/block/entity/BlueGateMediumTileEntity.java",
           "src/main/resources/assets/slsb/blockstates/blue_gate_medium.json",
+          "src/main/java/net/clozynoii/slsb/block/model/BlueGateMediumBlockModel.java",
+          "src/main/java/net/clozynoii/slsb/block/model/BlueGateMediumDisplayModel.java",
+          "src/main/java/net/clozynoii/slsb/block/BlueGateMediumBlock.java",
           "src/main/resources/assets/slsb/models/item/blue_gate_medium.json",
-          "src/main/java/net/clozynoii/slsb/block/entity/BlueGateMediumTileEntity.java"
+          "src/main/resources/assets/slsb/models/block/blue_gate_medium_blockstate_0.json",
+          "src/main/resources/assets/slsb/models/custom/blue_gate_medium_particle.json",
+          "src/main/java/net/clozynoii/slsb/block/renderer/BlueGateMediumTileRenderer.java"
         ]
       },
       "path": "~/Blocks"
@@ -2828,13 +2828,13 @@
       "registry_name": "barrier_slab",
       "metadata": {
         "files": [
-          "src/main/resources/assets/slsb/models/block/barrier_slab.json",
-          "src/main/resources/assets/slsb/models/block/barrier_slab_full.json",
-          "src/main/resources/assets/slsb/blockstates/barrier_slab.json",
           "src/main/resources/data/slsb/loot_table/blocks/barrier_slab.json",
           "src/main/resources/assets/slsb/models/item/barrier_slab.json",
+          "src/main/resources/assets/slsb/blockstates/barrier_slab.json",
+          "src/main/resources/assets/slsb/models/block/barrier_slab_full.json",
+          "src/main/resources/assets/slsb/models/block/barrier_slab_top.json",
           "src/main/java/net/clozynoii/slsb/block/BarrierSlabBlock.java",
-          "src/main/resources/assets/slsb/models/block/barrier_slab_top.json"
+          "src/main/resources/assets/slsb/models/block/barrier_slab.json"
         ]
       },
       "path": "~/Blocks/Misc"
@@ -2847,10 +2847,10 @@
       "registry_name": "barrier_wall",
       "metadata": {
         "files": [
-          "src/main/resources/data/slsb/loot_table/blocks/barrier_wall.json",
-          "src/main/java/net/clozynoii/slsb/block/BarrierWallBlock.java",
           "src/main/resources/assets/slsb/models/item/barrier_wall.json",
+          "src/main/resources/data/slsb/loot_table/blocks/barrier_wall.json",
           "src/main/resources/assets/slsb/models/block/barrier_wall.json",
+          "src/main/java/net/clozynoii/slsb/block/BarrierWallBlock.java",
           "src/main/resources/assets/slsb/blockstates/barrier_wall.json"
         ]
       },
@@ -2916,16 +2916,16 @@
       "registry_name": "mana_training_orb",
       "metadata": {
         "files": [
-          "src/main/java/net/clozynoii/slsb/block/model/ManaTrainingOrbDisplayModel.java",
-          "src/main/java/net/clozynoii/slsb/block/renderer/ManaTrainingOrbTileRenderer.java",
-          "src/main/java/net/clozynoii/slsb/block/display/ManaTrainingOrbDisplayItem.java",
           "src/main/java/net/clozynoii/slsb/block/model/ManaTrainingOrbBlockModel.java",
-          "src/main/java/net/clozynoii/slsb/block/entity/ManaTrainingOrbTileEntity.java",
           "src/main/resources/assets/slsb/blockstates/mana_training_orb.json",
-          "src/main/resources/assets/slsb/models/item/mana_training_orb.json",
           "src/main/java/net/clozynoii/slsb/block/ManaTrainingOrbBlock.java",
+          "src/main/java/net/clozynoii/slsb/block/renderer/ManaTrainingOrbTileRenderer.java",
+          "src/main/java/net/clozynoii/slsb/block/entity/ManaTrainingOrbTileEntity.java",
+          "src/main/java/net/clozynoii/slsb/block/display/ManaTrainingOrbDisplayItem.java",
           "src/main/java/net/clozynoii/slsb/block/renderer/ManaTrainingOrbDisplayItemRenderer.java",
-          "src/main/resources/assets/slsb/models/custom/mana_training_orb_particle.json"
+          "src/main/resources/assets/slsb/models/custom/mana_training_orb_particle.json",
+          "src/main/resources/assets/slsb/models/item/mana_training_orb.json",
+          "src/main/java/net/clozynoii/slsb/block/model/ManaTrainingOrbDisplayModel.java"
         ]
       },
       "path": "~/Blocks/Useable"
@@ -3496,18 +3496,18 @@
       "registry_name": "green_door",
       "metadata": {
         "files": [
-          "src/main/resources/assets/slsb/models/block/green_door_top_left.json",
-          "src/main/resources/assets/slsb/models/block/green_door_top_right.json",
-          "src/main/resources/assets/slsb/models/block/green_door_top_left_open.json",
-          "src/main/resources/assets/slsb/models/block/green_door_bottom_left.json",
-          "src/main/resources/assets/slsb/models/block/green_door_bottom_right_open.json",
-          "src/main/resources/assets/slsb/models/block/green_door_top_right_open.json",
-          "src/main/resources/assets/slsb/models/block/green_door_bottom_right.json",
-          "src/main/resources/assets/slsb/blockstates/green_door.json",
+          "src/main/java/net/clozynoii/slsb/block/GreenDoorBlock.java",
           "src/main/resources/data/slsb/loot_table/blocks/green_door.json",
-          "src/main/resources/assets/slsb/models/block/green_door_bottom_left_open.json",
+          "src/main/resources/assets/slsb/models/block/green_door_top_left_open.json",
+          "src/main/resources/assets/slsb/models/block/green_door_bottom_right_open.json",
           "src/main/resources/assets/slsb/models/item/green_door.json",
-          "src/main/java/net/clozynoii/slsb/block/GreenDoorBlock.java"
+          "src/main/resources/assets/slsb/models/block/green_door_bottom_left.json",
+          "src/main/resources/assets/slsb/models/block/green_door_top_right.json",
+          "src/main/resources/assets/slsb/models/block/green_door_top_right_open.json",
+          "src/main/resources/assets/slsb/models/block/green_door_top_left.json",
+          "src/main/resources/assets/slsb/models/block/green_door_bottom_left_open.json",
+          "src/main/resources/assets/slsb/models/block/green_door_bottom_right.json",
+          "src/main/resources/assets/slsb/blockstates/green_door.json"
         ]
       },
       "path": "~/Blocks/Hunter Association"
@@ -3520,11 +3520,11 @@
       "registry_name": "brown_trimmed_panel",
       "metadata": {
         "files": [
-          "src/main/java/net/clozynoii/slsb/block/BrownTrimmedPanelBlock.java",
           "src/main/resources/assets/slsb/blockstates/brown_trimmed_panel.json",
-          "src/main/resources/assets/slsb/models/item/brown_trimmed_panel.json",
+          "src/main/resources/assets/slsb/models/block/brown_trimmed_panel.json",
           "src/main/resources/data/slsb/loot_table/blocks/brown_trimmed_panel.json",
-          "src/main/resources/assets/slsb/models/block/brown_trimmed_panel.json"
+          "src/main/resources/assets/slsb/models/item/brown_trimmed_panel.json",
+          "src/main/java/net/clozynoii/slsb/block/BrownTrimmedPanelBlock.java"
         ]
       },
       "path": "~/Blocks/Hunter Association"
@@ -3537,11 +3537,11 @@
       "registry_name": "brown_panel",
       "metadata": {
         "files": [
-          "src/main/java/net/clozynoii/slsb/block/BrownPanelBlock.java",
           "src/main/resources/data/slsb/loot_table/blocks/brown_panel.json",
-          "src/main/resources/assets/slsb/blockstates/brown_panel.json",
+          "src/main/resources/assets/slsb/models/block/brown_panel.json",
           "src/main/resources/assets/slsb/models/item/brown_panel.json",
-          "src/main/resources/assets/slsb/models/block/brown_panel.json"
+          "src/main/java/net/clozynoii/slsb/block/BrownPanelBlock.java",
+          "src/main/resources/assets/slsb/blockstates/brown_panel.json"
         ]
       },
       "path": "~/Blocks/Hunter Association"
@@ -3554,11 +3554,11 @@
       "registry_name": "tan_panel",
       "metadata": {
         "files": [
-          "src/main/resources/assets/slsb/models/item/tan_panel.json",
+          "src/main/resources/data/slsb/loot_table/blocks/tan_panel.json",
           "src/main/resources/assets/slsb/blockstates/tan_panel.json",
+          "src/main/resources/assets/slsb/models/item/tan_panel.json",
           "src/main/java/net/clozynoii/slsb/block/TanPanelBlock.java",
-          "src/main/resources/assets/slsb/models/block/tan_panel.json",
-          "src/main/resources/data/slsb/loot_table/blocks/tan_panel.json"
+          "src/main/resources/assets/slsb/models/block/tan_panel.json"
         ]
       },
       "path": "~/Blocks/Hunter Association"
@@ -3571,14 +3571,14 @@
       "registry_name": "tan_trimmed_panel_wall",
       "metadata": {
         "files": [
+          "src/main/resources/assets/slsb/models/block/tan_trimmed_panel_wall.json",
+          "src/main/resources/assets/slsb/models/block/tan_trimmed_panel_wall_inventory.json",
           "src/main/resources/assets/slsb/models/block/tan_trimmed_panel_wall_post.json",
           "src/main/resources/assets/slsb/blockstates/tan_trimmed_panel_wall.json",
-          "src/main/resources/assets/slsb/models/block/tan_trimmed_panel_wall.json",
           "src/main/java/net/clozynoii/slsb/block/TanTrimmedPanelWallBlock.java",
-          "src/main/resources/assets/slsb/models/block/tan_trimmed_panel_wall_side_tall.json",
           "src/main/resources/assets/slsb/models/item/tan_trimmed_panel_wall.json",
-          "src/main/resources/assets/slsb/models/block/tan_trimmed_panel_wall_inventory.json",
-          "src/main/resources/data/slsb/loot_table/blocks/tan_trimmed_panel_wall.json"
+          "src/main/resources/data/slsb/loot_table/blocks/tan_trimmed_panel_wall.json",
+          "src/main/resources/assets/slsb/models/block/tan_trimmed_panel_wall_side_tall.json"
         ]
       },
       "path": "~/Blocks/Hunter Association"
@@ -3591,14 +3591,14 @@
       "registry_name": "tan_panel_wall",
       "metadata": {
         "files": [
-          "src/main/resources/assets/slsb/models/block/tan_panel_wall.json",
-          "src/main/resources/data/slsb/loot_table/blocks/tan_panel_wall.json",
-          "src/main/resources/assets/slsb/models/block/tan_panel_wall_post.json",
-          "src/main/resources/assets/slsb/models/block/tan_panel_wall_side_tall.json",
-          "src/main/resources/assets/slsb/models/block/tan_panel_wall_inventory.json",
-          "src/main/java/net/clozynoii/slsb/block/TanPanelWallBlock.java",
           "src/main/resources/assets/slsb/models/item/tan_panel_wall.json",
-          "src/main/resources/assets/slsb/blockstates/tan_panel_wall.json"
+          "src/main/java/net/clozynoii/slsb/block/TanPanelWallBlock.java",
+          "src/main/resources/data/slsb/loot_table/blocks/tan_panel_wall.json",
+          "src/main/resources/assets/slsb/models/block/tan_panel_wall_inventory.json",
+          "src/main/resources/assets/slsb/models/block/tan_panel_wall.json",
+          "src/main/resources/assets/slsb/models/block/tan_panel_wall_side_tall.json",
+          "src/main/resources/assets/slsb/blockstates/tan_panel_wall.json",
+          "src/main/resources/assets/slsb/models/block/tan_panel_wall_post.json"
         ]
       },
       "path": "~/Blocks/Hunter Association"
@@ -3611,15 +3611,15 @@
       "registry_name": "metal_framed_window",
       "metadata": {
         "files": [
-          "src/main/resources/assets/slsb/models/block/metal_framed_window_side.json",
-          "src/main/resources/assets/slsb/models/block/metal_framed_window_noside.json",
-          "src/main/resources/assets/slsb/blockstates/metal_framed_window.json",
-          "src/main/java/net/clozynoii/slsb/block/MetalFramedWindowBlock.java",
-          "src/main/resources/assets/slsb/models/item/metal_framed_window.json",
           "src/main/resources/assets/slsb/models/block/metal_framed_window_noside_alt.json",
           "src/main/resources/data/slsb/loot_table/blocks/metal_framed_window.json",
+          "src/main/resources/assets/slsb/blockstates/metal_framed_window.json",
+          "src/main/resources/assets/slsb/models/block/metal_framed_window_noside.json",
+          "src/main/resources/assets/slsb/models/block/metal_framed_window_side.json",
+          "src/main/resources/assets/slsb/models/item/metal_framed_window.json",
+          "src/main/resources/assets/slsb/models/block/metal_framed_window_side_alt.json",
           "src/main/resources/assets/slsb/models/block/metal_framed_window_post.json",
-          "src/main/resources/assets/slsb/models/block/metal_framed_window_side_alt.json"
+          "src/main/java/net/clozynoii/slsb/block/MetalFramedWindowBlock.java"
         ]
       },
       "path": "~/Blocks/Hunter Association"
@@ -3632,11 +3632,11 @@
       "registry_name": "bloodred_igris",
       "metadata": {
         "files": [
-          "src/main/java/net/clozynoii/slsb/client/renderer/BloodredIgrisRenderer.java",
-          "src/main/java/net/clozynoii/slsb/entity/model/BloodredIgrisModel.java",
-          "src/main/resources/assets/slsb/models/item/bloodred_igris_spawn_egg.json",
+          "src/main/java/net/clozynoii/slsb/entity/layer/BloodredIgrisLayer.java",
           "src/main/java/net/clozynoii/slsb/entity/BloodredIgrisEntity.java",
-          "src/main/java/net/clozynoii/slsb/entity/layer/BloodredIgrisLayer.java"
+          "src/main/java/net/clozynoii/slsb/client/renderer/BloodredIgrisRenderer.java",
+          "src/main/resources/assets/slsb/models/item/bloodred_igris_spawn_egg.json",
+          "src/main/java/net/clozynoii/slsb/entity/model/BloodredIgrisModel.java"
         ]
       },
       "path": "~/Entities"
@@ -3739,6 +3739,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
           }
         ]
       },
@@ -3773,6 +3777,1171 @@
         ]
       },
       "path": "~/Potions"
+    },
+    {
+      "name": "EssenceStoneS",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "essence_stone_s",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/slsb/models/item/essence_stone_s.json",
+          "src/main/java/net/clozynoii/slsb/item/EssenceStoneSItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "ReturnSystemEXP",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_system_exp",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnSystemEXPProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Procedures/GUI/System GUI"
+    },
+    {
+      "name": "CMDSetRankS",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmd_set_rank_s",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/CMDSetRankSProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Commands"
+    },
+    {
+      "name": "Paralyzed",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "paralyzed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/potion/ParalyzedMobEffect.java"
+        ]
+      },
+      "path": "~/Effects/Potions"
+    },
+    {
+      "name": "CMDSetRankE",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmd_set_rank_e",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/CMDSetRankEProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Commands"
+    },
+    {
+      "name": "CMDSetRankD",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmd_set_rank_d",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/CMDSetRankDProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Commands"
+    },
+    {
+      "name": "StrengthTrainingDumbells",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strength_training_dumbells",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/block/renderer/StrengthTrainingDumbellsDisplayItemRenderer.java",
+          "src/main/java/net/clozynoii/slsb/block/entity/StrengthTrainingDumbellsTileEntity.java",
+          "src/main/resources/assets/slsb/models/custom/strength_training_dumbells_particle.json",
+          "src/main/java/net/clozynoii/slsb/block/StrengthTrainingDumbellsBlock.java",
+          "src/main/java/net/clozynoii/slsb/block/model/StrengthTrainingDumbellsDisplayModel.java",
+          "src/main/java/net/clozynoii/slsb/block/renderer/StrengthTrainingDumbellsTileRenderer.java",
+          "src/main/java/net/clozynoii/slsb/block/model/StrengthTrainingDumbellsBlockModel.java",
+          "src/main/resources/assets/slsb/models/item/strength_training_dumbells.json",
+          "src/main/java/net/clozynoii/slsb/block/display/StrengthTrainingDumbellsDisplayItem.java",
+          "src/main/resources/assets/slsb/blockstates/strength_training_dumbells.json"
+        ]
+      },
+      "path": "~/Blocks/Useable"
+    },
+    {
+      "name": "SystemShopWeapons",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "system_shop_weapons",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/network/SystemShopWeaponsButtonMessage.java",
+          "src/main/java/net/clozynoii/slsb/world/inventory/SystemShopWeaponsMenu.java",
+          "src/main/java/net/clozynoii/slsb/client/gui/SystemShopWeaponsScreen.java"
+        ]
+      },
+      "path": "~/GUI/System/Shop"
+    },
+    {
+      "name": "VitalityTrainingMat",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vitality_training_mat",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/block/display/VitalityTrainingMatDisplayItem.java",
+          "src/main/resources/assets/slsb/models/item/vitality_training_mat.json",
+          "src/main/resources/assets/slsb/models/custom/vitality_training_mat_particle.json",
+          "src/main/java/net/clozynoii/slsb/block/renderer/VitalityTrainingMatDisplayItemRenderer.java",
+          "src/main/resources/assets/slsb/blockstates/vitality_training_mat.json",
+          "src/main/java/net/clozynoii/slsb/block/VitalityTrainingMatBlock.java",
+          "src/main/java/net/clozynoii/slsb/block/renderer/VitalityTrainingMatTileRenderer.java",
+          "src/main/java/net/clozynoii/slsb/block/model/VitalityTrainingMatBlockModel.java",
+          "src/main/java/net/clozynoii/slsb/block/entity/VitalityTrainingMatTileEntity.java",
+          "src/main/java/net/clozynoii/slsb/block/model/VitalityTrainingMatDisplayModel.java"
+        ]
+      },
+      "path": "~/Blocks/Useable"
+    },
+    {
+      "name": "CMDSetClassHealer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmd_set_class_healer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/CMDSetClassHealerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Commands"
+    },
+    {
+      "name": "EssenceStoneE",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "essence_stone_e",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/slsb/models/item/essence_stone_e.json",
+          "src/main/java/net/clozynoii/slsb/item/EssenceStoneEItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "AgilityTreadmill",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "agility_treadmill",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/block/AgilityTreadmillBlock.java",
+          "src/main/java/net/clozynoii/slsb/block/model/AgilityTreadmillBlockModel.java",
+          "src/main/resources/assets/slsb/blockstates/agility_treadmill.json",
+          "src/main/resources/assets/slsb/models/custom/agility_treadmill_particle.json",
+          "src/main/java/net/clozynoii/slsb/block/renderer/AgilityTreadmillTileRenderer.java",
+          "src/main/java/net/clozynoii/slsb/block/entity/AgilityTreadmillTileEntity.java",
+          "src/main/java/net/clozynoii/slsb/block/renderer/AgilityTreadmillDisplayItemRenderer.java",
+          "src/main/resources/assets/slsb/models/item/agility_treadmill.json",
+          "src/main/java/net/clozynoii/slsb/block/model/AgilityTreadmillDisplayModel.java",
+          "src/main/java/net/clozynoii/slsb/block/display/AgilityTreadmillDisplayItem.java"
+        ]
+      },
+      "path": "~/Blocks/Useable"
+    },
+    {
+      "name": "EssenceStoneC",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "essence_stone_c",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/item/EssenceStoneCItem.java",
+          "src/main/resources/assets/slsb/models/item/essence_stone_c.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "EssenceStoneD",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "essence_stone_d",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/item/EssenceStoneDItem.java",
+          "src/main/resources/assets/slsb/models/item/essence_stone_d.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "CMDSetClassTank",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmd_set_class_tank",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/CMDSetClassTankProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Commands"
+    },
+    {
+      "name": "EssenceStoneA",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "essence_stone_a",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/item/EssenceStoneAItem.java",
+          "src/main/resources/assets/slsb/models/item/essence_stone_a.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "EssenceStoneB",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "essence_stone_b",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/slsb/models/item/essence_stone_b.json",
+          "src/main/java/net/clozynoii/slsb/item/EssenceStoneBItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "CMDSetRankA",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmd_set_rank_a",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/CMDSetRankAProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Commands"
+    },
+    {
+      "name": "CMDSetRankC",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmd_set_rank_c",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/CMDSetRankCProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Commands"
+    },
+    {
+      "name": "CMDSetRankB",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmd_set_rank_b",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/CMDSetRankBProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Commands"
+    },
+    {
+      "name": "CMDSetClassFighter",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmd_set_class_fighter",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/CMDSetClassFighterProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Commands"
+    },
+    {
+      "name": "SystemShopPotions",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "system_shop_potions",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/client/gui/SystemShopPotionsScreen.java",
+          "src/main/java/net/clozynoii/slsb/network/SystemShopPotionsButtonMessage.java",
+          "src/main/java/net/clozynoii/slsb/world/inventory/SystemShopPotionsMenu.java"
+        ]
+      },
+      "path": "~/GUI/System/Shop"
+    },
+    {
+      "name": "INTOrbRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "int_orb_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/slsb/recipe/int_orb_recipe.json"
+        ]
+      },
+      "path": "~/Misc/Recipes"
+    },
+    {
+      "name": "ManaCrystalCluster",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_crystal_cluster",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/slsb/loot_table/blocks/mana_crystal_cluster.json",
+          "src/main/resources/assets/slsb/blockstates/mana_crystal_cluster.json",
+          "src/main/resources/assets/slsb/models/item/mana_crystal_cluster.json",
+          "src/main/java/net/clozynoii/slsb/block/ManaCrystalClusterBlock.java",
+          "src/main/resources/assets/slsb/models/block/mana_crystal_cluster.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "ManaStonePickaxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_stone_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/item/ManaStonePickaxeItem.java",
+          "src/main/resources/assets/slsb/models/item/mana_stone_pickaxe.json"
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "HunterSkillGUITank",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hunter_skill_gui_tank",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/network/HunterSkillGUITankButtonMessage.java",
+          "src/main/java/net/clozynoii/slsb/world/inventory/HunterSkillGUITankMenu.java",
+          "src/main/java/net/clozynoii/slsb/client/gui/HunterSkillGUITankScreen.java"
+        ]
+      },
+      "path": "~/GUI/Hunter"
+    },
+    {
+      "name": "ReturnHunterLocalClassSkills",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_hunter_local_class_skills",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnHunterLocalClassSkillsProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Procedures/GUI/System GUI/Localized"
+    },
+    {
+      "name": "MiningClothes",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mining_clothes",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/slsb/models/item/mining_clothes_helmet.json",
+          "src/main/resources/assets/slsb/models/item/mining_clothes_chestplate.json",
+          "src/main/resources/assets/slsb/models/item/mining_clothes_leggings.json",
+          "src/main/resources/assets/slsb/models/item/mining_clothes_boots.json",
+          "src/main/java/net/clozynoii/slsb/item/MiningClothesItem.java"
+        ]
+      },
+      "path": "~/Armor"
+    },
+    {
+      "name": "ReturnSystemGold",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_system_gold",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnSystemGoldProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Procedures/GUI/System GUI"
+    },
+    {
+      "name": "AGLTreadmillRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "agl_treadmill_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/slsb/recipe/agl_treadmill_recipe.json"
+        ]
+      },
+      "path": "~/Misc/Recipes"
+    },
+    {
+      "name": "ItemsTab",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "items_tab",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/item/ItemsTabItem.java",
+          "src/main/resources/assets/slsb/models/item/items_tab.json"
+        ]
+      },
+      "path": "~/Items/Misc"
+    },
+    {
+      "name": "MSPickRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ms_pick_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/slsb/recipe/ms_pick_recipe.json"
+        ]
+      },
+      "path": "~/Misc/Recipes"
+    },
+    {
+      "name": "STRDumbellRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "str_dumbell_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/slsb/recipe/str_dumbell_recipe.json"
+        ]
+      },
+      "path": "~/Misc/Recipes"
+    },
+    {
+      "name": "SystemOpenShopPotions",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "system_open_shop_potions",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SystemOpenShopPotionsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/System GUI"
+    },
+    {
+      "name": "SystemShopArmor2",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "system_shop_armor_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/world/inventory/SystemShopArmor2Menu.java",
+          "src/main/java/net/clozynoii/slsb/client/gui/SystemShopArmor2Screen.java",
+          "src/main/java/net/clozynoii/slsb/network/SystemShopArmor2ButtonMessage.java"
+        ]
+      },
+      "path": "~/GUI/System/Shop"
+    },
+    {
+      "name": "SystemShopArmor3",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "system_shop_armor_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/network/SystemShopArmor3ButtonMessage.java",
+          "src/main/java/net/clozynoii/slsb/client/gui/SystemShopArmor3Screen.java",
+          "src/main/java/net/clozynoii/slsb/world/inventory/SystemShopArmor3Menu.java"
+        ]
+      },
+      "path": "~/GUI/System/Shop"
+    },
+    {
+      "name": "ManaCrystal",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_crystal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/slsb/models/item/mana_crystal.json",
+          "src/main/java/net/clozynoii/slsb/item/ManaCrystalItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "ReturnHunterLocalBasicSkills",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_hunter_local_basic_skills",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnHunterLocalBasicSkillsProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Procedures/GUI/System GUI/Localized"
+    },
+    {
+      "name": "VitalityTraining",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vitality_training",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/VitalityTrainingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Blocks"
+    },
+    {
+      "name": "HunterSkillGUIAssassin",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hunter_skill_gui_assassin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/world/inventory/HunterSkillGUIAssassinMenu.java",
+          "src/main/java/net/clozynoii/slsb/network/HunterSkillGUIAssassinButtonMessage.java",
+          "src/main/java/net/clozynoii/slsb/client/gui/HunterSkillGUIAssassinScreen.java"
+        ]
+      },
+      "path": "~/GUI/Hunter"
+    },
+    {
+      "name": "TabHunterClassSkills",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tab_hunter_class_skills",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/TabHunterClassSkillsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Hunter GUI"
+    },
+    {
+      "name": "HunterSkillGUIHealer",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hunter_skill_gui_healer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/network/HunterSkillGUIHealerButtonMessage.java",
+          "src/main/java/net/clozynoii/slsb/client/gui/HunterSkillGUIHealerScreen.java",
+          "src/main/java/net/clozynoii/slsb/world/inventory/HunterSkillGUIHealerMenu.java"
+        ]
+      },
+      "path": "~/GUI/Hunter"
+    },
+    {
+      "name": "ParalyzedTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "paralyzed_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ParalyzedTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Effects/Potions/Procedures"
+    },
+    {
+      "name": "StrengthTraining",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strength_training",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/StrengthTrainingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Blocks"
+    },
+    {
+      "name": "SystemOpenShopArmor",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "system_open_shop_armor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SystemOpenShopArmorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/System GUI"
+    },
+    {
+      "name": "CMDSetClassAssassin",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmd_set_class_assassin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/CMDSetClassAssassinProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Commands"
+    },
+    {
+      "name": "HunterSkillGUIFighter",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hunter_skill_gui_fighter",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/client/gui/HunterSkillGUIFighterScreen.java",
+          "src/main/java/net/clozynoii/slsb/network/HunterSkillGUIFighterButtonMessage.java",
+          "src/main/java/net/clozynoii/slsb/world/inventory/HunterSkillGUIFighterMenu.java"
+        ]
+      },
+      "path": "~/GUI/Hunter"
+    },
+    {
+      "name": "SystemShopArmor",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "system_shop_armor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/client/gui/SystemShopArmorScreen.java",
+          "src/main/java/net/clozynoii/slsb/world/inventory/SystemShopArmorMenu.java",
+          "src/main/java/net/clozynoii/slsb/network/SystemShopArmorButtonMessage.java"
+        ]
+      },
+      "path": "~/GUI/System/Shop"
+    },
+    {
+      "name": "CMDSetClassRanger",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmd_set_class_ranger",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/CMDSetClassRangerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Commands"
+    },
+    {
+      "name": "SystemSell",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "system_sell",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SystemSellProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/System GUI"
+    },
+    {
+      "name": "SystemOpenShopWeapons",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "system_open_shop_weapons",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SystemOpenShopWeaponsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/System GUI"
+    },
+    {
+      "name": "AgilityTraining",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "agility_training",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/AgilityTrainingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Blocks"
+    },
+    {
+      "name": "VITMatRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vit_mat_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/slsb/recipe/vit_mat_recipe.json"
+        ]
+      },
+      "path": "~/Misc/Recipes"
+    },
+    {
+      "name": "ManaCrystalOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_crystal_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/slsb/loot_table/blocks/mana_crystal_ore.json",
+          "src/main/resources/assets/slsb/models/item/mana_crystal_ore.json",
+          "src/main/resources/assets/slsb/blockstates/mana_crystal_ore.json",
+          "src/main/java/net/clozynoii/slsb/block/ManaCrystalOreBlock.java",
+          "src/main/resources/assets/slsb/models/block/mana_crystal_ore.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "SystemOpenShopArmor3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "system_open_shop_armor_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SystemOpenShopArmor3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/System GUI"
+    },
+    {
+      "name": "HunterSkillGUIRanger",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hunter_skill_gui_ranger",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/world/inventory/HunterSkillGUIRangerMenu.java",
+          "src/main/java/net/clozynoii/slsb/network/HunterSkillGUIRangerButtonMessage.java",
+          "src/main/java/net/clozynoii/slsb/client/gui/HunterSkillGUIRangerScreen.java"
+        ]
+      },
+      "path": "~/GUI/Hunter"
+    },
+    {
+      "name": "SystemOpenShopArmor2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "system_open_shop_armor_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SystemOpenShopArmor2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/System GUI"
+    },
+    {
+      "name": "MuscleFatigue",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "muscle_fatigue",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/potion/MuscleFatigueMobEffect.java"
+        ]
+      },
+      "path": "~/Effects/Potions"
+    },
+    {
+      "name": "SLItems",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sl_items",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Misc/Tabs"
     }
   ],
   "variable_elements": [
@@ -4063,6 +5232,24 @@
       "type": "string",
       "scope": "player_persistent",
       "value": "None"
+    },
+    {
+      "name": "PlayerEXP",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "PlayerMaxEXP",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "100.0"
+    },
+    {
+      "name": "PlayerGold",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1000.0"
     }
   ],
   "sound_elements": [
@@ -4085,18 +5272,31 @@
   ],
   "tag_elements": {
     "ITEMS:minecraft:chest_armor": [
+      "~CUSTOM:MiningClothes.body",
       "~CUSTOM:RedKnightsArmor.body"
+    ],
+    "BLOCKS:minecraft:needs_diamond_tool": [
+      "~CUSTOM:ManaCrystalOre",
+      "~CUSTOM:ManaCrystalCluster"
     ],
     "BLOCKS:minecraft:slabs": [
       "~CUSTOM:BarrierSlab"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:ManaCrystalOre",
+      "~CUSTOM:ManaCrystalCluster",
+      "~CUSTOM:AgilityTreadmill",
+      "~CUSTOM:VitalityTrainingMat",
+      "~CUSTOM:StrengthTrainingDumbells",
       "~CUSTOM:GreenDoor",
       "~CUSTOM:ManaTrainingOrb"
     ],
     "BLOCKS:minecraft:walls": [
       "~CUSTOM:TanPanelWall",
       "~CUSTOM:TanTrimmedPanelWall"
+    ],
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:ManaStonePickaxe"
     ],
     "ENTITIES:mod:non_targetable": [
       "EntityAreaEffectCloud",
@@ -4150,12 +5350,15 @@
       "~CUSTOM:KasakasFang"
     ],
     "ITEMS:minecraft:head_armor": [
+      "~CUSTOM:MiningClothes.helmet",
       "~CUSTOM:RedKnightsArmor.helmet"
     ],
     "ITEMS:minecraft:foot_armor": [
+      "~CUSTOM:MiningClothes.boots",
       "~CUSTOM:RedKnightsArmor.boots"
     ],
     "ITEMS:minecraft:leg_armor": [
+      "~CUSTOM:MiningClothes.legs",
       "~CUSTOM:RedKnightsArmor.legs"
     ]
   },
@@ -4259,7 +5462,12 @@
       },
       {
         "name": "Items",
-        "children": []
+        "children": [
+          {
+            "name": "Misc",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Misc",
@@ -4274,6 +5482,10 @@
           },
           {
             "name": "Tabs",
+            "children": []
+          },
+          {
+            "name": "Recipes",
             "children": []
           }
         ]
@@ -4311,6 +5523,10 @@
                 "children": []
               }
             ]
+          },
+          {
+            "name": "Weapons",
+            "children": []
           },
           {
             "name": "Abilities",
@@ -4377,17 +5593,26 @@
         ]
       },
       {
-        "name": "Potions",
+        "name": "GUI",
         "children": [
           {
-            "name": "Procedures",
+            "name": "Hunter",
             "children": []
+          },
+          {
+            "name": "System",
+            "children": [
+              {
+                "name": "Shop",
+                "children": []
+              },
+              {
+                "name": "Skills",
+                "children": []
+              }
+            ]
           }
         ]
-      },
-      {
-        "name": "GUI",
-        "children": []
       },
       {
         "name": "Weapons",
@@ -4406,7 +5631,12 @@
           },
           {
             "name": "Potions",
-            "children": []
+            "children": [
+              {
+                "name": "Procedures",
+                "children": []
+              }
+            ]
           }
         ]
       }

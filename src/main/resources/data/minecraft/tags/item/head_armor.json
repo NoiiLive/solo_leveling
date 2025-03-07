@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "slsb:mining_clothes_helmet",
     "slsb:red_knights_armor_helmet"
   ]
 }

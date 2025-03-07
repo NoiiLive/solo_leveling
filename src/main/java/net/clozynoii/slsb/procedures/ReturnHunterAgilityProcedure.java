@@ -23,7 +23,7 @@ public class ReturnHunterAgilityProcedure {
 		if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerAgility >= 65 && entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerAgility < 85) {
 			return "[A]";
 		}
-		if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerAgility >= 85 && entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerAgility < 100) {
+		if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerAgility >= 85 && entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerAgility <= 100) {
 			return "[S]";
 		}
 		return "[F]";

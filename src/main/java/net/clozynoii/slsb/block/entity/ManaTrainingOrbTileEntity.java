@@ -140,7 +140,7 @@ public class ManaTrainingOrbTileEntity extends RandomizableContainerBlockEntity 
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Mana Training Orb");
+		return Component.literal("Mana Orb");
 	}
 
 	@Override

@@ -1,6 +1,11 @@
 {
   "replace": false,
   "values": [
+    "slsb:mana_crystal_ore",
+    "slsb:mana_crystal_cluster",
+    "slsb:agility_treadmill",
+    "slsb:vitality_training_mat",
+    "slsb:strength_training_dumbells",
     "slsb:green_door",
     "slsb:mana_training_orb"
   ]

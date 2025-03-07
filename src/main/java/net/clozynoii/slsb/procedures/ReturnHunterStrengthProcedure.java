@@ -23,7 +23,7 @@ public class ReturnHunterStrengthProcedure {
 		if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerStrength >= 65 && entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerStrength < 85) {
 			return "[A]";
 		}
-		if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerStrength >= 85 && entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerStrength < 100) {
+		if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerStrength >= 85 && entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerStrength <= 100) {
 			return "[S]";
 		}
 		return "[F]";

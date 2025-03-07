@@ -13,7 +13,7 @@
       {
         "type": "image",
         "data": {
-          "image": "system_menu_blank.png",
+          "image": "system_menu_shop.png",
           "use1Xscale": false,
           "x": 0,
           "y": 0,
@@ -129,6 +129,136 @@
           "height": 24,
           "x": 201,
           "y": 13,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "tab_top_system.png",
+          "use1Xscale": false,
+          "x": 175,
+          "y": 9,
+          "locked": true
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_ssfsslarmor",
+          "text": "§f§lArmor",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "SystemOpenShopArmor"
+          },
+          "width": 34,
+          "height": 20,
+          "x": 221,
+          "y": 102,
+          "locked": true
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_ssfsslweaps",
+          "text": "§f§lWeaps",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "SystemOpenShopWeapons"
+          },
+          "width": 34,
+          "height": 20,
+          "x": 171,
+          "y": 102,
+          "locked": true
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_ssfsslpots",
+          "text": "§f§lPots",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "SystemOpenShopPotions"
+          },
+          "width": 28,
+          "height": 20,
+          "x": 201,
+          "y": 148,
+          "locked": true
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_ssfsslsell",
+          "text": "§f§lSell",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "SystemSell"
+          },
+          "width": 21,
+          "height": 20,
+          "x": 203,
+          "y": 169,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_weapons",
+          "text": {
+            "fixedValue": "Weapons"
+          },
+          "width": 40,
+          "height": 11,
+          "x": 168,
+          "y": 102,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_armor",
+          "text": {
+            "fixedValue": "Armor"
+          },
+          "width": 40,
+          "height": 11,
+          "x": 218,
+          "y": 102,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_potions",
+          "text": {
+            "fixedValue": "Potions"
+          },
+          "width": 40,
+          "height": 11,
+          "x": 193,
+          "y": 148,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_sell_crystalsstones",
+          "text": {
+            "fixedValue": "Sell Crystals/Stones"
+          },
+          "width": 93,
+          "height": 15,
+          "x": 167,
+          "y": 165,
           "locked": true
         }
       }

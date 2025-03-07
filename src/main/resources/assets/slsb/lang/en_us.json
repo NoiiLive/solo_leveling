@@ -1,10 +1,10 @@
 {
   "slsb.evaluator.evaluated": "You have already been evaluated!",
   "item.slsb.red_knights_armor_chestplate": "Red Knight\u0027s Chestplate",
-  "slsb.evaluator.normalrank.rank": "-Rank!",
-  "slsb.training.manafatigue": "Your mana is currently fatigued",
-  "slsb.command.systemplayertarget": "Your Player status has been set to",
   "item_group.slsb.sl_gear": "Solo Leveling: Gear",
+  "slsb.command.systemplayertarget": "Your Player status has been set to",
+  "slsb.training.manafatigue": "Your mana is currently fatigued",
+  "slsb.evaluator.normalrank.rank": "-Rank!",
   "block.slsb.blue_gate_medium": "Gate (Medium)",
   "item.slsb.red_knights_armor_helmet": "Red Knight\u0027s Helmet",
   "gui.slsb.hunter_skill_gui.tooltip_barrage": "Barrage",

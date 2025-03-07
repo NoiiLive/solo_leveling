@@ -3,6 +3,9 @@ package net.clozynoii.slsb.block;
 
 import org.checkerframework.checker.units.qual.s;
 
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
+
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
@@ -20,9 +23,12 @@ import net.minecraft.world.level.block.BaseEntityBlock;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
@@ -47,7 +53,7 @@ public class ManaTrainingOrbBlock extends BaseEntityBlock implements EntityBlock
 	public ManaTrainingOrbBlock() {
 		super(BlockBehaviour.Properties.of()
 
-				.sound(SoundType.GLASS).strength(1f, 10f).lightLevel(s -> 10).requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+				.sound(SoundType.GLASS).strength(0.5f, 5f).lightLevel(s -> 10).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override
@@ -59,6 +65,14 @@ public class ManaTrainingOrbBlock extends BaseEntityBlock implements EntityBlock
 	@Override
 	public BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
 		return SlsbModBlockEntities.MANA_TRAINING_ORB.get().create(blockPos, blockState);
+	}
+
+	@Override
+	@OnlyIn(Dist.CLIENT)
+	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, context, list, flag);
+		list.add(Component.translatable("block.slsb.mana_training_orb.description_0"));
+		list.add(Component.translatable("block.slsb.mana_training_orb.description_1"));
 	}
 
 	@Override

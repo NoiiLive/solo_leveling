@@ -11,10 +11,13 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.core.registries.BuiltInRegistries;
 
+import net.clozynoii.slsb.block.entity.VitalityTrainingMatTileEntity;
+import net.clozynoii.slsb.block.entity.StrengthTrainingDumbellsTileEntity;
 import net.clozynoii.slsb.block.entity.ManaTrainingOrbTileEntity;
 import net.clozynoii.slsb.block.entity.BlueGateSmallTileEntity;
 import net.clozynoii.slsb.block.entity.BlueGateMediumTileEntity;
 import net.clozynoii.slsb.block.entity.AwakeningOrbTileEntity;
+import net.clozynoii.slsb.block.entity.AgilityTreadmillTileEntity;
 import net.clozynoii.slsb.SlsbMod;
 
 public class SlsbModBlockEntities {
@@ -23,6 +26,9 @@ public class SlsbModBlockEntities {
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> BLUE_GATE_SMALL = register("blue_gate_small", SlsbModBlocks.BLUE_GATE_SMALL, BlueGateSmallTileEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> BLUE_GATE_MEDIUM = register("blue_gate_medium", SlsbModBlocks.BLUE_GATE_MEDIUM, BlueGateMediumTileEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> MANA_TRAINING_ORB = register("mana_training_orb", SlsbModBlocks.MANA_TRAINING_ORB, ManaTrainingOrbTileEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> STRENGTH_TRAINING_DUMBELLS = register("strength_training_dumbells", SlsbModBlocks.STRENGTH_TRAINING_DUMBELLS, StrengthTrainingDumbellsTileEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> VITALITY_TRAINING_MAT = register("vitality_training_mat", SlsbModBlocks.VITALITY_TRAINING_MAT, VitalityTrainingMatTileEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> AGILITY_TREADMILL = register("agility_treadmill", SlsbModBlocks.AGILITY_TREADMILL, AgilityTreadmillTileEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
