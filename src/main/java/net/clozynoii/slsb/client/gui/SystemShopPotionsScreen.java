@@ -204,6 +204,10 @@ public class SystemShopPotionsScreen extends AbstractContainerScreen<SystemShopP
 		guistate.put("button:imagebutton_tab_top1", imagebutton_tab_top1);
 		this.addRenderableWidget(imagebutton_tab_top1);
 		imagebutton_blank16x = new ImageButton(this.leftPos + -68, this.topPos + -36, 16, 16, new WidgetSprites(ResourceLocation.parse("slsb:textures/screens/blank16x.png"), ResourceLocation.parse("slsb:textures/screens/blank16x.png")), e -> {
+			if (true) {
+				PacketDistributor.sendToServer(new SystemShopPotionsButtonMessage(4, x, y, z));
+				SystemShopPotionsButtonMessage.handleButtonAction(entity, 4, x, y, z);
+			}
 		}) {
 			@Override
 			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
@@ -213,6 +217,10 @@ public class SystemShopPotionsScreen extends AbstractContainerScreen<SystemShopP
 		guistate.put("button:imagebutton_blank16x", imagebutton_blank16x);
 		this.addRenderableWidget(imagebutton_blank16x);
 		imagebutton_blank16x1 = new ImageButton(this.leftPos + -68, this.topPos + -13, 16, 16, new WidgetSprites(ResourceLocation.parse("slsb:textures/screens/blank16x.png"), ResourceLocation.parse("slsb:textures/screens/blank16x.png")), e -> {
+			if (true) {
+				PacketDistributor.sendToServer(new SystemShopPotionsButtonMessage(5, x, y, z));
+				SystemShopPotionsButtonMessage.handleButtonAction(entity, 5, x, y, z);
+			}
 		}) {
 			@Override
 			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
@@ -222,6 +230,10 @@ public class SystemShopPotionsScreen extends AbstractContainerScreen<SystemShopP
 		guistate.put("button:imagebutton_blank16x1", imagebutton_blank16x1);
 		this.addRenderableWidget(imagebutton_blank16x1);
 		imagebutton_blank16x2 = new ImageButton(this.leftPos + -68, this.topPos + 10, 16, 16, new WidgetSprites(ResourceLocation.parse("slsb:textures/screens/blank16x.png"), ResourceLocation.parse("slsb:textures/screens/blank16x.png")), e -> {
+			if (true) {
+				PacketDistributor.sendToServer(new SystemShopPotionsButtonMessage(6, x, y, z));
+				SystemShopPotionsButtonMessage.handleButtonAction(entity, 6, x, y, z);
+			}
 		}) {
 			@Override
 			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
@@ -231,6 +243,10 @@ public class SystemShopPotionsScreen extends AbstractContainerScreen<SystemShopP
 		guistate.put("button:imagebutton_blank16x2", imagebutton_blank16x2);
 		this.addRenderableWidget(imagebutton_blank16x2);
 		imagebutton_blank16x3 = new ImageButton(this.leftPos + 4, this.topPos + -36, 16, 16, new WidgetSprites(ResourceLocation.parse("slsb:textures/screens/blank16x.png"), ResourceLocation.parse("slsb:textures/screens/blank16x.png")), e -> {
+			if (true) {
+				PacketDistributor.sendToServer(new SystemShopPotionsButtonMessage(7, x, y, z));
+				SystemShopPotionsButtonMessage.handleButtonAction(entity, 7, x, y, z);
+			}
 		}) {
 			@Override
 			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
@@ -240,6 +256,10 @@ public class SystemShopPotionsScreen extends AbstractContainerScreen<SystemShopP
 		guistate.put("button:imagebutton_blank16x3", imagebutton_blank16x3);
 		this.addRenderableWidget(imagebutton_blank16x3);
 		imagebutton_blank16x4 = new ImageButton(this.leftPos + 4, this.topPos + -13, 16, 16, new WidgetSprites(ResourceLocation.parse("slsb:textures/screens/blank16x.png"), ResourceLocation.parse("slsb:textures/screens/blank16x.png")), e -> {
+			if (true) {
+				PacketDistributor.sendToServer(new SystemShopPotionsButtonMessage(8, x, y, z));
+				SystemShopPotionsButtonMessage.handleButtonAction(entity, 8, x, y, z);
+			}
 		}) {
 			@Override
 			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
@@ -249,6 +269,10 @@ public class SystemShopPotionsScreen extends AbstractContainerScreen<SystemShopP
 		guistate.put("button:imagebutton_blank16x4", imagebutton_blank16x4);
 		this.addRenderableWidget(imagebutton_blank16x4);
 		imagebutton_blank16x5 = new ImageButton(this.leftPos + 4, this.topPos + 10, 16, 16, new WidgetSprites(ResourceLocation.parse("slsb:textures/screens/blank16x.png"), ResourceLocation.parse("slsb:textures/screens/blank16x.png")), e -> {
+			if (true) {
+				PacketDistributor.sendToServer(new SystemShopPotionsButtonMessage(9, x, y, z));
+				SystemShopPotionsButtonMessage.handleButtonAction(entity, 9, x, y, z);
+			}
 		}) {
 			@Override
 			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {

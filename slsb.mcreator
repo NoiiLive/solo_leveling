@@ -5453,6 +5453,120 @@
         ]
       },
       "path": "~/Procedures/Items"
+    },
+    {
+      "name": "BuyLowHeal",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buy_low_heal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/BuyLowHealProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/System GUI/Shop/Buy/Potions"
+    },
+    {
+      "name": "BuyMedHeal",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buy_med_heal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/BuyMedHealProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/System GUI/Shop/Buy/Potions"
+    },
+    {
+      "name": "BuyHighHeal",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buy_high_heal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/BuyHighHealProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/System GUI/Shop/Buy/Potions"
+    },
+    {
+      "name": "BuyLowMana",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buy_low_mana",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/BuyLowManaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/System GUI/Shop/Buy/Potions"
+    },
+    {
+      "name": "BuyMedMana",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buy_med_mana",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/BuyMedManaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/System GUI/Shop/Buy/Potions"
+    },
+    {
+      "name": "BuyHighMana",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buy_high_mana",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/BuyHighManaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/System GUI/Shop/Buy/Potions"
     }
   ],
   "variable_elements": [
@@ -6362,7 +6476,25 @@
                   },
                   {
                     "name": "Shop",
-                    "children": []
+                    "children": [
+                      {
+                        "name": "Buy",
+                        "children": [
+                          {
+                            "name": "Weapons",
+                            "children": []
+                          },
+                          {
+                            "name": "Armor",
+                            "children": []
+                          },
+                          {
+                            "name": "Potions",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
                   },
                   {
                     "name": "Skills",

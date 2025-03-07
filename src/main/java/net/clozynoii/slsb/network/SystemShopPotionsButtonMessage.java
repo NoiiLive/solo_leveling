@@ -21,6 +21,12 @@ import net.clozynoii.slsb.procedures.SystemOpenStatusProcedure;
 import net.clozynoii.slsb.procedures.SystemOpenSkillsProcedure;
 import net.clozynoii.slsb.procedures.SystemOpenShopProcedure;
 import net.clozynoii.slsb.procedures.SystemOpenQuestsProcedure;
+import net.clozynoii.slsb.procedures.BuyMedManaProcedure;
+import net.clozynoii.slsb.procedures.BuyMedHealProcedure;
+import net.clozynoii.slsb.procedures.BuyLowManaProcedure;
+import net.clozynoii.slsb.procedures.BuyLowHealProcedure;
+import net.clozynoii.slsb.procedures.BuyHighManaProcedure;
+import net.clozynoii.slsb.procedures.BuyHighHealProcedure;
 import net.clozynoii.slsb.SlsbMod;
 
 import java.util.HashMap;
@@ -77,6 +83,30 @@ public record SystemShopPotionsButtonMessage(int buttonID, int x, int y, int z) 
 		if (buttonID == 3) {
 
 			SystemOpenQuestsProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 4) {
+
+			BuyLowHealProcedure.execute(entity);
+		}
+		if (buttonID == 5) {
+
+			BuyMedHealProcedure.execute(entity);
+		}
+		if (buttonID == 6) {
+
+			BuyHighHealProcedure.execute(entity);
+		}
+		if (buttonID == 7) {
+
+			BuyLowManaProcedure.execute(entity);
+		}
+		if (buttonID == 8) {
+
+			BuyMedManaProcedure.execute(entity);
+		}
+		if (buttonID == 9) {
+
+			BuyHighManaProcedure.execute(entity);
 		}
 	}
 

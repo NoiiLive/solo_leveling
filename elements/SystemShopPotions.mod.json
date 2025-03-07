@@ -524,6 +524,9 @@
           "name": "imagebutton_blank16x",
           "image": "blank16x.png",
           "hoveredImage": "",
+          "onClick": {
+            "name": "BuyLowHeal"
+          },
           "x": 146,
           "y": 84,
           "locked": true
@@ -535,6 +538,9 @@
           "name": "imagebutton_blank16x1",
           "image": "blank16x.png",
           "hoveredImage": "",
+          "onClick": {
+            "name": "BuyMedHeal"
+          },
           "x": 146,
           "y": 107,
           "locked": true
@@ -546,6 +552,9 @@
           "name": "imagebutton_blank16x2",
           "image": "blank16x.png",
           "hoveredImage": "",
+          "onClick": {
+            "name": "BuyHighHeal"
+          },
           "x": 146,
           "y": 130,
           "locked": true
@@ -557,6 +566,9 @@
           "name": "imagebutton_blank16x3",
           "image": "blank16x.png",
           "hoveredImage": "",
+          "onClick": {
+            "name": "BuyLowMana"
+          },
           "x": 218,
           "y": 84,
           "locked": true
@@ -568,6 +580,9 @@
           "name": "imagebutton_blank16x4",
           "image": "blank16x.png",
           "hoveredImage": "",
+          "onClick": {
+            "name": "BuyMedMana"
+          },
           "x": 218,
           "y": 107,
           "locked": true
@@ -579,6 +594,9 @@
           "name": "imagebutton_blank16x5",
           "image": "blank16x.png",
           "hoveredImage": "",
+          "onClick": {
+            "name": "BuyHighMana"
+          },
           "x": 218,
           "y": 130,
           "locked": true
