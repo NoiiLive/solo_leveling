@@ -107,6 +107,18 @@ public class SystemShopPotionsScreen extends AbstractContainerScreen<SystemShopP
 
 		guiGraphics.blit(ResourceLocation.parse("slsb:textures/screens/system_slot.png"), this.leftPos + 2, this.topPos + 8, 0, 0, 21, 21, 21, 21);
 
+		guiGraphics.blit(ResourceLocation.parse("slsb:textures/screens/shop_heal_low.png"), this.leftPos + -68, this.topPos + -36, 0, 0, 16, 16, 16, 16);
+
+		guiGraphics.blit(ResourceLocation.parse("slsb:textures/screens/shop_heal_med.png"), this.leftPos + -68, this.topPos + -13, 0, 0, 16, 16, 16, 16);
+
+		guiGraphics.blit(ResourceLocation.parse("slsb:textures/screens/shop_heal_high.png"), this.leftPos + -68, this.topPos + 10, 0, 0, 16, 16, 16, 16);
+
+		guiGraphics.blit(ResourceLocation.parse("slsb:textures/screens/shop_mana_low.png"), this.leftPos + 4, this.topPos + -36, 0, 0, 16, 16, 16, 16);
+
+		guiGraphics.blit(ResourceLocation.parse("slsb:textures/screens/shop_mana_med.png"), this.leftPos + 4, this.topPos + -13, 0, 0, 16, 16, 16, 16);
+
+		guiGraphics.blit(ResourceLocation.parse("slsb:textures/screens/shop_mana_high.png"), this.leftPos + 4, this.topPos + 10, 0, 0, 16, 16, 16, 16);
+
 		RenderSystem.disableBlend();
 	}
 

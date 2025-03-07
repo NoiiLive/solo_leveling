@@ -18,6 +18,12 @@ public class SlsbModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, SlsbMod.MODID);
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> SL_ITEMS = REGISTRY.register("sl_items",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.slsb.sl_items")).icon(() -> new ItemStack(SlsbModItems.ITEMS_TAB.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(SlsbModItems.HIGH_HEAL_POTION.get());
+				tabData.accept(SlsbModItems.MED_HEAL_POTION.get());
+				tabData.accept(SlsbModItems.LOW_HEAL_POTION.get());
+				tabData.accept(SlsbModItems.HIGH_MANA_POTION.get());
+				tabData.accept(SlsbModItems.MED_MANA_POTION.get());
+				tabData.accept(SlsbModItems.LOW_MANA_POTION.get());
 				tabData.accept(SlsbModItems.MANA_CRYSTAL.get());
 				tabData.accept(SlsbModItems.ESSENCE_STONE_E.get());
 				tabData.accept(SlsbModItems.ESSENCE_STONE_D.get());

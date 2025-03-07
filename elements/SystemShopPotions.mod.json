@@ -597,6 +597,66 @@
           "y": 68,
           "locked": true
         }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "shop_heal_low.png",
+          "use1Xscale": false,
+          "x": 146,
+          "y": 84,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "shop_heal_med.png",
+          "use1Xscale": false,
+          "x": 146,
+          "y": 107,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "shop_heal_high.png",
+          "use1Xscale": false,
+          "x": 146,
+          "y": 130,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "shop_mana_low.png",
+          "use1Xscale": false,
+          "x": 218,
+          "y": 84,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "shop_mana_med.png",
+          "use1Xscale": false,
+          "x": 218,
+          "y": 107,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "shop_mana_high.png",
+          "use1Xscale": false,
+          "x": 218,
+          "y": 130,
+          "locked": true
+        }
       }
     ],
     "onClosed": {

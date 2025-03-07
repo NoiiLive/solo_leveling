@@ -17,10 +17,16 @@ import net.minecraft.world.item.BlockItem;
 import net.clozynoii.slsb.item.TrueKasakasFangItem;
 import net.clozynoii.slsb.item.RedKnightsArmorItem;
 import net.clozynoii.slsb.item.MiningClothesItem;
+import net.clozynoii.slsb.item.MedManaPotionItem;
+import net.clozynoii.slsb.item.MedHealPotionItem;
 import net.clozynoii.slsb.item.ManaStonePickaxeItem;
 import net.clozynoii.slsb.item.ManaCrystalItem;
+import net.clozynoii.slsb.item.LowManaPotionItem;
+import net.clozynoii.slsb.item.LowHealPotionItem;
 import net.clozynoii.slsb.item.KasakasFangItem;
 import net.clozynoii.slsb.item.ItemsTabItem;
+import net.clozynoii.slsb.item.HighManaPotionItem;
+import net.clozynoii.slsb.item.HighHealPotionItem;
 import net.clozynoii.slsb.item.EssenceStoneSItem;
 import net.clozynoii.slsb.item.EssenceStoneEItem;
 import net.clozynoii.slsb.item.EssenceStoneDItem;
@@ -78,6 +84,12 @@ public class SlsbModItems {
 	public static final DeferredItem<Item> AGILITY_TREADMILL = REGISTRY.register(SlsbModBlocks.AGILITY_TREADMILL.getId().getPath(), () -> new AgilityTreadmillDisplayItem(SlsbModBlocks.AGILITY_TREADMILL.get(), new Item.Properties()));
 	public static final DeferredItem<Item> VITALITY_TRAINING_MAT = REGISTRY.register(SlsbModBlocks.VITALITY_TRAINING_MAT.getId().getPath(), () -> new VitalityTrainingMatDisplayItem(SlsbModBlocks.VITALITY_TRAINING_MAT.get(), new Item.Properties()));
 	public static final DeferredItem<Item> TRUE_KASAKAS_FANG = REGISTRY.register("true_kasakas_fang", TrueKasakasFangItem::new);
+	public static final DeferredItem<Item> LOW_HEAL_POTION = REGISTRY.register("low_heal_potion", LowHealPotionItem::new);
+	public static final DeferredItem<Item> MED_HEAL_POTION = REGISTRY.register("med_heal_potion", MedHealPotionItem::new);
+	public static final DeferredItem<Item> HIGH_HEAL_POTION = REGISTRY.register("high_heal_potion", HighHealPotionItem::new);
+	public static final DeferredItem<Item> LOW_MANA_POTION = REGISTRY.register("low_mana_potion", LowManaPotionItem::new);
+	public static final DeferredItem<Item> MED_MANA_POTION = REGISTRY.register("med_mana_potion", MedManaPotionItem::new);
+	public static final DeferredItem<Item> HIGH_MANA_POTION = REGISTRY.register("high_mana_potion", HighManaPotionItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

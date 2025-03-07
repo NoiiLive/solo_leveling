@@ -8,6 +8,7 @@ import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Tier;
@@ -15,11 +16,13 @@ import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.TagKey;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.component.DataComponents;
 
+import net.clozynoii.slsb.procedures.SetItemOwnerProcedure;
 import net.clozynoii.slsb.procedures.KasakaFangEffectsProcedure;
 import net.clozynoii.slsb.init.SlsbModItems;
 
@@ -88,5 +91,11 @@ public class KasakasFangItem extends SwordItem {
 		list.add(Component.translatable("item.slsb.kasakas_fang.description_6"));
 		list.add(Component.translatable("item.slsb.kasakas_fang.description_7"));
 		list.add(Component.translatable("item.slsb.kasakas_fang.description_8"));
+	}
+
+	@Override
+	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
+		super.inventoryTick(itemstack, world, entity, slot, selected);
+		SetItemOwnerProcedure.execute(world, entity, itemstack);
 	}
 }
