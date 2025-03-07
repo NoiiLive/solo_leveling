@@ -39,6 +39,236 @@ public class CMDSystemPlayerProcedure {
 				}
 			}.getEntity()));
 		}
+		{
+			SlsbModVariables.PlayerVariables _vars = (new Object() {
+				public Entity getEntity() {
+					try {
+						return EntityArgument.getEntity(arguments, "name");
+					} catch (CommandSyntaxException e) {
+						e.printStackTrace();
+						return null;
+					}
+				}
+			}.getEntity()).getData(SlsbModVariables.PLAYER_VARIABLES);
+			_vars.PlayerStrength = 1;
+			_vars.syncPlayerVariables((new Object() {
+				public Entity getEntity() {
+					try {
+						return EntityArgument.getEntity(arguments, "name");
+					} catch (CommandSyntaxException e) {
+						e.printStackTrace();
+						return null;
+					}
+				}
+			}.getEntity()));
+		}
+		{
+			SlsbModVariables.PlayerVariables _vars = (new Object() {
+				public Entity getEntity() {
+					try {
+						return EntityArgument.getEntity(arguments, "name");
+					} catch (CommandSyntaxException e) {
+						e.printStackTrace();
+						return null;
+					}
+				}
+			}.getEntity()).getData(SlsbModVariables.PLAYER_VARIABLES);
+			_vars.PlayerAgility = 1;
+			_vars.syncPlayerVariables((new Object() {
+				public Entity getEntity() {
+					try {
+						return EntityArgument.getEntity(arguments, "name");
+					} catch (CommandSyntaxException e) {
+						e.printStackTrace();
+						return null;
+					}
+				}
+			}.getEntity()));
+		}
+		{
+			SlsbModVariables.PlayerVariables _vars = (new Object() {
+				public Entity getEntity() {
+					try {
+						return EntityArgument.getEntity(arguments, "name");
+					} catch (CommandSyntaxException e) {
+						e.printStackTrace();
+						return null;
+					}
+				}
+			}.getEntity()).getData(SlsbModVariables.PLAYER_VARIABLES);
+			_vars.PlayerPerception = 1;
+			_vars.syncPlayerVariables((new Object() {
+				public Entity getEntity() {
+					try {
+						return EntityArgument.getEntity(arguments, "name");
+					} catch (CommandSyntaxException e) {
+						e.printStackTrace();
+						return null;
+					}
+				}
+			}.getEntity()));
+		}
+		{
+			SlsbModVariables.PlayerVariables _vars = (new Object() {
+				public Entity getEntity() {
+					try {
+						return EntityArgument.getEntity(arguments, "name");
+					} catch (CommandSyntaxException e) {
+						e.printStackTrace();
+						return null;
+					}
+				}
+			}.getEntity()).getData(SlsbModVariables.PLAYER_VARIABLES);
+			_vars.PlayerVitality = 1;
+			_vars.syncPlayerVariables((new Object() {
+				public Entity getEntity() {
+					try {
+						return EntityArgument.getEntity(arguments, "name");
+					} catch (CommandSyntaxException e) {
+						e.printStackTrace();
+						return null;
+					}
+				}
+			}.getEntity()));
+		}
+		{
+			SlsbModVariables.PlayerVariables _vars = (new Object() {
+				public Entity getEntity() {
+					try {
+						return EntityArgument.getEntity(arguments, "name");
+					} catch (CommandSyntaxException e) {
+						e.printStackTrace();
+						return null;
+					}
+				}
+			}.getEntity()).getData(SlsbModVariables.PLAYER_VARIABLES);
+			_vars.PlayerIntelligence = 1;
+			_vars.syncPlayerVariables((new Object() {
+				public Entity getEntity() {
+					try {
+						return EntityArgument.getEntity(arguments, "name");
+					} catch (CommandSyntaxException e) {
+						e.printStackTrace();
+						return null;
+					}
+				}
+			}.getEntity()));
+		}
+		{
+			SlsbModVariables.PlayerVariables _vars = (new Object() {
+				public Entity getEntity() {
+					try {
+						return EntityArgument.getEntity(arguments, "name");
+					} catch (CommandSyntaxException e) {
+						e.printStackTrace();
+						return null;
+					}
+				}
+			}.getEntity()).getData(SlsbModVariables.PLAYER_VARIABLES);
+			_vars.PlayerLevel = 1;
+			_vars.syncPlayerVariables((new Object() {
+				public Entity getEntity() {
+					try {
+						return EntityArgument.getEntity(arguments, "name");
+					} catch (CommandSyntaxException e) {
+						e.printStackTrace();
+						return null;
+					}
+				}
+			}.getEntity()));
+		}
+		{
+			SlsbModVariables.PlayerVariables _vars = (new Object() {
+				public Entity getEntity() {
+					try {
+						return EntityArgument.getEntity(arguments, "name");
+					} catch (CommandSyntaxException e) {
+						e.printStackTrace();
+						return null;
+					}
+				}
+			}.getEntity()).getData(SlsbModVariables.PLAYER_VARIABLES);
+			_vars.PlayerSkillPoints = 0;
+			_vars.syncPlayerVariables((new Object() {
+				public Entity getEntity() {
+					try {
+						return EntityArgument.getEntity(arguments, "name");
+					} catch (CommandSyntaxException e) {
+						e.printStackTrace();
+						return null;
+					}
+				}
+			}.getEntity()));
+		}
+		{
+			SlsbModVariables.PlayerVariables _vars = (new Object() {
+				public Entity getEntity() {
+					try {
+						return EntityArgument.getEntity(arguments, "name");
+					} catch (CommandSyntaxException e) {
+						e.printStackTrace();
+						return null;
+					}
+				}
+			}.getEntity()).getData(SlsbModVariables.PLAYER_VARIABLES);
+			_vars.PlayerEXP = 0;
+			_vars.syncPlayerVariables((new Object() {
+				public Entity getEntity() {
+					try {
+						return EntityArgument.getEntity(arguments, "name");
+					} catch (CommandSyntaxException e) {
+						e.printStackTrace();
+						return null;
+					}
+				}
+			}.getEntity()));
+		}
+		{
+			SlsbModVariables.PlayerVariables _vars = (new Object() {
+				public Entity getEntity() {
+					try {
+						return EntityArgument.getEntity(arguments, "name");
+					} catch (CommandSyntaxException e) {
+						e.printStackTrace();
+						return null;
+					}
+				}
+			}.getEntity()).getData(SlsbModVariables.PLAYER_VARIABLES);
+			_vars.PlayerMaxEXP = 100;
+			_vars.syncPlayerVariables((new Object() {
+				public Entity getEntity() {
+					try {
+						return EntityArgument.getEntity(arguments, "name");
+					} catch (CommandSyntaxException e) {
+						e.printStackTrace();
+						return null;
+					}
+				}
+			}.getEntity()));
+		}
+		{
+			SlsbModVariables.PlayerVariables _vars = (new Object() {
+				public Entity getEntity() {
+					try {
+						return EntityArgument.getEntity(arguments, "name");
+					} catch (CommandSyntaxException e) {
+						e.printStackTrace();
+						return null;
+					}
+				}
+			}.getEntity()).getData(SlsbModVariables.PLAYER_VARIABLES);
+			_vars.PlayerGold = 1000;
+			_vars.syncPlayerVariables((new Object() {
+				public Entity getEntity() {
+					try {
+						return EntityArgument.getEntity(arguments, "name");
+					} catch (CommandSyntaxException e) {
+						e.printStackTrace();
+						return null;
+					}
+				}
+			}.getEntity()));
+		}
 		if (!((new Object() {
 			public Entity getEntity() {
 				try {
