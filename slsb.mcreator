@@ -883,11 +883,11 @@
       "registry_name": "blood_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/slsb/blockstates/blood_block.json",
           "src/main/resources/data/slsb/loot_table/blocks/blood_block.json",
+          "src/main/java/net/clozynoii/slsb/block/BloodBlockBlock.java",
+          "src/main/resources/assets/slsb/blockstates/blood_block.json",
           "src/main/resources/assets/slsb/models/item/blood_block.json",
-          "src/main/resources/assets/slsb/models/block/blood_block.json",
-          "src/main/java/net/clozynoii/slsb/block/BloodBlockBlock.java"
+          "src/main/resources/assets/slsb/models/block/blood_block.json"
         ]
       },
       "path": "~/Blocks/Misc"
@@ -990,8 +990,8 @@
       "registry_name": "circle_barrage",
       "metadata": {
         "files": [
-          "src/main/resources/assets/slsb/particles/circle_barrage.json",
-          "src/main/java/net/clozynoii/slsb/client/particle/CircleBarrageParticle.java"
+          "src/main/java/net/clozynoii/slsb/client/particle/CircleBarrageParticle.java",
+          "src/main/resources/assets/slsb/particles/circle_barrage.json"
         ]
       },
       "path": "~/Effects/Particles"
@@ -1581,8 +1581,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/clozynoii/slsb/world/inventory/HunterSkillGUIMenu.java",
-          "src/main/java/net/clozynoii/slsb/network/HunterSkillGUIButtonMessage.java",
-          "src/main/java/net/clozynoii/slsb/client/gui/HunterSkillGUIScreen.java"
+          "src/main/java/net/clozynoii/slsb/client/gui/HunterSkillGUIScreen.java",
+          "src/main/java/net/clozynoii/slsb/network/HunterSkillGUIButtonMessage.java"
         ]
       },
       "path": "~/GUI"
@@ -2005,16 +2005,16 @@
       "registry_name": "awakening_orb",
       "metadata": {
         "files": [
-          "src/main/java/net/clozynoii/slsb/block/renderer/AwakeningOrbDisplayItemRenderer.java",
           "src/main/java/net/clozynoii/slsb/block/display/AwakeningOrbDisplayItem.java",
-          "src/main/java/net/clozynoii/slsb/block/model/AwakeningOrbDisplayModel.java",
-          "src/main/java/net/clozynoii/slsb/block/AwakeningOrbBlock.java",
-          "src/main/resources/assets/slsb/models/custom/awakening_orb_particle.json",
-          "src/main/java/net/clozynoii/slsb/block/model/AwakeningOrbBlockModel.java",
-          "src/main/java/net/clozynoii/slsb/block/entity/AwakeningOrbTileEntity.java",
-          "src/main/java/net/clozynoii/slsb/block/renderer/AwakeningOrbTileRenderer.java",
           "src/main/resources/assets/slsb/models/item/awakening_orb.json",
-          "src/main/resources/assets/slsb/blockstates/awakening_orb.json"
+          "src/main/java/net/clozynoii/slsb/block/entity/AwakeningOrbTileEntity.java",
+          "src/main/resources/assets/slsb/models/custom/awakening_orb_particle.json",
+          "src/main/java/net/clozynoii/slsb/block/AwakeningOrbBlock.java",
+          "src/main/java/net/clozynoii/slsb/block/model/AwakeningOrbBlockModel.java",
+          "src/main/java/net/clozynoii/slsb/block/renderer/AwakeningOrbDisplayItemRenderer.java",
+          "src/main/resources/assets/slsb/blockstates/awakening_orb.json",
+          "src/main/java/net/clozynoii/slsb/block/renderer/AwakeningOrbTileRenderer.java",
+          "src/main/java/net/clozynoii/slsb/block/model/AwakeningOrbDisplayModel.java"
         ]
       },
       "path": "~/Blocks/Hunter Association"
@@ -2038,17 +2038,17 @@
       "registry_name": "blue_gate_small",
       "metadata": {
         "files": [
-          "src/main/java/net/clozynoii/slsb/block/model/BlueGateSmallBlockModel.java",
-          "src/main/java/net/clozynoii/slsb/block/model/BlueGateSmallDisplayModel.java",
-          "src/main/resources/assets/slsb/models/item/blue_gate_small.json",
-          "src/main/java/net/clozynoii/slsb/block/entity/BlueGateSmallTileEntity.java",
-          "src/main/java/net/clozynoii/slsb/block/renderer/BlueGateSmallDisplayItemRenderer.java",
-          "src/main/java/net/clozynoii/slsb/block/renderer/BlueGateSmallTileRenderer.java",
-          "src/main/resources/assets/slsb/models/custom/blue_gate_small_particle.json",
-          "src/main/resources/assets/slsb/blockstates/blue_gate_small.json",
           "src/main/java/net/clozynoii/slsb/block/BlueGateSmallBlock.java",
+          "src/main/java/net/clozynoii/slsb/block/entity/BlueGateSmallTileEntity.java",
+          "src/main/resources/assets/slsb/models/custom/blue_gate_small_particle.json",
+          "src/main/java/net/clozynoii/slsb/block/model/BlueGateSmallDisplayModel.java",
+          "src/main/resources/assets/slsb/models/block/blue_gate_small_blockstate_0.json",
+          "src/main/resources/assets/slsb/models/item/blue_gate_small.json",
+          "src/main/java/net/clozynoii/slsb/block/renderer/BlueGateSmallTileRenderer.java",
+          "src/main/java/net/clozynoii/slsb/block/renderer/BlueGateSmallDisplayItemRenderer.java",
+          "src/main/resources/assets/slsb/blockstates/blue_gate_small.json",
           "src/main/java/net/clozynoii/slsb/block/display/BlueGateSmallDisplayItem.java",
-          "src/main/resources/assets/slsb/models/block/blue_gate_small_blockstate_0.json"
+          "src/main/java/net/clozynoii/slsb/block/model/BlueGateSmallBlockModel.java"
         ]
       },
       "path": "~/Blocks"
@@ -2061,17 +2061,17 @@
       "registry_name": "blue_gate_medium",
       "metadata": {
         "files": [
-          "src/main/java/net/clozynoii/slsb/block/renderer/BlueGateMediumDisplayItemRenderer.java",
-          "src/main/java/net/clozynoii/slsb/block/display/BlueGateMediumDisplayItem.java",
-          "src/main/java/net/clozynoii/slsb/block/entity/BlueGateMediumTileEntity.java",
-          "src/main/resources/assets/slsb/blockstates/blue_gate_medium.json",
-          "src/main/java/net/clozynoii/slsb/block/model/BlueGateMediumBlockModel.java",
-          "src/main/java/net/clozynoii/slsb/block/model/BlueGateMediumDisplayModel.java",
           "src/main/java/net/clozynoii/slsb/block/BlueGateMediumBlock.java",
-          "src/main/resources/assets/slsb/models/item/blue_gate_medium.json",
           "src/main/resources/assets/slsb/models/block/blue_gate_medium_blockstate_0.json",
+          "src/main/java/net/clozynoii/slsb/block/renderer/BlueGateMediumTileRenderer.java",
+          "src/main/java/net/clozynoii/slsb/block/model/BlueGateMediumDisplayModel.java",
+          "src/main/java/net/clozynoii/slsb/block/renderer/BlueGateMediumDisplayItemRenderer.java",
+          "src/main/java/net/clozynoii/slsb/block/model/BlueGateMediumBlockModel.java",
+          "src/main/java/net/clozynoii/slsb/block/display/BlueGateMediumDisplayItem.java",
           "src/main/resources/assets/slsb/models/custom/blue_gate_medium_particle.json",
-          "src/main/java/net/clozynoii/slsb/block/renderer/BlueGateMediumTileRenderer.java"
+          "src/main/resources/assets/slsb/blockstates/blue_gate_medium.json",
+          "src/main/resources/assets/slsb/models/item/blue_gate_medium.json",
+          "src/main/java/net/clozynoii/slsb/block/entity/BlueGateMediumTileEntity.java"
         ]
       },
       "path": "~/Blocks"
@@ -2828,13 +2828,13 @@
       "registry_name": "barrier_slab",
       "metadata": {
         "files": [
+          "src/main/resources/assets/slsb/models/block/barrier_slab.json",
+          "src/main/resources/assets/slsb/models/block/barrier_slab_full.json",
+          "src/main/resources/assets/slsb/blockstates/barrier_slab.json",
           "src/main/resources/data/slsb/loot_table/blocks/barrier_slab.json",
           "src/main/resources/assets/slsb/models/item/barrier_slab.json",
-          "src/main/resources/assets/slsb/blockstates/barrier_slab.json",
-          "src/main/resources/assets/slsb/models/block/barrier_slab_full.json",
-          "src/main/resources/assets/slsb/models/block/barrier_slab_top.json",
           "src/main/java/net/clozynoii/slsb/block/BarrierSlabBlock.java",
-          "src/main/resources/assets/slsb/models/block/barrier_slab.json"
+          "src/main/resources/assets/slsb/models/block/barrier_slab_top.json"
         ]
       },
       "path": "~/Blocks/Misc"
@@ -2847,10 +2847,10 @@
       "registry_name": "barrier_wall",
       "metadata": {
         "files": [
-          "src/main/resources/assets/slsb/models/item/barrier_wall.json",
           "src/main/resources/data/slsb/loot_table/blocks/barrier_wall.json",
-          "src/main/resources/assets/slsb/models/block/barrier_wall.json",
           "src/main/java/net/clozynoii/slsb/block/BarrierWallBlock.java",
+          "src/main/resources/assets/slsb/models/item/barrier_wall.json",
+          "src/main/resources/assets/slsb/models/block/barrier_wall.json",
           "src/main/resources/assets/slsb/blockstates/barrier_wall.json"
         ]
       },
@@ -2916,16 +2916,16 @@
       "registry_name": "mana_training_orb",
       "metadata": {
         "files": [
-          "src/main/java/net/clozynoii/slsb/block/model/ManaTrainingOrbBlockModel.java",
-          "src/main/resources/assets/slsb/blockstates/mana_training_orb.json",
-          "src/main/java/net/clozynoii/slsb/block/ManaTrainingOrbBlock.java",
+          "src/main/java/net/clozynoii/slsb/block/model/ManaTrainingOrbDisplayModel.java",
           "src/main/java/net/clozynoii/slsb/block/renderer/ManaTrainingOrbTileRenderer.java",
-          "src/main/java/net/clozynoii/slsb/block/entity/ManaTrainingOrbTileEntity.java",
           "src/main/java/net/clozynoii/slsb/block/display/ManaTrainingOrbDisplayItem.java",
-          "src/main/java/net/clozynoii/slsb/block/renderer/ManaTrainingOrbDisplayItemRenderer.java",
-          "src/main/resources/assets/slsb/models/custom/mana_training_orb_particle.json",
+          "src/main/java/net/clozynoii/slsb/block/model/ManaTrainingOrbBlockModel.java",
+          "src/main/java/net/clozynoii/slsb/block/entity/ManaTrainingOrbTileEntity.java",
+          "src/main/resources/assets/slsb/blockstates/mana_training_orb.json",
           "src/main/resources/assets/slsb/models/item/mana_training_orb.json",
-          "src/main/java/net/clozynoii/slsb/block/model/ManaTrainingOrbDisplayModel.java"
+          "src/main/java/net/clozynoii/slsb/block/ManaTrainingOrbBlock.java",
+          "src/main/java/net/clozynoii/slsb/block/renderer/ManaTrainingOrbDisplayItemRenderer.java",
+          "src/main/resources/assets/slsb/models/custom/mana_training_orb_particle.json"
         ]
       },
       "path": "~/Blocks/Useable"
@@ -2993,9 +2993,9 @@
       "registry_name": "system_main_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/clozynoii/slsb/network/SystemMainGUIButtonMessage.java",
           "src/main/java/net/clozynoii/slsb/client/gui/SystemMainGUIScreen.java",
-          "src/main/java/net/clozynoii/slsb/world/inventory/SystemMainGUIMenu.java"
+          "src/main/java/net/clozynoii/slsb/world/inventory/SystemMainGUIMenu.java",
+          "src/main/java/net/clozynoii/slsb/network/SystemMainGUIButtonMessage.java"
         ]
       },
       "path": "~/GUI"
@@ -3312,8 +3312,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/clozynoii/slsb/client/gui/SystemSkillsGUIScreen.java",
-          "src/main/java/net/clozynoii/slsb/world/inventory/SystemSkillsGUIMenu.java",
-          "src/main/java/net/clozynoii/slsb/network/SystemSkillsGUIButtonMessage.java"
+          "src/main/java/net/clozynoii/slsb/network/SystemSkillsGUIButtonMessage.java",
+          "src/main/java/net/clozynoii/slsb/world/inventory/SystemSkillsGUIMenu.java"
         ]
       },
       "path": "~/GUI"
@@ -3326,9 +3326,9 @@
       "registry_name": "system_shop_gui",
       "metadata": {
         "files": [
+          "src/main/java/net/clozynoii/slsb/world/inventory/SystemShopGUIMenu.java",
           "src/main/java/net/clozynoii/slsb/client/gui/SystemShopGUIScreen.java",
-          "src/main/java/net/clozynoii/slsb/network/SystemShopGUIButtonMessage.java",
-          "src/main/java/net/clozynoii/slsb/world/inventory/SystemShopGUIMenu.java"
+          "src/main/java/net/clozynoii/slsb/network/SystemShopGUIButtonMessage.java"
         ]
       },
       "path": "~/GUI"
@@ -3496,18 +3496,18 @@
       "registry_name": "green_door",
       "metadata": {
         "files": [
-          "src/main/java/net/clozynoii/slsb/block/GreenDoorBlock.java",
-          "src/main/resources/data/slsb/loot_table/blocks/green_door.json",
-          "src/main/resources/assets/slsb/models/block/green_door_top_left_open.json",
-          "src/main/resources/assets/slsb/models/block/green_door_bottom_right_open.json",
-          "src/main/resources/assets/slsb/models/item/green_door.json",
-          "src/main/resources/assets/slsb/models/block/green_door_bottom_left.json",
-          "src/main/resources/assets/slsb/models/block/green_door_top_right.json",
-          "src/main/resources/assets/slsb/models/block/green_door_top_right_open.json",
           "src/main/resources/assets/slsb/models/block/green_door_top_left.json",
-          "src/main/resources/assets/slsb/models/block/green_door_bottom_left_open.json",
+          "src/main/resources/assets/slsb/models/block/green_door_top_right.json",
+          "src/main/resources/assets/slsb/models/block/green_door_top_left_open.json",
+          "src/main/resources/assets/slsb/models/block/green_door_bottom_left.json",
+          "src/main/resources/assets/slsb/models/block/green_door_bottom_right_open.json",
+          "src/main/resources/assets/slsb/models/block/green_door_top_right_open.json",
           "src/main/resources/assets/slsb/models/block/green_door_bottom_right.json",
-          "src/main/resources/assets/slsb/blockstates/green_door.json"
+          "src/main/resources/assets/slsb/blockstates/green_door.json",
+          "src/main/resources/data/slsb/loot_table/blocks/green_door.json",
+          "src/main/resources/assets/slsb/models/block/green_door_bottom_left_open.json",
+          "src/main/resources/assets/slsb/models/item/green_door.json",
+          "src/main/java/net/clozynoii/slsb/block/GreenDoorBlock.java"
         ]
       },
       "path": "~/Blocks/Hunter Association"
@@ -3520,11 +3520,11 @@
       "registry_name": "brown_trimmed_panel",
       "metadata": {
         "files": [
+          "src/main/java/net/clozynoii/slsb/block/BrownTrimmedPanelBlock.java",
           "src/main/resources/assets/slsb/blockstates/brown_trimmed_panel.json",
-          "src/main/resources/assets/slsb/models/block/brown_trimmed_panel.json",
-          "src/main/resources/data/slsb/loot_table/blocks/brown_trimmed_panel.json",
           "src/main/resources/assets/slsb/models/item/brown_trimmed_panel.json",
-          "src/main/java/net/clozynoii/slsb/block/BrownTrimmedPanelBlock.java"
+          "src/main/resources/data/slsb/loot_table/blocks/brown_trimmed_panel.json",
+          "src/main/resources/assets/slsb/models/block/brown_trimmed_panel.json"
         ]
       },
       "path": "~/Blocks/Hunter Association"
@@ -3537,11 +3537,11 @@
       "registry_name": "brown_panel",
       "metadata": {
         "files": [
-          "src/main/resources/data/slsb/loot_table/blocks/brown_panel.json",
-          "src/main/resources/assets/slsb/models/block/brown_panel.json",
-          "src/main/resources/assets/slsb/models/item/brown_panel.json",
           "src/main/java/net/clozynoii/slsb/block/BrownPanelBlock.java",
-          "src/main/resources/assets/slsb/blockstates/brown_panel.json"
+          "src/main/resources/data/slsb/loot_table/blocks/brown_panel.json",
+          "src/main/resources/assets/slsb/blockstates/brown_panel.json",
+          "src/main/resources/assets/slsb/models/item/brown_panel.json",
+          "src/main/resources/assets/slsb/models/block/brown_panel.json"
         ]
       },
       "path": "~/Blocks/Hunter Association"
@@ -3554,11 +3554,11 @@
       "registry_name": "tan_panel",
       "metadata": {
         "files": [
-          "src/main/resources/data/slsb/loot_table/blocks/tan_panel.json",
-          "src/main/resources/assets/slsb/blockstates/tan_panel.json",
           "src/main/resources/assets/slsb/models/item/tan_panel.json",
+          "src/main/resources/assets/slsb/blockstates/tan_panel.json",
           "src/main/java/net/clozynoii/slsb/block/TanPanelBlock.java",
-          "src/main/resources/assets/slsb/models/block/tan_panel.json"
+          "src/main/resources/assets/slsb/models/block/tan_panel.json",
+          "src/main/resources/data/slsb/loot_table/blocks/tan_panel.json"
         ]
       },
       "path": "~/Blocks/Hunter Association"
@@ -3571,14 +3571,14 @@
       "registry_name": "tan_trimmed_panel_wall",
       "metadata": {
         "files": [
-          "src/main/resources/assets/slsb/models/block/tan_trimmed_panel_wall.json",
-          "src/main/resources/assets/slsb/models/block/tan_trimmed_panel_wall_inventory.json",
           "src/main/resources/assets/slsb/models/block/tan_trimmed_panel_wall_post.json",
           "src/main/resources/assets/slsb/blockstates/tan_trimmed_panel_wall.json",
+          "src/main/resources/assets/slsb/models/block/tan_trimmed_panel_wall.json",
           "src/main/java/net/clozynoii/slsb/block/TanTrimmedPanelWallBlock.java",
+          "src/main/resources/assets/slsb/models/block/tan_trimmed_panel_wall_side_tall.json",
           "src/main/resources/assets/slsb/models/item/tan_trimmed_panel_wall.json",
-          "src/main/resources/data/slsb/loot_table/blocks/tan_trimmed_panel_wall.json",
-          "src/main/resources/assets/slsb/models/block/tan_trimmed_panel_wall_side_tall.json"
+          "src/main/resources/assets/slsb/models/block/tan_trimmed_panel_wall_inventory.json",
+          "src/main/resources/data/slsb/loot_table/blocks/tan_trimmed_panel_wall.json"
         ]
       },
       "path": "~/Blocks/Hunter Association"
@@ -3591,14 +3591,14 @@
       "registry_name": "tan_panel_wall",
       "metadata": {
         "files": [
-          "src/main/resources/assets/slsb/models/item/tan_panel_wall.json",
-          "src/main/java/net/clozynoii/slsb/block/TanPanelWallBlock.java",
-          "src/main/resources/data/slsb/loot_table/blocks/tan_panel_wall.json",
-          "src/main/resources/assets/slsb/models/block/tan_panel_wall_inventory.json",
           "src/main/resources/assets/slsb/models/block/tan_panel_wall.json",
+          "src/main/resources/data/slsb/loot_table/blocks/tan_panel_wall.json",
+          "src/main/resources/assets/slsb/models/block/tan_panel_wall_post.json",
           "src/main/resources/assets/slsb/models/block/tan_panel_wall_side_tall.json",
-          "src/main/resources/assets/slsb/blockstates/tan_panel_wall.json",
-          "src/main/resources/assets/slsb/models/block/tan_panel_wall_post.json"
+          "src/main/resources/assets/slsb/models/block/tan_panel_wall_inventory.json",
+          "src/main/java/net/clozynoii/slsb/block/TanPanelWallBlock.java",
+          "src/main/resources/assets/slsb/models/item/tan_panel_wall.json",
+          "src/main/resources/assets/slsb/blockstates/tan_panel_wall.json"
         ]
       },
       "path": "~/Blocks/Hunter Association"
@@ -3611,15 +3611,15 @@
       "registry_name": "metal_framed_window",
       "metadata": {
         "files": [
+          "src/main/resources/assets/slsb/models/block/metal_framed_window_side.json",
+          "src/main/resources/assets/slsb/models/block/metal_framed_window_noside.json",
+          "src/main/resources/assets/slsb/blockstates/metal_framed_window.json",
+          "src/main/java/net/clozynoii/slsb/block/MetalFramedWindowBlock.java",
+          "src/main/resources/assets/slsb/models/item/metal_framed_window.json",
           "src/main/resources/assets/slsb/models/block/metal_framed_window_noside_alt.json",
           "src/main/resources/data/slsb/loot_table/blocks/metal_framed_window.json",
-          "src/main/resources/assets/slsb/blockstates/metal_framed_window.json",
-          "src/main/resources/assets/slsb/models/block/metal_framed_window_noside.json",
-          "src/main/resources/assets/slsb/models/block/metal_framed_window_side.json",
-          "src/main/resources/assets/slsb/models/item/metal_framed_window.json",
-          "src/main/resources/assets/slsb/models/block/metal_framed_window_side_alt.json",
           "src/main/resources/assets/slsb/models/block/metal_framed_window_post.json",
-          "src/main/java/net/clozynoii/slsb/block/MetalFramedWindowBlock.java"
+          "src/main/resources/assets/slsb/models/block/metal_framed_window_side_alt.json"
         ]
       },
       "path": "~/Blocks/Hunter Association"
@@ -3632,11 +3632,11 @@
       "registry_name": "bloodred_igris",
       "metadata": {
         "files": [
-          "src/main/java/net/clozynoii/slsb/entity/layer/BloodredIgrisLayer.java",
-          "src/main/java/net/clozynoii/slsb/entity/BloodredIgrisEntity.java",
           "src/main/java/net/clozynoii/slsb/client/renderer/BloodredIgrisRenderer.java",
+          "src/main/java/net/clozynoii/slsb/entity/model/BloodredIgrisModel.java",
           "src/main/resources/assets/slsb/models/item/bloodred_igris_spawn_egg.json",
-          "src/main/java/net/clozynoii/slsb/entity/model/BloodredIgrisModel.java"
+          "src/main/java/net/clozynoii/slsb/entity/BloodredIgrisEntity.java",
+          "src/main/java/net/clozynoii/slsb/entity/layer/BloodredIgrisLayer.java"
         ]
       },
       "path": "~/Entities"
@@ -3760,6 +3760,19 @@
         ]
       },
       "path": "~/Armor"
+    },
+    {
+      "name": "Paralysis",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "paralysis",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/potion/ParalysisMobEffect.java"
+        ]
+      },
+      "path": "~/Potions"
     }
   ],
   "variable_elements": [
@@ -4150,12 +4163,15 @@
   "language_map": {
     "en_us": {
       "slsb.evaluator.evaluated": "You have already been evaluated!",
+      "item.slsb.red_knights_armor_chestplate": "Red Knight\u0027s Chestplate",
       "slsb.evaluator.normalrank.rank": "-Rank!",
       "slsb.training.manafatigue": "Your mana is currently fatigued",
       "slsb.command.systemplayertarget": "Your Player status has been set to",
       "item_group.slsb.sl_gear": "Solo Leveling: Gear",
       "block.slsb.blue_gate_medium": "Gate (Medium)",
+      "item.slsb.red_knights_armor_helmet": "Red Knight\u0027s Helmet",
       "gui.slsb.hunter_skill_gui.tooltip_barrage": "Barrage",
+      "item.slsb.red_knights_armor_boots": "Red Knight\u0027s Boots",
       "item.slsb.kasakas_fang.description_1": "§7Category: §fDagger",
       "item.slsb.kasakas_fang.description_0": "§7Acquisition Difficulty: §fC-Rank",
       "item.slsb.kasakas_fang.description_3": "§aATK +25",
@@ -4176,6 +4192,7 @@
       "block.slsb.brown_trimmed_panel": "Brown Trimmed Panel",
       "slsb.evaluator.normalrank.goodbye": "Good luck, and stay safe out there, Hunter!",
       "block.slsb.tan_panel_wall": "Tan Panel Wall",
+      "effect.slsb.paralysis": "Paralysis",
       "slsb.ability.cooldown": "Ability is on Cooldown!",
       "key.slsb.change_ability_bar": "Change Ability Bar",
       "gui.slsb.hunter_skill_gui.tooltip_slot_10": "Slot 10",
@@ -4227,8 +4244,10 @@
       "block.slsb.green_door": "Industrial Green Door",
       "gui.slsb.hunter_skill_gui.tooltip_dash": "Dash",
       "slsb.systemmenu.status": "Status",
+      "item.slsb.red_knights_armor_leggings": "Red Knight\u0027s Leggings",
       "gui.slsb.hunter_skill_gui.tooltip_heavy_attack": "Heavy Attack",
-      "block.slsb.barrier_slab": "§dBarrier Slab"
+      "block.slsb.barrier_slab": "§dBarrier Slab",
+      "effect.slsb.bleeding": "Bleeding"
     }
   },
   "foldersRoot": {

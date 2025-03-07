@@ -1,11 +1,14 @@
 {
   "slsb.evaluator.evaluated": "You have already been evaluated!",
-  "item_group.slsb.sl_gear": "Solo Leveling: Gear",
-  "slsb.command.systemplayertarget": "Your Player status has been set to",
-  "slsb.training.manafatigue": "Your mana is currently fatigued",
+  "item.slsb.red_knights_armor_chestplate": "Red Knight\u0027s Chestplate",
   "slsb.evaluator.normalrank.rank": "-Rank!",
+  "slsb.training.manafatigue": "Your mana is currently fatigued",
+  "slsb.command.systemplayertarget": "Your Player status has been set to",
+  "item_group.slsb.sl_gear": "Solo Leveling: Gear",
   "block.slsb.blue_gate_medium": "Gate (Medium)",
+  "item.slsb.red_knights_armor_helmet": "Red Knight\u0027s Helmet",
   "gui.slsb.hunter_skill_gui.tooltip_barrage": "Barrage",
+  "item.slsb.red_knights_armor_boots": "Red Knight\u0027s Boots",
   "item.slsb.kasakas_fang.description_1": "§7Category: §fDagger",
   "item.slsb.kasakas_fang.description_0": "§7Acquisition Difficulty: §fC-Rank",
   "item.slsb.kasakas_fang.description_3": "§aATK +25",
@@ -26,6 +29,7 @@
   "block.slsb.brown_trimmed_panel": "Brown Trimmed Panel",
   "slsb.evaluator.normalrank.goodbye": "Good luck, and stay safe out there, Hunter!",
   "block.slsb.tan_panel_wall": "Tan Panel Wall",
+  "effect.slsb.paralysis": "Paralysis",
   "slsb.ability.cooldown": "Ability is on Cooldown!",
   "key.slsb.change_ability_bar": "Change Ability Bar",
   "gui.slsb.hunter_skill_gui.tooltip_slot_10": "Slot 10",
@@ -77,6 +81,8 @@
   "block.slsb.green_door": "Industrial Green Door",
   "gui.slsb.hunter_skill_gui.tooltip_dash": "Dash",
   "slsb.systemmenu.status": "Status",
+  "item.slsb.red_knights_armor_leggings": "Red Knight\u0027s Leggings",
   "gui.slsb.hunter_skill_gui.tooltip_heavy_attack": "Heavy Attack",
-  "block.slsb.barrier_slab": "§dBarrier Slab"
+  "block.slsb.barrier_slab": "§dBarrier Slab",
+  "effect.slsb.bleeding": "Bleeding"
 }
