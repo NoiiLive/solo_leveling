@@ -21,7 +21,7 @@ public class SystemSellProcedure {
 				if (itemstackiterator.getItem() == SlsbModItems.MANA_CRYSTAL.get()) {
 					{
 						SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
-						_vars.PlayerGold = entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerGold + itemstackiterator.getCount() * 10;
+						_vars.PlayerGold = entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerGold + itemstackiterator.getCount() * 100;
 						_vars.syncPlayerVariables(entity);
 					}
 					if (entity instanceof Player _player) {
@@ -32,7 +32,7 @@ public class SystemSellProcedure {
 				if (itemstackiterator.getItem() == SlsbModItems.ESSENCE_STONE_E.get()) {
 					{
 						SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
-						_vars.PlayerGold = entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerGold + itemstackiterator.getCount() * 10;
+						_vars.PlayerGold = entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerGold + itemstackiterator.getCount() * 100;
 						_vars.syncPlayerVariables(entity);
 					}
 					if (entity instanceof Player _player) {
@@ -43,7 +43,7 @@ public class SystemSellProcedure {
 				if (itemstackiterator.getItem() == SlsbModItems.ESSENCE_STONE_D.get()) {
 					{
 						SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
-						_vars.PlayerGold = entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerGold + itemstackiterator.getCount() * 50;
+						_vars.PlayerGold = entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerGold + itemstackiterator.getCount() * 500;
 						_vars.syncPlayerVariables(entity);
 					}
 					if (entity instanceof Player _player) {
@@ -54,7 +54,7 @@ public class SystemSellProcedure {
 				if (itemstackiterator.getItem() == SlsbModItems.ESSENCE_STONE_C.get()) {
 					{
 						SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
-						_vars.PlayerGold = entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerGold + itemstackiterator.getCount() * 100;
+						_vars.PlayerGold = entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerGold + itemstackiterator.getCount() * 1000;
 						_vars.syncPlayerVariables(entity);
 					}
 					if (entity instanceof Player _player) {
@@ -65,7 +65,7 @@ public class SystemSellProcedure {
 				if (itemstackiterator.getItem() == SlsbModItems.ESSENCE_STONE_B.get()) {
 					{
 						SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
-						_vars.PlayerGold = entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerGold + itemstackiterator.getCount() * 1000;
+						_vars.PlayerGold = entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerGold + itemstackiterator.getCount() * 10000;
 						_vars.syncPlayerVariables(entity);
 					}
 					if (entity instanceof Player _player) {
@@ -76,7 +76,7 @@ public class SystemSellProcedure {
 				if (itemstackiterator.getItem() == SlsbModItems.ESSENCE_STONE_A.get()) {
 					{
 						SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
-						_vars.PlayerGold = entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerGold + itemstackiterator.getCount() * 10000;
+						_vars.PlayerGold = entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerGold + itemstackiterator.getCount() * 50000;
 						_vars.syncPlayerVariables(entity);
 					}
 					if (entity instanceof Player _player) {

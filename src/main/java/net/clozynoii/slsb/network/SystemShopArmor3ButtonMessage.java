@@ -16,11 +16,11 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.clozynoii.slsb.world.inventory.SystemShopArmorMenu;
+import net.clozynoii.slsb.world.inventory.SystemShopArmor3Menu;
 import net.clozynoii.slsb.procedures.SystemOpenStatusProcedure;
 import net.clozynoii.slsb.procedures.SystemOpenSkillsProcedure;
 import net.clozynoii.slsb.procedures.SystemOpenShopProcedure;
-import net.clozynoii.slsb.procedures.SystemOpenShopArmor3Procedure;
+import net.clozynoii.slsb.procedures.SystemOpenShopArmorProcedure;
 import net.clozynoii.slsb.procedures.SystemOpenShopArmor2Procedure;
 import net.clozynoii.slsb.procedures.SystemOpenQuestsProcedure;
 import net.clozynoii.slsb.SlsbMod;
@@ -28,21 +28,21 @@ import net.clozynoii.slsb.SlsbMod;
 import java.util.HashMap;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
-public record SystemShopArmorButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
+public record SystemShopArmor3ButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
 
-	public static final Type<SystemShopArmorButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(SlsbMod.MODID, "system_shop_armor_buttons"));
-	public static final StreamCodec<RegistryFriendlyByteBuf, SystemShopArmorButtonMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, SystemShopArmorButtonMessage message) -> {
+	public static final Type<SystemShopArmor3ButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(SlsbMod.MODID, "system_shop_armor_3_buttons"));
+	public static final StreamCodec<RegistryFriendlyByteBuf, SystemShopArmor3ButtonMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, SystemShopArmor3ButtonMessage message) -> {
 		buffer.writeInt(message.buttonID);
 		buffer.writeInt(message.x);
 		buffer.writeInt(message.y);
 		buffer.writeInt(message.z);
-	}, (RegistryFriendlyByteBuf buffer) -> new SystemShopArmorButtonMessage(buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt()));
+	}, (RegistryFriendlyByteBuf buffer) -> new SystemShopArmor3ButtonMessage(buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt()));
 	@Override
-	public Type<SystemShopArmorButtonMessage> type() {
+	public Type<SystemShopArmor3ButtonMessage> type() {
 		return TYPE;
 	}
 
-	public static void handleData(final SystemShopArmorButtonMessage message, final IPayloadContext context) {
+	public static void handleData(final SystemShopArmor3ButtonMessage message, final IPayloadContext context) {
 		if (context.flow() == PacketFlow.SERVERBOUND) {
 			context.enqueueWork(() -> {
 				Player entity = context.player();
@@ -60,7 +60,7 @@ public record SystemShopArmorButtonMessage(int buttonID, int x, int y, int z) im
 
 	public static void handleButtonAction(Player entity, int buttonID, int x, int y, int z) {
 		Level world = entity.level();
-		HashMap guistate = SystemShopArmorMenu.guistate;
+		HashMap guistate = SystemShopArmor3Menu.guistate;
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
@@ -82,16 +82,16 @@ public record SystemShopArmorButtonMessage(int buttonID, int x, int y, int z) im
 		}
 		if (buttonID == 4) {
 
-			SystemOpenShopArmor2Procedure.execute(world, x, y, z, entity);
+			SystemOpenShopArmorProcedure.execute(world, x, y, z, entity);
 		}
 		if (buttonID == 5) {
 
-			SystemOpenShopArmor3Procedure.execute(world, x, y, z, entity);
+			SystemOpenShopArmor2Procedure.execute(world, x, y, z, entity);
 		}
 	}
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		SlsbMod.addNetworkMessage(SystemShopArmorButtonMessage.TYPE, SystemShopArmorButtonMessage.STREAM_CODEC, SystemShopArmorButtonMessage::handleData);
+		SlsbMod.addNetworkMessage(SystemShopArmor3ButtonMessage.TYPE, SystemShopArmor3ButtonMessage.STREAM_CODEC, SystemShopArmor3ButtonMessage::handleData);
 	}
 }

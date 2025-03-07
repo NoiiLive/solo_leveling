@@ -205,6 +205,62 @@
           "y": 169,
           "locked": true
         }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_weapons",
+          "text": {
+            "fixedValue": "Weapons"
+          },
+          "width": 40,
+          "height": 11,
+          "x": 168,
+          "y": 102,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_armor",
+          "text": {
+            "fixedValue": "Armor"
+          },
+          "width": 40,
+          "height": 11,
+          "x": 218,
+          "y": 102,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_potions",
+          "text": {
+            "fixedValue": "Potions"
+          },
+          "width": 40,
+          "height": 11,
+          "x": 193,
+          "y": 148,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_sell_crystalsstones",
+          "text": {
+            "fixedValue": "Sell Crystals/Stones"
+          },
+          "width": 93,
+          "height": 15,
+          "x": 167,
+          "y": 165,
+          "locked": true
+        }
       }
     ],
     "gridSettings": {

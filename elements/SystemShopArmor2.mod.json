@@ -217,6 +217,16 @@
         "data": {
           "image": "system_slot.png",
           "use1Xscale": false,
+          "x": 144,
+          "y": 151,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "system_slot.png",
+          "use1Xscale": false,
           "x": 216,
           "y": 82,
           "locked": true
@@ -243,11 +253,49 @@
         }
       },
       {
+        "type": "image",
+        "data": {
+          "image": "system_slot.png",
+          "use1Xscale": false,
+          "x": 216,
+          "y": 151,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_system_arrow_right",
+          "image": "system_arrow_right.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "SystemOpenShopArmor3"
+          },
+          "x": 296,
+          "y": 119,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_system_arrow_left",
+          "image": "system_arrow_left.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "SystemOpenShopArmor"
+          },
+          "x": 114,
+          "y": 119,
+          "locked": true
+        }
+      },
+      {
         "type": "tooltip",
         "data": {
-          "name": "tooltip_erank_dagger",
+          "name": "tooltip_crank_helmet",
           "text": {
-            "fixedValue": "E-Rank Dagger"
+            "fixedValue": "C-Rank Helmet"
           },
           "width": 18,
           "height": 18,
@@ -259,9 +307,9 @@
       {
         "type": "tooltip",
         "data": {
-          "name": "tooltip_drank_dagger",
+          "name": "tooltip_crank_chestplate",
           "text": {
-            "fixedValue": "D-Rank Dagger"
+            "fixedValue": "C-Rank Chestplate"
           },
           "width": 18,
           "height": 18,
@@ -273,9 +321,9 @@
       {
         "type": "tooltip",
         "data": {
-          "name": "tooltip_crank_dagger",
+          "name": "tooltip_crank_leggings",
           "text": {
-            "fixedValue": "C-Rank Dagger"
+            "fixedValue": "C-Rank Leggings"
           },
           "width": 18,
           "height": 18,
@@ -287,9 +335,23 @@
       {
         "type": "tooltip",
         "data": {
-          "name": "tooltip_brank_dagger",
+          "name": "tooltip_crank_boots",
           "text": {
-            "fixedValue": "B-Rank Dagger"
+            "fixedValue": "C-Rank Boots"
+          },
+          "width": 18,
+          "height": 18,
+          "x": 145,
+          "y": 152,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_brank_helmet",
+          "text": {
+            "fixedValue": "B-Rank Helmet"
           },
           "width": 18,
           "height": 18,
@@ -301,9 +363,9 @@
       {
         "type": "tooltip",
         "data": {
-          "name": "tooltip_arank_dagger",
+          "name": "tooltip_brank_chestplate",
           "text": {
-            "fixedValue": "A-Rank Dagger"
+            "fixedValue": "B-Rank Chestplate"
           },
           "width": 18,
           "height": 18,
@@ -315,9 +377,9 @@
       {
         "type": "tooltip",
         "data": {
-          "name": "tooltip_srank_dagger",
+          "name": "tooltip_brank_leggings",
           "text": {
-            "fixedValue": "S-Rank Dagger"
+            "fixedValue": "B-Rank Leggings"
           },
           "width": 18,
           "height": 18,
@@ -327,66 +389,16 @@
         }
       },
       {
-        "type": "label",
+        "type": "tooltip",
         "data": {
-          "name": "label_10k",
+          "name": "tooltip_brank_boots",
           "text": {
-            "fixedValue": "10K"
+            "fixedValue": "B-Rank Boots"
           },
-          "color": {
-            "value": -15657947,
-            "falpha": 0.0
-          },
-          "x": 167,
-          "y": 89,
-          "locked": true
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_10k1",
-          "text": {
-            "fixedValue": "10K"
-          },
-          "color": {
-            "value": -1,
-            "falpha": 0.0
-          },
-          "x": 166,
-          "y": 88,
-          "locked": true
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_100k",
-          "text": {
-            "fixedValue": "100K"
-          },
-          "color": {
-            "value": -15657947,
-            "falpha": 0.0
-          },
-          "x": 167,
-          "y": 112,
-          "locked": true
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_100k1",
-          "text": {
-            "fixedValue": "100K"
-          },
-          "color": {
-            "value": -1,
-            "falpha": 0.0
-          },
-          "x": 166,
-          "y": 111,
+          "width": 18,
+          "height": 18,
+          "x": 217,
+          "y": 152,
           "locked": true
         }
       },
@@ -402,7 +414,7 @@
             "falpha": 0.0
           },
           "x": 167,
-          "y": 135,
+          "y": 89,
           "locked": true
         }
       },
@@ -414,11 +426,107 @@
             "fixedValue": "500K"
           },
           "color": {
+            "value": -15657947,
+            "falpha": 0.0
+          },
+          "x": 167,
+          "y": 112,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_500k2",
+          "text": {
+            "fixedValue": "500K"
+          },
+          "color": {
+            "value": -15657947,
+            "falpha": 0.0
+          },
+          "x": 167,
+          "y": 135,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_500k3",
+          "text": {
+            "fixedValue": "500K"
+          },
+          "color": {
+            "value": -15657947,
+            "falpha": 0.0
+          },
+          "x": 167,
+          "y": 158,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_500k4",
+          "text": {
+            "fixedValue": "500K"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 166,
+          "y": 88,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_500k5",
+          "text": {
+            "fixedValue": "500K"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 166,
+          "y": 111,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_500k6",
+          "text": {
+            "fixedValue": "500K"
+          },
+          "color": {
             "value": -1,
             "falpha": 0.0
           },
           "x": 166,
           "y": 134,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_500k7",
+          "text": {
+            "fixedValue": "500K"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 166,
+          "y": 157,
           "locked": true
         }
       },
@@ -446,22 +554,6 @@
             "fixedValue": "2.5M"
           },
           "color": {
-            "value": -1,
-            "falpha": 0.0
-          },
-          "x": 238,
-          "y": 88,
-          "locked": true
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_5m",
-          "text": {
-            "fixedValue": "5M"
-          },
-          "color": {
             "value": -15657947,
             "falpha": 0.0
           },
@@ -473,25 +565,9 @@
       {
         "type": "label",
         "data": {
-          "name": "label_5m1",
+          "name": "label_25m2",
           "text": {
-            "fixedValue": "5M"
-          },
-          "color": {
-            "value": -1,
-            "falpha": 0.0
-          },
-          "x": 238,
-          "y": 111,
-          "locked": true
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_10m",
-          "text": {
-            "fixedValue": "10M"
+            "fixedValue": "2.5M"
           },
           "color": {
             "value": -15657947,
@@ -505,9 +581,57 @@
       {
         "type": "label",
         "data": {
-          "name": "label_10m1",
+          "name": "label_25m3",
           "text": {
-            "fixedValue": "10M"
+            "fixedValue": "2.5M"
+          },
+          "color": {
+            "value": -15657947,
+            "falpha": 0.0
+          },
+          "x": 239,
+          "y": 158,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_25m4",
+          "text": {
+            "fixedValue": "2.5M"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 238,
+          "y": 88,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_25m5",
+          "text": {
+            "fixedValue": "2.5M"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 238,
+          "y": 111,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_25m6",
+          "text": {
+            "fixedValue": "2.5M"
           },
           "color": {
             "value": -1,
@@ -515,6 +639,22 @@
           },
           "x": 238,
           "y": 134,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_25m7",
+          "text": {
+            "fixedValue": "2.5M"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 238,
+          "y": 157,
           "locked": true
         }
       },
@@ -557,8 +697,8 @@
           "name": "imagebutton_blank16x3",
           "image": "blank16x.png",
           "hoveredImage": "",
-          "x": 218,
-          "y": 84,
+          "x": 146,
+          "y": 153,
           "locked": true
         }
       },
@@ -569,7 +709,7 @@
           "image": "blank16x.png",
           "hoveredImage": "",
           "x": 218,
-          "y": 107,
+          "y": 84,
           "locked": true
         }
       },
@@ -580,7 +720,29 @@
           "image": "blank16x.png",
           "hoveredImage": "",
           "x": 218,
+          "y": 107,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank16x6",
+          "image": "blank16x.png",
+          "hoveredImage": "",
+          "x": 218,
           "y": 130,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank16x7",
+          "image": "blank16x.png",
+          "hoveredImage": "",
+          "x": 218,
+          "y": 153,
           "locked": true
         }
       },

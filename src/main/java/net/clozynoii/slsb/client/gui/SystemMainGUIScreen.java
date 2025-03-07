@@ -28,6 +28,7 @@ import net.clozynoii.slsb.procedures.ReturnSystemLevelProcedure;
 import net.clozynoii.slsb.procedures.ReturnSystemIntelligenceProcedure;
 import net.clozynoii.slsb.procedures.ReturnSystemHealthProcedure;
 import net.clozynoii.slsb.procedures.ReturnSystemHasPointsProcedure;
+import net.clozynoii.slsb.procedures.ReturnSystemEXPProcedure;
 import net.clozynoii.slsb.procedures.ReturnSystemAgilityProcedure;
 import net.clozynoii.slsb.procedures.ReturnManaAmountProcedure;
 import net.clozynoii.slsb.procedures.ReturnHunterClassProcedure;
@@ -78,6 +79,8 @@ public class SystemMainGUIScreen extends AbstractContainerScreen<SystemMainGUIMe
 			guiGraphics.renderTooltip(font, Component.literal(ReturnSystemLocalShopProcedure.execute()), mouseX, mouseY);
 		if (mouseX > leftPos + -13 && mouseX < leftPos + 11 && mouseY > topPos + -107 && mouseY < topPos + -83)
 			guiGraphics.renderTooltip(font, Component.literal(ReturnSystemLocalQuestsProcedure.execute()), mouseX, mouseY);
+		if (mouseX > leftPos + -72 && mouseX < leftPos + -13 && mouseY > topPos + -51 && mouseY < topPos + -41)
+			guiGraphics.renderTooltip(font, Component.literal(ReturnSystemEXPProcedure.execute(entity)), mouseX, mouseY);
 	}
 
 	@Override

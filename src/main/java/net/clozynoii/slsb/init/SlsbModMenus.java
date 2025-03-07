@@ -16,6 +16,8 @@ import net.clozynoii.slsb.world.inventory.SystemShopWeaponsMenu;
 import net.clozynoii.slsb.world.inventory.SystemShopPotionsMenu;
 import net.clozynoii.slsb.world.inventory.SystemShopGUIMenu;
 import net.clozynoii.slsb.world.inventory.SystemShopArmorMenu;
+import net.clozynoii.slsb.world.inventory.SystemShopArmor3Menu;
+import net.clozynoii.slsb.world.inventory.SystemShopArmor2Menu;
 import net.clozynoii.slsb.world.inventory.SystemQuestGUIMenu;
 import net.clozynoii.slsb.world.inventory.SystemMainGUIMenu;
 import net.clozynoii.slsb.world.inventory.HunterSkillGUITankMenu;
@@ -43,4 +45,6 @@ public class SlsbModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<SystemShopWeaponsMenu>> SYSTEM_SHOP_WEAPONS = REGISTRY.register("system_shop_weapons", () -> IMenuTypeExtension.create(SystemShopWeaponsMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<SystemShopArmorMenu>> SYSTEM_SHOP_ARMOR = REGISTRY.register("system_shop_armor", () -> IMenuTypeExtension.create(SystemShopArmorMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<SystemShopPotionsMenu>> SYSTEM_SHOP_POTIONS = REGISTRY.register("system_shop_potions", () -> IMenuTypeExtension.create(SystemShopPotionsMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<SystemShopArmor2Menu>> SYSTEM_SHOP_ARMOR_2 = REGISTRY.register("system_shop_armor_2", () -> IMenuTypeExtension.create(SystemShopArmor2Menu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<SystemShopArmor3Menu>> SYSTEM_SHOP_ARMOR_3 = REGISTRY.register("system_shop_armor_3", () -> IMenuTypeExtension.create(SystemShopArmor3Menu::new));
 }

@@ -64,6 +64,14 @@ public class SystemShopGUIScreen extends AbstractContainerScreen<SystemShopGUIMe
 			guiGraphics.renderTooltip(font, Component.literal(ReturnSystemLocalShopProcedure.execute()), mouseX, mouseY);
 		if (mouseX > leftPos + -13 && mouseX < leftPos + 11 && mouseY > topPos + -107 && mouseY < topPos + -83)
 			guiGraphics.renderTooltip(font, Component.literal(ReturnSystemLocalQuestsProcedure.execute()), mouseX, mouseY);
+		if (mouseX > leftPos + -46 && mouseX < leftPos + -6 && mouseY > topPos + -18 && mouseY < topPos + -7)
+			guiGraphics.renderTooltip(font, Component.translatable("gui.slsb.system_shop_gui.tooltip_weapons"), mouseX, mouseY);
+		if (mouseX > leftPos + 4 && mouseX < leftPos + 44 && mouseY > topPos + -18 && mouseY < topPos + -7)
+			guiGraphics.renderTooltip(font, Component.translatable("gui.slsb.system_shop_gui.tooltip_armor"), mouseX, mouseY);
+		if (mouseX > leftPos + -21 && mouseX < leftPos + 19 && mouseY > topPos + 28 && mouseY < topPos + 39)
+			guiGraphics.renderTooltip(font, Component.translatable("gui.slsb.system_shop_gui.tooltip_potions"), mouseX, mouseY);
+		if (mouseX > leftPos + -47 && mouseX < leftPos + 46 && mouseY > topPos + 45 && mouseY < topPos + 60)
+			guiGraphics.renderTooltip(font, Component.translatable("gui.slsb.system_shop_gui.tooltip_sell_crystalsstones"), mouseX, mouseY);
 	}
 
 	@Override

@@ -14,6 +14,8 @@ import net.clozynoii.slsb.client.gui.SystemShopWeaponsScreen;
 import net.clozynoii.slsb.client.gui.SystemShopPotionsScreen;
 import net.clozynoii.slsb.client.gui.SystemShopGUIScreen;
 import net.clozynoii.slsb.client.gui.SystemShopArmorScreen;
+import net.clozynoii.slsb.client.gui.SystemShopArmor3Screen;
+import net.clozynoii.slsb.client.gui.SystemShopArmor2Screen;
 import net.clozynoii.slsb.client.gui.SystemQuestGUIScreen;
 import net.clozynoii.slsb.client.gui.SystemMainGUIScreen;
 import net.clozynoii.slsb.client.gui.HunterSkillGUITankScreen;
@@ -42,5 +44,7 @@ public class SlsbModScreens {
 		event.register(SlsbModMenus.SYSTEM_SHOP_WEAPONS.get(), SystemShopWeaponsScreen::new);
 		event.register(SlsbModMenus.SYSTEM_SHOP_ARMOR.get(), SystemShopArmorScreen::new);
 		event.register(SlsbModMenus.SYSTEM_SHOP_POTIONS.get(), SystemShopPotionsScreen::new);
+		event.register(SlsbModMenus.SYSTEM_SHOP_ARMOR_2.get(), SystemShopArmor2Screen::new);
+		event.register(SlsbModMenus.SYSTEM_SHOP_ARMOR_3.get(), SystemShopArmor3Screen::new);
 	}
 }

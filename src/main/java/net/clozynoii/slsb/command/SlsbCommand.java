@@ -17,6 +17,12 @@ import net.minecraft.commands.Commands;
 
 import net.clozynoii.slsb.procedures.CMDUnawakenPlayerProcedure;
 import net.clozynoii.slsb.procedures.CMDSystemPlayerProcedure;
+import net.clozynoii.slsb.procedures.CMDSetRankSProcedure;
+import net.clozynoii.slsb.procedures.CMDSetRankEProcedure;
+import net.clozynoii.slsb.procedures.CMDSetRankDProcedure;
+import net.clozynoii.slsb.procedures.CMDSetRankCProcedure;
+import net.clozynoii.slsb.procedures.CMDSetRankBProcedure;
+import net.clozynoii.slsb.procedures.CMDSetRankAProcedure;
 import net.clozynoii.slsb.procedures.CMDSetClassTankProcedure;
 import net.clozynoii.slsb.procedures.CMDSetClassRangerProcedure;
 import net.clozynoii.slsb.procedures.CMDSetClassHealerProcedure;
@@ -141,6 +147,90 @@ public class SlsbCommand {
 				direction = entity.getDirection();
 
 			CMDSetClassRangerProcedure.execute(arguments, entity);
+			return 0;
+		})))).then(Commands.literal("rank").then(Commands.literal("e").then(Commands.argument("name", EntityArgument.player()).executes(arguments -> {
+			Level world = arguments.getSource().getUnsidedLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null && world instanceof ServerLevel _servLevel)
+				entity = FakePlayerFactory.getMinecraft(_servLevel);
+			Direction direction = Direction.DOWN;
+			if (entity != null)
+				direction = entity.getDirection();
+
+			CMDSetRankEProcedure.execute(arguments, entity);
+			return 0;
+		}))).then(Commands.literal("d").then(Commands.argument("name", EntityArgument.player()).executes(arguments -> {
+			Level world = arguments.getSource().getUnsidedLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null && world instanceof ServerLevel _servLevel)
+				entity = FakePlayerFactory.getMinecraft(_servLevel);
+			Direction direction = Direction.DOWN;
+			if (entity != null)
+				direction = entity.getDirection();
+
+			CMDSetRankDProcedure.execute(arguments, entity);
+			return 0;
+		}))).then(Commands.literal("c").then(Commands.argument("name", EntityArgument.player()).executes(arguments -> {
+			Level world = arguments.getSource().getUnsidedLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null && world instanceof ServerLevel _servLevel)
+				entity = FakePlayerFactory.getMinecraft(_servLevel);
+			Direction direction = Direction.DOWN;
+			if (entity != null)
+				direction = entity.getDirection();
+
+			CMDSetRankCProcedure.execute(arguments, entity);
+			return 0;
+		}))).then(Commands.literal("b").then(Commands.argument("name", EntityArgument.player()).executes(arguments -> {
+			Level world = arguments.getSource().getUnsidedLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null && world instanceof ServerLevel _servLevel)
+				entity = FakePlayerFactory.getMinecraft(_servLevel);
+			Direction direction = Direction.DOWN;
+			if (entity != null)
+				direction = entity.getDirection();
+
+			CMDSetRankBProcedure.execute(arguments, entity);
+			return 0;
+		}))).then(Commands.literal("a").then(Commands.argument("name", EntityArgument.player()).executes(arguments -> {
+			Level world = arguments.getSource().getUnsidedLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null && world instanceof ServerLevel _servLevel)
+				entity = FakePlayerFactory.getMinecraft(_servLevel);
+			Direction direction = Direction.DOWN;
+			if (entity != null)
+				direction = entity.getDirection();
+
+			CMDSetRankAProcedure.execute(arguments, entity);
+			return 0;
+		}))).then(Commands.literal("s").then(Commands.argument("name", EntityArgument.player()).executes(arguments -> {
+			Level world = arguments.getSource().getUnsidedLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null && world instanceof ServerLevel _servLevel)
+				entity = FakePlayerFactory.getMinecraft(_servLevel);
+			Direction direction = Direction.DOWN;
+			if (entity != null)
+				direction = entity.getDirection();
+
+			CMDSetRankSProcedure.execute(arguments, entity);
 			return 0;
 		}))))));
 	}
