@@ -20,7 +20,7 @@ import net.minecraft.tags.BlockTags;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.component.DataComponents;
 
-import net.clozynoii.slsb.procedures.KasakasFangLivingEntityIsHitWithToolProcedure;
+import net.clozynoii.slsb.procedures.KasakaFangEffectsProcedure;
 import net.clozynoii.slsb.init.SlsbModItems;
 
 import java.util.List;
@@ -71,7 +71,7 @@ public class KasakasFangItem extends SwordItem {
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		KasakasFangLivingEntityIsHitWithToolProcedure.execute(entity, sourceentity);
+		KasakaFangEffectsProcedure.execute(entity, sourceentity);
 		return retval;
 	}
 

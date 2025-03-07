@@ -1,6 +1,18 @@
 
 package net.clozynoii.slsb.item;
 
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.DiggerItem;
+import net.minecraft.tags.TagKey;
+import net.minecraft.tags.BlockTags;
+
+import net.clozynoii.slsb.init.SlsbModItems;
+
 public class ManaStonePickaxeItem extends PickaxeItem {
 	private static final Tier TOOL_TIER = new Tier() {
 		@Override
@@ -30,7 +42,7 @@ public class ManaStonePickaxeItem extends PickaxeItem {
 
 		@Override
 		public Ingredient getRepairIngredient() {
-			return Ingredient.of(new ItemStack(SlsbModItems.ESSENCE_STONE_E.get()), new ItemStack(SlsbModItems.DELETED_MOD_ELEMENT.get()));
+			return Ingredient.of(new ItemStack(SlsbModItems.ESSENCE_STONE_E.get()), new ItemStack(SlsbModItems.MANA_CRYSTAL.get()));
 		}
 	};
 

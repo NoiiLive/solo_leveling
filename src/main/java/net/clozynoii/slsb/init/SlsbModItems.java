@@ -14,6 +14,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 
+import net.clozynoii.slsb.item.TrueKasakasFangItem;
 import net.clozynoii.slsb.item.RedKnightsArmorItem;
 import net.clozynoii.slsb.item.MiningClothesItem;
 import net.clozynoii.slsb.item.ManaStonePickaxeItem;
@@ -76,6 +77,7 @@ public class SlsbModItems {
 			() -> new StrengthTrainingDumbellsDisplayItem(SlsbModBlocks.STRENGTH_TRAINING_DUMBELLS.get(), new Item.Properties()));
 	public static final DeferredItem<Item> AGILITY_TREADMILL = REGISTRY.register(SlsbModBlocks.AGILITY_TREADMILL.getId().getPath(), () -> new AgilityTreadmillDisplayItem(SlsbModBlocks.AGILITY_TREADMILL.get(), new Item.Properties()));
 	public static final DeferredItem<Item> VITALITY_TRAINING_MAT = REGISTRY.register(SlsbModBlocks.VITALITY_TRAINING_MAT.getId().getPath(), () -> new VitalityTrainingMatDisplayItem(SlsbModBlocks.VITALITY_TRAINING_MAT.get(), new Item.Properties()));
+	public static final DeferredItem<Item> TRUE_KASAKAS_FANG = REGISTRY.register("true_kasakas_fang", TrueKasakasFangItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -1940,7 +1940,7 @@
           }
         ]
       },
-      "path": "~/Procedures/GUI/System GUI"
+      "path": "~/Procedures/GUI/System GUI/Main"
     },
     {
       "name": "ReturnPlayerIsHunter",
@@ -2983,7 +2983,7 @@
           }
         ]
       },
-      "path": "~/Procedures/GUI/System GUI"
+      "path": "~/Procedures/GUI/System GUI/Main"
     },
     {
       "name": "SystemMainGUI",
@@ -3018,7 +3018,7 @@
           }
         ]
       },
-      "path": "~/Procedures/GUI/System GUI"
+      "path": "~/Procedures/GUI/System GUI/Main"
     },
     {
       "name": "ReturnSystemHealth",
@@ -3038,7 +3038,7 @@
           }
         ]
       },
-      "path": "~/Procedures/GUI/System GUI"
+      "path": "~/Procedures/GUI/System GUI/Main"
     },
     {
       "name": "CMDSystemPlayer",
@@ -3081,7 +3081,7 @@
           }
         ]
       },
-      "path": "~/Procedures/GUI/System GUI"
+      "path": "~/Procedures/GUI/System GUI/Main"
     },
     {
       "name": "ReturnSystemSkillPoints",
@@ -3101,7 +3101,7 @@
           }
         ]
       },
-      "path": "~/Procedures/GUI/System GUI"
+      "path": "~/Procedures/GUI/System GUI/Main"
     },
     {
       "name": "ReturnSystemTitle",
@@ -3121,7 +3121,7 @@
           }
         ]
       },
-      "path": "~/Procedures/GUI/System GUI"
+      "path": "~/Procedures/GUI/System GUI/Main"
     },
     {
       "name": "ReturnSystemStrength",
@@ -3141,7 +3141,7 @@
           }
         ]
       },
-      "path": "~/Procedures/GUI/System GUI"
+      "path": "~/Procedures/GUI/System GUI/Main"
     },
     {
       "name": "ReturnSystemAgility",
@@ -3161,7 +3161,7 @@
           }
         ]
       },
-      "path": "~/Procedures/GUI/System GUI"
+      "path": "~/Procedures/GUI/System GUI/Main"
     },
     {
       "name": "ReturnSystemPerception",
@@ -3181,7 +3181,7 @@
           }
         ]
       },
-      "path": "~/Procedures/GUI/System GUI"
+      "path": "~/Procedures/GUI/System GUI/Main"
     },
     {
       "name": "ReturnSystemVitality",
@@ -3201,7 +3201,7 @@
           }
         ]
       },
-      "path": "~/Procedures/GUI/System GUI"
+      "path": "~/Procedures/GUI/System GUI/Main"
     },
     {
       "name": "ReturnSystemIntelligence",
@@ -3221,7 +3221,7 @@
           }
         ]
       },
-      "path": "~/Procedures/GUI/System GUI"
+      "path": "~/Procedures/GUI/System GUI/Main"
     },
     {
       "name": "ReturnSystemHasPoints",
@@ -3241,7 +3241,7 @@
           }
         ]
       },
-      "path": "~/Procedures/GUI/System GUI"
+      "path": "~/Procedures/GUI/System GUI/Main"
     },
     {
       "name": "ReturnSystemLocalStatus",
@@ -3316,7 +3316,7 @@
           "src/main/java/net/clozynoii/slsb/network/SystemSkillsGUIButtonMessage.java"
         ]
       },
-      "path": "~/GUI/System"
+      "path": "~/GUI/System/Skills"
     },
     {
       "name": "SystemShopGUI",
@@ -3381,7 +3381,7 @@
           }
         ]
       },
-      "path": "~/Procedures/GUI/System GUI"
+      "path": "~/Procedures/GUI/System GUI/Main"
     },
     {
       "name": "SystemOpenSkills",
@@ -3416,7 +3416,7 @@
           }
         ]
       },
-      "path": "~/Procedures/GUI/System GUI"
+      "path": "~/Procedures/GUI/System GUI/Skills"
     },
     {
       "name": "SystemOpenShop",
@@ -3451,7 +3451,7 @@
           }
         ]
       },
-      "path": "~/Procedures/GUI/System GUI"
+      "path": "~/Procedures/GUI/System GUI/Shop"
     },
     {
       "name": "SystemOpenQuests",
@@ -3486,7 +3486,7 @@
           }
         ]
       },
-      "path": "~/Procedures/GUI/System GUI"
+      "path": "~/Procedures/GUI/System GUI/Shop"
     },
     {
       "name": "GreenDoor",
@@ -3724,29 +3724,6 @@
         ]
       },
       "path": "~/Effects/Potions"
-    },
-    {
-      "name": "KasakasFangLivingEntityIsHitWithTool",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "kasakas_fang_living_entity_is_hit_with_tool",
-      "metadata": {
-        "files": [
-          "src/main/java/net/clozynoii/slsb/procedures/KasakasFangLivingEntityIsHitWithToolProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Procedures/Weapons"
     },
     {
       "name": "RedKnightsArmor",
@@ -4129,25 +4106,6 @@
       "path": "~/Effects/Potions"
     },
     {
-      "name": "ParalyzedTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "paralyzed_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/clozynoii/slsb/procedures/ParalyzedTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Effects/Potions/Procedures"
-    },
-    {
       "name": "ManaCrystal",
       "type": "item",
       "compiles": true,
@@ -4515,7 +4473,7 @@
           }
         ]
       },
-      "path": "~/Procedures/GUI/System GUI"
+      "path": "~/Procedures/GUI/System GUI/Shop"
     },
     {
       "name": "SystemOpenShopArmor",
@@ -4550,7 +4508,7 @@
           }
         ]
       },
-      "path": "~/Procedures/GUI/System GUI"
+      "path": "~/Procedures/GUI/System GUI/Shop"
     },
     {
       "name": "SystemOpenShopPotions",
@@ -4585,7 +4543,7 @@
           }
         ]
       },
-      "path": "~/Procedures/GUI/System GUI"
+      "path": "~/Procedures/GUI/System GUI/Shop"
     },
     {
       "name": "ReturnSystemEXP",
@@ -4605,7 +4563,7 @@
           }
         ]
       },
-      "path": "~/Procedures/GUI/System GUI"
+      "path": "~/Procedures/GUI/System GUI/Shop"
     },
     {
       "name": "ReturnSystemGold",
@@ -4625,7 +4583,7 @@
           }
         ]
       },
-      "path": "~/Procedures/GUI/System GUI"
+      "path": "~/Procedures/GUI/System GUI/Shop"
     },
     {
       "name": "INTOrbRecipe",
@@ -4700,7 +4658,7 @@
           }
         ]
       },
-      "path": "~/Procedures/GUI/System GUI"
+      "path": "~/Procedures/GUI/System GUI/Shop"
     },
     {
       "name": "SystemShopArmor2",
@@ -4765,7 +4723,7 @@
           }
         ]
       },
-      "path": "~/Procedures/GUI/System GUI"
+      "path": "~/Procedures/GUI/System GUI/Shop"
     },
     {
       "name": "SystemOpenShopArmor3",
@@ -4800,7 +4758,7 @@
           }
         ]
       },
-      "path": "~/Procedures/GUI/System GUI"
+      "path": "~/Procedures/GUI/System GUI/Shop"
     },
     {
       "name": "CMDSetRankE",
@@ -4950,7 +4908,302 @@
         "files": [
           "src/main/java/net/clozynoii/slsb/potion/ParalysisMobEffect.java"
         ]
-      }
+      },
+      "path": "~/Effects/Potions"
+    },
+    {
+      "name": "TrueKasakasFang",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "true_kasakas_fang",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/slsb/models/item/true_kasakas_fang.json",
+          "src/main/java/net/clozynoii/slsb/item/TrueKasakasFangItem.java"
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "KasakaFangEffects",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kasaka_fang_effects",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/KasakaFangEffectsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Weapons"
+    },
+    {
+      "name": "TrueKasakaFangEffects",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "true_kasaka_fang_effects",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/TrueKasakaFangEffectsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Weapons"
+    },
+    {
+      "name": "SystemSelectedClassFighter",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "system_selected_class_fighter",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SystemSelectedClassFighterProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/System GUI/Shop"
+    },
+    {
+      "name": "SystemSelectedClassTanker",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "system_selected_class_tanker",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SystemSelectedClassTankerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/System GUI/Shop"
+    },
+    {
+      "name": "SystemSelectedClassAssassin",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "system_selected_class_assassin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SystemSelectedClassAssassinProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/System GUI/Shop"
+    },
+    {
+      "name": "SystemSelectedClassRanger",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "system_selected_class_ranger",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SystemSelectedClassRangerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/System GUI/Shop"
+    },
+    {
+      "name": "SystemSelectedClassHealer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "system_selected_class_healer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SystemSelectedClassHealerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/System GUI/Shop"
+    },
+    {
+      "name": "SystemSelectedClassMage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "system_selected_class_mage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SystemSelectedClassMageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/System GUI/Shop"
+    },
+    {
+      "name": "ReturnSelectedFighter",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_selected_fighter",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnSelectedFighterProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/System GUI/Shop"
+    },
+    {
+      "name": "ReturnSelectedAssassin",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_selected_assassin",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnSelectedAssassinProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/System GUI/Shop"
+    },
+    {
+      "name": "ReturnSelectedTanker",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_selected_tanker",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnSelectedTankerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/System GUI/Shop"
+    },
+    {
+      "name": "ReturnSelectedRanger",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_selected_ranger",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnSelectedRangerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/System GUI/Shop"
+    },
+    {
+      "name": "ReturnSelectedHealer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_selected_healer",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnSelectedHealerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/System GUI/Shop"
+    },
+    {
+      "name": "ReturnSelectedMage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_selected_mage",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnSelectedMageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/System GUI/Shop"
     }
   ],
   "variable_elements": [
@@ -5259,6 +5512,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "1000.0"
+    },
+    {
+      "name": "GUISelectedClass",
+      "type": "string",
+      "scope": "player_lifetime",
+      "value": ""
     }
   ],
   "sound_elements": [
@@ -5356,6 +5615,7 @@
       "EntityWitherSkull"
     ],
     "ITEMS:minecraft:swords": [
+      "~CUSTOM:TrueKasakasFang",
       "~CUSTOM:KasakasFang"
     ],
     "ITEMS:minecraft:head_armor": [
@@ -5393,6 +5653,7 @@
     "CUSTOM:SLGear": [
       "ManaStonePickaxe",
       "MiningClothes",
+      "TrueKasakasFang",
       "KasakasFang",
       "RedKnightsArmor"
     ],
@@ -5402,89 +5663,365 @@
   },
   "language_map": {
     "en_us": {
-      "slsb.evaluator.normalrank.rank": "-Rank!",
       "item_group.slsb.sl_gear": "Solo Leveling: Gear",
+      "slsb.evaluator.normalrank.rank": "-Rank!",
+      "gui.slsb.system_shop_weapons.label_5m": "5M",
       "block.slsb.blue_gate_medium": "Gate (Medium)",
+      "gui.slsb.system_shop_weapons.tooltip_drank_weapon": "D-Rank Weapon",
+      "gui.slsb.hunter_skill_gui_fighter.tooltip_slot_10": "Slot 10",
+      "gui.slsb.hunter_skill_gui_fighter.tooltip_slot_2": "Slot 2",
+      "gui.slsb.hunter_skill_gui_fighter.tooltip_slot_3": "Slot 3",
+      "gui.slsb.hunter_skill_gui_fighter.tooltip_slot_4": "Slot 4",
+      "gui.slsb.system_shop_armor_2.label_25m": "2.5M",
+      "gui.slsb.hunter_skill_gui_fighter.tooltip_slot_5": "Slot 5",
+      "block.slsb.mana_crystal_cluster": "Mana Crystal Cluster",
+      "gui.slsb.hunter_skill_gui_fighter.tooltip_slot_1": "Slot 1",
+      "gui.slsb.system_shop_armor_3.tooltip_ranger": "Ranger",
+      "gui.slsb.system_shop_weapons.tooltip_drank_dagger": "D-Rank Dagger",
+      "gui.slsb.system_shop_armor.button_ssfsslx": "§f§lX",
+      "item.slsb.true_kasakas_fang.description_0": "§7Acquisition Difficulty: §fS-Rank",
+      "block.slsb.mana_crystal_ore": "Mana Crystal Ore",
+      "gui.slsb.system_shop_weapons.tooltip_fighter": "Fighter",
+      "gui.slsb.system_shop_armor.tooltip_back": "Back",
+      "gui.slsb.hunter_skill_gui_fighter.tooltip_slot_6": "Slot 6",
+      "gui.slsb.hunter_skill_gui_fighter.tooltip_slot_7": "Slot 7",
+      "gui.slsb.hunter_skill_gui_fighter.tooltip_slot_8": "Slot 8",
+      "gui.slsb.system_shop_armor_2.tooltip_crank_leggings": "C-Rank Leggings",
+      "gui.slsb.hunter_skill_gui_fighter.tooltip_slot_9": "Slot 9",
       "slsb.ability.cooldown": "Ability is on Cooldown!",
+      "gui.slsb.system_shop_potions.label_1k1": "1K",
+      "gui.slsb.system_shop_potions.label_1k2": "1K",
+      "gui.slsb.system_shop_potions.label_1k3": "1K",
       "slsb.evaluator.erank.response": "Oh... uh... Well, this is... unexpected. You’re an §f§lE-Rank",
+      "gui.slsb.system_shop_armor_3.tooltip_back": "Back",
       "item_group.slsb.sl_mobs": "Solo Leveling: Mobs",
+      "item.slsb.mining_clothes_helmet": "Mining Helmet",
+      "gui.slsb.system_shop_armor_3.label_5m3": "5M",
+      "gui.slsb.system_shop_armor_3.label_5m2": "5M",
+      "gui.slsb.system_shop_armor_3.label_5m5": "5M",
+      "gui.slsb.system_shop_armor_3.label_5m4": "5M",
+      "gui.slsb.system_shop_armor_3.label_5m7": "5M",
+      "gui.slsb.system_shop_armor_2.tooltip_ranger": "Ranger",
+      "gui.slsb.system_shop_armor_3.label_5m6": "5M",
+      "gui.slsb.system_shop_armor_3.tooltip_arank_helmet": "A-Rank Helmet",
+      "gui.slsb.system_shop_armor_3.label_5m1": "5M",
       "key.slsb.main_menu": "Main Menu",
+      "gui.slsb.system_shop_armor_2.tooltip_healer": "Healer",
+      "gui.slsb.system_shop_armor_2.tooltip_brank_boots": "B-Rank Boots",
       "key.slsb.ability_4": "Ability 4",
+      "gui.slsb.system_shop_armor_2.tooltip_fighter": "Fighter",
       "key.slsb.ability_5": "Ability 5",
+      "gui.slsb.system_shop_armor_3.tooltip_arank_chestplate": "A-Rank Chestplate",
+      "slsb.training.musclefatigue": "Your muscles are currently fatigued",
       "block.slsb.brown_panel": "Brown Panel",
+      "gui.slsb.system_shop_weapons.tooltip_ranger": "Ranger",
       "subtitles.whoosh": "Player whooshes",
       "key.slsb.ability_2": "Ability 2",
       "block.slsb.barrier_wall": "§dBarrier Wall",
       "key.slsb.ability_3": "Ability 3",
+      "gui.slsb.system_shop_armor.tooltip_drank_boots": "D-Rank Boots",
       "key.slsb.ability_1": "Ability 1",
+      "gui.slsb.system_shop_armor_2.label_25m1": "2.5M",
+      "gui.slsb.system_shop_armor_2.label_25m2": "2.5M",
       "gui.slsb.hunter_skill_gui.tooltip_dash": "Dash",
+      "gui.slsb.system_shop_armor_2.label_25m3": "2.5M",
+      "gui.slsb.system_shop_armor_2.label_25m4": "2.5M",
       "item.slsb.red_knights_armor_leggings": "§cCrimson Knight\u0027s Leggings",
+      "gui.slsb.system_shop_armor_2.label_25m5": "2.5M",
+      "gui.slsb.system_shop_weapons.label_10k1": "10K",
+      "gui.slsb.system_shop_armor_2.label_25m6": "2.5M",
+      "gui.slsb.system_shop_armor_2.tooltip_brank_helmet": "B-Rank Helmet",
+      "block.slsb.mana_training_orb.description_1": "§7train their Intelligence",
+      "block.slsb.mana_training_orb.description_0": "§7Used by Hunters to",
+      "item.slsb.mana_crystal": "§bMana Crystal",
       "slsb.training.manafatigue": "Your mana is currently fatigued",
+      "item.slsb.red_knights_armor_boots.description_5": "§aSTR +20",
+      "item.slsb.red_knights_armor_boots.description_4": "§aVIT +20",
+      "item.slsb.red_knights_armor_boots.description_3": "§aPhysical Damage -20%",
+      "item.slsb.red_knights_armor_boots.description_2": "",
+      "gui.slsb.system_shop_armor_2.label_500k5": "500K",
+      "gui.slsb.system_shop_armor_2.label_25m7": "2.5M",
+      "gui.slsb.system_shop_armor_2.label_500k6": "500K",
+      "gui.slsb.system_shop_armor_3.tooltip_arank_leggings": "A-Rank Leggings",
       "gui.slsb.hunter_skill_gui.tooltip_barrage": "Barrage",
+      "gui.slsb.system_shop_potions.tooltip_low_mana": "Low Mana",
+      "gui.slsb.system_shop_armor_2.label_500k7": "500K",
+      "gui.slsb.system_shop_armor_2.label_500k1": "500K",
+      "gui.slsb.system_shop_armor_2.label_500k2": "500K",
+      "gui.slsb.system_shop_armor_2.label_500k3": "500K",
+      "gui.slsb.system_shop_armor_2.label_500k4": "500K",
+      "gui.slsb.system_shop_weapons.tooltip_assassin": "Assassin",
       "item.slsb.kasakas_fang.description_1": "§7Category: §fDagger",
+      "gui.slsb.system_shop_armor_3.tooltip_mage": "Mage",
       "item.slsb.kasakas_fang.description_0": "§7Acquisition Difficulty: §fC-Rank",
       "item.slsb.kasakas_fang.description_3": "§aATK +25",
       "item.slsb.kasakas_fang.description_2": "",
       "key.categories.slsb\\": "Solo Leveling: System Break",
       "block.slsb.awakening_orb": "Awakening Orb",
       "item.slsb.kasakas_fang.description_5": "§7§oOpponent cannot move",
+      "item.slsb.red_knights_armor_boots.description_1": "§7Category: §fGear",
       "item.slsb.kasakas_fang.description_4": "§f- Paralysis:",
+      "item.slsb.red_knights_armor_boots.description_0": "§7Acquisition Difficulty: §fS-Rank",
       "item.slsb.kasakas_fang.description_7": "§f- Bleed:",
+      "gui.slsb.system_shop_weapons.label_10m": "10M",
       "item.slsb.kasakas_fang.description_6": "§7§ofor a set time.",
-      "block.slsb.metal_framed_window": "Metal Framed Window",
+      "gui.slsb.system_shop_armor_2.tooltip_tanker": "Tanker",
       "item.slsb.kasakas_fang.description_8": "§7§oHP -1%/second.",
+      "block.slsb.metal_framed_window": "Metal Framed Window",
+      "item.slsb.mining_clothes_boots": "Mining Boots",
       "entity.slsb.bloodred_igris": "Blood-Red Commander Igris",
+      "gui.slsb.system_shop_weapons.label_10k": "10K",
+      "gui.slsb.system_shop_armor_2.tooltip_brank_leggings": "B-Rank Leggings",
+      "gui.slsb.system_shop_armor.tooltip_tanker": "Tanker",
       "key.slsb.change_ability_bar": "Change Ability Bar",
       "gui.slsb.hunter_skill_gui.tooltip_slot_10": "Slot 10",
+      "gui.slsb.system_shop_weapons.label_10m1": "10M",
+      "gui.slsb.system_shop_armor_2.tooltip_back": "Back",
+      "block.slsb.vitality_training_mat": "Training Mat",
+      "gui.slsb.system_shop_armor_3.label_5m": "5M",
+      "gui.slsb.system_shop_armor.tooltip_drank_helmet": "D-Rank Helmet",
       "slsb.evaluator.unawakened": "It appears you haven\u0027t awakened yet...",
       "item.slsb.bloodred_igris_spawn_egg": "Blood-Red Commander Igris Spawn Egg",
+      "slsb.weapontrigger.kasaka": "Debuff: \"Paralysis\" and \"Bleed\" triggered.",
+      "gui.slsb.system_shop_gui.tooltip_potions": "Potions",
+      "gui.slsb.system_shop_armor_3.tooltip_fighter": "Fighter",
+      "gui.slsb.system_shop_weapons.tooltip_srank_dagger": "S-Rank Dagger",
+      "gui.slsb.system_shop_weapons.label_500k": "500K",
+      "gui.slsb.system_shop_weapons.label_25m": "2.5M",
       "item_group.slsb.sl_blocks": "Solo Leveling: Blocks",
       "slsb.command.unawakentarget": "You have been un-awakened",
+      "gui.slsb.system_shop_potions.label_10k3": "10K",
+      "gui.slsb.hunter_skill_gui_healer.tooltip_slot_10": "Slot 10",
+      "gui.slsb.system_shop_potions.label_10k2": "10K",
+      "gui.slsb.system_shop_potions.tooltip_low_heal": "Low Heal",
+      "item_group.slsb.sl_items": "Solo Leveling: Items",
+      "gui.slsb.system_shop_potions.label_10k1": "10K",
       "block.slsb.tan_trimmed_panel_wall": "Tan Trimmed Panel Wall",
+      "gui.slsb.hunter_skill_gui_ranger.tooltip_slot_10": "Slot 10",
+      "gui.slsb.system_shop_weapons.tooltip_erank_weapon": "E-Rank Weapon",
+      "block.slsb.agility_treadmill": "Treadmill",
+      "item.slsb.true_kasakas_fang.description_1": "§7Category: §fDagger",
+      "item.slsb.true_kasakas_fang.description_2": "",
+      "item.slsb.true_kasakas_fang.description_3": "§aATK +250",
+      "item.slsb.true_kasakas_fang.description_4": "§f- Paralysis:",
+      "item.slsb.essence_stone_b": "§bEssence Stone (B-Rank)",
+      "item.slsb.mining_clothes_chestplate": "Mining Jacket",
+      "item.slsb.true_kasakas_fang.description_5": "§7§oOpponent cannot move",
+      "item.slsb.essence_stone_c": "§aEssence Stone (C-Rank)",
+      "item.slsb.true_kasakas_fang.description_6": "§7§ofor a set time.",
+      "item.slsb.true_kasakas_fang.description_7": "§f- Bleed:",
+      "item.slsb.essence_stone_a": "§cEssence Stone (A-Rank)",
+      "item.slsb.true_kasakas_fang.description_8": "§7§oHP -5%/second.",
+      "gui.slsb.system_shop_armor_2.tooltip_brank_chestplate": "B-Rank Chestplate",
+      "gui.slsb.system_shop_gui.button_ssfsslpots": "§f§lPots",
+      "gui.slsb.system_shop_armor_3.tooltip_arank_boots": "A-Rank Boots",
+      "gui.slsb.system_shop_weapons.label_5m1": "5M",
       "subtitles.basic_hit": "Player lands a hit",
+      "gui.slsb.system_shop_armor.tooltip_erank_chestplate": "E-Rank Chestplate",
+      "item.slsb.essence_stone_s": "§dEssence Stone (S-Rank)",
+      "gui.slsb.hunter_skill_gui_tank.tooltip_slot_10": "Slot 10",
+      "item.slsb.essence_stone_d": "§eEssence Stone (D-Rank)",
+      "gui.slsb.system_shop_weapons.tooltip_crank_weapon": "C-Rank Weapon",
+      "item.slsb.essence_stone_e": "Essence Stone (E-Rank)",
+      "gui.slsb.system_shop_potions.button_ssfsslx": "§f§lX",
+      "gui.slsb.system_shop_armor_3.tooltip_assassin": "Assassin",
+      "gui.slsb.hunter_skill_gui_tank.tooltip_slot_9": "Slot 9",
+      "gui.slsb.system_shop_armor_3.label_10m5": "10M",
+      "gui.slsb.system_shop_gui.button_ssfsslweaps": "§f§lWeaps",
+      "gui.slsb.system_shop_armor_3.label_10m4": "10M",
+      "gui.slsb.system_shop_weapons.tooltip_healer": "Healer",
       "slsb.evaluator.evaluated": "You have already been evaluated!",
+      "gui.slsb.hunter_skill_gui_tank.tooltip_slot_7": "Slot 7",
+      "gui.slsb.system_shop_armor_3.label_10m7": "10M",
       "item.slsb.red_knights_armor_chestplate": "§cCrimson Knight\u0027s Chestplate",
+      "gui.slsb.hunter_skill_gui_tank.tooltip_slot_8": "Slot 8",
+      "gui.slsb.system_shop_armor_3.label_10m6": "10M",
+      "item.slsb.true_kasakas_fang": "§bTruth: Kasaka\u0027s Venom Fang",
+      "gui.slsb.system_shop_weapons.tooltip_arank_weapon": "A-Rank Weapon",
       "slsb.command.systemplayertarget": "Your Player status has been set to",
+      "slsb.command.setclasstarget": "Your Class has been set to",
+      "gui.slsb.hunter_skill_gui_tank.tooltip_slot_1": "Slot 1",
+      "gui.slsb.system_shop_armor.label_100k2": "100K",
       "item.slsb.red_knights_armor_helmet": "§cCrimson Knight\u0027s Helmet",
+      "gui.slsb.hunter_skill_gui_tank.tooltip_slot_2": "Slot 2",
+      "gui.slsb.system_shop_armor.label_100k3": "100K",
+      "item.slsb.red_knights_armor_leggings.description_0": "§7Acquisition Difficulty: §fS-Rank",
+      "gui.slsb.system_shop_armor.label_100k1": "100K",
+      "block.slsb.strength_training_dumbells": "Dumbell Rack",
+      "item.slsb.red_knights_armor_leggings.description_1": "§7Category: §fGear",
+      "gui.slsb.hunter_skill_gui_tank.tooltip_slot_5": "Slot 5",
+      "gui.slsb.system_shop_armor.label_100k6": "100K",
+      "gui.slsb.system_shop_armor_3.label_10m1": "10M",
+      "item.slsb.red_knights_armor_leggings.description_2": "",
+      "gui.slsb.hunter_skill_gui_tank.tooltip_slot_6": "Slot 6",
+      "gui.slsb.system_shop_armor.label_100k7": "100K",
+      "item.slsb.red_knights_armor_leggings.description_3": "§aPhysical Damage -20%",
       "item.slsb.red_knights_armor_boots": "§cCrimson Knight\u0027s Boots",
-      "block.slsb.tan_panel_wall": "Tan Panel Wall",
+      "gui.slsb.hunter_skill_gui_tank.tooltip_slot_3": "Slot 3",
+      "gui.slsb.system_shop_armor.label_100k4": "100K",
+      "gui.slsb.system_shop_potions.tooltip_back": "Back",
+      "gui.slsb.system_shop_armor_2.button_ssfsslx": "§f§lX",
+      "gui.slsb.system_shop_armor_3.label_10m3": "10M",
+      "item.slsb.red_knights_armor_leggings.description_4": "§aVIT +20",
+      "gui.slsb.hunter_skill_gui_tank.tooltip_slot_4": "Slot 4",
+      "gui.slsb.system_shop_armor.label_100k5": "100K",
+      "gui.slsb.system_shop_armor_3.label_10m2": "10M",
+      "gui.slsb.system_shop_weapons.tooltip_arank_dagger": "A-Rank Dagger",
+      "slsb.command.setrankadmin": "Rank has been set to",
+      "gui.slsb.system_shop_armor_3.tooltip_tanker": "Tanker",
+      "gui.slsb.system_shop_gui.button_ssfsslsell": "§f§lSell",
+      "item.slsb.mana_stone_pickaxe": "Mana-Stone Pickaxe",
       "slsb.evaluator.normalrank.goodbye": "Good luck, and stay safe out there, Hunter!",
+      "block.slsb.tan_panel_wall": "Tan Panel Wall",
+      "effect.slsb.paralysis": "Paralysis",
+      "block.slsb.strength_training_dumbells.description_1": "§7train their Strength",
+      "item.slsb.red_knights_armor_leggings.description_5": "§aSTR +20",
+      "gui.slsb.system_shop_potions.tooltip_high_heal": "High Heal",
+      "gui.slsb.system_shop_potions.label_5k2": "5K",
       "block.slsb.tan_panel": "Brown Panel",
+      "gui.slsb.system_shop_potions.label_5k1": "5K",
       "gui.slsb.hunter_skill_gui.tooltip_slam": "Slam",
       "gui.slsb.hunter_skill_gui.tooltip_uppercut": "Uppercut",
+      "gui.slsb.system_shop_potions.label_5k3": "5K",
       "slsb.training.nomana": "You do not have enough mana to train",
+      "gui.slsb.system_shop_potions.label_5k": "5K",
+      "item.slsb.red_knights_armor_chestplate.description_2": "",
+      "item.slsb.red_knights_armor_chestplate.description_3": "§aPhysical Damage -20%",
+      "item.slsb.red_knights_armor_chestplate.description_4": "§aVIT +20",
+      "item.slsb.red_knights_armor_chestplate.description_5": "§aSTR +20",
+      "gui.slsb.system_shop_weapons.tooltip_brank_dagger": "B-Rank Dagger",
+      "gui.slsb.system_shop_potions.label_10k": "10K",
       "slsb.command.systemplayeradmin": "Player status has been set to",
       "slsb.systemmenu.quests": "Quests",
+      "item.slsb.red_knights_armor_chestplate.description_0": "§7Acquisition Difficulty: §fS-Rank",
+      "item.slsb.red_knights_armor_chestplate.description_1": "§7Category: §fGear",
       "block.slsb.blood_block": "Blood Block",
       "slsb.evaluator.srank.goodbye": "This is history in the making! The world will be watching you.",
+      "gui.slsb.system_shop_weapons.label_100k": "100K",
+      "block.slsb.vitality_training_mat.description_0": "§7Used by Hunters to",
+      "block.slsb.vitality_training_mat.description_1": "§7train their Vitality",
+      "gui.slsb.system_shop_weapons.tooltip_back": "Back",
+      "block.slsb.strength_training_dumbells.description_0": "§7Used by Hunters to",
       "slsb.evaluator.welcome": "Welcome to your Hunter Evaluation!",
+      "gui.slsb.system_shop_potions.tooltip_high_mana": "High Mana",
+      "gui.slsb.system_shop_armor_3.tooltip_srank_chestplate": "S-Rank Chestplate",
+      "gui.slsb.system_shop_armor.tooltip_healer": "Healer",
+      "item.slsb.mining_clothes_leggings": "Mining Pants",
       "gui.slsb.hunter_skill_gui.tooltip_slot_2": "Slot 2",
       "block.slsb.blue_gate_small": "Gate (Small)",
       "gui.slsb.hunter_skill_gui.tooltip_slot_3": "Slot 3",
       "gui.slsb.hunter_skill_gui.tooltip_slot_1": "Slot 1",
       "gui.slsb.hunter_skill_gui.tooltip_slot_6": "Slot 6",
       "gui.slsb.hunter_skill_gui.tooltip_slot_7": "Slot 7",
-      "slsb.evaluator.waiting": "Let\u0027s see what your rank is...",
+      "gui.slsb.system_shop_armor_2.tooltip_crank_chestplate": "C-Rank Chestplate",
       "gui.slsb.hunter_skill_gui.tooltip_slot_4": "Slot 4",
+      "slsb.evaluator.waiting": "Let\u0027s see what your rank is...",
       "gui.slsb.hunter_skill_gui.tooltip_slot_5": "Slot 5",
+      "gui.slsb.system_shop_weapons.label_500k1": "500K",
       "gui.slsb.hunter_skill_gui.tooltip_slot_8": "Slot 8",
       "gui.slsb.hunter_skill_gui.tooltip_slot_9": "Slot 9",
+      "gui.slsb.system_shop_armor_3.tooltip_srank_leggings": "S-Rank Leggings",
+      "gui.slsb.system_shop_armor.label_10k6": "10K",
+      "gui.slsb.system_shop_armor.label_10k7": "10K",
       "slsb.evaluator.erank.goodbye": "I, uh... hope you have a strong will. Good luck... I guess.",
+      "gui.slsb.system_shop_armor_3.tooltip_srank_boots": "S-Rank Boots",
+      "effect.slsb.paralyzed": "Paralyzed",
+      "gui.slsb.system_shop_armor.tooltip_drank_chestplate": "D-Rank Chestplate",
       "slsb.evaluator.srank.response": "Wow... I can\u0027t believe my eyes! You\u0027re really an §f§lS-Rank!",
       "effect.slsb.mana_fatigue": "Mana Fatigue",
       "block.slsb.green_door": "Industrial Green Door",
+      "gui.slsb.system_shop_armor.tooltip_erank_leggings": "E-Rank Leggings",
+      "gui.slsb.system_shop_gui.button_ssfsslarmor": "§f§lArmor",
+      "gui.slsb.system_shop_armor.label_10k4": "10K",
+      "gui.slsb.system_shop_armor.label_10k5": "10K",
+      "gui.slsb.system_shop_armor_3.button_ssfsslx": "§f§lX",
+      "gui.slsb.system_shop_armor.label_10k2": "10K",
+      "block.slsb.agility_treadmill.description_1": "§7train their Agility",
+      "gui.slsb.system_shop_armor.tooltip_ranger": "Ranger",
+      "gui.slsb.system_shop_armor.label_10k3": "10K",
+      "block.slsb.agility_treadmill.description_0": "§7Used by Hunters to",
+      "gui.slsb.system_shop_armor.label_10k1": "10K",
       "effect.slsb.bleeding": "Bleeding",
+      "gui.slsb.system_shop_armor_2.tooltip_crank_helmet": "C-Rank Helmet",
+      "gui.slsb.system_shop_armor_2.tooltip_assassin": "Assassin",
+      "gui.slsb.system_shop_weapons.label_25m1": "2.5M",
+      "gui.slsb.system_shop_armor.tooltip_mage": "Mage",
+      "gui.slsb.system_shop_armor_3.label_10m": "10M",
+      "gui.slsb.system_shop_armor.label_100k": "100K",
+      "gui.slsb.system_shop_armor.tooltip_assassin": "Assassin",
+      "item.slsb.red_knights_armor_helmet.description_0": "§7Acquisition Difficulty: §fS-Rank",
+      "item.slsb.red_knights_armor_helmet.description_1": "§7Category: §fGear",
       "block.slsb.mana_training_orb": "Mana Orb",
+      "item.slsb.red_knights_armor_helmet.description_4": "§aVIT +20",
+      "gui.slsb.system_shop_armor_2.label_500k": "500K",
+      "item.slsb.red_knights_armor_helmet.description_5": "§aSTR +20",
       "slsb.command.awakentarget": "You have been awakened",
+      "item.slsb.red_knights_armor_helmet.description_2": "",
       "slsb.systemmenu.skills": "Skills",
+      "item.slsb.red_knights_armor_helmet.description_3": "§aPhysical Damage -20%",
+      "item.slsb.items_tab": "Items Tab",
       "slsb.command.unawakenadmin": "has been un-awakened",
+      "gui.slsb.system_shop_potions.tooltip_med_mana": "Med. Mana",
       "block.slsb.brown_trimmed_panel": "Brown Trimmed Panel",
+      "gui.slsb.system_shop_armor.tooltip_fighter": "Fighter",
+      "gui.slsb.system_shop_armor.tooltip_erank_helmet": "E-Rank Helmet",
+      "gui.slsb.system_shop_gui.tooltip_sell_crystalsstones": "Sell Crystals/Stones",
       "slsb.systemmenu.shop": "Shop",
+      "gui.slsb.system_shop_weapons.tooltip_crank_dagger": "C-Rank Dagger",
+      "gui.slsb.system_shop_armor_3.tooltip_srank_helmet": "S-Rank Helmet",
+      "gui.slsb.hunter_skill_gui_assassin.tooltip_slot_10": "Slot 10",
+      "effect.slsb.muscle_fatigue": "Muscle Fatigue",
+      "gui.slsb.system_shop_weapons.label_100k1": "100K",
+      "gui.slsb.hunter_skill_gui_assassin.tooltip_slot_1": "Slot 1",
+      "gui.slsb.system_shop_weapons.tooltip_erank_dagger": "E-Rank Dagger",
+      "gui.slsb.system_shop_armor.tooltip_erank_boots": "E-Rank Boots",
+      "gui.slsb.system_shop_potions.label_1k": "1K",
+      "gui.slsb.system_shop_potions.tooltip_med_heal": "Med. Heal",
+      "gui.slsb.hunter_skill_gui_assassin.tooltip_slot_6": "Slot 6",
+      "slsb.command.setranktarget": "Your Rank has been set to",
+      "gui.slsb.hunter_skill_gui_assassin.tooltip_slot_7": "Slot 7",
       "slsb.evaluator.normalrank.response": "This is good! It seems you are",
+      "gui.slsb.hunter_skill_gui_assassin.tooltip_slot_8": "Slot 8",
+      "gui.slsb.hunter_skill_gui_assassin.tooltip_slot_9": "Slot 9",
+      "gui.slsb.system_shop_weapons.tooltip_tanker": "Tanker",
+      "gui.slsb.hunter_skill_gui_assassin.tooltip_slot_2": "Slot 2",
+      "gui.slsb.hunter_skill_gui_assassin.tooltip_slot_3": "Slot 3",
+      "gui.slsb.hunter_skill_gui_assassin.tooltip_slot_4": "Slot 4",
+      "gui.slsb.hunter_skill_gui_assassin.tooltip_slot_5": "Slot 5",
       "item.slsb.kasakas_fang": "§eKasaka\u0027s Venom Fang",
+      "gui.slsb.system_shop_weapons.button_ssfsslx": "§f§lX",
+      "gui.slsb.system_shop_weapons.tooltip_brank_weapon": "B-Rank Weapon",
+      "gui.slsb.system_shop_armor_2.tooltip_mage": "Mage",
       "effect.slsb.no_fall": "No Fall",
+      "gui.slsb.system_shop_armor.label_10k": "10K",
+      "gui.slsb.system_shop_armor_2.tooltip_crank_boots": "C-Rank Boots",
+      "gui.slsb.system_shop_weapons.tooltip_mage": "Mage",
+      "gui.slsb.hunter_skill_gui_healer.tooltip_slot_8": "Slot 8",
+      "gui.slsb.hunter_skill_gui_ranger.tooltip_slot_8": "Slot 8",
+      "gui.slsb.hunter_skill_gui_healer.tooltip_slot_9": "Slot 9",
+      "gui.slsb.hunter_skill_gui_ranger.tooltip_slot_9": "Slot 9",
+      "gui.slsb.hunter_skill_gui_healer.tooltip_slot_6": "Slot 6",
+      "gui.slsb.hunter_skill_gui_ranger.tooltip_slot_6": "Slot 6",
+      "gui.slsb.hunter_skill_gui_healer.tooltip_slot_7": "Slot 7",
+      "gui.slsb.hunter_skill_gui_ranger.tooltip_slot_7": "Slot 7",
+      "gui.slsb.hunter_skill_gui_ranger.tooltip_slot_4": "Slot 4",
+      "gui.slsb.hunter_skill_gui_healer.tooltip_slot_4": "Slot 4",
+      "gui.slsb.hunter_skill_gui_ranger.tooltip_slot_5": "Slot 5",
+      "gui.slsb.hunter_skill_gui_healer.tooltip_slot_5": "Slot 5",
+      "gui.slsb.hunter_skill_gui_healer.tooltip_slot_2": "Slot 2",
+      "gui.slsb.hunter_skill_gui_ranger.tooltip_slot_2": "Slot 2",
+      "gui.slsb.hunter_skill_gui_ranger.tooltip_slot_3": "Slot 3",
+      "gui.slsb.hunter_skill_gui_healer.tooltip_slot_3": "Slot 3",
       "slsb.command.awakenadmin": "has been awakened",
+      "gui.slsb.hunter_skill_gui_healer.tooltip_slot_1": "Slot 1",
+      "gui.slsb.hunter_skill_gui_ranger.tooltip_slot_1": "Slot 1",
+      "gui.slsb.system_shop_armor_3.tooltip_healer": "Healer",
+      "gui.slsb.system_shop_armor.tooltip_drank_leggings": "D-Rank Leggings",
+      "gui.slsb.system_shop_weapons.tooltip_srank_weapon": "S-Rank Weapon",
+      "gui.slsb.system_shop_gui.tooltip_weapons": "Weapons",
+      "gui.slsb.system_shop_gui.tooltip_armor": "Armor",
       "slsb.systemmenu.status": "Status",
+      "slsb.command.setclassadmin": "Class has been set to",
       "block.slsb.barrier_slab": "§dBarrier Slab",
       "gui.slsb.hunter_skill_gui.tooltip_heavy_attack": "Heavy Attack"
     }
@@ -5537,6 +6074,18 @@
                 "children": [
                   {
                     "name": "Localized",
+                    "children": []
+                  },
+                  {
+                    "name": "Main",
+                    "children": []
+                  },
+                  {
+                    "name": "Shop",
+                    "children": []
+                  },
+                  {
+                    "name": "Skills",
                     "children": []
                   }
                 ]

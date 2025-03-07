@@ -1,12 +1,42 @@
 
 package net.clozynoii.slsb.item;
 
-import java.util.function.Consumer;
-import net.minecraft.client.model.Model;
+import net.neoforged.neoforge.registries.RegisterEvent;
+import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
+import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
+
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ArmorMaterial;
+import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.Holder;
+import net.minecraft.client.model.geom.ModelPart;
+import net.minecraft.client.model.HumanoidModel;
+import net.minecraft.client.Minecraft;
+import net.minecraft.Util;
+
+import net.clozynoii.slsb.init.SlsbModItems;
+import net.clozynoii.slsb.client.model.Modelmining_armor;
+
+import java.util.Map;
+import java.util.List;
+import java.util.EnumMap;
+import java.util.Collections;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public abstract class MiningClothesItem extends ArmorItem {
-
 	public static Holder<ArmorMaterial> ARMOR_MATERIAL = null;
 
 	@SubscribeEvent
@@ -39,7 +69,6 @@ public abstract class MiningClothesItem extends ArmorItem {
 				return armorModel;
 			}
 		}, SlsbModItems.MINING_CLOTHES_HELMET.get());
-
 		event.registerItem(new IClientItemExtensions() {
 			@Override
 			@OnlyIn(Dist.CLIENT)
@@ -54,7 +83,6 @@ public abstract class MiningClothesItem extends ArmorItem {
 				return armorModel;
 			}
 		}, SlsbModItems.MINING_CLOTHES_CHESTPLATE.get());
-
 		event.registerItem(new IClientItemExtensions() {
 			@Override
 			@OnlyIn(Dist.CLIENT)
@@ -70,7 +98,6 @@ public abstract class MiningClothesItem extends ArmorItem {
 				return armorModel;
 			}
 		}, SlsbModItems.MINING_CLOTHES_LEGGINGS.get());
-
 		event.registerItem(new IClientItemExtensions() {
 			@Override
 			@OnlyIn(Dist.CLIENT)
@@ -93,7 +120,6 @@ public abstract class MiningClothesItem extends ArmorItem {
 	}
 
 	public static class Helmet extends MiningClothesItem {
-
 		public Helmet() {
 			super(ArmorItem.Type.HELMET, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(25)));
 		}
@@ -102,11 +128,9 @@ public abstract class MiningClothesItem extends ArmorItem {
 		public ResourceLocation getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, ArmorMaterial.Layer layer, boolean innerModel) {
 			return ResourceLocation.parse("slsb:textures/entities/mining_fit.png");
 		}
-
 	}
 
 	public static class Chestplate extends MiningClothesItem {
-
 		public Chestplate() {
 			super(ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(25)));
 		}
@@ -115,11 +139,9 @@ public abstract class MiningClothesItem extends ArmorItem {
 		public ResourceLocation getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, ArmorMaterial.Layer layer, boolean innerModel) {
 			return ResourceLocation.parse("slsb:textures/entities/mining_fit.png");
 		}
-
 	}
 
 	public static class Leggings extends MiningClothesItem {
-
 		public Leggings() {
 			super(ArmorItem.Type.LEGGINGS, new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(25)));
 		}
@@ -128,11 +150,9 @@ public abstract class MiningClothesItem extends ArmorItem {
 		public ResourceLocation getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, ArmorMaterial.Layer layer, boolean innerModel) {
 			return ResourceLocation.parse("slsb:textures/entities/mining_fit.png");
 		}
-
 	}
 
 	public static class Boots extends MiningClothesItem {
-
 		public Boots() {
 			super(ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(25)));
 		}
@@ -141,7 +161,5 @@ public abstract class MiningClothesItem extends ArmorItem {
 		public ResourceLocation getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, ArmorMaterial.Layer layer, boolean innerModel) {
 			return ResourceLocation.parse("slsb:textures/entities/mining_fit.png");
 		}
-
 	}
-
 }

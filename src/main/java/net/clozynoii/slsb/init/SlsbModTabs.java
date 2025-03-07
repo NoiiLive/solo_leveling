@@ -43,6 +43,7 @@ public class SlsbModTabs {
 				tabData.accept(SlsbModItems.MINING_CLOTHES_CHESTPLATE.get());
 				tabData.accept(SlsbModItems.MINING_CLOTHES_LEGGINGS.get());
 				tabData.accept(SlsbModItems.MINING_CLOTHES_BOOTS.get());
+				tabData.accept(SlsbModItems.TRUE_KASAKAS_FANG.get());
 				tabData.accept(SlsbModItems.KASAKAS_FANG.get());
 				tabData.accept(SlsbModItems.RED_KNIGHTS_ARMOR_HELMET.get());
 				tabData.accept(SlsbModItems.RED_KNIGHTS_ARMOR_CHESTPLATE.get());

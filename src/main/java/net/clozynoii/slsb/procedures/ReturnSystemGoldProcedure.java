@@ -1,9 +1,13 @@
 package net.clozynoii.slsb.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.entity.Entity;
+
+import net.clozynoii.slsb.network.SlsbModVariables;
 
 public class ReturnSystemGoldProcedure {
-	public static String execute() {
-		return new java.text.DecimalFormat("##").format() + "G";
+	public static String execute(Entity entity) {
+		if (entity == null)
+			return "";
+		return new java.text.DecimalFormat("##").format(entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerGold) + "G";
 	}
 }

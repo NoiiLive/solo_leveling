@@ -1,7 +1,22 @@
 package net.clozynoii.slsb.block.display;
 
-import software.bernie.geckolib.animation.AnimatableManager;
+import software.bernie.geckolib.util.GeckoLibUtil;
+import software.bernie.geckolib.animation.PlayState;
 import software.bernie.geckolib.animation.AnimationState;
+import software.bernie.geckolib.animation.AnimationController;
+import software.bernie.geckolib.animation.AnimatableManager;
+import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
+import software.bernie.geckolib.animatable.client.GeoRenderProvider;
+import software.bernie.geckolib.animatable.GeoItem;
+
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
+
+import net.clozynoii.slsb.block.renderer.StrengthTrainingDumbellsDisplayItemRenderer;
+
+import java.util.function.Consumer;
+import java.util.Properties;
 
 public class StrengthTrainingDumbellsDisplayItem extends BlockItem implements GeoItem {
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);

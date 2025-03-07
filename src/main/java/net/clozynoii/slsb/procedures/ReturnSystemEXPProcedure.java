@@ -1,9 +1,13 @@
 package net.clozynoii.slsb.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.entity.Entity;
+
+import net.clozynoii.slsb.network.SlsbModVariables;
 
 public class ReturnSystemEXPProcedure {
-	public static String execute() {
-		return new java.text.DecimalFormat("##").format() + "/" + new java.text.DecimalFormat("##").format() + " EXP";
+	public static String execute(Entity entity) {
+		if (entity == null)
+			return "";
+		return new java.text.DecimalFormat("##").format(entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerEXP) + "/" + new java.text.DecimalFormat("##").format(entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerMaxEXP) + " EXP";
 	}
 }

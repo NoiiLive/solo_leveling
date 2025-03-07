@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "slsb:true_kasakas_fang",
     "slsb:kasakas_fang"
   ]
 }

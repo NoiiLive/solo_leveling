@@ -118,6 +118,7 @@ public class SlsbModVariables {
 				clone.InputDelay = original.InputDelay;
 				clone.Barraging = original.Barraging;
 				clone.BarrageCooldown = original.BarrageCooldown;
+				clone.GUISelectedClass = original.GUISelectedClass;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
@@ -306,6 +307,7 @@ public class SlsbModVariables {
 		public double PlayerEXP = 0.0;
 		public double PlayerMaxEXP = 100.0;
 		public double PlayerGold = 1000.0;
+		public String GUISelectedClass = "";
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -360,6 +362,7 @@ public class SlsbModVariables {
 			nbt.putDouble("PlayerEXP", PlayerEXP);
 			nbt.putDouble("PlayerMaxEXP", PlayerMaxEXP);
 			nbt.putDouble("PlayerGold", PlayerGold);
+			nbt.putString("GUISelectedClass", GUISelectedClass);
 			return nbt;
 		}
 
@@ -415,6 +418,7 @@ public class SlsbModVariables {
 			PlayerEXP = nbt.getDouble("PlayerEXP");
 			PlayerMaxEXP = nbt.getDouble("PlayerMaxEXP");
 			PlayerGold = nbt.getDouble("PlayerGold");
+			GUISelectedClass = nbt.getString("GUISelectedClass");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

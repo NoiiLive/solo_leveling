@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 1,
+    "blockingRenderType": 0,
+    "texture": "true_kasaka",
+    "customModelName": "truth_kasaka_fang:default",
+    "blockingModelName": "Normal blocking",
+    "name": "§bTruth: Kasaka's Venom Fang",
+    "specialInformation": {
+      "fixedValue": [
+        "§7Acquisition Difficulty: §fS-Rank",
+        "§7Category: §fDagger",
+        "",
+        "§aATK +250",
+        "§f- Paralysis:",
+        "§7§oOpponent cannot move",
+        "§7§ofor a set time.",
+        "§f- Bleed:",
+        "§7§oHP -5%/second."
+      ]
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:SLGear"
+      }
+    ],
+    "efficiency": 4.0,
+    "attackSpeed": 2.0,
+    "enchantability": 0,
+    "damageVsEntity": 250.0,
+    "usageCount": 0,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": true,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "TrueKasakaFangEffects"
+    }
+  }
+}

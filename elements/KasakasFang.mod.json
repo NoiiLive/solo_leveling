@@ -42,7 +42,7 @@
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onEntityHitWith": {
-      "name": "KasakasFangLivingEntityIsHitWithTool"
+      "name": "KasakaFangEffects"
     }
   }
 }

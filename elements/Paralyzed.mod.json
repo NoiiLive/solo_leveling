@@ -15,9 +15,14 @@
     "isCuredByMilk": false,
     "isProtectedByTotem": false,
     "isCuredbyHoney": false,
-    "modifiers": [],
-    "onActiveTick": {
-      "name": "ParalyzedTick"
-    }
+    "modifiers": [
+      {
+        "attribute": {
+          "value": "MOVEMENT_SPEED"
+        },
+        "amount": -5.0,
+        "operation": "ADD_VALUE"
+      }
+    ]
   }
 }

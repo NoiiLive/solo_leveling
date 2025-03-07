@@ -1,5 +1,11 @@
 package net.clozynoii.slsb.block.model;
 
+import software.bernie.geckolib.model.GeoModel;
+
+import net.minecraft.resources.ResourceLocation;
+
+import net.clozynoii.slsb.block.display.VitalityTrainingMatDisplayItem;
+
 public class VitalityTrainingMatDisplayModel extends GeoModel<VitalityTrainingMatDisplayItem> {
 	@Override
 	public ResourceLocation getAnimationResource(VitalityTrainingMatDisplayItem animatable) {

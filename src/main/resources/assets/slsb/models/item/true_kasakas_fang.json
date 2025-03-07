@@ -1,0 +1,7 @@
+{
+  "parent": "slsb:custom/truth_kasaka_fang",
+  "textures": {
+    "0": "slsb:block/truth_kasaka_fang",
+    "particle": "slsb:item/true_kasaka"
+  }
+}
