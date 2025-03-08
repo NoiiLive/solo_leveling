@@ -22,9 +22,11 @@ public class HunterEvaluationProcedure {
 			return;
 		double RandomClass = 0;
 		double RandomRank = 0;
+		double MageRandom = 0;
 		if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerAwakened == true && (entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerClass).equals("Civilian")) {
 			RandomClass = Mth.nextInt(RandomSource.create(), 1, 6);
 			RandomRank = Mth.nextInt(RandomSource.create(), 1, 6);
+			MageRandom = Mth.nextInt(RandomSource.create(), 1, 10);
 			{
 				SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
 				_vars.PlayerStrength = 1;
@@ -64,10 +66,66 @@ public class HunterEvaluationProcedure {
 					_vars.syncPlayerVariables(entity);
 				}
 			} else if (RandomClass == 4) {
-				{
-					SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
-					_vars.PlayerClass = "Mage";
-					_vars.syncPlayerVariables(entity);
+				if (MageRandom == 1) {
+					{
+						SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
+						_vars.PlayerClass = "Barrier Mage";
+						_vars.syncPlayerVariables(entity);
+					}
+				} else if (MageRandom == 2) {
+					{
+						SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
+						_vars.PlayerClass = "Spatial Mage";
+						_vars.syncPlayerVariables(entity);
+					}
+				} else if (MageRandom == 3) {
+					{
+						SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
+						_vars.PlayerClass = "Curse Mage";
+						_vars.syncPlayerVariables(entity);
+					}
+				} else if (MageRandom == 4) {
+					{
+						SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
+						_vars.PlayerClass = "Summon Mage";
+						_vars.syncPlayerVariables(entity);
+					}
+				} else if (MageRandom == 5) {
+					{
+						SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
+						_vars.PlayerClass = "Fire Mage";
+						_vars.syncPlayerVariables(entity);
+					}
+				} else if (MageRandom == 6) {
+					{
+						SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
+						_vars.PlayerClass = "Ice Mage";
+						_vars.syncPlayerVariables(entity);
+					}
+				} else if (MageRandom == 7) {
+					{
+						SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
+						_vars.PlayerClass = "Water Mage";
+						_vars.syncPlayerVariables(entity);
+					}
+				} else if (MageRandom == 8) {
+					{
+						SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
+						_vars.PlayerClass = "Earth Mage";
+						_vars.syncPlayerVariables(entity);
+					}
+				} else if (MageRandom == 9) {
+					{
+						SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
+						_vars.PlayerClass = "Wind Mage";
+						_vars.syncPlayerVariables(entity);
+					}
+				} else if (MageRandom == 10) {
+					{
+						SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
+						_vars.PlayerClass = "Electric Mage";
+						_vars.syncPlayerVariables(entity);
+					}
 				}
 			} else if (RandomClass == 5) {
 				{
@@ -149,6 +207,7 @@ public class HunterEvaluationProcedure {
 					_vars.syncPlayerVariables(entity);
 				}
 			}
+			RollHunterSkillsProcedure.execute(entity);
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal(("<Evaluator> " + Component.translatable("slsb.evaluator.welcome").getString())), false);
 			if (world instanceof ServerLevel _level)

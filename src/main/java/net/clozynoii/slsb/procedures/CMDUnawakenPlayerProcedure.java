@@ -256,6 +256,29 @@ public class CMDUnawakenPlayerProcedure {
 					}
 				}
 			}.getEntity()).getData(SlsbModVariables.PLAYER_VARIABLES);
+			_vars.UnlockedSkills = "";
+			_vars.syncPlayerVariables((new Object() {
+				public Entity getEntity() {
+					try {
+						return EntityArgument.getEntity(arguments, "name");
+					} catch (CommandSyntaxException e) {
+						e.printStackTrace();
+						return null;
+					}
+				}
+			}.getEntity()));
+		}
+		{
+			SlsbModVariables.PlayerVariables _vars = (new Object() {
+				public Entity getEntity() {
+					try {
+						return EntityArgument.getEntity(arguments, "name");
+					} catch (CommandSyntaxException e) {
+						e.printStackTrace();
+						return null;
+					}
+				}
+			}.getEntity()).getData(SlsbModVariables.PLAYER_VARIABLES);
 			_vars.Ability1a = "";
 			_vars.syncPlayerVariables((new Object() {
 				public Entity getEntity() {
