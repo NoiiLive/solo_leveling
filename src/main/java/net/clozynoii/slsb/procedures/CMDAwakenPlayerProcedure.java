@@ -509,7 +509,16 @@ public class CMDAwakenPlayerProcedure {
 			}
 		}.getEntity()) == entity)) {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal((entity.getDisplayName().getString() + " " + Component.translatable("slsb.command.awakenadmin").getString())), false);
+				_player.displayClientMessage(Component.literal(((new Object() {
+					public Entity getEntity() {
+						try {
+							return EntityArgument.getEntity(arguments, "name");
+						} catch (CommandSyntaxException e) {
+							e.printStackTrace();
+							return null;
+						}
+					}
+				}.getEntity()).getDisplayName().getString() + " " + Component.translatable("slsb.command.awakenadmin").getString())), false);
 		}
 		if ((new Object() {
 			public Entity getEntity() {

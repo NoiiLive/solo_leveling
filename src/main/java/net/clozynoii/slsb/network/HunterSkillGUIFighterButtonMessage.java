@@ -19,6 +19,15 @@ import net.minecraft.core.BlockPos;
 import net.clozynoii.slsb.world.inventory.HunterSkillGUIFighterMenu;
 import net.clozynoii.slsb.procedures.TabHunterSkillsProcedure;
 import net.clozynoii.slsb.procedures.TabHunterMainProcedure;
+import net.clozynoii.slsb.procedures.SkillButtonSwordDanceProcedure;
+import net.clozynoii.slsb.procedures.SkillButtonStormSlashProcedure;
+import net.clozynoii.slsb.procedures.SkillButtonRazorStrikeProcedure;
+import net.clozynoii.slsb.procedures.SkillButtonQuickCutProcedure;
+import net.clozynoii.slsb.procedures.SkillButtonQuakeProcedure;
+import net.clozynoii.slsb.procedures.SkillButtonGuardBreakerProcedure;
+import net.clozynoii.slsb.procedures.SkillButtonEnergySlashProcedure;
+import net.clozynoii.slsb.procedures.SkillButtonCleaveProcedure;
+import net.clozynoii.slsb.procedures.SkillButtonBraceProcedure;
 import net.clozynoii.slsb.procedures.GUISkillSlot5bProcedure;
 import net.clozynoii.slsb.procedures.GUISkillSlot5aProcedure;
 import net.clozynoii.slsb.procedures.GUISkillSlot4bProcedure;
@@ -117,6 +126,42 @@ public record HunterSkillGUIFighterButtonMessage(int buttonID, int x, int y, int
 		if (buttonID == 11) {
 
 			TabHunterSkillsProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 12) {
+
+			SkillButtonEnergySlashProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 13) {
+
+			SkillButtonSwordDanceProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 14) {
+
+			SkillButtonQuakeProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 15) {
+
+			SkillButtonStormSlashProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 16) {
+
+			SkillButtonQuickCutProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 17) {
+
+			SkillButtonRazorStrikeProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 18) {
+
+			SkillButtonCleaveProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 19) {
+
+			SkillButtonGuardBreakerProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 20) {
+
+			SkillButtonBraceProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

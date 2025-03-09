@@ -597,6 +597,434 @@
           "y": 201,
           "locked": true
         }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blank_skill.png",
+          "use1Xscale": false,
+          "x": 164,
+          "y": 96,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blank_skill.png",
+          "use1Xscale": false,
+          "x": 189,
+          "y": 96,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blank_skill.png",
+          "use1Xscale": false,
+          "x": 215,
+          "y": 96,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blank_skill.png",
+          "use1Xscale": false,
+          "x": 240,
+          "y": 96,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blank_skill.png",
+          "use1Xscale": false,
+          "x": 164,
+          "y": 120,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_text_energy_slash",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnTextEnergySlash"
+          },
+          "width": 22,
+          "height": 22,
+          "x": 164,
+          "y": 72,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_text_sword_dance",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnTextSwordDance"
+          },
+          "width": 22,
+          "height": 22,
+          "x": 189,
+          "y": 72,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_text_quake",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnTextQuake"
+          },
+          "width": 22,
+          "height": 22,
+          "x": 215,
+          "y": 72,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_text_storm_slash",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnTextStormSlash"
+          },
+          "width": 22,
+          "height": 22,
+          "x": 240,
+          "y": 72,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_text_quick_cut",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnTextQuickCut"
+          },
+          "width": 22,
+          "height": 22,
+          "x": 164,
+          "y": 96,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_text_razor_strike",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnTextRazorStrike"
+          },
+          "width": 22,
+          "height": 22,
+          "x": 189,
+          "y": 96,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_text_cleave",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnTextCleave"
+          },
+          "width": 22,
+          "height": 22,
+          "x": 215,
+          "y": 96,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_text_guard_breaker",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnTextGuardBreaker"
+          },
+          "width": 22,
+          "height": 22,
+          "x": 240,
+          "y": 96,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_text_brace",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnTextBrace"
+          },
+          "width": 22,
+          "height": 22,
+          "x": 164,
+          "y": 120,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnNoSkillEnergySlash"
+          },
+          "x": 170,
+          "y": 76,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnNoSkillSwordDance"
+          },
+          "x": 195,
+          "y": 76,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnNoSkillQuake"
+          },
+          "x": 221,
+          "y": 76,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnNoSkillStormSlash"
+          },
+          "x": 246,
+          "y": 76,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnNoSkillQuickCut"
+          },
+          "x": 170,
+          "y": 100,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnNoSkillRazorStrike"
+          },
+          "x": 195,
+          "y": 100,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnNoSkillCleave"
+          },
+          "x": 221,
+          "y": 100,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnNoSkillGuardBreaker"
+          },
+          "x": 246,
+          "y": 100,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnNoSkillBrace"
+          },
+          "x": 170,
+          "y": 124,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank22x",
+          "image": "blank22x.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "SkillButtonEnergySlash"
+          },
+          "x": 164,
+          "y": 72,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank22x1",
+          "image": "blank22x.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "SkillButtonSwordDance"
+          },
+          "x": 189,
+          "y": 72,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank22x2",
+          "image": "blank22x.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "SkillButtonQuake"
+          },
+          "x": 215,
+          "y": 72,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank22x3",
+          "image": "blank22x.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "SkillButtonStormSlash"
+          },
+          "x": 240,
+          "y": 72,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank22x4",
+          "image": "blank22x.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "SkillButtonQuickCut"
+          },
+          "x": 164,
+          "y": 96,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank22x5",
+          "image": "blank22x.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "SkillButtonRazorStrike"
+          },
+          "x": 189,
+          "y": 96,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank22x6",
+          "image": "blank22x.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "SkillButtonCleave"
+          },
+          "x": 215,
+          "y": 96,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank22x7",
+          "image": "blank22x.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "SkillButtonGuardBreaker"
+          },
+          "x": 240,
+          "y": 96,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank22x8",
+          "image": "blank22x.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "SkillButtonBrace"
+          },
+          "x": 164,
+          "y": 120,
+          "locked": true
+        }
       }
     ],
     "onClosed": {

@@ -25,9 +25,21 @@ import net.clozynoii.slsb.procedures.CMDSetRankBProcedure;
 import net.clozynoii.slsb.procedures.CMDSetRankAProcedure;
 import net.clozynoii.slsb.procedures.CMDSetClassTankProcedure;
 import net.clozynoii.slsb.procedures.CMDSetClassRangerProcedure;
+import net.clozynoii.slsb.procedures.CMDSetClassMageWindProcedure;
+import net.clozynoii.slsb.procedures.CMDSetClassMageWaterProcedure;
+import net.clozynoii.slsb.procedures.CMDSetClassMageSummonProcedure;
+import net.clozynoii.slsb.procedures.CMDSetClassMageSpatialProcedure;
+import net.clozynoii.slsb.procedures.CMDSetClassMageIceProcedure;
+import net.clozynoii.slsb.procedures.CMDSetClassMageFireProcedure;
+import net.clozynoii.slsb.procedures.CMDSetClassMageElectricProcedure;
+import net.clozynoii.slsb.procedures.CMDSetClassMageEarthProcedure;
+import net.clozynoii.slsb.procedures.CMDSetClassMageCurseProcedure;
+import net.clozynoii.slsb.procedures.CMDSetClassMageBarrierProcedure;
 import net.clozynoii.slsb.procedures.CMDSetClassHealerProcedure;
 import net.clozynoii.slsb.procedures.CMDSetClassFighterProcedure;
 import net.clozynoii.slsb.procedures.CMDSetClassAssassinProcedure;
+import net.clozynoii.slsb.procedures.CMDRerollSkillsProcedure;
+import net.clozynoii.slsb.procedures.CMDClearSkillsProcedure;
 import net.clozynoii.slsb.procedures.CMDAwakenPlayerProcedure;
 
 import com.mojang.brigadier.arguments.BoolArgumentType;
@@ -148,7 +160,147 @@ public class SlsbCommand {
 
 			CMDSetClassRangerProcedure.execute(arguments, entity);
 			return 0;
-		})))).then(Commands.literal("rank").then(Commands.literal("e").then(Commands.argument("name", EntityArgument.player()).executes(arguments -> {
+		}))).then(Commands.literal("mage").then(Commands.literal("barrier").then(Commands.argument("name", EntityArgument.player()).executes(arguments -> {
+			Level world = arguments.getSource().getUnsidedLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null && world instanceof ServerLevel _servLevel)
+				entity = FakePlayerFactory.getMinecraft(_servLevel);
+			Direction direction = Direction.DOWN;
+			if (entity != null)
+				direction = entity.getDirection();
+
+			CMDSetClassMageBarrierProcedure.execute(arguments, entity);
+			return 0;
+		}))).then(Commands.literal("curse").then(Commands.argument("name", EntityArgument.player()).executes(arguments -> {
+			Level world = arguments.getSource().getUnsidedLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null && world instanceof ServerLevel _servLevel)
+				entity = FakePlayerFactory.getMinecraft(_servLevel);
+			Direction direction = Direction.DOWN;
+			if (entity != null)
+				direction = entity.getDirection();
+
+			CMDSetClassMageCurseProcedure.execute(arguments, entity);
+			return 0;
+		}))).then(Commands.literal("spatial").then(Commands.argument("name", EntityArgument.player()).executes(arguments -> {
+			Level world = arguments.getSource().getUnsidedLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null && world instanceof ServerLevel _servLevel)
+				entity = FakePlayerFactory.getMinecraft(_servLevel);
+			Direction direction = Direction.DOWN;
+			if (entity != null)
+				direction = entity.getDirection();
+
+			CMDSetClassMageSpatialProcedure.execute(arguments, entity);
+			return 0;
+		}))).then(Commands.literal("summoner").then(Commands.argument("name", EntityArgument.player()).executes(arguments -> {
+			Level world = arguments.getSource().getUnsidedLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null && world instanceof ServerLevel _servLevel)
+				entity = FakePlayerFactory.getMinecraft(_servLevel);
+			Direction direction = Direction.DOWN;
+			if (entity != null)
+				direction = entity.getDirection();
+
+			CMDSetClassMageSummonProcedure.execute(arguments, entity);
+			return 0;
+		}))).then(Commands.literal("fire").then(Commands.argument("name", EntityArgument.player()).executes(arguments -> {
+			Level world = arguments.getSource().getUnsidedLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null && world instanceof ServerLevel _servLevel)
+				entity = FakePlayerFactory.getMinecraft(_servLevel);
+			Direction direction = Direction.DOWN;
+			if (entity != null)
+				direction = entity.getDirection();
+
+			CMDSetClassMageFireProcedure.execute(arguments, entity);
+			return 0;
+		}))).then(Commands.literal("ice").then(Commands.argument("name", EntityArgument.player()).executes(arguments -> {
+			Level world = arguments.getSource().getUnsidedLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null && world instanceof ServerLevel _servLevel)
+				entity = FakePlayerFactory.getMinecraft(_servLevel);
+			Direction direction = Direction.DOWN;
+			if (entity != null)
+				direction = entity.getDirection();
+
+			CMDSetClassMageIceProcedure.execute(arguments, entity);
+			return 0;
+		}))).then(Commands.literal("water").then(Commands.argument("name", EntityArgument.player()).executes(arguments -> {
+			Level world = arguments.getSource().getUnsidedLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null && world instanceof ServerLevel _servLevel)
+				entity = FakePlayerFactory.getMinecraft(_servLevel);
+			Direction direction = Direction.DOWN;
+			if (entity != null)
+				direction = entity.getDirection();
+
+			CMDSetClassMageWaterProcedure.execute(arguments, entity);
+			return 0;
+		}))).then(Commands.literal("wind").then(Commands.argument("name", EntityArgument.player()).executes(arguments -> {
+			Level world = arguments.getSource().getUnsidedLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null && world instanceof ServerLevel _servLevel)
+				entity = FakePlayerFactory.getMinecraft(_servLevel);
+			Direction direction = Direction.DOWN;
+			if (entity != null)
+				direction = entity.getDirection();
+
+			CMDSetClassMageWindProcedure.execute(arguments, entity);
+			return 0;
+		}))).then(Commands.literal("earth").then(Commands.argument("name", EntityArgument.player()).executes(arguments -> {
+			Level world = arguments.getSource().getUnsidedLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null && world instanceof ServerLevel _servLevel)
+				entity = FakePlayerFactory.getMinecraft(_servLevel);
+			Direction direction = Direction.DOWN;
+			if (entity != null)
+				direction = entity.getDirection();
+
+			CMDSetClassMageEarthProcedure.execute(arguments, entity);
+			return 0;
+		}))).then(Commands.literal("lightning").then(Commands.argument("name", EntityArgument.player()).executes(arguments -> {
+			Level world = arguments.getSource().getUnsidedLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null && world instanceof ServerLevel _servLevel)
+				entity = FakePlayerFactory.getMinecraft(_servLevel);
+			Direction direction = Direction.DOWN;
+			if (entity != null)
+				direction = entity.getDirection();
+
+			CMDSetClassMageElectricProcedure.execute(arguments, entity);
+			return 0;
+		}))))).then(Commands.literal("rank").then(Commands.literal("e").then(Commands.argument("name", EntityArgument.player()).executes(arguments -> {
 			Level world = arguments.getSource().getUnsidedLevel();
 			double x = arguments.getSource().getPosition().x();
 			double y = arguments.getSource().getPosition().y();
@@ -231,6 +383,34 @@ public class SlsbCommand {
 				direction = entity.getDirection();
 
 			CMDSetRankSProcedure.execute(arguments, entity);
+			return 0;
+		})))).then(Commands.literal("skill").then(Commands.literal("reroll").executes(arguments -> {
+			Level world = arguments.getSource().getUnsidedLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null && world instanceof ServerLevel _servLevel)
+				entity = FakePlayerFactory.getMinecraft(_servLevel);
+			Direction direction = Direction.DOWN;
+			if (entity != null)
+				direction = entity.getDirection();
+
+			CMDRerollSkillsProcedure.execute(world, x, y, z, entity);
+			return 0;
+		})).then(Commands.literal("clear").then(Commands.argument("name", EntityArgument.player()).executes(arguments -> {
+			Level world = arguments.getSource().getUnsidedLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null && world instanceof ServerLevel _servLevel)
+				entity = FakePlayerFactory.getMinecraft(_servLevel);
+			Direction direction = Direction.DOWN;
+			if (entity != null)
+				direction = entity.getDirection();
+
+			CMDClearSkillsProcedure.execute(arguments, entity);
 			return 0;
 		}))))));
 	}

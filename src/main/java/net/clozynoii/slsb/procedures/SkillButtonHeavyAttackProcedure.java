@@ -24,6 +24,5 @@ public class SkillButtonHeavyAttackProcedure {
 		if (world instanceof ServerLevel _level)
 			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 					("playsound minecraft:item.book.put master " + entity.getDisplayName().getString() + " ~ ~ ~ 2 1"));
-		gate = true;
 	}
 }

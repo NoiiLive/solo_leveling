@@ -597,6 +597,434 @@
           "y": 201,
           "locked": true
         }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blank_skill.png",
+          "use1Xscale": false,
+          "x": 164,
+          "y": 96,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blank_skill.png",
+          "use1Xscale": false,
+          "x": 189,
+          "y": 96,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blank_skill.png",
+          "use1Xscale": false,
+          "x": 215,
+          "y": 96,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blank_skill.png",
+          "use1Xscale": false,
+          "x": 240,
+          "y": 96,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blank_skill.png",
+          "use1Xscale": false,
+          "x": 164,
+          "y": 120,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_text_taunt",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnTextTaunt"
+          },
+          "width": 22,
+          "height": 22,
+          "x": 164,
+          "y": 72,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_text_collapse",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnTextCollapse"
+          },
+          "width": 22,
+          "height": 22,
+          "x": 189,
+          "y": 72,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_text_power_smash",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnTextPowerSmash"
+          },
+          "width": 22,
+          "height": 22,
+          "x": 215,
+          "y": 72,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_text_mana_shield",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnTextManaShield"
+          },
+          "width": 22,
+          "height": 22,
+          "x": 240,
+          "y": 72,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_text_strengthening",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnTextStrengthening"
+          },
+          "width": 22,
+          "height": 22,
+          "x": 164,
+          "y": 96,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_text_charge",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnTextCharge"
+          },
+          "width": 22,
+          "height": 22,
+          "x": 189,
+          "y": 96,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_text_stride",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnTextStride"
+          },
+          "width": 22,
+          "height": 22,
+          "x": 215,
+          "y": 96,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_text_unyielding_roar",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnTextUnyieldingRoar"
+          },
+          "width": 22,
+          "height": 22,
+          "x": 240,
+          "y": 96,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_text_iron_grasp",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnTextIronGrasp"
+          },
+          "width": 22,
+          "height": 22,
+          "x": 164,
+          "y": 120,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnNoSkillTaunt"
+          },
+          "x": 170,
+          "y": 76,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnNoSkillCollapse"
+          },
+          "x": 195,
+          "y": 76,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnNoSkillPowerSmash"
+          },
+          "x": 221,
+          "y": 76,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnNoSkillManaShield"
+          },
+          "x": 246,
+          "y": 76,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnNoSkillStrengthening"
+          },
+          "x": 170,
+          "y": 100,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnNoSkillCharge"
+          },
+          "x": 195,
+          "y": 100,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnNoSkillStride"
+          },
+          "x": 221,
+          "y": 100,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnNoSkillUnyieldingRoar"
+          },
+          "x": 246,
+          "y": 100,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnNoSkillIronGrasp"
+          },
+          "x": 170,
+          "y": 124,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank22x",
+          "image": "blank22x.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "SkillButtonTaunt"
+          },
+          "x": 164,
+          "y": 72,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank22x1",
+          "image": "blank22x.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "SkillButtonCollapse"
+          },
+          "x": 189,
+          "y": 72,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank22x2",
+          "image": "blank22x.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "SkillButtonPowerSmash"
+          },
+          "x": 215,
+          "y": 72,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank22x3",
+          "image": "blank22x.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "SkillButtonManaShield"
+          },
+          "x": 240,
+          "y": 72,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank22x4",
+          "image": "blank22x.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "SkillButtonStrengthening"
+          },
+          "x": 164,
+          "y": 96,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank22x5",
+          "image": "blank22x.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "SkillButtonCharge"
+          },
+          "x": 189,
+          "y": 96,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank22x6",
+          "image": "blank22x.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "SkillButtonStride"
+          },
+          "x": 215,
+          "y": 96,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank22x7",
+          "image": "blank22x.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "SkillButtonUnyieldingRoar"
+          },
+          "x": 240,
+          "y": 96,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank22x8",
+          "image": "blank22x.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "SkillButtonIronGrasp"
+          },
+          "x": 164,
+          "y": 120,
+          "locked": true
+        }
       }
     ],
     "onClosed": {

@@ -21,6 +21,16 @@ import net.clozynoii.slsb.client.gui.SystemMainGUIScreen;
 import net.clozynoii.slsb.client.gui.HunterSkillGUITankScreen;
 import net.clozynoii.slsb.client.gui.HunterSkillGUIScreen;
 import net.clozynoii.slsb.client.gui.HunterSkillGUIRangerScreen;
+import net.clozynoii.slsb.client.gui.HunterSkillGUIMageWindScreen;
+import net.clozynoii.slsb.client.gui.HunterSkillGUIMageWaterScreen;
+import net.clozynoii.slsb.client.gui.HunterSkillGUIMageSummonScreen;
+import net.clozynoii.slsb.client.gui.HunterSkillGUIMageSpatialScreen;
+import net.clozynoii.slsb.client.gui.HunterSkillGUIMageLightningScreen;
+import net.clozynoii.slsb.client.gui.HunterSkillGUIMageIceScreen;
+import net.clozynoii.slsb.client.gui.HunterSkillGUIMageFireScreen;
+import net.clozynoii.slsb.client.gui.HunterSkillGUIMageEarthScreen;
+import net.clozynoii.slsb.client.gui.HunterSkillGUIMageCurseScreen;
+import net.clozynoii.slsb.client.gui.HunterSkillGUIMageBarrierScreen;
 import net.clozynoii.slsb.client.gui.HunterSkillGUIHealerScreen;
 import net.clozynoii.slsb.client.gui.HunterSkillGUIFighterScreen;
 import net.clozynoii.slsb.client.gui.HunterSkillGUIAssassinScreen;
@@ -46,5 +56,15 @@ public class SlsbModScreens {
 		event.register(SlsbModMenus.SYSTEM_SHOP_POTIONS.get(), SystemShopPotionsScreen::new);
 		event.register(SlsbModMenus.SYSTEM_SHOP_ARMOR_2.get(), SystemShopArmor2Screen::new);
 		event.register(SlsbModMenus.SYSTEM_SHOP_ARMOR_3.get(), SystemShopArmor3Screen::new);
+		event.register(SlsbModMenus.HUNTER_SKILL_GUI_MAGE_BARRIER.get(), HunterSkillGUIMageBarrierScreen::new);
+		event.register(SlsbModMenus.HUNTER_SKILL_GUI_MAGE_CURSE.get(), HunterSkillGUIMageCurseScreen::new);
+		event.register(SlsbModMenus.HUNTER_SKILL_GUI_MAGE_SPATIAL.get(), HunterSkillGUIMageSpatialScreen::new);
+		event.register(SlsbModMenus.HUNTER_SKILL_GUI_MAGE_SUMMON.get(), HunterSkillGUIMageSummonScreen::new);
+		event.register(SlsbModMenus.HUNTER_SKILL_GUI_MAGE_FIRE.get(), HunterSkillGUIMageFireScreen::new);
+		event.register(SlsbModMenus.HUNTER_SKILL_GUI_MAGE_ICE.get(), HunterSkillGUIMageIceScreen::new);
+		event.register(SlsbModMenus.HUNTER_SKILL_GUI_MAGE_WATER.get(), HunterSkillGUIMageWaterScreen::new);
+		event.register(SlsbModMenus.HUNTER_SKILL_GUI_MAGE_EARTH.get(), HunterSkillGUIMageEarthScreen::new);
+		event.register(SlsbModMenus.HUNTER_SKILL_GUI_MAGE_WIND.get(), HunterSkillGUIMageWindScreen::new);
+		event.register(SlsbModMenus.HUNTER_SKILL_GUI_MAGE_LIGHTNING.get(), HunterSkillGUIMageLightningScreen::new);
 	}
 }

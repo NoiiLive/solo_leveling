@@ -14,6 +14,15 @@ import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.clozynoii.slsb.world.inventory.HunterSkillGUITankMenu;
+import net.clozynoii.slsb.procedures.ReturnTextUnyieldingRoarProcedure;
+import net.clozynoii.slsb.procedures.ReturnTextTauntProcedure;
+import net.clozynoii.slsb.procedures.ReturnTextStrideProcedure;
+import net.clozynoii.slsb.procedures.ReturnTextStrengtheningProcedure;
+import net.clozynoii.slsb.procedures.ReturnTextPowerSmashProcedure;
+import net.clozynoii.slsb.procedures.ReturnTextManaShieldProcedure;
+import net.clozynoii.slsb.procedures.ReturnTextIronGraspProcedure;
+import net.clozynoii.slsb.procedures.ReturnTextCollapseProcedure;
+import net.clozynoii.slsb.procedures.ReturnTextChargeProcedure;
 import net.clozynoii.slsb.procedures.ReturnSystemLocalStatusProcedure;
 import net.clozynoii.slsb.procedures.ReturnSystemLocalSkillsProcedure;
 import net.clozynoii.slsb.procedures.ReturnSlot5bProcedure;
@@ -26,6 +35,15 @@ import net.clozynoii.slsb.procedures.ReturnSlot2bProcedure;
 import net.clozynoii.slsb.procedures.ReturnSlot2aProcedure;
 import net.clozynoii.slsb.procedures.ReturnSlot1bProcedure;
 import net.clozynoii.slsb.procedures.ReturnSlot1aProcedure;
+import net.clozynoii.slsb.procedures.ReturnNoSkillUnyieldingRoarProcedure;
+import net.clozynoii.slsb.procedures.ReturnNoSkillTauntProcedure;
+import net.clozynoii.slsb.procedures.ReturnNoSkillStrideProcedure;
+import net.clozynoii.slsb.procedures.ReturnNoSkillStrengtheningProcedure;
+import net.clozynoii.slsb.procedures.ReturnNoSkillPowerSmashProcedure;
+import net.clozynoii.slsb.procedures.ReturnNoSkillManaShieldProcedure;
+import net.clozynoii.slsb.procedures.ReturnNoSkillIronGraspProcedure;
+import net.clozynoii.slsb.procedures.ReturnNoSkillCollapseProcedure;
+import net.clozynoii.slsb.procedures.ReturnNoSkillChargeProcedure;
 import net.clozynoii.slsb.procedures.ReturnHunterLocalClassSkillsProcedure;
 import net.clozynoii.slsb.procedures.ReturnHunterLocalBasicSkillsProcedure;
 import net.clozynoii.slsb.network.HunterSkillGUITankButtonMessage;
@@ -51,6 +69,15 @@ public class HunterSkillGUITankScreen extends AbstractContainerScreen<HunterSkil
 	ImageButton imagebutton_blank16x8;
 	ImageButton imagebutton_blank16x9;
 	ImageButton imagebutton_tab_bottom;
+	ImageButton imagebutton_blank22x;
+	ImageButton imagebutton_blank22x1;
+	ImageButton imagebutton_blank22x2;
+	ImageButton imagebutton_blank22x3;
+	ImageButton imagebutton_blank22x4;
+	ImageButton imagebutton_blank22x5;
+	ImageButton imagebutton_blank22x6;
+	ImageButton imagebutton_blank22x7;
+	ImageButton imagebutton_blank22x8;
 
 	public HunterSkillGUITankScreen(HunterSkillGUITankMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -98,6 +125,24 @@ public class HunterSkillGUITankScreen extends AbstractContainerScreen<HunterSkil
 			guiGraphics.renderTooltip(font, Component.literal(ReturnHunterLocalBasicSkillsProcedure.execute()), mouseX, mouseY);
 		if (mouseX > leftPos + -37 && mouseX < leftPos + -13 && mouseY > topPos + 81 && mouseY < topPos + 105)
 			guiGraphics.renderTooltip(font, Component.literal(ReturnHunterLocalClassSkillsProcedure.execute()), mouseX, mouseY);
+		if (mouseX > leftPos + -50 && mouseX < leftPos + -28 && mouseY > topPos + -48 && mouseY < topPos + -26)
+			guiGraphics.renderTooltip(font, Component.literal(ReturnTextTauntProcedure.execute(entity)), mouseX, mouseY);
+		if (mouseX > leftPos + -25 && mouseX < leftPos + -3 && mouseY > topPos + -48 && mouseY < topPos + -26)
+			guiGraphics.renderTooltip(font, Component.literal(ReturnTextCollapseProcedure.execute(entity)), mouseX, mouseY);
+		if (mouseX > leftPos + 1 && mouseX < leftPos + 23 && mouseY > topPos + -48 && mouseY < topPos + -26)
+			guiGraphics.renderTooltip(font, Component.literal(ReturnTextPowerSmashProcedure.execute(entity)), mouseX, mouseY);
+		if (mouseX > leftPos + 26 && mouseX < leftPos + 48 && mouseY > topPos + -48 && mouseY < topPos + -26)
+			guiGraphics.renderTooltip(font, Component.literal(ReturnTextManaShieldProcedure.execute(entity)), mouseX, mouseY);
+		if (mouseX > leftPos + -50 && mouseX < leftPos + -28 && mouseY > topPos + -24 && mouseY < topPos + -2)
+			guiGraphics.renderTooltip(font, Component.literal(ReturnTextStrengtheningProcedure.execute(entity)), mouseX, mouseY);
+		if (mouseX > leftPos + -25 && mouseX < leftPos + -3 && mouseY > topPos + -24 && mouseY < topPos + -2)
+			guiGraphics.renderTooltip(font, Component.literal(ReturnTextChargeProcedure.execute(entity)), mouseX, mouseY);
+		if (mouseX > leftPos + 1 && mouseX < leftPos + 23 && mouseY > topPos + -24 && mouseY < topPos + -2)
+			guiGraphics.renderTooltip(font, Component.literal(ReturnTextStrideProcedure.execute(entity)), mouseX, mouseY);
+		if (mouseX > leftPos + 26 && mouseX < leftPos + 48 && mouseY > topPos + -24 && mouseY < topPos + -2)
+			guiGraphics.renderTooltip(font, Component.literal(ReturnTextUnyieldingRoarProcedure.execute(entity)), mouseX, mouseY);
+		if (mouseX > leftPos + -50 && mouseX < leftPos + -28 && mouseY > topPos + 0 && mouseY < topPos + 22)
+			guiGraphics.renderTooltip(font, Component.literal(ReturnTextIronGraspProcedure.execute(entity)), mouseX, mouseY);
 	}
 
 	@Override
@@ -122,6 +167,44 @@ public class HunterSkillGUITankScreen extends AbstractContainerScreen<HunterSkil
 		guiGraphics.blit(ResourceLocation.parse("slsb:textures/screens/tab_bottom_edge.png"), this.leftPos + -63, this.topPos + 78, 0, 0, 26, 32, 26, 32);
 
 		guiGraphics.blit(ResourceLocation.parse("slsb:textures/screens/tab_bottom_middle.png"), this.leftPos + -38, this.topPos + 77, 0, 0, 26, 32, 26, 32);
+
+		guiGraphics.blit(ResourceLocation.parse("slsb:textures/screens/blank_skill.png"), this.leftPos + -50, this.topPos + -24, 0, 0, 22, 22, 22, 22);
+
+		guiGraphics.blit(ResourceLocation.parse("slsb:textures/screens/blank_skill.png"), this.leftPos + -25, this.topPos + -24, 0, 0, 22, 22, 22, 22);
+
+		guiGraphics.blit(ResourceLocation.parse("slsb:textures/screens/blank_skill.png"), this.leftPos + 1, this.topPos + -24, 0, 0, 22, 22, 22, 22);
+
+		guiGraphics.blit(ResourceLocation.parse("slsb:textures/screens/blank_skill.png"), this.leftPos + 26, this.topPos + -24, 0, 0, 22, 22, 22, 22);
+
+		guiGraphics.blit(ResourceLocation.parse("slsb:textures/screens/blank_skill.png"), this.leftPos + -50, this.topPos + 0, 0, 0, 22, 22, 22, 22);
+
+		if (ReturnNoSkillTauntProcedure.execute(entity)) {
+			guiGraphics.blit(ResourceLocation.parse("slsb:textures/screens/ability_lock.png"), this.leftPos + -44, this.topPos + -44, 0, 0, 10, 14, 10, 14);
+		}
+		if (ReturnNoSkillCollapseProcedure.execute(entity)) {
+			guiGraphics.blit(ResourceLocation.parse("slsb:textures/screens/ability_lock.png"), this.leftPos + -19, this.topPos + -44, 0, 0, 10, 14, 10, 14);
+		}
+		if (ReturnNoSkillPowerSmashProcedure.execute(entity)) {
+			guiGraphics.blit(ResourceLocation.parse("slsb:textures/screens/ability_lock.png"), this.leftPos + 7, this.topPos + -44, 0, 0, 10, 14, 10, 14);
+		}
+		if (ReturnNoSkillManaShieldProcedure.execute(entity)) {
+			guiGraphics.blit(ResourceLocation.parse("slsb:textures/screens/ability_lock.png"), this.leftPos + 32, this.topPos + -44, 0, 0, 10, 14, 10, 14);
+		}
+		if (ReturnNoSkillStrengtheningProcedure.execute(entity)) {
+			guiGraphics.blit(ResourceLocation.parse("slsb:textures/screens/ability_lock.png"), this.leftPos + -44, this.topPos + -20, 0, 0, 10, 14, 10, 14);
+		}
+		if (ReturnNoSkillChargeProcedure.execute(entity)) {
+			guiGraphics.blit(ResourceLocation.parse("slsb:textures/screens/ability_lock.png"), this.leftPos + -19, this.topPos + -20, 0, 0, 10, 14, 10, 14);
+		}
+		if (ReturnNoSkillStrideProcedure.execute(entity)) {
+			guiGraphics.blit(ResourceLocation.parse("slsb:textures/screens/ability_lock.png"), this.leftPos + 7, this.topPos + -20, 0, 0, 10, 14, 10, 14);
+		}
+		if (ReturnNoSkillUnyieldingRoarProcedure.execute(entity)) {
+			guiGraphics.blit(ResourceLocation.parse("slsb:textures/screens/ability_lock.png"), this.leftPos + 32, this.topPos + -20, 0, 0, 10, 14, 10, 14);
+		}
+		if (ReturnNoSkillIronGraspProcedure.execute(entity)) {
+			guiGraphics.blit(ResourceLocation.parse("slsb:textures/screens/ability_lock.png"), this.leftPos + -44, this.topPos + 4, 0, 0, 10, 14, 10, 14);
+		}
 
 		guiGraphics.blit(ResourceLocation.parse("slsb:textures/screens/abilities.png"), this.leftPos + 70, this.topPos + -45, Mth.clamp((int) ReturnSlot1aProcedure.execute(entity) * 16, 0, 80), 0, 16, 16, 96, 16);
 
@@ -318,5 +401,122 @@ public class HunterSkillGUITankScreen extends AbstractContainerScreen<HunterSkil
 		};
 		guistate.put("button:imagebutton_tab_bottom", imagebutton_tab_bottom);
 		this.addRenderableWidget(imagebutton_tab_bottom);
+		imagebutton_blank22x = new ImageButton(this.leftPos + -50, this.topPos + -48, 22, 22, new WidgetSprites(ResourceLocation.parse("slsb:textures/screens/blank22x.png"), ResourceLocation.parse("slsb:textures/screens/blank22x.png")), e -> {
+			if (true) {
+				PacketDistributor.sendToServer(new HunterSkillGUITankButtonMessage(12, x, y, z));
+				HunterSkillGUITankButtonMessage.handleButtonAction(entity, 12, x, y, z);
+			}
+		}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
+			}
+		};
+		guistate.put("button:imagebutton_blank22x", imagebutton_blank22x);
+		this.addRenderableWidget(imagebutton_blank22x);
+		imagebutton_blank22x1 = new ImageButton(this.leftPos + -25, this.topPos + -48, 22, 22, new WidgetSprites(ResourceLocation.parse("slsb:textures/screens/blank22x.png"), ResourceLocation.parse("slsb:textures/screens/blank22x.png")), e -> {
+			if (true) {
+				PacketDistributor.sendToServer(new HunterSkillGUITankButtonMessage(13, x, y, z));
+				HunterSkillGUITankButtonMessage.handleButtonAction(entity, 13, x, y, z);
+			}
+		}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
+			}
+		};
+		guistate.put("button:imagebutton_blank22x1", imagebutton_blank22x1);
+		this.addRenderableWidget(imagebutton_blank22x1);
+		imagebutton_blank22x2 = new ImageButton(this.leftPos + 1, this.topPos + -48, 22, 22, new WidgetSprites(ResourceLocation.parse("slsb:textures/screens/blank22x.png"), ResourceLocation.parse("slsb:textures/screens/blank22x.png")), e -> {
+			if (true) {
+				PacketDistributor.sendToServer(new HunterSkillGUITankButtonMessage(14, x, y, z));
+				HunterSkillGUITankButtonMessage.handleButtonAction(entity, 14, x, y, z);
+			}
+		}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
+			}
+		};
+		guistate.put("button:imagebutton_blank22x2", imagebutton_blank22x2);
+		this.addRenderableWidget(imagebutton_blank22x2);
+		imagebutton_blank22x3 = new ImageButton(this.leftPos + 26, this.topPos + -48, 22, 22, new WidgetSprites(ResourceLocation.parse("slsb:textures/screens/blank22x.png"), ResourceLocation.parse("slsb:textures/screens/blank22x.png")), e -> {
+			if (true) {
+				PacketDistributor.sendToServer(new HunterSkillGUITankButtonMessage(15, x, y, z));
+				HunterSkillGUITankButtonMessage.handleButtonAction(entity, 15, x, y, z);
+			}
+		}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
+			}
+		};
+		guistate.put("button:imagebutton_blank22x3", imagebutton_blank22x3);
+		this.addRenderableWidget(imagebutton_blank22x3);
+		imagebutton_blank22x4 = new ImageButton(this.leftPos + -50, this.topPos + -24, 22, 22, new WidgetSprites(ResourceLocation.parse("slsb:textures/screens/blank22x.png"), ResourceLocation.parse("slsb:textures/screens/blank22x.png")), e -> {
+			if (true) {
+				PacketDistributor.sendToServer(new HunterSkillGUITankButtonMessage(16, x, y, z));
+				HunterSkillGUITankButtonMessage.handleButtonAction(entity, 16, x, y, z);
+			}
+		}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
+			}
+		};
+		guistate.put("button:imagebutton_blank22x4", imagebutton_blank22x4);
+		this.addRenderableWidget(imagebutton_blank22x4);
+		imagebutton_blank22x5 = new ImageButton(this.leftPos + -25, this.topPos + -24, 22, 22, new WidgetSprites(ResourceLocation.parse("slsb:textures/screens/blank22x.png"), ResourceLocation.parse("slsb:textures/screens/blank22x.png")), e -> {
+			if (true) {
+				PacketDistributor.sendToServer(new HunterSkillGUITankButtonMessage(17, x, y, z));
+				HunterSkillGUITankButtonMessage.handleButtonAction(entity, 17, x, y, z);
+			}
+		}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
+			}
+		};
+		guistate.put("button:imagebutton_blank22x5", imagebutton_blank22x5);
+		this.addRenderableWidget(imagebutton_blank22x5);
+		imagebutton_blank22x6 = new ImageButton(this.leftPos + 1, this.topPos + -24, 22, 22, new WidgetSprites(ResourceLocation.parse("slsb:textures/screens/blank22x.png"), ResourceLocation.parse("slsb:textures/screens/blank22x.png")), e -> {
+			if (true) {
+				PacketDistributor.sendToServer(new HunterSkillGUITankButtonMessage(18, x, y, z));
+				HunterSkillGUITankButtonMessage.handleButtonAction(entity, 18, x, y, z);
+			}
+		}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
+			}
+		};
+		guistate.put("button:imagebutton_blank22x6", imagebutton_blank22x6);
+		this.addRenderableWidget(imagebutton_blank22x6);
+		imagebutton_blank22x7 = new ImageButton(this.leftPos + 26, this.topPos + -24, 22, 22, new WidgetSprites(ResourceLocation.parse("slsb:textures/screens/blank22x.png"), ResourceLocation.parse("slsb:textures/screens/blank22x.png")), e -> {
+			if (true) {
+				PacketDistributor.sendToServer(new HunterSkillGUITankButtonMessage(19, x, y, z));
+				HunterSkillGUITankButtonMessage.handleButtonAction(entity, 19, x, y, z);
+			}
+		}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
+			}
+		};
+		guistate.put("button:imagebutton_blank22x7", imagebutton_blank22x7);
+		this.addRenderableWidget(imagebutton_blank22x7);
+		imagebutton_blank22x8 = new ImageButton(this.leftPos + -50, this.topPos + 0, 22, 22, new WidgetSprites(ResourceLocation.parse("slsb:textures/screens/blank22x.png"), ResourceLocation.parse("slsb:textures/screens/blank22x.png")), e -> {
+			if (true) {
+				PacketDistributor.sendToServer(new HunterSkillGUITankButtonMessage(20, x, y, z));
+				HunterSkillGUITankButtonMessage.handleButtonAction(entity, 20, x, y, z);
+			}
+		}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
+			}
+		};
+		guistate.put("button:imagebutton_blank22x8", imagebutton_blank22x8);
+		this.addRenderableWidget(imagebutton_blank22x8);
 	}
 }

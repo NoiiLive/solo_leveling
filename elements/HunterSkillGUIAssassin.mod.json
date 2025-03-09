@@ -597,6 +597,382 @@
           "y": 201,
           "locked": true
         }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blank_skill.png",
+          "use1Xscale": false,
+          "x": 164,
+          "y": 96,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blank_skill.png",
+          "use1Xscale": false,
+          "x": 189,
+          "y": 96,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blank_skill.png",
+          "use1Xscale": false,
+          "x": 215,
+          "y": 96,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blank_skill.png",
+          "use1Xscale": false,
+          "x": 240,
+          "y": 96,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_text_stealth",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnTextStealth"
+          },
+          "width": 22,
+          "height": 22,
+          "x": 164,
+          "y": 72,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_text_dagger_throw",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnTextDaggerThrow"
+          },
+          "width": 22,
+          "height": 22,
+          "x": 189,
+          "y": 72,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_text_critical_strike",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnTextCriticalStrike"
+          },
+          "width": 22,
+          "height": 22,
+          "x": 215,
+          "y": 72,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_text_slaughterer",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnTextSlaughterer"
+          },
+          "width": 22,
+          "height": 22,
+          "x": 240,
+          "y": 72,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_text_backstab",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnTextBackstab"
+          },
+          "width": 22,
+          "height": 22,
+          "x": 164,
+          "y": 96,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_text_quick_reflex",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnTextQuickReflex"
+          },
+          "width": 22,
+          "height": 22,
+          "x": 189,
+          "y": 96,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_text_whirl_cut",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnTextWhirlCut"
+          },
+          "width": 22,
+          "height": 22,
+          "x": 215,
+          "y": 96,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_text_flicker_fang",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnTextFlickerFang"
+          },
+          "width": 22,
+          "height": 22,
+          "x": 240,
+          "y": 96,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnNoSkillStealth"
+          },
+          "x": 170,
+          "y": 76,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnNoSkillDaggerThrow"
+          },
+          "x": 195,
+          "y": 76,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnNoSkillCriticalStrike"
+          },
+          "x": 221,
+          "y": 76,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnNoSkillSlaughterer"
+          },
+          "x": 246,
+          "y": 76,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnNoSkillBackstab"
+          },
+          "x": 170,
+          "y": 100,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnNoSkillQuickReflex"
+          },
+          "x": 195,
+          "y": 100,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnNoSkillWhirlCut"
+          },
+          "x": 221,
+          "y": 100,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnNoSkillFlickerFang"
+          },
+          "x": 246,
+          "y": 100,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank22x",
+          "image": "blank22x.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "SkillButtonStealth"
+          },
+          "x": 164,
+          "y": 72,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank22x1",
+          "image": "blank22x.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "SkillButtonDaggerThrow"
+          },
+          "x": 189,
+          "y": 72,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank22x2",
+          "image": "blank22x.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "SkillButtonCriticalStrike"
+          },
+          "x": 215,
+          "y": 72,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank22x3",
+          "image": "blank22x.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "SkillButtonSlaughterer"
+          },
+          "x": 240,
+          "y": 72,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank22x4",
+          "image": "blank22x.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "SkillButtonBackstab"
+          },
+          "x": 164,
+          "y": 96,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank22x5",
+          "image": "blank22x.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "SkillButtonQuickReflex"
+          },
+          "x": 189,
+          "y": 96,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank22x6",
+          "image": "blank22x.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "SkillButtonWhirlCut"
+          },
+          "x": 215,
+          "y": 96,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank22x7",
+          "image": "blank22x.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "SkillButtonFlickerFang"
+          },
+          "x": 240,
+          "y": 96,
+          "locked": true
+        }
       }
     ],
     "onClosed": {

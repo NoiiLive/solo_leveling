@@ -123,6 +123,10 @@ public class HunterSkillGUIHealerScreen extends AbstractContainerScreen<HunterSk
 
 		guiGraphics.blit(ResourceLocation.parse("slsb:textures/screens/tab_bottom_middle.png"), this.leftPos + -38, this.topPos + 77, 0, 0, 26, 32, 26, 32);
 
+		guiGraphics.blit(ResourceLocation.parse("slsb:textures/screens/blank_skill.png"), this.leftPos + -50, this.topPos + -24, 0, 0, 22, 22, 22, 22);
+
+		guiGraphics.blit(ResourceLocation.parse("slsb:textures/screens/blank_skill.png"), this.leftPos + -25, this.topPos + -24, 0, 0, 22, 22, 22, 22);
+
 		guiGraphics.blit(ResourceLocation.parse("slsb:textures/screens/abilities.png"), this.leftPos + 70, this.topPos + -45, Mth.clamp((int) ReturnSlot1aProcedure.execute(entity) * 16, 0, 80), 0, 16, 16, 96, 16);
 
 		guiGraphics.blit(ResourceLocation.parse("slsb:textures/screens/abilities.png"), this.leftPos + 70, this.topPos + -24, Mth.clamp((int) ReturnSlot2aProcedure.execute(entity) * 16, 0, 80), 0, 16, 16, 96, 16);

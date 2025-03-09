@@ -13,6 +13,16 @@ import net.minecraft.core.BlockPos;
 
 import net.clozynoii.slsb.world.inventory.HunterSkillGUITankMenu;
 import net.clozynoii.slsb.world.inventory.HunterSkillGUIRangerMenu;
+import net.clozynoii.slsb.world.inventory.HunterSkillGUIMageWindMenu;
+import net.clozynoii.slsb.world.inventory.HunterSkillGUIMageWaterMenu;
+import net.clozynoii.slsb.world.inventory.HunterSkillGUIMageSummonMenu;
+import net.clozynoii.slsb.world.inventory.HunterSkillGUIMageSpatialMenu;
+import net.clozynoii.slsb.world.inventory.HunterSkillGUIMageLightningMenu;
+import net.clozynoii.slsb.world.inventory.HunterSkillGUIMageIceMenu;
+import net.clozynoii.slsb.world.inventory.HunterSkillGUIMageFireMenu;
+import net.clozynoii.slsb.world.inventory.HunterSkillGUIMageEarthMenu;
+import net.clozynoii.slsb.world.inventory.HunterSkillGUIMageCurseMenu;
+import net.clozynoii.slsb.world.inventory.HunterSkillGUIMageBarrierMenu;
 import net.clozynoii.slsb.world.inventory.HunterSkillGUIHealerMenu;
 import net.clozynoii.slsb.world.inventory.HunterSkillGUIFighterMenu;
 import net.clozynoii.slsb.world.inventory.HunterSkillGUIAssassinMenu;
@@ -127,6 +137,209 @@ public class TabHunterClassSkillsProcedure {
 						return new HunterSkillGUIRangerMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
 					}
 				}, _bpos);
+			}
+		}
+		if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerClass.contains("Mage")) {
+			if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerClass.contains("Barrier")) {
+				if (entity instanceof ServerPlayer _ent) {
+					BlockPos _bpos = BlockPos.containing(x, y, z);
+					_ent.openMenu(new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return Component.literal("HunterSkillGUIMageBarrier");
+						}
+
+						@Override
+						public boolean shouldTriggerClientSideContainerClosingOnOpen() {
+							return false;
+						}
+
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							return new HunterSkillGUIMageBarrierMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+						}
+					}, _bpos);
+				}
+			} else if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerClass.contains("Curse")) {
+				if (entity instanceof ServerPlayer _ent) {
+					BlockPos _bpos = BlockPos.containing(x, y, z);
+					_ent.openMenu(new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return Component.literal("HunterSkillGUIMageCurse");
+						}
+
+						@Override
+						public boolean shouldTriggerClientSideContainerClosingOnOpen() {
+							return false;
+						}
+
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							return new HunterSkillGUIMageCurseMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+						}
+					}, _bpos);
+				}
+			} else if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerClass.contains("Spatial")) {
+				if (entity instanceof ServerPlayer _ent) {
+					BlockPos _bpos = BlockPos.containing(x, y, z);
+					_ent.openMenu(new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return Component.literal("HunterSkillGUIMageSpatial");
+						}
+
+						@Override
+						public boolean shouldTriggerClientSideContainerClosingOnOpen() {
+							return false;
+						}
+
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							return new HunterSkillGUIMageSpatialMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+						}
+					}, _bpos);
+				}
+			} else if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerClass.contains("Summon")) {
+				if (entity instanceof ServerPlayer _ent) {
+					BlockPos _bpos = BlockPos.containing(x, y, z);
+					_ent.openMenu(new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return Component.literal("HunterSkillGUIMageSummon");
+						}
+
+						@Override
+						public boolean shouldTriggerClientSideContainerClosingOnOpen() {
+							return false;
+						}
+
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							return new HunterSkillGUIMageSummonMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+						}
+					}, _bpos);
+				}
+			} else if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerClass.contains("Fire")) {
+				if (entity instanceof ServerPlayer _ent) {
+					BlockPos _bpos = BlockPos.containing(x, y, z);
+					_ent.openMenu(new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return Component.literal("HunterSkillGUIMageFire");
+						}
+
+						@Override
+						public boolean shouldTriggerClientSideContainerClosingOnOpen() {
+							return false;
+						}
+
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							return new HunterSkillGUIMageFireMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+						}
+					}, _bpos);
+				}
+			} else if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerClass.contains("Ice")) {
+				if (entity instanceof ServerPlayer _ent) {
+					BlockPos _bpos = BlockPos.containing(x, y, z);
+					_ent.openMenu(new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return Component.literal("HunterSkillGUIMageIce");
+						}
+
+						@Override
+						public boolean shouldTriggerClientSideContainerClosingOnOpen() {
+							return false;
+						}
+
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							return new HunterSkillGUIMageIceMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+						}
+					}, _bpos);
+				}
+			} else if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerClass.contains("Water")) {
+				if (entity instanceof ServerPlayer _ent) {
+					BlockPos _bpos = BlockPos.containing(x, y, z);
+					_ent.openMenu(new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return Component.literal("HunterSkillGUIMageWater");
+						}
+
+						@Override
+						public boolean shouldTriggerClientSideContainerClosingOnOpen() {
+							return false;
+						}
+
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							return new HunterSkillGUIMageWaterMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+						}
+					}, _bpos);
+				}
+			} else if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerClass.contains("Earth")) {
+				if (entity instanceof ServerPlayer _ent) {
+					BlockPos _bpos = BlockPos.containing(x, y, z);
+					_ent.openMenu(new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return Component.literal("HunterSkillGUIMageEarth");
+						}
+
+						@Override
+						public boolean shouldTriggerClientSideContainerClosingOnOpen() {
+							return false;
+						}
+
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							return new HunterSkillGUIMageEarthMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+						}
+					}, _bpos);
+				}
+			} else if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerClass.contains("Wind")) {
+				if (entity instanceof ServerPlayer _ent) {
+					BlockPos _bpos = BlockPos.containing(x, y, z);
+					_ent.openMenu(new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return Component.literal("HunterSkillGUIMageWind");
+						}
+
+						@Override
+						public boolean shouldTriggerClientSideContainerClosingOnOpen() {
+							return false;
+						}
+
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							return new HunterSkillGUIMageWindMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+						}
+					}, _bpos);
+				}
+			} else if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerClass.contains("Electric")) {
+				if (entity instanceof ServerPlayer _ent) {
+					BlockPos _bpos = BlockPos.containing(x, y, z);
+					_ent.openMenu(new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return Component.literal("HunterSkillGUIMageLightning");
+						}
+
+						@Override
+						public boolean shouldTriggerClientSideContainerClosingOnOpen() {
+							return false;
+						}
+
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							return new HunterSkillGUIMageLightningMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+						}
+					}, _bpos);
+				}
 			}
 		}
 	}

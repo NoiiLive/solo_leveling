@@ -49,7 +49,16 @@ public class CMDSetRankDProcedure {
 			}
 		}.getEntity()) == entity)) {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal((entity.getDisplayName().getString() + "'s " + Component.translatable("slsb.command.setclassadmin").getString() + " D")), false);
+				_player.displayClientMessage(Component.literal(((new Object() {
+					public Entity getEntity() {
+						try {
+							return EntityArgument.getEntity(arguments, "name");
+						} catch (CommandSyntaxException e) {
+							e.printStackTrace();
+							return null;
+						}
+					}
+				}.getEntity()).getDisplayName().getString() + "'s " + Component.translatable("slsb.command.setclassadmin").getString() + " D")), false);
 		}
 		if ((new Object() {
 			public Entity getEntity() {
@@ -61,6 +70,6 @@ public class CMDSetRankDProcedure {
 				}
 			}
 		}.getEntity()) instanceof Player _player && !_player.level().isClientSide())
-			_player.displayClientMessage(Component.literal((Component.translatable(("slsb.command.setranktarget" + " D")).getString())), true);
+			_player.displayClientMessage(Component.literal((Component.translatable((Component.translatable("slsb.command.setranktarget").getString() + " D")).getString())), true);
 	}
 }

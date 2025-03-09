@@ -19,6 +19,14 @@ import net.minecraft.core.BlockPos;
 import net.clozynoii.slsb.world.inventory.HunterSkillGUIAssassinMenu;
 import net.clozynoii.slsb.procedures.TabHunterSkillsProcedure;
 import net.clozynoii.slsb.procedures.TabHunterMainProcedure;
+import net.clozynoii.slsb.procedures.SkillButtonWhirlCutProcedure;
+import net.clozynoii.slsb.procedures.SkillButtonStealthProcedure;
+import net.clozynoii.slsb.procedures.SkillButtonSlaughtererProcedure;
+import net.clozynoii.slsb.procedures.SkillButtonQuickReflexProcedure;
+import net.clozynoii.slsb.procedures.SkillButtonFlickerFangProcedure;
+import net.clozynoii.slsb.procedures.SkillButtonDaggerThrowProcedure;
+import net.clozynoii.slsb.procedures.SkillButtonCriticalStrikeProcedure;
+import net.clozynoii.slsb.procedures.SkillButtonBackstabProcedure;
 import net.clozynoii.slsb.procedures.GUISkillSlot5bProcedure;
 import net.clozynoii.slsb.procedures.GUISkillSlot5aProcedure;
 import net.clozynoii.slsb.procedures.GUISkillSlot4bProcedure;
@@ -117,6 +125,38 @@ public record HunterSkillGUIAssassinButtonMessage(int buttonID, int x, int y, in
 		if (buttonID == 11) {
 
 			TabHunterSkillsProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 12) {
+
+			SkillButtonStealthProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 13) {
+
+			SkillButtonDaggerThrowProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 14) {
+
+			SkillButtonCriticalStrikeProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 15) {
+
+			SkillButtonSlaughtererProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 16) {
+
+			SkillButtonBackstabProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 17) {
+
+			SkillButtonQuickReflexProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 18) {
+
+			SkillButtonWhirlCutProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 19) {
+
+			SkillButtonFlickerFangProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

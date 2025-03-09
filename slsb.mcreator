@@ -3755,7 +3755,7 @@
           "src/main/java/net/clozynoii/slsb/world/inventory/HunterSkillGUIFighterMenu.java"
         ]
       },
-      "path": "~/GUI/Hunter"
+      "path": "~/GUI/Hunter/Classes"
     },
     {
       "name": "TabHunterClassSkills",
@@ -3950,7 +3950,7 @@
           "src/main/java/net/clozynoii/slsb/client/gui/HunterSkillGUIAssassinScreen.java"
         ]
       },
-      "path": "~/GUI/Hunter"
+      "path": "~/GUI/Hunter/Classes"
     },
     {
       "name": "HunterSkillGUITank",
@@ -3965,7 +3965,7 @@
           "src/main/java/net/clozynoii/slsb/client/gui/HunterSkillGUITankScreen.java"
         ]
       },
-      "path": "~/GUI/Hunter"
+      "path": "~/GUI/Hunter/Classes"
     },
     {
       "name": "HunterSkillGUIHealer",
@@ -3980,7 +3980,7 @@
           "src/main/java/net/clozynoii/slsb/world/inventory/HunterSkillGUIHealerMenu.java"
         ]
       },
-      "path": "~/GUI/Hunter"
+      "path": "~/GUI/Hunter/Classes"
     },
     {
       "name": "HunterSkillGUIRanger",
@@ -3995,7 +3995,7 @@
           "src/main/java/net/clozynoii/slsb/client/gui/HunterSkillGUIRangerScreen.java"
         ]
       },
-      "path": "~/GUI/Hunter"
+      "path": "~/GUI/Hunter/Classes"
     },
     {
       "name": "EssenceStoneE",
@@ -5871,6 +5871,2914 @@
         ]
       },
       "path": "~/Procedures/Abilities/Hunters/Hunter Rolls"
+    },
+    {
+      "name": "HunterSkillGUIMageBarrier",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hunter_skill_gui_mage_barrier",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/world/inventory/HunterSkillGUIMageBarrierMenu.java",
+          "src/main/java/net/clozynoii/slsb/network/HunterSkillGUIMageBarrierButtonMessage.java",
+          "src/main/java/net/clozynoii/slsb/client/gui/HunterSkillGUIMageBarrierScreen.java"
+        ]
+      },
+      "path": "~/GUI/Hunter/Classes/Mage"
+    },
+    {
+      "name": "HunterSkillGUIMageCurse",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hunter_skill_gui_mage_curse",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/client/gui/HunterSkillGUIMageCurseScreen.java",
+          "src/main/java/net/clozynoii/slsb/world/inventory/HunterSkillGUIMageCurseMenu.java",
+          "src/main/java/net/clozynoii/slsb/network/HunterSkillGUIMageCurseButtonMessage.java"
+        ]
+      },
+      "path": "~/GUI/Hunter/Classes/Mage"
+    },
+    {
+      "name": "HunterSkillGUIMageSpatial",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hunter_skill_gui_mage_spatial",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/client/gui/HunterSkillGUIMageSpatialScreen.java",
+          "src/main/java/net/clozynoii/slsb/network/HunterSkillGUIMageSpatialButtonMessage.java",
+          "src/main/java/net/clozynoii/slsb/world/inventory/HunterSkillGUIMageSpatialMenu.java"
+        ]
+      },
+      "path": "~/GUI/Hunter/Classes/Mage"
+    },
+    {
+      "name": "HunterSkillGUIMageSummon",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hunter_skill_gui_mage_summon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/client/gui/HunterSkillGUIMageSummonScreen.java",
+          "src/main/java/net/clozynoii/slsb/world/inventory/HunterSkillGUIMageSummonMenu.java",
+          "src/main/java/net/clozynoii/slsb/network/HunterSkillGUIMageSummonButtonMessage.java"
+        ]
+      },
+      "path": "~/GUI/Hunter/Classes/Mage"
+    },
+    {
+      "name": "HunterSkillGUIMageFire",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hunter_skill_gui_mage_fire",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/client/gui/HunterSkillGUIMageFireScreen.java",
+          "src/main/java/net/clozynoii/slsb/world/inventory/HunterSkillGUIMageFireMenu.java",
+          "src/main/java/net/clozynoii/slsb/network/HunterSkillGUIMageFireButtonMessage.java"
+        ]
+      },
+      "path": "~/GUI/Hunter/Classes/Mage"
+    },
+    {
+      "name": "HunterSkillGUIMageIce",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hunter_skill_gui_mage_ice",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/network/HunterSkillGUIMageIceButtonMessage.java",
+          "src/main/java/net/clozynoii/slsb/world/inventory/HunterSkillGUIMageIceMenu.java",
+          "src/main/java/net/clozynoii/slsb/client/gui/HunterSkillGUIMageIceScreen.java"
+        ]
+      },
+      "path": "~/GUI/Hunter/Classes/Mage"
+    },
+    {
+      "name": "HunterSkillGUIMageWater",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hunter_skill_gui_mage_water",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/network/HunterSkillGUIMageWaterButtonMessage.java",
+          "src/main/java/net/clozynoii/slsb/world/inventory/HunterSkillGUIMageWaterMenu.java",
+          "src/main/java/net/clozynoii/slsb/client/gui/HunterSkillGUIMageWaterScreen.java"
+        ]
+      },
+      "path": "~/GUI/Hunter/Classes/Mage"
+    },
+    {
+      "name": "HunterSkillGUIMageEarth",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hunter_skill_gui_mage_earth",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/client/gui/HunterSkillGUIMageEarthScreen.java",
+          "src/main/java/net/clozynoii/slsb/network/HunterSkillGUIMageEarthButtonMessage.java",
+          "src/main/java/net/clozynoii/slsb/world/inventory/HunterSkillGUIMageEarthMenu.java"
+        ]
+      },
+      "path": "~/GUI/Hunter/Classes/Mage"
+    },
+    {
+      "name": "HunterSkillGUIMageWind",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hunter_skill_gui_mage_wind",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/world/inventory/HunterSkillGUIMageWindMenu.java",
+          "src/main/java/net/clozynoii/slsb/client/gui/HunterSkillGUIMageWindScreen.java",
+          "src/main/java/net/clozynoii/slsb/network/HunterSkillGUIMageWindButtonMessage.java"
+        ]
+      },
+      "path": "~/GUI/Hunter/Classes/Mage"
+    },
+    {
+      "name": "HunterSkillGUIMageLightning",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hunter_skill_gui_mage_lightning",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/client/gui/HunterSkillGUIMageLightningScreen.java",
+          "src/main/java/net/clozynoii/slsb/world/inventory/HunterSkillGUIMageLightningMenu.java",
+          "src/main/java/net/clozynoii/slsb/network/HunterSkillGUIMageLightningButtonMessage.java"
+        ]
+      },
+      "path": "~/GUI/Hunter/Classes/Mage"
+    },
+    {
+      "name": "ReturnNoSkillEnergySlash",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_no_skill_energy_slash",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnNoSkillEnergySlashProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Fighter"
+    },
+    {
+      "name": "ReturnNoSkillSwordDance",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_no_skill_sword_dance",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnNoSkillSwordDanceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Fighter"
+    },
+    {
+      "name": "ReturnNoSkillQuake",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_no_skill_quake",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnNoSkillQuakeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Fighter"
+    },
+    {
+      "name": "ReturnNoSkillStormSlash",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_no_skill_storm_slash",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnNoSkillStormSlashProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Fighter"
+    },
+    {
+      "name": "ReturnNoSkillQuickCut",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_no_skill_quick_cut",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnNoSkillQuickCutProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Fighter"
+    },
+    {
+      "name": "ReturnNoSkillRazorStrike",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_no_skill_razor_strike",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnNoSkillRazorStrikeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Fighter"
+    },
+    {
+      "name": "ReturnNoSkillCleave",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_no_skill_cleave",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnNoSkillCleaveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Fighter"
+    },
+    {
+      "name": "ReturnNoSkillGuardBreaker",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_no_skill_guard_breaker",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnNoSkillGuardBreakerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Fighter"
+    },
+    {
+      "name": "ReturnNoSkillBrace",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_no_skill_brace",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnNoSkillBraceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Fighter"
+    },
+    {
+      "name": "ReturnHasSkillEnergySlash",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_has_skill_energy_slash",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnHasSkillEnergySlashProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Fighter"
+    },
+    {
+      "name": "ReturnHasSkillSwordDance",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_has_skill_sword_dance",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnHasSkillSwordDanceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Fighter"
+    },
+    {
+      "name": "ReturnHasSkillQuake",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_has_skill_quake",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnHasSkillQuakeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Fighter"
+    },
+    {
+      "name": "ReturnHasSkillStormSlash",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_has_skill_storm_slash",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnHasSkillStormSlashProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Fighter"
+    },
+    {
+      "name": "ReturnHasSkillQuickCut",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_has_skill_quick_cut",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnHasSkillQuickCutProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Fighter"
+    },
+    {
+      "name": "ReturnHasSkillRazorStrike",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_has_skill_razor_strike",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnHasSkillRazorStrikeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Fighter"
+    },
+    {
+      "name": "ReturnHasSkillCleave",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_has_skill_cleave",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnHasSkillCleaveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Fighter"
+    },
+    {
+      "name": "ReturnHasSkillGuardBreaker",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_has_skill_guard_breaker",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnHasSkillGuardBreakerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Fighter"
+    },
+    {
+      "name": "ReturnHasSkillBrace",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_has_skill_brace",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnHasSkillBraceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Fighter"
+    },
+    {
+      "name": "ReturnTextEnergySlash",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_text_energy_slash",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnTextEnergySlashProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Fighter"
+    },
+    {
+      "name": "ReturnTextSwordDance",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_text_sword_dance",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnTextSwordDanceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Fighter"
+    },
+    {
+      "name": "ReturnTextQuake",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_text_quake",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnTextQuakeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Fighter"
+    },
+    {
+      "name": "ReturnTextStormSlash",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_text_storm_slash",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnTextStormSlashProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Fighter"
+    },
+    {
+      "name": "ReturnTextQuickCut",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_text_quick_cut",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnTextQuickCutProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Fighter"
+    },
+    {
+      "name": "ReturnTextRazorStrike",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_text_razor_strike",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnTextRazorStrikeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Fighter"
+    },
+    {
+      "name": "ReturnTextCleave",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_text_cleave",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnTextCleaveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Fighter"
+    },
+    {
+      "name": "ReturnTextGuardBreaker",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_text_guard_breaker",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnTextGuardBreakerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Fighter"
+    },
+    {
+      "name": "ReturnTextBrace",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_text_brace",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnTextBraceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Fighter"
+    },
+    {
+      "name": "CMDRerollSkills",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmd_reroll_skills",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/CMDRerollSkillsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Commands"
+    },
+    {
+      "name": "CMDSetClassMageBarrier",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmd_set_class_mage_barrier",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/CMDSetClassMageBarrierProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Commands"
+    },
+    {
+      "name": "CMDSetClassMageCurse",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmd_set_class_mage_curse",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/CMDSetClassMageCurseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Commands"
+    },
+    {
+      "name": "CMDSetClassMageSpatial",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmd_set_class_mage_spatial",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/CMDSetClassMageSpatialProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Commands"
+    },
+    {
+      "name": "CMDSetClassMageSummon",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmd_set_class_mage_summon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/CMDSetClassMageSummonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Commands"
+    },
+    {
+      "name": "CMDSetClassMageFire",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmd_set_class_mage_fire",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/CMDSetClassMageFireProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Commands"
+    },
+    {
+      "name": "CMDSetClassMageIce",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmd_set_class_mage_ice",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/CMDSetClassMageIceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Commands"
+    },
+    {
+      "name": "CMDSetClassMageWater",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmd_set_class_mage_water",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/CMDSetClassMageWaterProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Commands"
+    },
+    {
+      "name": "CMDSetClassMageWind",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmd_set_class_mage_wind",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/CMDSetClassMageWindProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Commands"
+    },
+    {
+      "name": "CMDSetClassMageEarth",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmd_set_class_mage_earth",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/CMDSetClassMageEarthProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Commands"
+    },
+    {
+      "name": "CMDSetClassMageElectric",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmd_set_class_mage_electric",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/CMDSetClassMageElectricProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Commands"
+    },
+    {
+      "name": "CMDClearSkills",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmd_clear_skills",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/CMDClearSkillsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Commands"
+    },
+    {
+      "name": "SkillButtonEnergySlash",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_button_energy_slash",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SkillButtonEnergySlashProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Fighter"
+    },
+    {
+      "name": "SkillButtonSwordDance",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_button_sword_dance",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SkillButtonSwordDanceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Fighter"
+    },
+    {
+      "name": "SkillButtonQuake",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_button_quake",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SkillButtonQuakeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Fighter"
+    },
+    {
+      "name": "SkillButtonStormSlash",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_button_storm_slash",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SkillButtonStormSlashProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Fighter"
+    },
+    {
+      "name": "SkillButtonQuickCut",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_button_quick_cut",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SkillButtonQuickCutProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Fighter"
+    },
+    {
+      "name": "SkillButtonRazorStrike",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_button_razor_strike",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SkillButtonRazorStrikeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Fighter"
+    },
+    {
+      "name": "SkillButtonCleave",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_button_cleave",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SkillButtonCleaveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Fighter"
+    },
+    {
+      "name": "SkillButtonGuardBreaker",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_button_guard_breaker",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SkillButtonGuardBreakerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Fighter"
+    },
+    {
+      "name": "SkillButtonBrace",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_button_brace",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SkillButtonBraceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Fighter"
+    },
+    {
+      "name": "ReturnNoSkillStealth",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_no_skill_stealth",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnNoSkillStealthProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Assassin"
+    },
+    {
+      "name": "ReturnHasSkillStealth",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_has_skill_stealth",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnHasSkillStealthProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Assassin"
+    },
+    {
+      "name": "ReturnTextStealth",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_text_stealth",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnTextStealthProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Assassin"
+    },
+    {
+      "name": "SkillButtonStealth",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_button_stealth",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SkillButtonStealthProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Assassin"
+    },
+    {
+      "name": "ReturnNoSkillDaggerThrow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_no_skill_dagger_throw",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnNoSkillDaggerThrowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Assassin"
+    },
+    {
+      "name": "ReturnNoSkillCriticalStrike",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_no_skill_critical_strike",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnNoSkillCriticalStrikeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Assassin"
+    },
+    {
+      "name": "ReturnNoSkillSlaughterer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_no_skill_slaughterer",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnNoSkillSlaughtererProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Assassin"
+    },
+    {
+      "name": "ReturnNoSkillBackstab",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_no_skill_backstab",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnNoSkillBackstabProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Assassin"
+    },
+    {
+      "name": "ReturnNoSkillQuickReflex",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_no_skill_quick_reflex",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnNoSkillQuickReflexProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Assassin"
+    },
+    {
+      "name": "ReturnNoSkillWhirlCut",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_no_skill_whirl_cut",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnNoSkillWhirlCutProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Assassin"
+    },
+    {
+      "name": "ReturnNoSkillFlickerFang",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_no_skill_flicker_fang",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnNoSkillFlickerFangProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Assassin"
+    },
+    {
+      "name": "ReturnHasSkillDaggerThrow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_has_skill_dagger_throw",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnHasSkillDaggerThrowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Assassin"
+    },
+    {
+      "name": "ReturnHasSkillCriticalStrike",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_has_skill_critical_strike",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnHasSkillCriticalStrikeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Assassin"
+    },
+    {
+      "name": "ReturnHasSkillSlaughterer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_has_skill_slaughterer",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnHasSkillSlaughtererProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Assassin"
+    },
+    {
+      "name": "ReturnHasSkillBackstab",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_has_skill_backstab",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnHasSkillBackstabProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Assassin"
+    },
+    {
+      "name": "ReturnHasSkillQuickReflex",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_has_skill_quick_reflex",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnHasSkillQuickReflexProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Assassin"
+    },
+    {
+      "name": "ReturnHasSkillWhirlCut",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_has_skill_whirl_cut",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnHasSkillWhirlCutProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Assassin"
+    },
+    {
+      "name": "ReturnHasSkillFlickerFang",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_has_skill_flicker_fang",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnHasSkillFlickerFangProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Assassin"
+    },
+    {
+      "name": "ReturnTextDaggerThrow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_text_dagger_throw",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnTextDaggerThrowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Assassin"
+    },
+    {
+      "name": "ReturnTextCriticalStrike",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_text_critical_strike",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnTextCriticalStrikeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Assassin"
+    },
+    {
+      "name": "ReturnTextSlaughterer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_text_slaughterer",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnTextSlaughtererProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Assassin"
+    },
+    {
+      "name": "ReturnTextBackstab",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_text_backstab",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnTextBackstabProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Assassin"
+    },
+    {
+      "name": "ReturnTextQuickReflex",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_text_quick_reflex",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnTextQuickReflexProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Assassin"
+    },
+    {
+      "name": "ReturnTextWhirlCut",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_text_whirl_cut",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnTextWhirlCutProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Assassin"
+    },
+    {
+      "name": "ReturnTextFlickerFang",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_text_flicker_fang",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnTextFlickerFangProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Assassin"
+    },
+    {
+      "name": "SkillButtonDaggerThrow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_button_dagger_throw",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SkillButtonDaggerThrowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Assassin"
+    },
+    {
+      "name": "SkillButtonCriticalStrike",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_button_critical_strike",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SkillButtonCriticalStrikeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Assassin"
+    },
+    {
+      "name": "SkillButtonSlaughterer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_button_slaughterer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SkillButtonSlaughtererProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Assassin"
+    },
+    {
+      "name": "SkillButtonBackstab",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_button_backstab",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SkillButtonBackstabProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Assassin"
+    },
+    {
+      "name": "SkillButtonQuickReflex",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_button_quick_reflex",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SkillButtonQuickReflexProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Assassin"
+    },
+    {
+      "name": "SkillButtonWhirlCut",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_button_whirl_cut",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SkillButtonWhirlCutProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Assassin"
+    },
+    {
+      "name": "SkillButtonFlickerFang",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_button_flicker_fang",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SkillButtonFlickerFangProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Assassin"
+    },
+    {
+      "name": "ReturnNoSkillCollapse",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_no_skill_collapse",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnNoSkillCollapseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Tanker"
+    },
+    {
+      "name": "ReturnHasSkillCollapse",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_has_skill_collapse",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnHasSkillCollapseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Tanker"
+    },
+    {
+      "name": "ReturnTextCollapse",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_text_collapse",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnTextCollapseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Tanker"
+    },
+    {
+      "name": "SkillButtonCollapse",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_button_collapse",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SkillButtonCollapseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Tanker"
+    },
+    {
+      "name": "ReturnNoSkillPowerSmash",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_no_skill_power_smash",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnNoSkillPowerSmashProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Tanker"
+    },
+    {
+      "name": "ReturnNoSkillTaunt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_no_skill_taunt",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnNoSkillTauntProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Tanker"
+    },
+    {
+      "name": "ReturnNoSkillManaShield",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_no_skill_mana_shield",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnNoSkillManaShieldProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Tanker"
+    },
+    {
+      "name": "ReturnNoSkillStrengthening",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_no_skill_strengthening",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnNoSkillStrengtheningProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Tanker"
+    },
+    {
+      "name": "ReturnNoSkillCharge",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_no_skill_charge",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnNoSkillChargeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Tanker"
+    },
+    {
+      "name": "ReturnNoSkillStride",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_no_skill_stride",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnNoSkillStrideProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Tanker"
+    },
+    {
+      "name": "ReturnNoSkillUnyieldingRoar",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_no_skill_unyielding_roar",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnNoSkillUnyieldingRoarProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Tanker"
+    },
+    {
+      "name": "ReturnNoSkillIronGrasp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_no_skill_iron_grasp",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnNoSkillIronGraspProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Tanker"
+    },
+    {
+      "name": "ReturnHasSkillPowerSmash",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_has_skill_power_smash",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnHasSkillPowerSmashProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Tanker"
+    },
+    {
+      "name": "ReturnHasSkillTaunt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_has_skill_taunt",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnHasSkillTauntProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Tanker"
+    },
+    {
+      "name": "ReturnHasSkillManaShield",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_has_skill_mana_shield",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnHasSkillManaShieldProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Tanker"
+    },
+    {
+      "name": "ReturnHasSkillCharge",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_has_skill_charge",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnHasSkillChargeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Tanker"
+    },
+    {
+      "name": "ReturnHasSkillStrengthening",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_has_skill_strengthening",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnHasSkillStrengtheningProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Tanker"
+    },
+    {
+      "name": "ReturnHasSkillStride",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_has_skill_stride",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnHasSkillStrideProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Tanker"
+    },
+    {
+      "name": "ReturnHasSkillUnyieldingRoar",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_has_skill_unyielding_roar",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnHasSkillUnyieldingRoarProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Tanker"
+    },
+    {
+      "name": "ReturnHasSkillIronGrasp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_has_skill_iron_grasp",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnHasSkillIronGraspProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Tanker"
+    },
+    {
+      "name": "ReturnTextPowerSmash",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_text_power_smash",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnTextPowerSmashProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Tanker"
+    },
+    {
+      "name": "ReturnTextTaunt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_text_taunt",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnTextTauntProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Tanker"
+    },
+    {
+      "name": "ReturnTextManaShield",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_text_mana_shield",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnTextManaShieldProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Tanker"
+    },
+    {
+      "name": "ReturnTextStrengthening",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_text_strengthening",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnTextStrengtheningProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Tanker"
+    },
+    {
+      "name": "ReturnTextCharge",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_text_charge",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnTextChargeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Tanker"
+    },
+    {
+      "name": "ReturnTextStride",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_text_stride",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnTextStrideProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Tanker"
+    },
+    {
+      "name": "ReturnTextUnyieldingRoar",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_text_unyielding_roar",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnTextUnyieldingRoarProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Tanker"
+    },
+    {
+      "name": "ReturnTextIronGrasp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_text_iron_grasp",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ReturnTextIronGraspProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Tanker"
+    },
+    {
+      "name": "SkillButtonPowerSmash",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_button_power_smash",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SkillButtonPowerSmashProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Tanker"
+    },
+    {
+      "name": "SkillButtonTaunt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_button_taunt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SkillButtonTauntProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Tanker"
+    },
+    {
+      "name": "SkillButtonManaShield",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_button_mana_shield",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SkillButtonManaShieldProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Tanker"
+    },
+    {
+      "name": "SkillButtonStrengthening",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_button_strengthening",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SkillButtonStrengtheningProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Tanker"
+    },
+    {
+      "name": "SkillButtonCharge",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_button_charge",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SkillButtonChargeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Tanker"
+    },
+    {
+      "name": "SkillButtonStride",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_button_stride",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SkillButtonStrideProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Tanker"
+    },
+    {
+      "name": "SkillButtonUnyieldingRoar",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_button_unyielding_roar",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SkillButtonUnyieldingRoarProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Tanker"
+    },
+    {
+      "name": "SkillButtonIronGrasp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_button_iron_grasp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/SkillButtonIronGraspProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GUI/Skills/Tanker"
     }
   ],
   "variable_elements": [
@@ -6338,16 +9246,22 @@
     "en_us": {
       "slsb.evaluator.normalrank.rank": "-Rank!",
       "block.slsb.blue_gate_medium": "Gate (Medium)",
+      "slsb.skill.assassin.daggerthrow": "Dagger Throw",
+      "slsb.skill.tanker.powersmash": "Power Smash",
       "gui.slsb.system_shop_weapons.tooltip_drank_weapon": "D-Rank Weapon",
       "gui.slsb.hunter_skill_gui_fighter.tooltip_slot_10": "Slot 10",
       "gui.slsb.system_shop_armor_3.tooltip_ranger": "Ranger",
       "gui.slsb.system_shop_armor.button_ssfsslx": "§f§lX",
+      "gui.slsb.hunter_skill_gui_mage_curse.tooltip_slot_10": "Slot 10",
+      "gui.slsb.hunter_skill_gui_mage_summon.tooltip_slot_10": "Slot 10",
       "slsb.ability.cooldown": "Ability is on Cooldown!",
       "item.slsb.med_heal_potion.description_2": "§aHP +25",
       "item.slsb.med_heal_potion.description_1": "",
       "item.slsb.med_heal_potion.description_0": "§7Category: §fPotion",
       "gui.slsb.system_shop_armor_2.tooltip_ranger": "Ranger",
+      "slsb.skill.assassin.slaughterer": "Slaughterer",
       "key.slsb.main_menu": "Main Menu",
+      "slsb.skill.tanker.taunt": "Taunt",
       "key.slsb.ability_4": "Ability 4",
       "key.slsb.ability_5": "Ability 5",
       "block.slsb.brown_panel": "Brown Panel",
@@ -6360,6 +9274,7 @@
       "gui.slsb.system_shop_armor_2.label_25m2": "2.5M",
       "gui.slsb.system_shop_armor_2.label_25m3": "2.5M",
       "gui.slsb.system_shop_armor_2.label_25m4": "2.5M",
+      "slsb.skill.unknown": "Unknown",
       "gui.slsb.system_shop_armor_2.label_25m5": "2.5M",
       "gui.slsb.system_shop_weapons.label_10k1": "10K",
       "gui.slsb.system_shop_armor_2.label_25m6": "2.5M",
@@ -6371,8 +9286,8 @@
       "gui.slsb.system_shop_armor_2.label_25m7": "2.5M",
       "item.slsb.low_heal_potion.description_0": "§7Category: §fPotion",
       "gui.slsb.system_shop_armor_2.label_500k6": "500K",
-      "gui.slsb.system_shop_armor_2.label_500k7": "500K",
       "gui.slsb.hunter_skill_gui.tooltip_barrage": "Barrage",
+      "gui.slsb.system_shop_armor_2.label_500k7": "500K",
       "gui.slsb.system_shop_armor_2.label_500k1": "500K",
       "gui.slsb.system_shop_armor_2.label_500k2": "500K",
       "item.slsb.low_heal_potion.description_2": "§aHP +10",
@@ -6386,34 +9301,57 @@
       "entity.slsb.bloodred_igris": "Blood-Red Commander Igris",
       "gui.slsb.system_shop_weapons.label_10k": "10K",
       "slsb.huntermenu.basicskills": "Basic Skills",
-      "item.slsb.high_heal_potion.description_0": "§7Category: §fPotion",
+      "gui.slsb.hunter_skill_gui_mage_spatial.tooltip_slot_1": "Slot 1",
+      "gui.slsb.hunter_skill_gui_mage_spatial.tooltip_slot_3": "Slot 3",
+      "slsb.skill.fighter.quake": "Provoking Quake",
+      "gui.slsb.hunter_skill_gui_mage_spatial.tooltip_slot_2": "Slot 2",
       "key.slsb.change_ability_bar": "Change Ability Bar",
+      "item.slsb.high_heal_potion.description_0": "§7Category: §fPotion",
       "gui.slsb.hunter_skill_gui.tooltip_slot_10": "Slot 10",
       "gui.slsb.system_shop_weapons.label_10m1": "10M",
+      "gui.slsb.hunter_skill_gui_mage_spatial.tooltip_slot_9": "Slot 9",
       "block.slsb.vitality_training_mat": "Training Mat",
+      "gui.slsb.hunter_skill_gui_mage_spatial.tooltip_slot_8": "Slot 8",
       "slsb.evaluator.unawakened": "It appears you haven\u0027t awakened yet...",
       "item.slsb.bloodred_igris_spawn_egg": "Blood-Red Commander Igris Spawn Egg",
       "item.slsb.high_heal_potion.description_1": "",
-      "item.slsb.high_heal_potion.description_2": "§aHP +50",
+      "gui.slsb.hunter_skill_gui_mage_spatial.tooltip_slot_5": "Slot 5",
+      "gui.slsb.hunter_skill_gui_mage_spatial.tooltip_slot_4": "Slot 4",
       "slsb.weapontrigger.kasaka": "Debuff: \"Paralysis\" and \"Bleed\" triggered.",
+      "item.slsb.high_heal_potion.description_2": "§aHP +50",
+      "gui.slsb.hunter_skill_gui_mage_spatial.tooltip_slot_7": "Slot 7",
+      "gui.slsb.hunter_skill_gui_mage_spatial.tooltip_slot_6": "Slot 6",
       "gui.slsb.system_shop_armor_3.tooltip_fighter": "Fighter",
       "gui.slsb.system_shop_weapons.tooltip_srank_dagger": "S-Rank Dagger",
       "gui.slsb.system_shop_weapons.label_25m": "2.5M",
       "item_group.slsb.sl_blocks": "Solo Leveling: Blocks",
+      "slsb.skill.assassin.quickreflex": "Quick Reflex",
       "item_group.slsb.sl_items": "Solo Leveling: Items",
+      "gui.slsb.hunter_skill_gui_mage_water.tooltip_slot_10": "Slot 10",
       "gui.slsb.hunter_skill_gui_ranger.tooltip_slot_10": "Slot 10",
+      "gui.slsb.hunter_skill_gui_mage_curse.tooltip_slot_4": "Slot 4",
+      "gui.slsb.hunter_skill_gui_mage_curse.tooltip_slot_5": "Slot 5",
+      "gui.slsb.hunter_skill_gui_mage_curse.tooltip_slot_2": "Slot 2",
+      "gui.slsb.hunter_skill_gui_mage_curse.tooltip_slot_3": "Slot 3",
+      "gui.slsb.hunter_skill_gui_mage_curse.tooltip_slot_8": "Slot 8",
+      "gui.slsb.hunter_skill_gui_mage_curse.tooltip_slot_9": "Slot 9",
+      "gui.slsb.hunter_skill_gui_mage_curse.tooltip_slot_6": "Slot 6",
+      "gui.slsb.hunter_skill_gui_mage_curse.tooltip_slot_7": "Slot 7",
       "gui.slsb.system_shop_armor_2.tooltip_brank_chestplate": "B-Rank Chestplate",
+      "slsb.skill.tanker.unyieldingroar": "Unyielding Roar",
+      "gui.slsb.hunter_skill_gui_mage_curse.tooltip_slot_1": "Slot 1",
       "gui.slsb.system_shop_potions.button_ssfsslx": "§f§lX",
+      "gui.slsb.hunter_skill_gui_mage_barrier.tooltip_slot_10": "Slot 10",
       "gui.slsb.system_shop_armor_3.tooltip_assassin": "Assassin",
       "gui.slsb.system_shop_armor_3.label_10m5": "10M",
       "gui.slsb.system_shop_gui.button_ssfsslweaps": "§f§lWeaps",
       "gui.slsb.system_shop_armor_3.label_10m4": "10M",
       "gui.slsb.system_shop_weapons.tooltip_healer": "Healer",
       "gui.slsb.system_shop_armor_3.label_10m7": "10M",
-      "gui.slsb.system_shop_weapons.tooltip_arank_weapon": "A-Rank Weapon",
-      "item.slsb.true_kasakas_fang": "§bTruth: Kasaka\u0027s Venom Fang",
-      "gui.slsb.system_shop_armor_3.label_10m6": "10M",
       "item.slsb.red_knights_armor_chestplate": "§cCrimson Knight\u0027s Chestplate",
+      "gui.slsb.system_shop_armor_3.label_10m6": "10M",
+      "item.slsb.true_kasakas_fang": "§bTruth: Kasaka\u0027s Venom Fang",
+      "gui.slsb.system_shop_weapons.tooltip_arank_weapon": "A-Rank Weapon",
       "slsb.command.systemplayertarget": "Your Player status has been set to",
       "item.slsb.red_knights_armor_helmet": "§cCrimson Knight\u0027s Helmet",
       "gui.slsb.system_shop_armor_3.label_10m1": "10M",
@@ -6421,16 +9359,25 @@
       "gui.slsb.system_shop_armor_2.button_ssfsslx": "§f§lX",
       "item.slsb.red_knights_armor_boots": "§cCrimson Knight\u0027s Boots",
       "gui.slsb.system_shop_armor_3.label_10m2": "10M",
+      "slsb.skill.assassin.whirlcut": "Whirl Cut",
       "gui.slsb.system_shop_armor_3.tooltip_tanker": "Tanker",
       "gui.slsb.system_shop_gui.button_ssfsslsell": "§f§lSell",
       "item.slsb.mana_stone_pickaxe": "Mana-Stone Pickaxe",
       "slsb.evaluator.normalrank.goodbye": "Good luck, and stay safe out there, Hunter!",
       "effect.slsb.paralysis": "Paralysis",
+      "gui.slsb.hunter_skill_gui_mage_ice.tooltip_slot_9": "Slot 9",
+      "gui.slsb.hunter_skill_gui_mage_ice.tooltip_slot_7": "Slot 7",
+      "gui.slsb.hunter_skill_gui_mage_ice.tooltip_slot_8": "Slot 8",
+      "gui.slsb.hunter_skill_gui_mage_ice.tooltip_slot_5": "Slot 5",
+      "gui.slsb.hunter_skill_gui_mage_ice.tooltip_slot_6": "Slot 6",
+      "gui.slsb.hunter_skill_gui_mage_ice.tooltip_slot_3": "Slot 3",
+      "gui.slsb.hunter_skill_gui_mage_ice.tooltip_slot_4": "Slot 4",
       "slsb.item.notowner": "This does not belong to you",
       "gui.slsb.system_shop_potions.label_5k": "5K",
       "gui.slsb.system_shop_potions.label_10k": "10K",
       "block.slsb.blood_block": "Blood Block",
       "block.slsb.vitality_training_mat.description_0": "§7Used by Hunters to",
+      "slsb.skill.fighter.stormslash": "Storm Slash",
       "block.slsb.vitality_training_mat.description_1": "§7train their Vitality",
       "gui.slsb.system_shop_armor_3.tooltip_srank_chestplate": "S-Rank Chestplate",
       "gui.slsb.system_shop_armor.tooltip_healer": "Healer",
@@ -6440,6 +9387,7 @@
       "gui.slsb.hunter_skill_gui.tooltip_slot_3": "Slot 3",
       "gui.slsb.hunter_skill_gui.tooltip_slot_1": "Slot 1",
       "gui.slsb.hunter_skill_gui.tooltip_slot_6": "Slot 6",
+      "slsb.command.skillclearadmin": "Skills have been cleared",
       "gui.slsb.hunter_skill_gui.tooltip_slot_7": "Slot 7",
       "gui.slsb.system_shop_armor_2.tooltip_crank_chestplate": "C-Rank Chestplate",
       "gui.slsb.hunter_skill_gui.tooltip_slot_4": "Slot 4",
@@ -6460,10 +9408,12 @@
       "gui.slsb.system_shop_armor.tooltip_ranger": "Ranger",
       "gui.slsb.system_shop_armor.label_10k2": "10K",
       "gui.slsb.system_shop_armor.label_10k3": "10K",
+      "gui.slsb.hunter_skill_gui_mage_ice.tooltip_slot_10": "Slot 10",
       "gui.slsb.system_shop_armor.label_10k1": "10K",
       "effect.slsb.bleeding": "Bleeding",
       "gui.slsb.system_shop_armor_2.tooltip_crank_helmet": "C-Rank Helmet",
       "gui.slsb.system_shop_weapons.label_25m1": "2.5M",
+      "gui.slsb.hunter_skill_gui_mage_lightning.tooltip_slot_1": "Slot 1",
       "gui.slsb.system_shop_armor_3.label_10m": "10M",
       "item.slsb.red_knights_armor_helmet.description_0": "§7Acquisition Difficulty: §fS-Rank",
       "item.slsb.red_knights_armor_helmet.description_1": "§7Category: §fGear",
@@ -6472,18 +9422,30 @@
       "slsb.command.awakentarget": "You have been awakened",
       "item.slsb.red_knights_armor_helmet.description_2": "",
       "item.slsb.red_knights_armor_helmet.description_3": "§aPhysical Damage -20%",
+      "slsb.skill.fighter.cleave": "Cleave",
       "slsb.command.unawakenadmin": "has been un-awakened",
+      "gui.slsb.hunter_skill_gui_mage_lightning.tooltip_slot_9": "Slot 9",
       "block.slsb.brown_trimmed_panel": "Brown Trimmed Panel",
+      "gui.slsb.hunter_skill_gui_mage_lightning.tooltip_slot_8": "Slot 8",
       "gui.slsb.system_shop_armor.tooltip_fighter": "Fighter",
+      "gui.slsb.hunter_skill_gui_mage_lightning.tooltip_slot_7": "Slot 7",
+      "gui.slsb.hunter_skill_gui_mage_lightning.tooltip_slot_6": "Slot 6",
+      "gui.slsb.hunter_skill_gui_mage_lightning.tooltip_slot_5": "Slot 5",
+      "gui.slsb.hunter_skill_gui_mage_lightning.tooltip_slot_4": "Slot 4",
       "gui.slsb.system_shop_armor.tooltip_erank_helmet": "E-Rank Helmet",
+      "gui.slsb.hunter_skill_gui_mage_lightning.tooltip_slot_3": "Slot 3",
+      "gui.slsb.hunter_skill_gui_mage_lightning.tooltip_slot_2": "Slot 2",
       "gui.slsb.system_shop_gui.tooltip_sell_crystalsstones": "Sell Crystals/Stones",
       "slsb.systemmenu.shop": "Shop",
       "gui.slsb.system_shop_weapons.tooltip_crank_dagger": "C-Rank Dagger",
+      "gui.slsb.hunter_skill_gui_mage_spatial.tooltip_slot_10": "Slot 10",
       "gui.slsb.hunter_skill_gui_assassin.tooltip_slot_10": "Slot 10",
       "effect.slsb.muscle_fatigue": "Muscle Fatigue",
       "gui.slsb.system_shop_weapons.label_100k1": "100K",
       "gui.slsb.system_shop_armor.tooltip_erank_boots": "E-Rank Boots",
       "gui.slsb.system_shop_potions.label_1k": "1K",
+      "slsb.skill.tanker.irongrasp": "Iron Grasp",
+      "gui.slsb.hunter_skill_gui_mage_earth.tooltip_slot_10": "Slot 10",
       "item.slsb.kasakas_fang": "§eKasaka\u0027s Venom Fang",
       "gui.slsb.system_shop_weapons.button_ssfsslx": "§f§lX",
       "item.slsb.med_heal_potion": "Medium Healing Potion",
@@ -6507,12 +9469,24 @@
       "gui.slsb.hunter_skill_gui_healer.tooltip_slot_3": "Slot 3",
       "gui.slsb.hunter_skill_gui_healer.tooltip_slot_1": "Slot 1",
       "gui.slsb.hunter_skill_gui_ranger.tooltip_slot_1": "Slot 1",
+      "slsb.skill.fighter.quickcut": "Quick Cut",
       "gui.slsb.system_shop_armor.tooltip_drank_leggings": "D-Rank Leggings",
       "gui.slsb.system_shop_weapons.tooltip_srank_weapon": "S-Rank Weapon",
+      "slsb.command.skillcleartarget": "Your Skills have been cleared",
       "slsb.command.setclassadmin": "Class has been set to",
       "gui.slsb.hunter_skill_gui.tooltip_heavy_attack": "Heavy Attack",
+      "gui.slsb.hunter_skill_gui_mage_fire.tooltip_slot_3": "Slot 3",
+      "gui.slsb.hunter_skill_gui_mage_fire.tooltip_slot_2": "Slot 2",
+      "slsb.skill.assassin.backstab": "Backstab",
+      "gui.slsb.hunter_skill_gui_mage_fire.tooltip_slot_1": "Slot 1",
       "item_group.slsb.sl_gear": "Solo Leveling: Gear",
       "gui.slsb.system_shop_weapons.label_5m": "5M",
+      "gui.slsb.hunter_skill_gui_mage_fire.tooltip_slot_9": "Slot 9",
+      "gui.slsb.hunter_skill_gui_mage_fire.tooltip_slot_8": "Slot 8",
+      "gui.slsb.hunter_skill_gui_mage_fire.tooltip_slot_7": "Slot 7",
+      "gui.slsb.hunter_skill_gui_mage_fire.tooltip_slot_6": "Slot 6",
+      "gui.slsb.hunter_skill_gui_mage_fire.tooltip_slot_5": "Slot 5",
+      "gui.slsb.hunter_skill_gui_mage_fire.tooltip_slot_4": "Slot 4",
       "gui.slsb.hunter_skill_gui_fighter.tooltip_slot_2": "Slot 2",
       "gui.slsb.hunter_skill_gui_fighter.tooltip_slot_3": "Slot 3",
       "gui.slsb.hunter_skill_gui_fighter.tooltip_slot_4": "Slot 4",
@@ -6523,9 +9497,11 @@
       "gui.slsb.system_shop_weapons.tooltip_drank_dagger": "D-Rank Dagger",
       "item.slsb.true_kasakas_fang.description_0": "§7Acquisition Difficulty: §fS-Rank",
       "block.slsb.mana_crystal_ore": "Mana Crystal Ore",
+      "slsb.skill.fighter.guardbreaker": "Guard Breaker",
       "gui.slsb.system_shop_weapons.tooltip_fighter": "Fighter",
       "gui.slsb.system_shop_armor.tooltip_back": "Back",
       "gui.slsb.hunter_skill_gui_fighter.tooltip_slot_6": "Slot 6",
+      "gui.slsb.hunter_skill_gui_mage_fire.tooltip_slot_10": "Slot 10",
       "gui.slsb.hunter_skill_gui_fighter.tooltip_slot_7": "Slot 7",
       "gui.slsb.hunter_skill_gui_fighter.tooltip_slot_8": "Slot 8",
       "gui.slsb.system_shop_armor_2.tooltip_crank_leggings": "C-Rank Leggings",
@@ -6550,10 +9526,23 @@
       "gui.slsb.system_shop_armor_2.tooltip_fighter": "Fighter",
       "gui.slsb.system_shop_armor_3.tooltip_arank_chestplate": "A-Rank Chestplate",
       "slsb.training.musclefatigue": "Your muscles are currently fatigued",
+      "gui.slsb.hunter_skill_gui_mage_wind.tooltip_slot_8": "Slot 8",
+      "slsb.command.reroll": "Skills have been rerolled",
+      "gui.slsb.hunter_skill_gui_mage_wind.tooltip_slot_9": "Slot 9",
+      "gui.slsb.hunter_skill_gui_mage_wind.tooltip_slot_6": "Slot 6",
+      "gui.slsb.hunter_skill_gui_mage_wind.tooltip_slot_7": "Slot 7",
       "subtitles.whoosh": "Player whooshes",
+      "gui.slsb.hunter_skill_gui_mage_wind.tooltip_slot_4": "Slot 4",
+      "slsb.skill.fighter.razorstrike": "Razor Strike",
+      "gui.slsb.hunter_skill_gui_mage_wind.tooltip_slot_5": "Slot 5",
+      "gui.slsb.hunter_skill_gui_mage_wind.tooltip_slot_2": "Slot 2",
+      "gui.slsb.hunter_skill_gui_mage_wind.tooltip_slot_3": "Slot 3",
       "block.slsb.barrier_wall": "§dBarrier Wall",
+      "gui.slsb.hunter_skill_gui_mage_wind.tooltip_slot_1": "Slot 1",
       "gui.slsb.hunter_skill_gui.tooltip_dash": "Dash",
+      "slsb.skill.fighter.sworddance": "Sword Dance",
       "item.slsb.red_knights_armor_leggings": "§cCrimson Knight\u0027s Leggings",
+      "slsb.skill.fighter.brace": "Brace",
       "slsb.training.manafatigue": "Your mana is currently fatigued",
       "item.slsb.red_knights_armor_boots.description_5": "§aSTR +20",
       "item.slsb.red_knights_armor_boots.description_4": "§aVIT +20",
@@ -6585,6 +9574,9 @@
       "gui.slsb.system_shop_armor.tooltip_drank_helmet": "D-Rank Helmet",
       "gui.slsb.system_shop_gui.tooltip_potions": "Potions",
       "item.slsb.med_mana_potion": "Medium Mana Potion",
+      "slsb.skill.assassin.stealth": "Stealth",
+      "gui.slsb.hunter_skill_gui_mage_ice.tooltip_slot_1": "Slot 1",
+      "gui.slsb.hunter_skill_gui_mage_ice.tooltip_slot_2": "Slot 2",
       "gui.slsb.system_shop_weapons.label_500k": "500K",
       "slsb.command.unawakentarget": "You have been un-awakened",
       "gui.slsb.system_shop_potions.label_10k3": "10K",
@@ -6593,6 +9585,7 @@
       "gui.slsb.system_shop_potions.tooltip_low_heal": "Low Heal",
       "gui.slsb.system_shop_potions.label_10k1": "10K",
       "block.slsb.tan_trimmed_panel_wall": "Tan Trimmed Panel Wall",
+      "slsb.skill.assassin.criticalstrike": "Critical Strike",
       "gui.slsb.system_shop_weapons.tooltip_erank_weapon": "E-Rank Weapon",
       "block.slsb.agility_treadmill": "Treadmill",
       "item.slsb.true_kasakas_fang.description_1": "§7Category: §fDagger",
@@ -6615,6 +9608,7 @@
       "gui.slsb.system_shop_armor.tooltip_erank_chestplate": "E-Rank Chestplate",
       "item.slsb.essence_stone_s": "§dEssence Stone (S-Rank)",
       "gui.slsb.hunter_skill_gui_tank.tooltip_slot_10": "Slot 10",
+      "slsb.skill.tanker.manashield": "Mana Shield",
       "item.slsb.essence_stone_d": "§eEssence Stone (D-Rank)",
       "gui.slsb.system_shop_weapons.tooltip_crank_weapon": "C-Rank Weapon",
       "item.slsb.essence_stone_e": "Essence Stone (E-Rank)",
@@ -6623,6 +9617,7 @@
       "slsb.evaluator.evaluated": "You have already been evaluated!",
       "gui.slsb.hunter_skill_gui_tank.tooltip_slot_8": "Slot 8",
       "slsb.command.setclasstarget": "Your Class has been set to",
+      "slsb.skill.assassin.flickerfang": "Flicker Fang",
       "gui.slsb.hunter_skill_gui_tank.tooltip_slot_1": "Slot 1",
       "gui.slsb.system_shop_armor.label_100k2": "100K",
       "gui.slsb.hunter_skill_gui_tank.tooltip_slot_2": "Slot 2",
@@ -6640,21 +9635,40 @@
       "gui.slsb.system_shop_armor.label_100k4": "100K",
       "gui.slsb.hunter_skill_gui_tank.tooltip_slot_3": "Slot 3",
       "item.slsb.red_knights_armor_leggings.description_3": "§aPhysical Damage -20%",
+      "slsb.skill.fighter.energyslash": "Energy Slash",
       "gui.slsb.system_shop_armor.label_100k5": "100K",
       "gui.slsb.hunter_skill_gui_tank.tooltip_slot_4": "Slot 4",
       "item.slsb.red_knights_armor_leggings.description_4": "§aVIT +20",
       "gui.slsb.system_shop_weapons.tooltip_arank_dagger": "A-Rank Dagger",
       "slsb.command.setrankadmin": "Rank has been set to",
+      "gui.slsb.hunter_skill_gui_mage_barrier.tooltip_slot_9": "Slot 9",
+      "gui.slsb.hunter_skill_gui_mage_barrier.tooltip_slot_7": "Slot 7",
+      "gui.slsb.hunter_skill_gui_mage_barrier.tooltip_slot_8": "Slot 8",
+      "gui.slsb.hunter_skill_gui_mage_summon.tooltip_slot_7": "Slot 7",
+      "gui.slsb.hunter_skill_gui_mage_summon.tooltip_slot_8": "Slot 8",
+      "gui.slsb.hunter_skill_gui_mage_summon.tooltip_slot_9": "Slot 9",
+      "gui.slsb.hunter_skill_gui_mage_barrier.tooltip_slot_1": "Slot 1",
+      "gui.slsb.hunter_skill_gui_mage_barrier.tooltip_slot_2": "Slot 2",
+      "gui.slsb.hunter_skill_gui_mage_barrier.tooltip_slot_5": "Slot 5",
       "block.slsb.tan_panel_wall": "Tan Panel Wall",
+      "gui.slsb.hunter_skill_gui_mage_barrier.tooltip_slot_6": "Slot 6",
+      "gui.slsb.hunter_skill_gui_mage_barrier.tooltip_slot_3": "Slot 3",
       "block.slsb.strength_training_dumbells.description_1": "§7train their Strength",
+      "gui.slsb.hunter_skill_gui_mage_barrier.tooltip_slot_4": "Slot 4",
       "item.slsb.red_knights_armor_leggings.description_5": "§aSTR +20",
       "gui.slsb.system_shop_potions.tooltip_high_heal": "High Heal",
       "gui.slsb.system_shop_potions.label_5k2": "5K",
       "block.slsb.tan_panel": "Brown Panel",
       "gui.slsb.system_shop_potions.label_5k1": "5K",
       "gui.slsb.hunter_skill_gui.tooltip_slam": "Slam",
+      "gui.slsb.hunter_skill_gui_mage_summon.tooltip_slot_3": "Slot 3",
       "gui.slsb.hunter_skill_gui.tooltip_uppercut": "Uppercut",
       "gui.slsb.system_shop_potions.label_5k3": "5K",
+      "gui.slsb.hunter_skill_gui_mage_summon.tooltip_slot_4": "Slot 4",
+      "gui.slsb.hunter_skill_gui_mage_summon.tooltip_slot_5": "Slot 5",
+      "gui.slsb.hunter_skill_gui_mage_summon.tooltip_slot_6": "Slot 6",
+      "gui.slsb.hunter_skill_gui_mage_summon.tooltip_slot_1": "Slot 1",
+      "gui.slsb.hunter_skill_gui_mage_summon.tooltip_slot_2": "Slot 2",
       "slsb.training.nomana": "You do not have enough mana to train",
       "item.slsb.red_knights_armor_chestplate.description_2": "",
       "item.slsb.red_knights_armor_chestplate.description_3": "§aPhysical Damage -20%",
@@ -6679,21 +9693,43 @@
       "item.slsb.low_mana_potion.description_2": "§bMP +500",
       "slsb.evaluator.waiting": "Let\u0027s see what your rank is...",
       "gui.slsb.system_shop_weapons.label_500k1": "500K",
+      "gui.slsb.hunter_skill_gui_mage_water.tooltip_slot_2": "Slot 2",
+      "gui.slsb.hunter_skill_gui_mage_water.tooltip_slot_1": "Slot 1",
+      "gui.slsb.hunter_skill_gui_mage_water.tooltip_slot_4": "Slot 4",
+      "gui.slsb.hunter_skill_gui_mage_water.tooltip_slot_3": "Slot 3",
+      "gui.slsb.hunter_skill_gui_mage_water.tooltip_slot_6": "Slot 6",
+      "gui.slsb.hunter_skill_gui_mage_water.tooltip_slot_5": "Slot 5",
       "gui.slsb.system_shop_armor_3.tooltip_srank_boots": "S-Rank Boots",
+      "gui.slsb.hunter_skill_gui_mage_water.tooltip_slot_8": "Slot 8",
       "effect.slsb.paralyzed": "Paralyzed",
+      "gui.slsb.hunter_skill_gui_mage_water.tooltip_slot_7": "Slot 7",
+      "gui.slsb.hunter_skill_gui_mage_water.tooltip_slot_9": "Slot 9",
       "gui.slsb.system_shop_gui.button_ssfsslarmor": "§f§lArmor",
       "gui.slsb.system_shop_armor_3.button_ssfsslx": "§f§lX",
       "block.slsb.agility_treadmill.description_1": "§7train their Agility",
       "block.slsb.agility_treadmill.description_0": "§7Used by Hunters to",
       "gui.slsb.system_shop_armor_2.tooltip_assassin": "Assassin",
+      "gui.slsb.hunter_skill_gui_mage_earth.tooltip_slot_1": "Slot 1",
       "gui.slsb.system_shop_armor.tooltip_mage": "Mage",
+      "slsb.skill.tanker.charge": "Charge",
       "gui.slsb.system_shop_armor.label_100k": "100K",
       "gui.slsb.system_shop_armor.tooltip_assassin": "Assassin",
       "block.slsb.mana_training_orb": "Mana Orb",
+      "gui.slsb.hunter_skill_gui_mage_lightning.tooltip_slot_10": "Slot 10",
       "gui.slsb.system_shop_armor_2.label_500k": "500K",
       "slsb.systemmenu.skills": "Skills",
       "item.slsb.items_tab": "Items Tab",
       "gui.slsb.system_shop_potions.tooltip_med_mana": "Med. Mana",
+      "gui.slsb.hunter_skill_gui_mage_earth.tooltip_slot_8": "Slot 8",
+      "gui.slsb.hunter_skill_gui_mage_earth.tooltip_slot_9": "Slot 9",
+      "gui.slsb.hunter_skill_gui_mage_earth.tooltip_slot_6": "Slot 6",
+      "gui.slsb.hunter_skill_gui_mage_earth.tooltip_slot_7": "Slot 7",
+      "gui.slsb.hunter_skill_gui_mage_earth.tooltip_slot_4": "Slot 4",
+      "gui.slsb.hunter_skill_gui_mage_earth.tooltip_slot_5": "Slot 5",
+      "gui.slsb.hunter_skill_gui_mage_earth.tooltip_slot_2": "Slot 2",
+      "gui.slsb.hunter_skill_gui_mage_earth.tooltip_slot_3": "Slot 3",
+      "slsb.skill.tanker.strengthening": "Strengthening",
+      "slsb.skill.tanker.stride": "Stride",
       "gui.slsb.system_shop_armor_3.tooltip_srank_helmet": "S-Rank Helmet",
       "gui.slsb.hunter_skill_gui_assassin.tooltip_slot_1": "Slot 1",
       "gui.slsb.system_shop_weapons.tooltip_erank_dagger": "E-Rank Dagger",
@@ -6719,9 +9755,11 @@
       "item.slsb.med_mana_potion.description_0": "§7Category: §fPotion",
       "item.slsb.med_mana_potion.description_1": "",
       "slsb.command.awakenadmin": "has been awakened",
+      "gui.slsb.hunter_skill_gui_mage_wind.tooltip_slot_10": "Slot 10",
       "gui.slsb.system_shop_armor_3.tooltip_healer": "Healer",
       "gui.slsb.system_shop_gui.tooltip_weapons": "Weapons",
       "gui.slsb.system_shop_gui.tooltip_armor": "Armor",
+      "slsb.skill.tanker.collapse": "Collapse",
       "slsb.systemmenu.status": "Status",
       "block.slsb.barrier_slab": "§dBarrier Slab"
     }
@@ -6814,6 +9852,71 @@
                   {
                     "name": "Basic",
                     "children": []
+                  },
+                  {
+                    "name": "Fighter",
+                    "children": []
+                  },
+                  {
+                    "name": "Assassin",
+                    "children": []
+                  },
+                  {
+                    "name": "Tanker",
+                    "children": []
+                  },
+                  {
+                    "name": "Ranger",
+                    "children": []
+                  },
+                  {
+                    "name": "Healer",
+                    "children": []
+                  },
+                  {
+                    "name": "Mages",
+                    "children": [
+                      {
+                        "name": "Barrier",
+                        "children": []
+                      },
+                      {
+                        "name": "Curse",
+                        "children": []
+                      },
+                      {
+                        "name": "Spatial",
+                        "children": []
+                      },
+                      {
+                        "name": "Summon",
+                        "children": []
+                      },
+                      {
+                        "name": "Fire",
+                        "children": []
+                      },
+                      {
+                        "name": "Ice",
+                        "children": []
+                      },
+                      {
+                        "name": "Water",
+                        "children": []
+                      },
+                      {
+                        "name": "Wind",
+                        "children": []
+                      },
+                      {
+                        "name": "Earth",
+                        "children": []
+                      },
+                      {
+                        "name": "Electric",
+                        "children": []
+                      }
+                    ]
                   }
                 ]
               },
@@ -6914,7 +10017,17 @@
         "children": [
           {
             "name": "Hunter",
-            "children": []
+            "children": [
+              {
+                "name": "Classes",
+                "children": [
+                  {
+                    "name": "Mage",
+                    "children": []
+                  }
+                ]
+              }
+            ]
           },
           {
             "name": "System",

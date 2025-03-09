@@ -23,6 +23,16 @@ import net.clozynoii.slsb.world.inventory.SystemMainGUIMenu;
 import net.clozynoii.slsb.world.inventory.HunterSkillGUITankMenu;
 import net.clozynoii.slsb.world.inventory.HunterSkillGUIRangerMenu;
 import net.clozynoii.slsb.world.inventory.HunterSkillGUIMenu;
+import net.clozynoii.slsb.world.inventory.HunterSkillGUIMageWindMenu;
+import net.clozynoii.slsb.world.inventory.HunterSkillGUIMageWaterMenu;
+import net.clozynoii.slsb.world.inventory.HunterSkillGUIMageSummonMenu;
+import net.clozynoii.slsb.world.inventory.HunterSkillGUIMageSpatialMenu;
+import net.clozynoii.slsb.world.inventory.HunterSkillGUIMageLightningMenu;
+import net.clozynoii.slsb.world.inventory.HunterSkillGUIMageIceMenu;
+import net.clozynoii.slsb.world.inventory.HunterSkillGUIMageFireMenu;
+import net.clozynoii.slsb.world.inventory.HunterSkillGUIMageEarthMenu;
+import net.clozynoii.slsb.world.inventory.HunterSkillGUIMageCurseMenu;
+import net.clozynoii.slsb.world.inventory.HunterSkillGUIMageBarrierMenu;
 import net.clozynoii.slsb.world.inventory.HunterSkillGUIHealerMenu;
 import net.clozynoii.slsb.world.inventory.HunterSkillGUIFighterMenu;
 import net.clozynoii.slsb.world.inventory.HunterSkillGUIAssassinMenu;
@@ -47,4 +57,15 @@ public class SlsbModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<SystemShopPotionsMenu>> SYSTEM_SHOP_POTIONS = REGISTRY.register("system_shop_potions", () -> IMenuTypeExtension.create(SystemShopPotionsMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<SystemShopArmor2Menu>> SYSTEM_SHOP_ARMOR_2 = REGISTRY.register("system_shop_armor_2", () -> IMenuTypeExtension.create(SystemShopArmor2Menu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<SystemShopArmor3Menu>> SYSTEM_SHOP_ARMOR_3 = REGISTRY.register("system_shop_armor_3", () -> IMenuTypeExtension.create(SystemShopArmor3Menu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<HunterSkillGUIMageBarrierMenu>> HUNTER_SKILL_GUI_MAGE_BARRIER = REGISTRY.register("hunter_skill_gui_mage_barrier", () -> IMenuTypeExtension.create(HunterSkillGUIMageBarrierMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<HunterSkillGUIMageCurseMenu>> HUNTER_SKILL_GUI_MAGE_CURSE = REGISTRY.register("hunter_skill_gui_mage_curse", () -> IMenuTypeExtension.create(HunterSkillGUIMageCurseMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<HunterSkillGUIMageSpatialMenu>> HUNTER_SKILL_GUI_MAGE_SPATIAL = REGISTRY.register("hunter_skill_gui_mage_spatial", () -> IMenuTypeExtension.create(HunterSkillGUIMageSpatialMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<HunterSkillGUIMageSummonMenu>> HUNTER_SKILL_GUI_MAGE_SUMMON = REGISTRY.register("hunter_skill_gui_mage_summon", () -> IMenuTypeExtension.create(HunterSkillGUIMageSummonMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<HunterSkillGUIMageFireMenu>> HUNTER_SKILL_GUI_MAGE_FIRE = REGISTRY.register("hunter_skill_gui_mage_fire", () -> IMenuTypeExtension.create(HunterSkillGUIMageFireMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<HunterSkillGUIMageIceMenu>> HUNTER_SKILL_GUI_MAGE_ICE = REGISTRY.register("hunter_skill_gui_mage_ice", () -> IMenuTypeExtension.create(HunterSkillGUIMageIceMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<HunterSkillGUIMageWaterMenu>> HUNTER_SKILL_GUI_MAGE_WATER = REGISTRY.register("hunter_skill_gui_mage_water", () -> IMenuTypeExtension.create(HunterSkillGUIMageWaterMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<HunterSkillGUIMageEarthMenu>> HUNTER_SKILL_GUI_MAGE_EARTH = REGISTRY.register("hunter_skill_gui_mage_earth", () -> IMenuTypeExtension.create(HunterSkillGUIMageEarthMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<HunterSkillGUIMageWindMenu>> HUNTER_SKILL_GUI_MAGE_WIND = REGISTRY.register("hunter_skill_gui_mage_wind", () -> IMenuTypeExtension.create(HunterSkillGUIMageWindMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<HunterSkillGUIMageLightningMenu>> HUNTER_SKILL_GUI_MAGE_LIGHTNING = REGISTRY.register("hunter_skill_gui_mage_lightning",
+			() -> IMenuTypeExtension.create(HunterSkillGUIMageLightningMenu::new));
 }

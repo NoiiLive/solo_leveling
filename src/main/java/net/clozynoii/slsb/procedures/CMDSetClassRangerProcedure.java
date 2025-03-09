@@ -49,6 +49,29 @@ public class CMDSetClassRangerProcedure {
 					}
 				}
 			}.getEntity()).getData(SlsbModVariables.PLAYER_VARIABLES);
+			_vars.UnlockedSkills = "";
+			_vars.syncPlayerVariables((new Object() {
+				public Entity getEntity() {
+					try {
+						return EntityArgument.getEntity(arguments, "name");
+					} catch (CommandSyntaxException e) {
+						e.printStackTrace();
+						return null;
+					}
+				}
+			}.getEntity()));
+		}
+		{
+			SlsbModVariables.PlayerVariables _vars = (new Object() {
+				public Entity getEntity() {
+					try {
+						return EntityArgument.getEntity(arguments, "name");
+					} catch (CommandSyntaxException e) {
+						e.printStackTrace();
+						return null;
+					}
+				}
+			}.getEntity()).getData(SlsbModVariables.PLAYER_VARIABLES);
 			_vars.Ability1a = "";
 			_vars.syncPlayerVariables((new Object() {
 				public Entity getEntity() {
@@ -279,7 +302,16 @@ public class CMDSetClassRangerProcedure {
 			}
 		}.getEntity()) == entity)) {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal((entity.getDisplayName().getString() + "'s " + Component.translatable("slsb.command.setclassadmin").getString() + " Ranger")), false);
+				_player.displayClientMessage(Component.literal(((new Object() {
+					public Entity getEntity() {
+						try {
+							return EntityArgument.getEntity(arguments, "name");
+						} catch (CommandSyntaxException e) {
+							e.printStackTrace();
+							return null;
+						}
+					}
+				}.getEntity()).getDisplayName().getString() + "'s " + Component.translatable("slsb.command.setclassadmin").getString() + " Ranger")), false);
 		}
 		if ((new Object() {
 			public Entity getEntity() {
@@ -291,6 +323,6 @@ public class CMDSetClassRangerProcedure {
 				}
 			}
 		}.getEntity()) instanceof Player _player && !_player.level().isClientSide())
-			_player.displayClientMessage(Component.literal((Component.translatable(("slsb.command.setclasstarget" + " Ranger")).getString())), true);
+			_player.displayClientMessage(Component.literal((Component.translatable((Component.translatable("slsb.command.setclasstarget").getString() + " Ranger")).getString())), true);
 	}
 }

@@ -19,6 +19,15 @@ import net.minecraft.core.BlockPos;
 import net.clozynoii.slsb.world.inventory.HunterSkillGUITankMenu;
 import net.clozynoii.slsb.procedures.TabHunterSkillsProcedure;
 import net.clozynoii.slsb.procedures.TabHunterMainProcedure;
+import net.clozynoii.slsb.procedures.SkillButtonUnyieldingRoarProcedure;
+import net.clozynoii.slsb.procedures.SkillButtonTauntProcedure;
+import net.clozynoii.slsb.procedures.SkillButtonStrideProcedure;
+import net.clozynoii.slsb.procedures.SkillButtonStrengtheningProcedure;
+import net.clozynoii.slsb.procedures.SkillButtonPowerSmashProcedure;
+import net.clozynoii.slsb.procedures.SkillButtonManaShieldProcedure;
+import net.clozynoii.slsb.procedures.SkillButtonIronGraspProcedure;
+import net.clozynoii.slsb.procedures.SkillButtonCollapseProcedure;
+import net.clozynoii.slsb.procedures.SkillButtonChargeProcedure;
 import net.clozynoii.slsb.procedures.GUISkillSlot5bProcedure;
 import net.clozynoii.slsb.procedures.GUISkillSlot5aProcedure;
 import net.clozynoii.slsb.procedures.GUISkillSlot4bProcedure;
@@ -117,6 +126,42 @@ public record HunterSkillGUITankButtonMessage(int buttonID, int x, int y, int z)
 		if (buttonID == 11) {
 
 			TabHunterSkillsProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 12) {
+
+			SkillButtonTauntProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 13) {
+
+			SkillButtonCollapseProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 14) {
+
+			SkillButtonPowerSmashProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 15) {
+
+			SkillButtonManaShieldProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 16) {
+
+			SkillButtonStrengtheningProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 17) {
+
+			SkillButtonChargeProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 18) {
+
+			SkillButtonStrideProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 19) {
+
+			SkillButtonUnyieldingRoarProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 20) {
+
+			SkillButtonIronGraspProcedure.execute(world, x, y, z, entity);
 		}
 	}
 
