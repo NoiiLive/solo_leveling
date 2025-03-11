@@ -32,6 +32,7 @@ public class PlayerStatEffectsProcedure {
 		double StrengthScaling = 0;
 		double HealthScaling = 0;
 		double AgilityScaling = 0;
+		double FullSpeed = 0;
 		if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).SystemPlayer == true) {
 			{
 				SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
@@ -96,8 +97,21 @@ public class PlayerStatEffectsProcedure {
 				_livingEntity5.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue((1 + entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerStrength * HealthScaling));
 			if (entity instanceof LivingEntity _livingEntity6 && _livingEntity6.getAttributes().hasAttribute(Attributes.MAX_HEALTH))
 				_livingEntity6.getAttribute(Attributes.MAX_HEALTH).setBaseValue((20 + Math.round(entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerVitality * StrengthScaling)));
-			if (entity instanceof LivingEntity _livingEntity7 && _livingEntity7.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED))
-				_livingEntity7.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue((0.1 + entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerAgility * AgilityScaling));
+			if (entity.isSprinting()) {
+				if (FullSpeed < 0.1 + entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerAgility * AgilityScaling) {
+					FullSpeed = (entity instanceof LivingEntity _livingEntity8 && _livingEntity8.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED) ? _livingEntity8.getAttribute(Attributes.MOVEMENT_SPEED).getBaseValue() : 0) + 0.01;
+				} else if (FullSpeed > 0.1 + entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerAgility * AgilityScaling) {
+					FullSpeed = 0.1 + entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerAgility * AgilityScaling;
+				}
+			} else {
+				if (FullSpeed > 0.1) {
+					FullSpeed = (entity instanceof LivingEntity _livingEntity9 && _livingEntity9.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED) ? _livingEntity9.getAttribute(Attributes.MOVEMENT_SPEED).getBaseValue() : 0) - 0.01;
+				} else if (FullSpeed < 0.1) {
+					FullSpeed = 0.1;
+				}
+			}
+			if (entity instanceof LivingEntity _livingEntity10 && _livingEntity10.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED))
+				_livingEntity10.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(FullSpeed);
 		}
 	}
 }
