@@ -213,6 +213,24 @@ public class BloodredIgrisEntity extends Monster implements GeoEntity {
 		return PlayState.STOP;
 	}
 
+	private PlayState attackingPredicate(AnimationState event) {
+		double d1 = this.getX() - this.xOld;
+		double d0 = this.getZ() - this.zOld;
+		float velocity = (float) Math.sqrt(d1 * d1 + d0 * d0);
+		if (getAttackAnim(event.getPartialTick()) > 0f && !this.swinging) {
+			this.swinging = true;
+			this.lastSwing = level().getGameTime();
+		}
+		if (this.swinging && this.lastSwing + 6L <= level().getGameTime()) {
+			this.swinging = false;
+		}
+		if (this.swinging && event.getController().getAnimationState() == AnimationController.State.STOPPED) {
+			event.getController().forceAnimationReset();
+			return event.setAndContinue(RawAnimation.begin().thenPlay("swing"));
+		}
+		return PlayState.CONTINUE;
+	}
+
 	String prevAnim = "empty";
 
 	private PlayState procedurePredicate(AnimationState event) {
@@ -235,7 +253,7 @@ public class BloodredIgrisEntity extends Monster implements GeoEntity {
 	@Override
 	protected void tickDeath() {
 		++this.deathTime;
-		if (this.deathTime == 20) {
+		if (this.deathTime == 10) {
 			this.remove(BloodredIgrisEntity.RemovalReason.KILLED);
 			this.dropExperience(this);
 		}
@@ -252,6 +270,7 @@ public class BloodredIgrisEntity extends Monster implements GeoEntity {
 	@Override
 	public void registerControllers(AnimatableManager.ControllerRegistrar data) {
 		data.add(new AnimationController<>(this, "movement", 5, this::movementPredicate));
+		data.add(new AnimationController<>(this, "attacking", 5, this::attackingPredicate));
 		data.add(new AnimationController<>(this, "procedure", 5, this::procedurePredicate));
 	}
 
