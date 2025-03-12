@@ -3813,7 +3813,7 @@
           }
         ]
       },
-      "path": "~/Procedures/Commands"
+      "path": "~/Procedures/Commands/Hunter"
     },
     {
       "name": "CMDSetClassAssassin",
@@ -3836,7 +3836,7 @@
           }
         ]
       },
-      "path": "~/Procedures/Commands"
+      "path": "~/Procedures/Commands/Hunter"
     },
     {
       "name": "CMDSetClassTank",
@@ -3859,7 +3859,7 @@
           }
         ]
       },
-      "path": "~/Procedures/Commands"
+      "path": "~/Procedures/Commands/Hunter"
     },
     {
       "name": "CMDSetClassRanger",
@@ -3882,7 +3882,7 @@
           }
         ]
       },
-      "path": "~/Procedures/Commands"
+      "path": "~/Procedures/Commands/Hunter"
     },
     {
       "name": "CMDSetClassHealer",
@@ -3905,7 +3905,7 @@
           }
         ]
       },
-      "path": "~/Procedures/Commands"
+      "path": "~/Procedures/Commands/Hunter"
     },
     {
       "name": "ReturnHunterLocalBasicSkills",
@@ -6618,7 +6618,7 @@
           }
         ]
       },
-      "path": "~/Procedures/Commands"
+      "path": "~/Procedures/Commands/Hunter"
     },
     {
       "name": "CMDSetClassMageCurse",
@@ -6641,7 +6641,7 @@
           }
         ]
       },
-      "path": "~/Procedures/Commands"
+      "path": "~/Procedures/Commands/Hunter"
     },
     {
       "name": "CMDSetClassMageSpatial",
@@ -6664,7 +6664,7 @@
           }
         ]
       },
-      "path": "~/Procedures/Commands"
+      "path": "~/Procedures/Commands/Hunter"
     },
     {
       "name": "CMDSetClassMageSummon",
@@ -6687,7 +6687,7 @@
           }
         ]
       },
-      "path": "~/Procedures/Commands"
+      "path": "~/Procedures/Commands/Hunter"
     },
     {
       "name": "CMDSetClassMageFire",
@@ -6710,7 +6710,7 @@
           }
         ]
       },
-      "path": "~/Procedures/Commands"
+      "path": "~/Procedures/Commands/Hunter"
     },
     {
       "name": "CMDSetClassMageIce",
@@ -6733,7 +6733,7 @@
           }
         ]
       },
-      "path": "~/Procedures/Commands"
+      "path": "~/Procedures/Commands/Hunter"
     },
     {
       "name": "CMDSetClassMageWater",
@@ -6756,7 +6756,7 @@
           }
         ]
       },
-      "path": "~/Procedures/Commands"
+      "path": "~/Procedures/Commands/Hunter"
     },
     {
       "name": "CMDSetClassMageWind",
@@ -6779,7 +6779,7 @@
           }
         ]
       },
-      "path": "~/Procedures/Commands"
+      "path": "~/Procedures/Commands/Hunter"
     },
     {
       "name": "CMDSetClassMageEarth",
@@ -6802,7 +6802,7 @@
           }
         ]
       },
-      "path": "~/Procedures/Commands"
+      "path": "~/Procedures/Commands/Hunter"
     },
     {
       "name": "CMDSetClassMageElectric",
@@ -6825,7 +6825,7 @@
           }
         ]
       },
-      "path": "~/Procedures/Commands"
+      "path": "~/Procedures/Commands/Hunter"
     },
     {
       "name": "CMDClearSkills",
@@ -8779,6 +8779,213 @@
         ]
       },
       "path": "~/Procedures/GUI/Skills/Tanker"
+    },
+    {
+      "name": "CMDSetJobShadowMonarch",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmd_set_job_shadow_monarch",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/CMDSetJobShadowMonarchProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Commands/Monarch"
+    },
+    {
+      "name": "CMDSetJobDestructionMonarch",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmd_set_job_destruction_monarch",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/CMDSetJobDestructionMonarchProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Commands/Monarch"
+    },
+    {
+      "name": "CMDSetJobFangMonarch",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmd_set_job_fang_monarch",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/CMDSetJobFangMonarchProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Commands/Monarch"
+    },
+    {
+      "name": "CMDSetJobFrostMonarch",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmd_set_job_frost_monarch",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/CMDSetJobFrostMonarchProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Commands/Monarch"
+    },
+    {
+      "name": "CMDSetJobIronBodyMonarch",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmd_set_job_iron_body_monarch",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/CMDSetJobIronBodyMonarchProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Commands/Monarch"
+    },
+    {
+      "name": "CMDSetJobPlagueMonarch",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmd_set_job_plague_monarch",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/CMDSetJobPlagueMonarchProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Commands/Monarch"
+    },
+    {
+      "name": "CMDSetJobWhiteFlameMonarch",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmd_set_job_white_flame_monarch",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/CMDSetJobWhiteFlameMonarchProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Commands/Monarch"
+    },
+    {
+      "name": "CMDSetJobTransfigurationMonarch",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmd_set_job_transfiguration_monarch",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/CMDSetJobTransfigurationMonarchProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Commands/Monarch"
+    },
+    {
+      "name": "CMDSetJobBeginningMonarch",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmd_set_job_beginning_monarch",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/CMDSetJobBeginningMonarchProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Commands/Monarch"
     }
   ],
   "variable_elements": [
@@ -9958,7 +10165,16 @@
           },
           {
             "name": "Commands",
-            "children": []
+            "children": [
+              {
+                "name": "Hunter",
+                "children": []
+              },
+              {
+                "name": "Monarch",
+                "children": []
+              }
+            ]
           },
           {
             "name": "Player",

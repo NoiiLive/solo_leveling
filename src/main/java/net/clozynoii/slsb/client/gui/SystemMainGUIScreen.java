@@ -112,10 +112,10 @@ public class SystemMainGUIScreen extends AbstractContainerScreen<SystemMainGUIMe
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font,
 
-				ReturnHunterClassProcedure.execute(entity), -44, -36, -15657947, false);
+				ReturnHunterClassProcedure.execute(entity), -47, -36, -15657947, false);
 		guiGraphics.drawString(this.font,
 
-				ReturnHunterClassProcedure.execute(entity), -45, -37, -1, false);
+				ReturnHunterClassProcedure.execute(entity), -48, -37, -1, false);
 		guiGraphics.drawString(this.font,
 
 				ReturnSystemManaProcedure.execute(entity), 27, 7, -15657947, false);
@@ -136,16 +136,16 @@ public class SystemMainGUIScreen extends AbstractContainerScreen<SystemMainGUIMe
 				ReturnSystemSkillPointsProcedure.execute(entity), 35, 51, -1, false);
 		guiGraphics.drawString(this.font,
 
-				ReturnSystemLevelProcedure.execute(entity), -33, -49, -15657947, false);
+				ReturnSystemLevelProcedure.execute(entity), -36, -49, -15657947, false);
 		guiGraphics.drawString(this.font,
 
-				ReturnSystemTitleProcedure.execute(entity), -39, -23, -15657947, false);
+				ReturnSystemTitleProcedure.execute(entity), -42, -23, -15657947, false);
 		guiGraphics.drawString(this.font,
 
-				ReturnSystemLevelProcedure.execute(entity), -34, -50, -1, false);
+				ReturnSystemLevelProcedure.execute(entity), -37, -50, -1, false);
 		guiGraphics.drawString(this.font,
 
-				ReturnSystemTitleProcedure.execute(entity), -40, -24, -1, false);
+				ReturnSystemTitleProcedure.execute(entity), -43, -24, -1, false);
 		guiGraphics.drawString(this.font,
 
 				ReturnSystemStrengthProcedure.execute(entity), -33, 28, -15657947, false);

@@ -23,6 +23,15 @@ import net.clozynoii.slsb.procedures.CMDSetRankDProcedure;
 import net.clozynoii.slsb.procedures.CMDSetRankCProcedure;
 import net.clozynoii.slsb.procedures.CMDSetRankBProcedure;
 import net.clozynoii.slsb.procedures.CMDSetRankAProcedure;
+import net.clozynoii.slsb.procedures.CMDSetJobWhiteFlameMonarchProcedure;
+import net.clozynoii.slsb.procedures.CMDSetJobTransfigurationMonarchProcedure;
+import net.clozynoii.slsb.procedures.CMDSetJobShadowMonarchProcedure;
+import net.clozynoii.slsb.procedures.CMDSetJobPlagueMonarchProcedure;
+import net.clozynoii.slsb.procedures.CMDSetJobIronBodyMonarchProcedure;
+import net.clozynoii.slsb.procedures.CMDSetJobFrostMonarchProcedure;
+import net.clozynoii.slsb.procedures.CMDSetJobFangMonarchProcedure;
+import net.clozynoii.slsb.procedures.CMDSetJobDestructionMonarchProcedure;
+import net.clozynoii.slsb.procedures.CMDSetJobBeginningMonarchProcedure;
 import net.clozynoii.slsb.procedures.CMDSetClassTankProcedure;
 import net.clozynoii.slsb.procedures.CMDSetClassRangerProcedure;
 import net.clozynoii.slsb.procedures.CMDSetClassMageWindProcedure;
@@ -299,6 +308,132 @@ public class SlsbCommand {
 				direction = entity.getDirection();
 
 			CMDSetClassMageElectricProcedure.execute(arguments, entity);
+			return 0;
+		})))).then(Commands.literal("monarch").then(Commands.literal("shadow").then(Commands.argument("name", EntityArgument.player()).executes(arguments -> {
+			Level world = arguments.getSource().getUnsidedLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null && world instanceof ServerLevel _servLevel)
+				entity = FakePlayerFactory.getMinecraft(_servLevel);
+			Direction direction = Direction.DOWN;
+			if (entity != null)
+				direction = entity.getDirection();
+
+			CMDSetJobShadowMonarchProcedure.execute(arguments, entity);
+			return 0;
+		}))).then(Commands.literal("destruction").then(Commands.argument("name", EntityArgument.player()).executes(arguments -> {
+			Level world = arguments.getSource().getUnsidedLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null && world instanceof ServerLevel _servLevel)
+				entity = FakePlayerFactory.getMinecraft(_servLevel);
+			Direction direction = Direction.DOWN;
+			if (entity != null)
+				direction = entity.getDirection();
+
+			CMDSetJobDestructionMonarchProcedure.execute(arguments, entity);
+			return 0;
+		}))).then(Commands.literal("fang").then(Commands.argument("name", EntityArgument.player()).executes(arguments -> {
+			Level world = arguments.getSource().getUnsidedLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null && world instanceof ServerLevel _servLevel)
+				entity = FakePlayerFactory.getMinecraft(_servLevel);
+			Direction direction = Direction.DOWN;
+			if (entity != null)
+				direction = entity.getDirection();
+
+			CMDSetJobFangMonarchProcedure.execute(arguments, entity);
+			return 0;
+		}))).then(Commands.literal("frost").then(Commands.argument("name", EntityArgument.player()).executes(arguments -> {
+			Level world = arguments.getSource().getUnsidedLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null && world instanceof ServerLevel _servLevel)
+				entity = FakePlayerFactory.getMinecraft(_servLevel);
+			Direction direction = Direction.DOWN;
+			if (entity != null)
+				direction = entity.getDirection();
+
+			CMDSetJobFrostMonarchProcedure.execute(arguments, entity);
+			return 0;
+		}))).then(Commands.literal("ironbody").then(Commands.argument("name", EntityArgument.player()).executes(arguments -> {
+			Level world = arguments.getSource().getUnsidedLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null && world instanceof ServerLevel _servLevel)
+				entity = FakePlayerFactory.getMinecraft(_servLevel);
+			Direction direction = Direction.DOWN;
+			if (entity != null)
+				direction = entity.getDirection();
+
+			CMDSetJobIronBodyMonarchProcedure.execute(arguments, entity);
+			return 0;
+		}))).then(Commands.literal("plague").then(Commands.argument("name", EntityArgument.player()).executes(arguments -> {
+			Level world = arguments.getSource().getUnsidedLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null && world instanceof ServerLevel _servLevel)
+				entity = FakePlayerFactory.getMinecraft(_servLevel);
+			Direction direction = Direction.DOWN;
+			if (entity != null)
+				direction = entity.getDirection();
+
+			CMDSetJobPlagueMonarchProcedure.execute(arguments, entity);
+			return 0;
+		}))).then(Commands.literal("whiteflame").then(Commands.argument("name", EntityArgument.player()).executes(arguments -> {
+			Level world = arguments.getSource().getUnsidedLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null && world instanceof ServerLevel _servLevel)
+				entity = FakePlayerFactory.getMinecraft(_servLevel);
+			Direction direction = Direction.DOWN;
+			if (entity != null)
+				direction = entity.getDirection();
+
+			CMDSetJobWhiteFlameMonarchProcedure.execute(arguments, entity);
+			return 0;
+		}))).then(Commands.literal("transfiguration").then(Commands.argument("name", EntityArgument.player()).executes(arguments -> {
+			Level world = arguments.getSource().getUnsidedLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null && world instanceof ServerLevel _servLevel)
+				entity = FakePlayerFactory.getMinecraft(_servLevel);
+			Direction direction = Direction.DOWN;
+			if (entity != null)
+				direction = entity.getDirection();
+
+			CMDSetJobTransfigurationMonarchProcedure.execute(arguments, entity);
+			return 0;
+		}))).then(Commands.literal("beginning").then(Commands.argument("name", EntityArgument.player()).executes(arguments -> {
+			Level world = arguments.getSource().getUnsidedLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null && world instanceof ServerLevel _servLevel)
+				entity = FakePlayerFactory.getMinecraft(_servLevel);
+			Direction direction = Direction.DOWN;
+			if (entity != null)
+				direction = entity.getDirection();
+
+			CMDSetJobBeginningMonarchProcedure.execute(arguments, entity);
 			return 0;
 		}))))).then(Commands.literal("rank").then(Commands.literal("e").then(Commands.argument("name", EntityArgument.player()).executes(arguments -> {
 			Level world = arguments.getSource().getUnsidedLevel();
