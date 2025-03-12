@@ -90,6 +90,7 @@ public class SlsbModItems {
 	public static final DeferredItem<Item> LOW_MANA_POTION = REGISTRY.register("low_mana_potion", LowManaPotionItem::new);
 	public static final DeferredItem<Item> MED_MANA_POTION = REGISTRY.register("med_mana_potion", MedManaPotionItem::new);
 	public static final DeferredItem<Item> HIGH_MANA_POTION = REGISTRY.register("high_mana_potion", HighManaPotionItem::new);
+	public static final DeferredItem<Item> GOBLIN_SPAWN_EGG = REGISTRY.register("goblin_spawn_egg", () -> new DeferredSpawnEggItem(SlsbModEntities.GOBLIN, -9657756, -4803692, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

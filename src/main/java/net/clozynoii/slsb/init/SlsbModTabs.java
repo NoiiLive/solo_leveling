@@ -59,5 +59,6 @@ public class SlsbModTabs {
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> SL_MOBS = REGISTRY.register("sl_mobs",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.slsb.sl_mobs")).icon(() -> new ItemStack(SlsbModItems.BLOODRED_IGRIS_SPAWN_EGG.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(SlsbModItems.BLOODRED_IGRIS_SPAWN_EGG.get());
+				tabData.accept(SlsbModItems.GOBLIN_SPAWN_EGG.get());
 			}).withTabsBefore(SL_GEAR.getId()).build());
 }

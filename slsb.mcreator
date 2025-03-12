@@ -8986,6 +8986,117 @@
         ]
       },
       "path": "~/Procedures/Commands/Monarch"
+    },
+    {
+      "name": "Goblin",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "goblin",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/slsb/models/item/goblin_spawn_egg.json",
+          "src/main/java/net/clozynoii/slsb/entity/model/GoblinModel.java",
+          "src/main/java/net/clozynoii/slsb/entity/layer/GoblinLayer.java",
+          "src/main/java/net/clozynoii/slsb/client/renderer/GoblinRenderer.java",
+          "src/main/java/net/clozynoii/slsb/entity/GoblinEntity.java"
+        ]
+      },
+      "path": "~/Entities"
+    },
+    {
+      "name": "GoblinShadow",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "goblin_shadow",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/entity/layer/GoblinShadowLayer.java",
+          "src/main/java/net/clozynoii/slsb/entity/GoblinShadowEntity.java",
+          "src/main/java/net/clozynoii/slsb/entity/model/GoblinShadowModel.java",
+          "src/main/java/net/clozynoii/slsb/client/renderer/GoblinShadowRenderer.java"
+        ]
+      },
+      "path": "~/Entities/Shadows"
+    },
+    {
+      "name": "IgrisShadow",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "igris_shadow",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/client/renderer/IgrisShadowRenderer.java",
+          "src/main/java/net/clozynoii/slsb/entity/layer/IgrisShadowLayer.java",
+          "src/main/java/net/clozynoii/slsb/entity/model/IgrisShadowModel.java",
+          "src/main/java/net/clozynoii/slsb/entity/IgrisShadowEntity.java"
+        ]
+      },
+      "path": "~/Entities/Shadows"
+    },
+    {
+      "name": "ShadowGoblinTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shadow_goblin_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ShadowGoblinTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entities/Shadows"
+    },
+    {
+      "name": "ShadowIgrisTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shadow_igris_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/slsb/procedures/ShadowIgrisTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entities/Shadows"
     }
   ],
   "variable_elements": [
@@ -9446,7 +9557,8 @@
       "RedKnightsArmor"
     ],
     "CUSTOM:SLMobs": [
-      "BloodredIgris"
+      "BloodredIgris",
+      "Goblin"
     ]
   },
   "language_map": {
@@ -9750,6 +9862,7 @@
       "slsb.skill.fighter.sworddance": "Sword Dance",
       "item.slsb.red_knights_armor_leggings": "§cCrimson Knight\u0027s Leggings",
       "slsb.skill.fighter.brace": "Brace",
+      "entity.slsb.goblin": "Goblin",
       "slsb.training.manafatigue": "Your mana is currently fatigued",
       "item.slsb.red_knights_armor_boots.description_5": "§aSTR +20",
       "item.slsb.red_knights_armor_boots.description_4": "§aVIT +20",
@@ -9757,6 +9870,7 @@
       "item.slsb.red_knights_armor_boots.description_2": "",
       "gui.slsb.system_shop_armor_3.tooltip_arank_leggings": "A-Rank Leggings",
       "gui.slsb.system_shop_potions.tooltip_low_mana": "Low Mana",
+      "item.slsb.goblin_shadow_spawn_egg": "Goblin (Shadow) Spawn Egg",
       "item.slsb.kasakas_fang.description_1": "§7Category: §fDagger",
       "gui.slsb.system_shop_armor_3.tooltip_mage": "Mage",
       "item.slsb.kasakas_fang.description_0": "§7Acquisition Difficulty: §fC-Rank",
@@ -9791,10 +9905,13 @@
       "gui.slsb.system_shop_potions.label_10k2": "10K",
       "gui.slsb.system_shop_potions.tooltip_low_heal": "Low Heal",
       "gui.slsb.system_shop_potions.label_10k1": "10K",
+      "entity.slsb.goblin_shadow": "Goblin (Shadow)",
       "block.slsb.tan_trimmed_panel_wall": "Tan Trimmed Panel Wall",
       "slsb.skill.assassin.criticalstrike": "Critical Strike",
+      "item.slsb.igris_shadow_spawn_egg": "Igris (Shadow) Spawn Egg",
       "gui.slsb.system_shop_weapons.tooltip_erank_weapon": "E-Rank Weapon",
       "block.slsb.agility_treadmill": "Treadmill",
+      "item.slsb.goblin_spawn_egg": "Goblin Spawn Egg",
       "item.slsb.true_kasakas_fang.description_1": "§7Category: §fDagger",
       "item.slsb.true_kasakas_fang.description_2": "",
       "item.slsb.true_kasakas_fang.description_3": "§aATK +250",
@@ -9855,6 +9972,7 @@
       "gui.slsb.hunter_skill_gui_mage_summon.tooltip_slot_8": "Slot 8",
       "gui.slsb.hunter_skill_gui_mage_summon.tooltip_slot_9": "Slot 9",
       "gui.slsb.hunter_skill_gui_mage_barrier.tooltip_slot_1": "Slot 1",
+      "entity.slsb.igris_shadow": "Igris (Shadow)",
       "gui.slsb.hunter_skill_gui_mage_barrier.tooltip_slot_2": "Slot 2",
       "gui.slsb.hunter_skill_gui_mage_barrier.tooltip_slot_5": "Slot 5",
       "block.slsb.tan_panel_wall": "Tan Panel Wall",
@@ -10205,7 +10323,12 @@
       },
       {
         "name": "Entities",
-        "children": []
+        "children": [
+          {
+            "name": "Shadows",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Structures",
