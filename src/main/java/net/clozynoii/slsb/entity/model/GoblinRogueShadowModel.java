@@ -14,12 +14,12 @@ import net.clozynoii.slsb.entity.GoblinRogueShadowEntity;
 public class GoblinRogueShadowModel extends GeoModel<GoblinRogueShadowEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(GoblinRogueShadowEntity entity) {
-		return ResourceLocation.parse("slsb:animations/goblin_generic.animation.json");
+		return ResourceLocation.parse("slsb:animations/goblin_rogue.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(GoblinRogueShadowEntity entity) {
-		return ResourceLocation.parse("slsb:geo/goblin_generic.geo.json");
+		return ResourceLocation.parse("slsb:geo/goblin_rogue.geo.json");
 	}
 
 	@Override

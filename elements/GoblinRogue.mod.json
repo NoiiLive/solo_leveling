@@ -2,7 +2,7 @@
   "_fv": 73,
   "_type": "animatedentity",
   "definition": {
-    "mobName": "Goblin (Rogue)",
+    "mobName": "Goblin Rogue",
     "mobLabel": "",
     "mobModelTexture": "goblin_rogue.png",
     "mobModelGlowTexture": "goblin_eyes.png",
