@@ -18,6 +18,8 @@ import net.minecraft.core.registries.Registries;
 
 import net.clozynoii.slsb.entity.IgrisShadowEntity;
 import net.clozynoii.slsb.entity.GoblinShadowEntity;
+import net.clozynoii.slsb.entity.GoblinRogueShadowEntity;
+import net.clozynoii.slsb.entity.GoblinRogueEntity;
 import net.clozynoii.slsb.entity.GoblinEntity;
 import net.clozynoii.slsb.entity.BloodredIgrisEntity;
 import net.clozynoii.slsb.SlsbMod;
@@ -37,6 +39,14 @@ public class SlsbModEntities {
 					.sized(0.6f, 1.3f));
 	public static final DeferredHolder<EntityType<?>, EntityType<IgrisShadowEntity>> IGRIS_SHADOW = register("igris_shadow",
 			EntityType.Builder.<IgrisShadowEntity>of(IgrisShadowEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(80).setUpdateInterval(3).fireImmune().sized(1f, 3f));
+	public static final DeferredHolder<EntityType<?>, EntityType<GoblinRogueEntity>> GOBLIN_ROGUE = register("goblin_rogue",
+			EntityType.Builder.<GoblinRogueEntity>of(GoblinRogueEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.3f));
+	public static final DeferredHolder<EntityType<?>, EntityType<GoblinRogueShadowEntity>> GOBLIN_ROGUE_SHADOW = register("goblin_rogue_shadow",
+			EntityType.Builder.<GoblinRogueShadowEntity>of(GoblinRogueShadowEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.3f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -50,6 +60,8 @@ public class SlsbModEntities {
 		GoblinEntity.init(event);
 		GoblinShadowEntity.init(event);
 		IgrisShadowEntity.init(event);
+		GoblinRogueEntity.init(event);
+		GoblinRogueShadowEntity.init(event);
 	}
 
 	@SubscribeEvent
@@ -58,5 +70,7 @@ public class SlsbModEntities {
 		event.put(GOBLIN.get(), GoblinEntity.createAttributes().build());
 		event.put(GOBLIN_SHADOW.get(), GoblinShadowEntity.createAttributes().build());
 		event.put(IGRIS_SHADOW.get(), IgrisShadowEntity.createAttributes().build());
+		event.put(GOBLIN_ROGUE.get(), GoblinRogueEntity.createAttributes().build());
+		event.put(GOBLIN_ROGUE_SHADOW.get(), GoblinRogueShadowEntity.createAttributes().build());
 	}
 }

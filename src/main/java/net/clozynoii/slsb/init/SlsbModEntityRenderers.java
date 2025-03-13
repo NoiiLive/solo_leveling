@@ -11,6 +11,8 @@ import net.neoforged.api.distmarker.Dist;
 
 import net.clozynoii.slsb.client.renderer.IgrisShadowRenderer;
 import net.clozynoii.slsb.client.renderer.GoblinShadowRenderer;
+import net.clozynoii.slsb.client.renderer.GoblinRogueShadowRenderer;
+import net.clozynoii.slsb.client.renderer.GoblinRogueRenderer;
 import net.clozynoii.slsb.client.renderer.GoblinRenderer;
 import net.clozynoii.slsb.client.renderer.BloodredIgrisRenderer;
 
@@ -22,5 +24,7 @@ public class SlsbModEntityRenderers {
 		event.registerEntityRenderer(SlsbModEntities.GOBLIN.get(), GoblinRenderer::new);
 		event.registerEntityRenderer(SlsbModEntities.GOBLIN_SHADOW.get(), GoblinShadowRenderer::new);
 		event.registerEntityRenderer(SlsbModEntities.IGRIS_SHADOW.get(), IgrisShadowRenderer::new);
+		event.registerEntityRenderer(SlsbModEntities.GOBLIN_ROGUE.get(), GoblinRogueRenderer::new);
+		event.registerEntityRenderer(SlsbModEntities.GOBLIN_ROGUE_SHADOW.get(), GoblinRogueShadowRenderer::new);
 	}
 }

@@ -6,6 +6,8 @@ import net.neoforged.bus.api.SubscribeEvent;
 
 import net.clozynoii.slsb.entity.IgrisShadowEntity;
 import net.clozynoii.slsb.entity.GoblinShadowEntity;
+import net.clozynoii.slsb.entity.GoblinRogueShadowEntity;
+import net.clozynoii.slsb.entity.GoblinRogueEntity;
 import net.clozynoii.slsb.entity.GoblinEntity;
 import net.clozynoii.slsb.entity.BloodredIgrisEntity;
 
@@ -36,6 +38,20 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof IgrisShadowEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof GoblinRogueEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof GoblinRogueShadowEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");
