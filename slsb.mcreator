@@ -9467,6 +9467,24 @@
       "type": "string",
       "scope": "player_lifetime",
       "value": ""
+    },
+    {
+      "name": "StoredShadow",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "CurrentShadows",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "MaxShadows",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [

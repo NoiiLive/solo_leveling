@@ -47,6 +47,11 @@ public class PlayerStatEffectsProcedure {
 				_livingEntity2.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue((0.1 + entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerAgility * 0.005));
 			if (entity instanceof LivingEntity _livingEntity3 && _livingEntity3.getAttributes().hasAttribute(Attributes.STEP_HEIGHT))
 				_livingEntity3.getAttribute(Attributes.STEP_HEIGHT).setBaseValue(1);
+			{
+				SlsbModVariables.PlayerVariables _vars = entity.getData(SlsbModVariables.PLAYER_VARIABLES);
+				_vars.MaxShadows = Math.round(entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerIntelligence / 2);
+				_vars.syncPlayerVariables(entity);
+			}
 		}
 		if (entity.getData(SlsbModVariables.PLAYER_VARIABLES).SystemPlayer == false) {
 			if ((entity.getData(SlsbModVariables.PLAYER_VARIABLES).PlayerRank).equals("E")) {

@@ -111,6 +111,9 @@ public class SlsbModVariables {
 			clone.PlayerEXP = original.PlayerEXP;
 			clone.PlayerMaxEXP = original.PlayerMaxEXP;
 			clone.PlayerGold = original.PlayerGold;
+			clone.StoredShadow = original.StoredShadow;
+			clone.CurrentShadows = original.CurrentShadows;
+			clone.MaxShadows = original.MaxShadows;
 			if (!event.isWasDeath()) {
 				clone.AbilityBar = original.AbilityBar;
 				clone.GUISelectedEntry = original.GUISelectedEntry;
@@ -308,6 +311,9 @@ public class SlsbModVariables {
 		public double PlayerMaxEXP = 100.0;
 		public double PlayerGold = 1000.0;
 		public String GUISelectedClass = "";
+		public String StoredShadow = "";
+		public double CurrentShadows = 0;
+		public double MaxShadows = 0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -363,6 +369,9 @@ public class SlsbModVariables {
 			nbt.putDouble("PlayerMaxEXP", PlayerMaxEXP);
 			nbt.putDouble("PlayerGold", PlayerGold);
 			nbt.putString("GUISelectedClass", GUISelectedClass);
+			nbt.putString("StoredShadow", StoredShadow);
+			nbt.putDouble("CurrentShadows", CurrentShadows);
+			nbt.putDouble("MaxShadows", MaxShadows);
 			return nbt;
 		}
 
@@ -419,6 +428,9 @@ public class SlsbModVariables {
 			PlayerMaxEXP = nbt.getDouble("PlayerMaxEXP");
 			PlayerGold = nbt.getDouble("PlayerGold");
 			GUISelectedClass = nbt.getString("GUISelectedClass");
+			StoredShadow = nbt.getString("StoredShadow");
+			CurrentShadows = nbt.getDouble("CurrentShadows");
+			MaxShadows = nbt.getDouble("MaxShadows");
 		}
 
 		public void syncPlayerVariables(Entity entity) {
